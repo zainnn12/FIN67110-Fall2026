@@ -1,0 +1,33 @@
+# Environment variables and local secrets
+.env
+.env.*
+
+# Keep the required safe template trackable
+!.env.example
+
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Editor and operating-system files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Private keys and certificate bundles
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519

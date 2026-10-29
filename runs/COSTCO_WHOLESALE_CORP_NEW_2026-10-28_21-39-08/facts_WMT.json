@@ -1,0 +1,272 @@
+{
+  "company": {
+    "ticker": "WMT",
+    "cik": 104169,
+    "name": "Walmart Inc."
+  },
+  "generated_at": "2026-10-28T21:39:10-04:00",
+  "fiscal_year_period_end": "2026-01-31",
+  "prior_year_period_end": "2025-01-31",
+  "selection_rule": "For each metric, select the candidate US-GAAP tag whose latest annual period end is newest; break ties by candidate order. Read current and prior facts at the same period ends selected from revenue.",
+  "facts": {
+    "revenue": {
+      "label": "Total revenue",
+      "taxonomy": "us-gaap",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "xbrl_label": "Revenue from Contract with Customer, Excluding Assessed Tax",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 706413000000,
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 674538000000,
+        "start": "2024-02-01",
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2024"
+      }
+    },
+    "operating_income": {
+      "label": "Operating income",
+      "taxonomy": "us-gaap",
+      "tag": "OperatingIncomeLoss",
+      "xbrl_label": "Operating Income (Loss)",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 29825000000,
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 29348000000,
+        "start": "2024-02-01",
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2024"
+      }
+    },
+    "net_income": {
+      "label": "Net income",
+      "taxonomy": "us-gaap",
+      "tag": "NetIncomeLoss",
+      "xbrl_label": "Net Income (Loss) Attributable to Parent",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 21893000000,
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13"
+      },
+      "prior": {
+        "val": 19436000000,
+        "start": "2024-02-01",
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13"
+      }
+    },
+    "diluted_eps": {
+      "label": "Diluted EPS",
+      "taxonomy": "us-gaap",
+      "tag": "EarningsPerShareDiluted",
+      "xbrl_label": "Earnings Per Share, Diluted",
+      "unit": "USD/shares",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 2.73,
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 2.41,
+        "start": "2024-02-01",
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2024"
+      }
+    },
+    "stockholders_equity": {
+      "label": "Stockholders' equity",
+      "taxonomy": "us-gaap",
+      "tag": "StockholdersEquity",
+      "xbrl_label": "Stockholders' Equity Attributable to Parent",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 99617000000,
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13"
+      },
+      "prior": {
+        "val": 91013000000,
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2024Q4I"
+      }
+    },
+    "long_term_debt": {
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": "LongTermDebtNoncurrent",
+      "xbrl_label": "Long-term Debt, Excluding Current Maturities",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 34624000000,
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13"
+      },
+      "prior": {
+        "val": 33401000000,
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2024Q4I"
+      }
+    },
+    "current_long_term_debt": {
+      "label": "Current portion of long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": "LongTermDebtCurrent",
+      "xbrl_label": "Long-term Debt, Current Maturities",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 3542000000,
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13"
+      },
+      "prior": {
+        "val": 2598000000,
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2024Q4I"
+      }
+    },
+    "cash_from_operations": {
+      "label": "Cash from operations",
+      "taxonomy": "us-gaap",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "xbrl_label": "Net Cash Provided by (Used in) Operating Activities",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 41565000000,
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 36443000000,
+        "start": "2024-02-01",
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2024"
+      }
+    },
+    "property_additions": {
+      "label": "Additions to property and equipment",
+      "taxonomy": "us-gaap",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "xbrl_label": "Payments to Acquire Property, Plant, and Equipment",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-31",
+      "current": {
+        "val": 26642000000,
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 23783000000,
+        "start": "2024-02-01",
+        "end": "2025-01-31",
+        "accn": "0000104169-26-000055",
+        "fy": 2026,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-03-13",
+        "frame": "CY2024"
+      }
+    }
+  }
+}
