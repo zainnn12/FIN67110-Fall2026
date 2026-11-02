@@ -1,0 +1,10 @@
+metric,label,taxonomy,tag,unit,tag_latest_period_end,current_value,current_start,current_end,current_form,current_accession,current_filed,prior_value,prior_start,prior_end,prior_form,prior_accession,prior_filed
+revenue,Total revenue,us-gaap,RevenueFromContractWithCustomerExcludingAssessedTax,USD,2026-05-31,67357000000,2025-06-01,2026-05-31,10-K,0001193125-26-277521,2026-06-22,57399000000,2024-06-01,2025-05-31,10-K,0001193125-26-277521,2026-06-22
+operating_income,Operating income,us-gaap,OperatingIncomeLoss,USD,2026-05-31,20606000000,2025-06-01,2026-05-31,10-K,0001193125-26-277521,2026-06-22,17678000000,2024-06-01,2025-05-31,10-K,0001193125-26-277521,2026-06-22
+net_income,Net income,us-gaap,NetIncomeLoss,USD,2026-05-31,17087000000,2025-06-01,2026-05-31,10-K,0001193125-26-277521,2026-06-22,12443000000,2024-06-01,2025-05-31,10-K,0001193125-26-277521,2026-06-22
+diluted_eps,Diluted EPS,us-gaap,EarningsPerShareDiluted,USD/shares,2026-05-31,5.83,2025-06-01,2026-05-31,10-K,0001193125-26-277521,2026-06-22,4.34,2024-06-01,2025-05-31,10-K,0001193125-26-277521,2026-06-22
+stockholders_equity,Stockholders' equity,us-gaap,StockholdersEquity,USD,2026-05-31,42508000000,,2026-05-31,10-K,0001193125-26-277521,2026-06-22,20451000000,,2025-05-31,10-K,0001193125-26-277521,2026-06-22
+long_term_debt,Long-term debt,us-gaap,,,,,,,,,,,,,,,
+current_long_term_debt,Current portion of long-term debt,us-gaap,,,,,,,,,,,,,,,
+cash_from_operations,Cash from operations,us-gaap,NetCashProvidedByUsedInOperatingActivities,USD,2026-05-31,31977000000,2025-06-01,2026-05-31,10-K,0001193125-26-277521,2026-06-22,20821000000,2024-06-01,2025-05-31,10-K,0001193125-26-277521,2026-06-22
+property_additions,Additions to property and equipment,us-gaap,PaymentsToAcquirePropertyPlantAndEquipment,USD,2026-05-31,55663000000,2025-06-01,2026-05-31,10-K,0001193125-26-277521,2026-06-22,21215000000,2024-06-01,2025-05-31,10-K,0001193125-26-277521,2026-06-22

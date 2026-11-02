@@ -1,0 +1,38 @@
+{
+  "company": {
+    "ticker": "COST",
+    "cik": 909832,
+    "name": "COSTCO WHOLESALE CORP /NEW"
+  },
+  "run_started": "2026-10-28T21:58:12-04:00",
+  "documents": [
+    {
+      "label": "10-K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+      "text_file": "10-K_000090983226000093.txt",
+      "accession_number": "0000909832-26-000093",
+      "accepted": "2026-10-06 21:13:15"
+    },
+    {
+      "label": "10-Q",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/cost-20260510.htm",
+      "text_file": "10-Q_000090983226000051.txt",
+      "accession_number": "0000909832-26-000051",
+      "accepted": "2026-06-03 16:43:00"
+    },
+    {
+      "label": "8-K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000084/cost-20260924.htm",
+      "text_file": "8-K_000090983226000084.txt",
+      "accession_number": "0000909832-26-000084",
+      "accepted": "2026-09-24 16:17:37"
+    },
+    {
+      "label": "8-K_EX-99.1",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000084/costex9918-k92426.htm",
+      "text_file": "8-K_EX-99.1_000090983226000084.txt",
+      "accession_number": "0000909832-26-000084",
+      "accepted": "2026-09-24 16:17:37"
+    }
+  ]
+}

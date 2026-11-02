@@ -1,0 +1,38 @@
+{
+  "company": {
+    "ticker": "MSFT",
+    "cik": 789019,
+    "name": "MICROSOFT CORP"
+  },
+  "run_started": "2026-11-02T15:42:54-05:00",
+  "documents": [
+    {
+      "label": "10-K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "text_file": "10-K_000119312526323660.txt",
+      "accession_number": "0001193125-26-323660",
+      "accepted": "2026-07-29 16:08:01"
+    },
+    {
+      "label": "10-Q",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+      "text_file": "10-Q_000119312526436133.txt",
+      "accession_number": "0001193125-26-436133",
+      "accepted": "2026-10-28 16:07:39"
+    },
+    {
+      "label": "8-K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm",
+      "text_file": "8-K_000119312526436122.txt",
+      "accession_number": "0001193125-26-436122",
+      "accepted": "2026-10-28 16:04:44"
+    },
+    {
+      "label": "8-K_EX-99.1",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm",
+      "text_file": "8-K_EX-99.1_000119312526436122.txt",
+      "accession_number": "0001193125-26-436122",
+      "accepted": "2026-10-28 16:04:44"
+    }
+  ]
+}
