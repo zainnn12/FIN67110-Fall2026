@@ -1,9 +1,8 @@
-"""Build the SEC data layer for an equity-research workflow.
+"""Build an SEC data desk and a four-role equity-research report.
 
-The script deliberately stops before model-driven research roles.  It resolves a
-ticker, selects and downloads filings, extracts comparable XBRL facts, performs
-deterministic calculations, extracts two earnings-release disclosures, and
-repeats the quantitative work for optional peers.
+The seven deterministic steps resolve filings, extract comparable facts, and
+perform all arithmetic. Four model roles then analyze only the JSON evidence
+that the Strategy Manager sends to them.
 """
 
 from __future__ import annotations
@@ -30,6 +29,14 @@ from dotenv import dotenv_values
 from pypdf import PdfReader
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+
+from research_roles import (
+    DEFAULT_OPENAI_MODEL,
+    OpenAIRoleClient,
+    RoleWorkflowError,
+    number_document_lines,
+    run_four_role_workflow,
+)
 
 SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 SEC_SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik}.json"
@@ -326,6 +333,17 @@ def read_sec_user_agent(base_dir: Path) -> str:
     value = dotenv_values(env_path).get("SEC_USER_AGENT")
     if value is None or not str(value).strip():
         raise DeskError("SEC_USER_AGENT is missing or empty in .env.")
+    return str(value).strip()
+
+
+def read_openai_api_key(base_dir: Path) -> str:
+    """Read the role-workflow key only from API_KEY in the local .env."""
+    env_path = base_dir / ".env"
+    if not env_path.is_file():
+        raise DeskError(f"Missing .env file: {env_path}")
+    value = dotenv_values(env_path).get("API_KEY")
+    if value is None or not str(value).strip():
+        raise DeskError("API_KEY is missing or empty in .env.")
     return str(value).strip()
 
 
@@ -1372,6 +1390,7 @@ class EquityResearchDataDesk:
         self.document_texts: dict[str, str] = {}
         self.release_text: str | None = None
         self.fact_set: dict[str, Any] | None = None
+        self.peer_fact_sets: dict[str, dict[str, Any]] = {}
 
     def print_step(self, step: int) -> None:
         print(f"\n[Step {step}/7] {STEP_TITLES[step]}")
@@ -1555,6 +1574,7 @@ class EquityResearchDataDesk:
             if not isinstance(payload, dict):
                 raise DeskError(f"Unexpected company-facts response for {ticker}.")
             fact_set = extract_aligned_facts(company, payload)
+            self.peer_fact_sets[company.ticker] = fact_set
             print(f"\nPeer: {company.ticker} | {company.name} | CIK {company.padded_cik}")
             print_fact_set(fact_set)
             margin_row = dict(calculate_metrics(fact_set, None))["Operating margin"]
@@ -1567,12 +1587,82 @@ class EquityResearchDataDesk:
             print(f"Saved peer facts: {json_path}")
             print(f"Saved peer facts: {csv_path}")
 
-    def run(self, step: int | None) -> None:
+    def run_roles(self, api_key: str, model: str) -> Path:
+        selected = self.ensure_filings()
+        ten_k_text = self.document_texts.get("10-K")
+        if ten_k_text is None:
+            company = self.ensure_company()
+            ten_k_text = resource_to_plain_text(
+                self.client.fetch(selected["10-K"].primary_document_url(company.cik))
+            )
+        release_text = self.ensure_release_text()
+        fact_set = self.ensure_fact_set()
+        metrics = calculate_metrics(fact_set, self.price)
+        quarter_lines = format_quarterly_release_metrics(
+            parse_quarterly_release_metrics(release_text),
+            selected["8-K"].accession_number,
+        )
+        peer_context = []
+        for ticker in self.peers:
+            peer_fact_set = self.peer_fact_sets.get(ticker)
+            if peer_fact_set is None:
+                raise DeskError(
+                    f"Step 7 did not retain the expected peer facts for {ticker}."
+                )
+            peer_context.append(
+                {
+                    "facts": peer_fact_set,
+                    "operating_margin": dict(
+                        calculate_metrics(peer_fact_set, None)
+                    )["Operating margin"],
+                }
+            )
+
+        financial_context = {
+            "step_4_facts": fact_set,
+            "step_5_ratios": [
+                {"name": label, "arithmetic": arithmetic}
+                for label, arithmetic in metrics
+            ],
+            "step_6_quarter": {
+                "filing": "8-K Exhibit 99.1",
+                "accession_number": selected["8-K"].accession_number,
+                "deterministic_output": quarter_lines,
+                "line_numbered_earnings_release": number_document_lines(
+                    release_text
+                ),
+            },
+            "step_7_peers": peer_context,
+        }
+        role_client = OpenAIRoleClient(api_key=api_key, model=model)
+        return run_four_role_workflow(
+            role_client=role_client,
+            output_dir=self.ensure_output_dir(),
+            run_started=self.run_started,
+            filings={
+                "10-K": selected["10-K"].accession_number,
+                "10-Q": selected["10-Q"].accession_number,
+                "8-K": selected["8-K"].accession_number,
+            },
+            ten_k_text=ten_k_text,
+            release_text=release_text,
+            financial_context=financial_context,
+        )
+
+    def run(
+        self,
+        step: int | None,
+        api_key: str | None = None,
+        model: str = DEFAULT_OPENAI_MODEL,
+    ) -> None:
         if step is not None:
             getattr(self, f"step_{step}")()
             return
         for step_number in range(1, 8):
             getattr(self, f"step_{step_number}")()
+        if api_key is None:
+            raise DeskError("API_KEY is required for the four research roles.")
+        self.run_roles(api_key, model)
 
 
 def decimal_argument(value: str) -> Decimal:
@@ -1608,6 +1698,11 @@ def build_parser() -> argparse.ArgumentParser:
         choices=range(1, 8),
         help="Run only one numbered step (1-7)",
     )
+    parser.add_argument(
+        "--model",
+        default=DEFAULT_OPENAI_MODEL,
+        help=f"OpenAI model for all four roles (default: {DEFAULT_OPENAI_MODEL})",
+    )
     return parser
 
 
@@ -1618,6 +1713,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         peers = normalize_peer_arguments(args.peers)
         user_agent = read_sec_user_agent(base_dir)
+        api_key = read_openai_api_key(base_dir) if args.step is None else None
         client = SecClient(user_agent)
         desk = EquityResearchDataDesk(
             client=client,
@@ -1626,8 +1722,13 @@ def main(argv: Sequence[str] | None = None) -> int:
             price=args.price,
             base_dir=base_dir,
         )
-        desk.run(args.step)
-    except (DeskError, requests.RequestException, OSError) as exc:
+        desk.run(args.step, api_key=api_key, model=args.model)
+    except (
+        DeskError,
+        RoleWorkflowError,
+        requests.RequestException,
+        OSError,
+    ) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
     return 0

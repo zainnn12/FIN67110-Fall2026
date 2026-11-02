@@ -31,11 +31,11 @@ def main() -> None:
         raise SystemExit("ERROR: .env was not found in the course folder.")
 
     values = load_env(env_path)
-    api_key = values.get("API_KEY") or values.get("OPENAI_API_KEY")
+    api_key = values.get("API_KEY")
     user_agent = values.get("SEC_USER_AGENT")
 
     if not api_key or len(api_key) < 4:
-        raise SystemExit("ERROR: API_KEY or OPENAI_API_KEY is missing from .env.")
+        raise SystemExit("ERROR: API_KEY is missing from .env.")
     if not user_agent:
         raise SystemExit("ERROR: SEC_USER_AGENT is missing from .env.")
 

@@ -1,0 +1,10 @@
+metric,label,taxonomy,tag,unit,tag_latest_period_end,current_value,current_start,current_end,current_form,current_accession,current_filed,prior_value,prior_start,prior_end,prior_form,prior_accession,prior_filed
+revenue,Total revenue,us-gaap,Revenues,USD,2026-01-30,113538000000,2025-02-01,2026-01-30,10-K,0001571996-26-000008,2026-03-16,95567000000,2024-02-03,2025-01-31,10-K,0001571996-26-000008,2026-03-16
+operating_income,Operating income,us-gaap,OperatingIncomeLoss,USD,2026-01-30,8149000000,2025-02-01,2026-01-30,10-K,0001571996-26-000008,2026-03-16,6237000000,2024-02-03,2025-01-31,10-K,0001571996-26-000008,2026-03-16
+net_income,Net income,us-gaap,NetIncomeLoss,USD,2026-01-30,5936000000,2025-02-01,2026-01-30,10-K,0001571996-26-000008,2026-03-16,4592000000,2024-02-03,2025-01-31,10-K,0001571996-26-000008,2026-03-16
+diluted_eps,Diluted EPS,us-gaap,EarningsPerShareDiluted,USD/shares,2026-01-30,8.68,2025-02-01,2026-01-30,10-K,0001571996-26-000008,2026-03-16,6.38,2024-02-03,2025-01-31,10-K,0001571996-26-000008,2026-03-16
+stockholders_equity,Stockholders' equity,us-gaap,StockholdersEquity,USD,2026-01-30,-2470000000,,2026-01-30,10-K,0001571996-26-000008,2026-03-16,-1482000000,,2025-01-31,10-K,0001571996-26-000008,2026-03-16
+long_term_debt,Long-term debt,us-gaap,LongTermDebtNoncurrent,USD,2026-01-30,23513000000,,2026-01-30,10-K,0001571996-26-000008,2026-03-16,19363000000,,2025-01-31,10-K,0001571996-26-000008,2026-03-16
+current_long_term_debt,Current portion of long-term debt,us-gaap,,,,,,,,,,,,,,,
+cash_from_operations,Cash from operations,us-gaap,NetCashProvidedByUsedInOperatingActivities,USD,2026-01-30,11185000000,2025-02-01,2026-01-30,10-K,0001571996-26-000008,2026-03-16,4521000000,2024-02-03,2025-01-31,10-K,0001571996-26-000008,2026-03-16
+property_additions,Additions to property and equipment,us-gaap,PaymentsToAcquirePropertyPlantAndEquipment,USD,2026-01-30,2633000000,2025-02-01,2026-01-30,10-K,0001571996-26-000008,2026-03-16,2652000000,2024-02-03,2025-01-31,10-K,0001571996-26-000008,2026-03-16
