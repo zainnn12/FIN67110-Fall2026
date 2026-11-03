@@ -4,20 +4,20 @@
     "cik": 104169,
     "name": "Walmart Inc."
   },
-  "generated_at": "2026-10-28T21:58:15-04:00",
+  "generated_at": "2026-11-02T21:47:21-05:00",
   "fiscal_year_period_end": "2026-01-31",
   "prior_year_period_end": "2025-01-31",
-  "selection_rule": "For each metric, select the candidate US-GAAP tag whose latest annual period end is newest; break ties by candidate order. Read current and prior facts at the same period ends selected from revenue.",
+  "selection_rule": "For each metric, select the candidate US-GAAP tag whose latest annual period end is newest; break ties by candidate order. For revenue ties, the total-revenues candidate order prefers Revenues before RevenueFromContractWithCustomerExcludingAssessedTax. Read current and prior facts at the same period ends selected from revenue.",
   "facts": {
     "revenue": {
       "label": "Total revenue",
       "taxonomy": "us-gaap",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "xbrl_label": "Revenue from Contract with Customer, Excluding Assessed Tax",
+      "tag": "Revenues",
+      "xbrl_label": "Revenues",
       "unit": "USD",
       "tag_latest_period_end": "2026-01-31",
       "current": {
-        "val": 706413000000,
+        "val": 713163000000,
         "start": "2025-02-01",
         "end": "2026-01-31",
         "accn": "0000104169-26-000055",
@@ -28,7 +28,7 @@
         "frame": "CY2025"
       },
       "prior": {
-        "val": 674538000000,
+        "val": 680985000000,
         "start": "2024-02-01",
         "end": "2025-01-31",
         "accn": "0000104169-26-000055",

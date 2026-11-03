@@ -36,4 +36,4 @@ Costco audit results:
 - [Seven-step tests](tests/test_equity_research_data.py)
 - [Walmart prerequisite facts](runs/Walmart_Inc_2026-10-28_21-39-10/facts.json)
 
-Verification: 18 unit tests passed.
+Verification: 19 unit tests passed.

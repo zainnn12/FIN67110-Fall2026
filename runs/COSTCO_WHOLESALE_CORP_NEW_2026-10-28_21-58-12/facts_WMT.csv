@@ -1,5 +1,5 @@
 metric,label,taxonomy,tag,unit,tag_latest_period_end,current_value,current_start,current_end,current_form,current_accession,current_filed,prior_value,prior_start,prior_end,prior_form,prior_accession,prior_filed
-revenue,Total revenue,us-gaap,RevenueFromContractWithCustomerExcludingAssessedTax,USD,2026-01-31,706413000000,2025-02-01,2026-01-31,10-K,0000104169-26-000055,2026-03-13,674538000000,2024-02-01,2025-01-31,10-K,0000104169-26-000055,2026-03-13
+revenue,Total revenue,us-gaap,Revenues,USD,2026-01-31,713163000000,2025-02-01,2026-01-31,10-K,0000104169-26-000055,2026-03-13,680985000000,2024-02-01,2025-01-31,10-K,0000104169-26-000055,2026-03-13
 operating_income,Operating income,us-gaap,OperatingIncomeLoss,USD,2026-01-31,29825000000,2025-02-01,2026-01-31,10-K,0000104169-26-000055,2026-03-13,29348000000,2024-02-01,2025-01-31,10-K,0000104169-26-000055,2026-03-13
 net_income,Net income,us-gaap,NetIncomeLoss,USD,2026-01-31,21893000000,2025-02-01,2026-01-31,10-K,0000104169-26-000055,2026-03-13,19436000000,2024-02-01,2025-01-31,10-K,0000104169-26-000055,2026-03-13
 diluted_eps,Diluted EPS,us-gaap,EarningsPerShareDiluted,USD/shares,2026-01-31,2.73,2025-02-01,2026-01-31,10-K,0000104169-26-000055,2026-03-13,2.41,2024-02-01,2025-01-31,10-K,0000104169-26-000055,2026-03-13

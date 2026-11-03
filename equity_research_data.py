@@ -129,8 +129,8 @@ FACT_DEFINITIONS: tuple[FactDefinition, ...] = (
         "revenue",
         "Total revenue",
         (
-            "RevenueFromContractWithCustomerExcludingAssessedTax",
             "Revenues",
+            "RevenueFromContractWithCustomerExcludingAssessedTax",
             "SalesRevenueNet",
             "OperatingRevenues",
             "RegulatedAndUnregulatedOperatingRevenue",
@@ -806,8 +806,10 @@ def extract_aligned_facts(
         "prior_year_period_end": prior_end.isoformat() if prior_end else None,
         "selection_rule": (
             "For each metric, select the candidate US-GAAP tag whose latest "
-            "annual period end is newest; break ties by candidate order. Read "
-            "current and prior facts at the same period ends selected from revenue."
+            "annual period end is newest; break ties by candidate order. For "
+            "revenue ties, the total-revenues candidate order prefers Revenues "
+            "before RevenueFromContractWithCustomerExcludingAssessedTax. Read current "
+            "and prior facts at the same period ends selected from revenue."
         ),
         "facts": facts,
     }

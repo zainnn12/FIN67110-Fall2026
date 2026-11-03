@@ -72,16 +72,17 @@ The arithmetic indicates positive FY2026 operating performance: total revenue gr
 
 ### Peer operating-margin comparison
 
-The peer definition is consistent: `OperatingIncomeLoss` divided by `RevenueFromContractWithCustomerExcludingAssessedTax`. The peer JSON files do not include line-numbered peer filings. Therefore, peer line references are explicitly not available; the accession, tag, and exact period identify each saved XBRL fact.
+The peer definition is consistent: `OperatingIncomeLoss` divided by total revenue. Walmart's total-revenue tag is `Revenues`.
+Costco, Target, and BJ's Wholesale Club use `RevenueFromContractWithCustomerExcludingAssessedTax`. The peer JSON files do not include line-numbered peer filings. Therefore, peer line references are explicitly not available; the accession, tag, and exact period identify each saved XBRL fact.
 
 | Company | Supplied arithmetic | Operating margin | Filing line, tag, and period |
 |---|---|---:|---|
 | Costco | $11,685,000,000 / $303,154,000,000 | 3.85% | 10-K 0000909832-26-000093, lines 1281 and 1285; tags `OperatingIncomeLoss` and `RevenueFromContractWithCustomerExcludingAssessedTax`; period 2025-09-01 to 2026-08-30 |
-| Walmart | $29,825,000,000 / $706,413,000,000 | 4.22% | 10-K 0000104169-26-000055; filing line: not available in supplied peer facts; tags `OperatingIncomeLoss` and `RevenueFromContractWithCustomerExcludingAssessedTax`; period 2025-02-01 to 2026-01-31 |
+| Walmart | $29,825,000,000 / $713,163,000,000 | 4.18% | 10-K 0000104169-26-000055; filing line: not available in supplied peer facts; tags `OperatingIncomeLoss` and `Revenues`; period 2025-02-01 to 2026-01-31 |
 | Target | $5,117,000,000 / $104,780,000,000 | 4.88% | 10-K 0000027419-26-000016; filing line: not available in supplied peer facts; tags `OperatingIncomeLoss` and `RevenueFromContractWithCustomerExcludingAssessedTax`; period 2025-02-02 to 2026-01-31 |
 | BJ's Wholesale Club | $816,604,000 / $21,457,274,000 | 3.81% | 10-K 0001531152-26-000007; filing line: not available in supplied peer facts; tags `OperatingIncomeLoss` and `RevenueFromContractWithCustomerExcludingAssessedTax`; period 2025-02-02 to 2026-01-31 |
 
-On this definition, Costco's **3.85%** operating margin is above BJ's **3.81%** and below Walmart's **4.22%** and Target's **4.88%**. [Derived from the four arithmetic rows immediately above; each row identifies the accession, line availability, tags, and period.] This comparison is not contemporaneous: Costco's period ends on August 30, 2026, while each peer period ends on January 31, 2026. [Costco `facts.json` and peer `facts_*.json`; filing line: not applicable to JSON period metadata; the tags and periods are shown in the table above.]
+On this definition, Costco's **3.85%** operating margin is above BJ's **3.81%** and below Walmart's **4.18%** and Target's **4.88%**. [Derived from the four arithmetic rows immediately above; each row identifies the accession, line availability, tags, and period.] This comparison is not contemporaneous: Costco's period ends on August 30, 2026, while each peer period ends on January 31, 2026. [Costco `facts.json` and peer `facts_*.json`; filing line: not applicable to JSON period metadata; the tags and periods are shown in the table above.]
 
 Valuation is the principal constraint. At the supplied price, Costco trades at **47.7905x** FY2026 diluted EPS: **$992.13 / $20.76 = 47.7905x**. [Price: user-supplied assignment input; filing line/tag/period: not applicable. EPS: 10-K 0000909832-26-000093, line 1294; tag `EarningsPerShareDiluted`; period 2025-09-01 to 2026-08-30.] This is a demanding multiple because it requires the investor to pay almost forty-eight times the latest annual GAAP earnings; that characterization is an analytical judgment, not a peer P/E claim.
 

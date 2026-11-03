@@ -179,6 +179,43 @@ class FactSelectionTests(unittest.TestCase):
         self.assertEqual(revenue["current"]["val"], 120)
         self.assertEqual(revenue["prior"]["val"], 100)
 
+    def test_revenue_candidate_order_breaks_same_period_tie(self) -> None:
+        revenue_facts = self.company_facts["facts"]["us-gaap"]
+        revenue_facts["Revenues"] = {
+            "label": "Total revenues",
+            "units": {
+                "USD": [
+                    duration_point(
+                        110,
+                        "2023-01-01",
+                        "2023-12-31",
+                        "0000000000-24-000001",
+                        "2024-02-01",
+                    ),
+                    duration_point(
+                        130,
+                        "2024-01-01",
+                        "2024-12-31",
+                        "0000000000-25-000001",
+                        "2025-02-01",
+                    ),
+                ]
+            },
+        }
+        revenue_facts["RevenueFromContractWithCustomerExcludingAssessedTax"][
+            "label"
+        ] = "Net sales"
+
+        fact_set = extract_aligned_facts(
+            Company(ticker="TEST", cik=1, name="Issuer"),
+            self.company_facts,
+        )
+        revenue = fact_set["facts"]["revenue"]
+
+        self.assertEqual(revenue["tag"], "Revenues")
+        self.assertEqual(revenue["current"]["val"], 130)
+        self.assertEqual(revenue["prior"]["val"], 110)
+
     def test_calculator_prints_the_required_arithmetic(self) -> None:
         fact_set = extract_aligned_facts(
             Company(ticker="TEST", cik=1, name="Issuer"),
