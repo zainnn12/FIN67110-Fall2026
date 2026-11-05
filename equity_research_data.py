@@ -1405,10 +1405,12 @@ class EquityResearchDataDesk:
     def ensure_output_dir(self) -> Path:
         if self.output_dir is None:
             company = self.ensure_company()
-            stamp = self.run_started.strftime("%Y-%m-%d_%H-%M-%S")
+            # Include microseconds so two runs that start in the same second
+            # cannot select the same folder and overwrite saved evidence.
+            stamp = self.run_started.strftime("%Y-%m-%d_%H-%M-%S-%f")
             folder = f"{safe_path_component(company.name)}_{stamp}"
             self.output_dir = self.base_dir / "runs" / folder
-            self.output_dir.mkdir(parents=True, exist_ok=True)
+            self.output_dir.mkdir(parents=True, exist_ok=False)
         return self.output_dir
 
     def ensure_filings(self) -> dict[str, Filing]:

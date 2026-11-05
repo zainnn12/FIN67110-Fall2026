@@ -1,0 +1,450 @@
+{
+  "claims": [
+    {
+      "claim_id": "N001",
+      "report_line": 8,
+      "statement": "1. FY2026 total revenue was $303,154 million.",
+      "reported": "$303,154 million",
+      "source_kind": "xbrl",
+      "tags": [
+        "RevenueFromContractWithCustomerExcludingAssessedTax"
+      ],
+      "periods": [
+        "2025-09-01",
+        "2026-08-30",
+        "FY2026"
+      ],
+      "accession_number": "0000909832-26-000093",
+      "line_ranges": [
+        [
+          1281,
+          1281
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The value, tag, accession, and period match the saved fact.",
+      "corrected_value": "",
+      "evidence": "facts.json: tag RevenueFromContractWithCustomerExcludingAssessedTax; value 303154000000 USD; period 2025-09-01 to 2026-08-30; accession 0000909832-26-000093",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N002",
+      "report_line": 10,
+      "statement": "2. Revenue growth was ($303,154 - $275,235) / $275,235 = 10.14%.",
+      "reported": "10.14%",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [
+        "2025-09-01",
+        "2026-08-30",
+        "2024-09-02",
+        "2025-08-31"
+      ],
+      "accession_number": "0000909832-26-000093",
+      "line_ranges": [
+        [
+          1281,
+          1281
+        ]
+      ],
+      "expression": "$303,154 - $275,235) / $275,235",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The code recomputation agrees within displayed rounding.",
+      "corrected_value": "",
+      "evidence": "Recomputed in code: $303,154 - $275,235) / $275,235 = 0.1014369538757788798662960743",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N003",
+      "report_line": 12,
+      "statement": "3. Operating margin was $11,685 / $303,154 = 3.85%.",
+      "reported": "3.85%",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [
+        "2025-09-01",
+        "2026-08-30"
+      ],
+      "accession_number": "0000909832-26-000093",
+      "line_ranges": [
+        [
+          1281,
+          1281
+        ],
+        [
+          1285,
+          1285
+        ]
+      ],
+      "expression": "$11,685 / $303,154",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The code recomputation agrees within displayed rounding.",
+      "corrected_value": "",
+      "evidence": "Recomputed in code: $11,685 / $303,154 = 0.03854476602650797944279145253",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N004",
+      "report_line": 14,
+      "statement": "4. FY2026 net income was $9,226 million.",
+      "reported": "$9,226 million",
+      "source_kind": "xbrl",
+      "tags": [
+        "NetIncomeLoss"
+      ],
+      "periods": [
+        "2025-09-01",
+        "2026-08-30",
+        "FY2026"
+      ],
+      "accession_number": "0000909832-26-000093",
+      "line_ranges": [
+        [
+          1291,
+          1291
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The value, tag, accession, and period match the saved fact.",
+      "corrected_value": "",
+      "evidence": "facts.json: tag NetIncomeLoss; value 9226000000 USD; period 2025-09-01 to 2026-08-30; accession 0000909832-26-000093",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N005",
+      "report_line": 16,
+      "statement": "5. FY2026 diluted EPS was $20.76.",
+      "reported": "$20.76",
+      "source_kind": "xbrl",
+      "tags": [
+        "EarningsPerShareDiluted"
+      ],
+      "periods": [
+        "2025-09-01",
+        "2026-08-30",
+        "FY2026"
+      ],
+      "accession_number": "0000909832-26-000093",
+      "line_ranges": [
+        [
+          1294,
+          1294
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The value, tag, accession, and period match the saved fact.",
+      "corrected_value": "",
+      "evidence": "facts.json: tag EarningsPerShareDiluted; value 20.76 USD/shares; period 2025-09-01 to 2026-08-30; accession 0000909832-26-000093",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N006",
+      "report_line": 18,
+      "statement": "6. Return on average equity is defined as net income divided by average beginning and ending equity: $9,226 / (($35,803 + $29,164) / 2) = 28.40%.",
+      "reported": "28.40%",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [
+        "2025-09-01",
+        "2026-08-30",
+        "2025-08-31"
+      ],
+      "accession_number": "0000909832-26-000093",
+      "line_ranges": [
+        [
+          1291,
+          1291
+        ],
+        [
+          1350,
+          1350
+        ]
+      ],
+      "expression": "$9,226 / (($35,803 + $29,164) / 2)",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The code recomputation agrees within displayed rounding.",
+      "corrected_value": "",
+      "evidence": "Recomputed in code: $9,226 / (($35,803 + $29,164) / 2) = 0.2840211184139640124986531624",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N007",
+      "report_line": 20,
+      "statement": "7. Debt to equity is defined as current plus noncurrent long-term debt divided by total equity: ($3,914 + $2,248) / $35,803 = 0.1721x.",
+      "reported": "0.1721x",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [
+        "2026-08-30"
+      ],
+      "accession_number": "0000909832-26-000093",
+      "line_ranges": [
+        [
+          1335,
+          1335
+        ],
+        [
+          1339,
+          1339
+        ],
+        [
+          1350,
+          1350
+        ]
+      ],
+      "expression": "$3,914 + $2,248) / $35,803",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The code recomputation agrees within displayed rounding.",
+      "corrected_value": "",
+      "evidence": "Recomputed in code: $3,914 + $2,248) / $35,803 = 0.1721084825293969779068793118",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N008",
+      "report_line": 22,
+      "statement": "8. Free cash flow is defined here as cash from operations less property additions: $15,817 - $6,435 = $9,382 million.",
+      "reported": "$9,382 million",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [
+        "2025-09-01",
+        "2026-08-30"
+      ],
+      "accession_number": "0000909832-26-000093",
+      "line_ranges": [
+        [
+          1402,
+          1402
+        ],
+        [
+          1404,
+          1404
+        ]
+      ],
+      "expression": "$15,817 - $6,435",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The code recomputation agrees within displayed rounding.",
+      "corrected_value": "",
+      "evidence": "Recomputed in code: $15,817 - $6,435 = 9382",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N009",
+      "report_line": 26,
+      "statement": "9. For the 16 weeks ended 2026-08-30, quarterly total revenue was $95,723 million.",
+      "reported": "$95,723 million",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [
+        "2026-08-30"
+      ],
+      "accession_number": "0000909832-26-000084",
+      "line_ranges": [
+        [
+          39,
+          39
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_000090983226000084.txt, lines 39-39: Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (17 CFR §230.405) or Rule 12b-2 of the Securities Exchange Act of 1934 (17 CFR §240.12b-2).\n8-K_EX-99.1_000090983226000084.txt, lines 39-39: Total revenue | 95,723 | 86,156 | 303,154 | 275,235",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N010",
+      "report_line": 28,
+      "statement": "10. Quarterly revenue growth was ($95,723 - $86,156) / $86,156 = 11.10%.",
+      "reported": "11.10%",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [
+        "2026-08-30",
+        "2025-08-31"
+      ],
+      "accession_number": "0000909832-26-000084",
+      "line_ranges": [
+        [
+          39,
+          39
+        ]
+      ],
+      "expression": "$95,723 - $86,156) / $86,156",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The code recomputation agrees within displayed rounding.",
+      "corrected_value": "",
+      "evidence": "Recomputed in code: $95,723 - $86,156) / $86,156 = 0.1110427596452945819211662566",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N011",
+      "report_line": 30,
+      "statement": "11. For the 16 weeks ended 2026-08-30, quarterly diluted EPS was $6.75.",
+      "reported": "$6.75",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [
+        "2026-08-30"
+      ],
+      "accession_number": "0000909832-26-000084",
+      "line_ranges": [
+        [
+          52,
+          52
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_000090983226000084.txt, lines 52-52: Fourth quarter fiscal 2026 supplemental information.\n8-K_EX-99.1_000090983226000084.txt, lines 52-52: Diluted | $ | 6.75 | $ | 5.87 | $ | 20.76 | $ | 18.21",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N012",
+      "report_line": 32,
+      "statement": "12. Invented quarterly revenue growth was ($95,723 - $86,156) / $86,156 = 15.10%.",
+      "reported": "15.10%",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [
+        "2026-08-30",
+        "2025-08-31"
+      ],
+      "accession_number": "0000909832-26-000084",
+      "line_ranges": [
+        [
+          39,
+          39
+        ]
+      ],
+      "expression": "$95,723 - $86,156) / $86,156",
+      "deterministic_mark": "wrong",
+      "deterministic_reason": "The code recomputation does not equal the reported result.",
+      "corrected_value": "11.10%",
+      "evidence": "Recomputed in code: $95,723 - $86,156) / $86,156 = 0.1110427596452945819211662566",
+      "semantic_supported": true,
+      "semantic_explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+      "final_mark": "wrong"
+    }
+  ],
+  "counts": {
+    "correct": 11,
+    "wrong": 1,
+    "unsupported": 0
+  },
+  "semantic_output": {
+    "checks": [
+      {
+        "claim_id": "N001",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "facts.json: tag RevenueFromContractWithCustomerExcludingAssessedTax; value 303154000000 USD; period 2025-09-01 to 2026-08-30; accession 0000909832-26-000093"
+      },
+      {
+        "claim_id": "N002",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "Recomputed in code: $303,154 - $275,235) / $275,235 = 0.1014369538757788798662960743"
+      },
+      {
+        "claim_id": "N003",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "Recomputed in code: $11,685 / $303,154 = 0.03854476602650797944279145253"
+      },
+      {
+        "claim_id": "N004",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "facts.json: tag NetIncomeLoss; value 9226000000 USD; period 2025-09-01 to 2026-08-30; accession 0000909832-26-000093"
+      },
+      {
+        "claim_id": "N005",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "facts.json: tag EarningsPerShareDiluted; value 20.76 USD/shares; period 2025-09-01 to 2026-08-30; accession 0000909832-26-000093"
+      },
+      {
+        "claim_id": "N006",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "Recomputed in code: $9,226 / (($35,803 + $29,164) / 2) = 0.2840211184139640124986531624"
+      },
+      {
+        "claim_id": "N007",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "Recomputed in code: $3,914 + $2,248) / $35,803 = 0.1721084825293969779068793118"
+      },
+      {
+        "claim_id": "N008",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "Recomputed in code: $15,817 - $6,435 = 9382"
+      },
+      {
+        "claim_id": "N009",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "8-K_000090983226000084.txt, lines 39-39: Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (17 CFR §230.405) or Rule 12b-2 of the Securities Exchange Act of 1934 (17 CFR §240.12b-2).\n8-K_EX-99.1_000090983226000084.txt, lines 39-39: Total revenue | 95,723 | 86,156 | 303,154 | 275,235"
+      },
+      {
+        "claim_id": "N010",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "Recomputed in code: $95,723 - $86,156) / $86,156 = 0.1110427596452945819211662566"
+      },
+      {
+        "claim_id": "N011",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "8-K_000090983226000084.txt, lines 52-52: Fourth quarter fiscal 2026 supplemental information.\n8-K_EX-99.1_000090983226000084.txt, lines 52-52: Diluted | $ | 6.75 | $ | 5.87 | $ | 20.76 | $ | 18.21"
+      },
+      {
+        "claim_id": "N012",
+        "supported": true,
+        "explanation": "Offline proof: the deterministic evidence supplied the cited value, period, and definition.",
+        "corrected_value": "",
+        "source": "Recomputed in code: $95,723 - $86,156) / $86,156 = 0.1110427596452945819211662566"
+      }
+    ]
+  }
+}

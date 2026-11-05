@@ -1,0 +1,37 @@
+[project]
+name = "equity_research_team"
+version = "0.1.0"
+description = "Deterministic CrewAI Flow for a sourced equity-research agent team"
+authors = [{ name = "FIN 67110 student" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "beautifulsoup4>=4.12,<5",
+    "crewai[tools]>=1.15.34,<2.0.0",
+    "openai>=2,<3",
+    "pypdf>=5,<7",
+    "python-dotenv>=1,<2",
+    "requests>=2.31,<3",
+]
+
+[project.scripts]
+kickoff = "equity_research_team.main:kickoff"
+run_crew = "equity_research_team.main:kickoff"
+plot = "equity_research_team.main:plot"
+run_with_trigger = "equity_research_team.main:run_with_trigger"
+page = "equity_research_team.web:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
+project_id = "d38a80ad-fb5b-43dc-9ead-f06a221f26b2"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0",
+]
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning:crewai.*"]
