@@ -1,6 +1,6 @@
 # Checkpoint 2 — status and handoff
 
-## Repository evidence ready to commit
+## Checkpoint 2 repository evidence
 
 - Fixed graph: Steps → Research Analyst → Financial Analyst → Investment Advisor
   → Strategy Manager → Verifier.
@@ -14,7 +14,8 @@
 - The saved seeded-error proof marks FY2026 diluted EPS of $21.76 as `wrong` and
   corrects it to $20.76 with tag `EarningsPerShareDiluted`, period
   2025-09-01 to 2026-08-30, and accession 0000909832-26-000093.
-- The deterministic suite passes 11 tests.
+- The agent-team test suite passes 11 tests, the repository test suite passes 19
+  tests, and the financial-analyst test suite passes 3 tests.
 
 Saved proof:
 
@@ -48,7 +49,7 @@ Start the page:
 UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page
 ```
 
-## Lab 05 Student Inputs — Final Report
+## Lab 05 Student Inputs
 
 ### Partner company and report
 
@@ -74,7 +75,7 @@ FY27 Q1 GAAP total revenue of $92.279 billion and GAAP diluted EPS of $4.92 for
 the three months ended September 30, 2026. Both marks are PASS in the Microsoft
 report. They apply only to Microsoft.
 
-### Team and reflection
+## Team and Reflection
 
 The team is Three Musketeers: Krishmi, Ansh, and Zainab. The team starts from
 Zainab's agent desk. It has the fixed graph, Verifier, three analyst personas,
@@ -94,7 +95,7 @@ did not complete a live model-assisted partner-company run. The course-approved
 fallback report was used. A live run can be completed if API credit becomes
 available, but it is not required for the current Checkpoint 2 submission.
 
-## Draft gap-check line
+## Costco report gap check
 
 The earnings release's first paragraph does not state Costco's FY2026 diluted EPS
 of $20.76; the release states that number later in its net-income paragraph and
