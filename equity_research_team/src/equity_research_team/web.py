@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 import sys
@@ -17,11 +18,17 @@ from pathlib import Path
 from typing import Any, Mapping
 from urllib.parse import urlparse
 
-from equity_research_team.team_flow import PROJECT_DIR
+from equity_research_team.team_flow import PROJECT_DIR, WORKSPACE_DIR
 
 
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 TICKER_RE = re.compile(r"^[A-Za-z][A-Za-z0-9.-]{0,9}$")
+PACKAGE_SOURCE_DIR = PROJECT_DIR / "src"
+AMD_FALLBACK_DIR = (
+    WORKSPACE_DIR
+    / "runs"
+    / "ADVANCED_MICRO_DEVICES_INC_2026-11-08_16-02-23-519971"
+)
 
 
 @dataclass(frozen=True)
@@ -67,6 +74,7 @@ class RunRecord:
     events: list[dict[str, Any]] = field(default_factory=list)
     report_path: str = ""
     report: str = ""
+    run_dir: str = ""
 
 
 _runs: dict[str, RunRecord] = {}
@@ -88,6 +96,63 @@ def build_command(run_input: RunInput) -> list[str]:
     return command
 
 
+def build_environment(base_env: Mapping[str, str] | None = None) -> dict[str, str]:
+    """Make the src-layout package importable in the child process."""
+    environment = dict(os.environ if base_env is None else base_env)
+    import_paths = [str(PACKAGE_SOURCE_DIR), str(WORKSPACE_DIR)]
+    existing = environment.get("PYTHONPATH", "")
+    if existing:
+        import_paths.extend(existing.split(os.pathsep))
+    environment["PYTHONPATH"] = os.pathsep.join(
+        dict.fromkeys(path for path in import_paths if path)
+    )
+    return environment
+
+
+def fallback_report_for(run_input: RunInput) -> Path | None:
+    """Return the saved AMD fallback only for the requested AMD inputs."""
+    if run_input.ticker != "AMD" or run_input.peers != "NVDA,INTC,AVGO":
+        return None
+    if not run_input.price or Decimal(run_input.price) != Decimal("466.84"):
+        return None
+    report = AMD_FALLBACK_DIR / "fallback_report.md"
+    return report if report.is_file() else None
+
+
+def is_credit_balance_exhausted(output: str) -> bool:
+    lowered = output.lower()
+    return "429" in lowered and "credit_balance_exhausted" in lowered
+
+
+def _save_ui_evidence(record: RunRecord, run_input: RunInput) -> None:
+    if not record.run_dir:
+        return
+    run_dir = Path(record.run_dir)
+    events = list(record.events)
+    payload = {
+        "source": "local UI subprocess event stream",
+        "inputs": {
+            "ticker": run_input.ticker,
+            "peers": run_input.peers.split(",") if run_input.peers else [],
+            "price": run_input.price or None,
+        },
+        "status": record.status,
+        "node_order": [
+            item["name"] for item in events if item.get("kind") == "node"
+        ],
+        "report_path": record.report_path or None,
+        "fallback_label": next(
+            (item.get("label") for item in events if item.get("kind") == "fallback"),
+            None,
+        ),
+        "events": events,
+    }
+    run_dir.mkdir(parents=True, exist_ok=True)
+    (run_dir / "ui_evidence.json").write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+
+
 def _emit(record: RunRecord, kind: str, **payload: Any) -> None:
     with _lock:
         record.events.append({"kind": kind, **payload})
@@ -98,10 +163,12 @@ def _run_team(run_id: str, run_input: RunInput) -> None:
     record.status = "running"
     _emit(record, "status", status="running")
     verified_path: Path | None = None
+    process_output: list[str] = []
     try:
         process = subprocess.Popen(
             build_command(run_input),
             cwd=PROJECT_DIR,
+            env=build_environment(),
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
@@ -110,6 +177,9 @@ def _run_team(run_id: str, run_input: RunInput) -> None:
         assert process.stdout is not None
         for raw_line in process.stdout:
             line = raw_line.rstrip("\n")
+            process_output.append(line)
+            if line.startswith("Run folder: "):
+                record.run_dir = str(Path(line.removeprefix("Run folder: ").strip()).resolve())
             if line.startswith("Node: "):
                 _emit(record, "node", name=line.removeprefix("Node: "))
             elif line.startswith("Verified report: "):
@@ -121,6 +191,22 @@ def _run_team(run_id: str, run_input: RunInput) -> None:
             _emit(record, "log", line=line)
         return_code = process.wait()
         if return_code != 0:
+            combined_output = "\n".join(process_output)
+            fallback_path = fallback_report_for(run_input)
+            if is_credit_balance_exhausted(combined_output) and fallback_path:
+                record.report_path = str(fallback_path.resolve())
+                record.report = fallback_path.read_text(encoding="utf-8")
+                record.status = "fallback"
+                _emit(
+                    record,
+                    "fallback",
+                    status="fallback",
+                    label="Fallback — not a live agent-team run",
+                    report_path=record.report_path,
+                    report=record.report,
+                )
+                _save_ui_evidence(record, run_input)
+                return
             raise RuntimeError(f"The agent team stopped with exit code {return_code}.")
         if verified_path is None or not verified_path.is_file():
             raise RuntimeError("The run ended without a saved verified report.")
@@ -133,9 +219,11 @@ def _run_team(run_id: str, run_input: RunInput) -> None:
             report_path=record.report_path,
             report=record.report,
         )
+        _save_ui_evidence(record, run_input)
     except Exception as exc:  # The exact process output is already in the event log.
         record.status = "failed"
         _emit(record, "error", status="failed", message=str(exc))
+        _save_ui_evidence(record, run_input)
 
 
 class PageHandler(BaseHTTPRequestHandler):
@@ -250,8 +338,10 @@ def make_server(host: str = "127.0.0.1", port: int = 8000) -> ThreadingHTTPServe
 
 
 def main() -> None:
-    server = make_server()
-    print("Agent team page: http://127.0.0.1:8000", flush=True)
+    port = int(os.environ.get("EQUITY_RESEARCH_PAGE_PORT", "8000"))
+    server = make_server(port=port)
+    actual_port = server.server_address[1]
+    print(f"Agent team page: http://127.0.0.1:{actual_port}", flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

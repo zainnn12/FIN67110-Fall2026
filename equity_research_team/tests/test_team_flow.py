@@ -262,7 +262,13 @@ def test_fixed_flow_runs_all_nodes_and_mandatory_verifier(tmp_path):
     flow, desk, client, verified = _run_flow(tmp_path)
     assert desk.steps == list(range(1, 8))
     assert flow.state.node_order == [
-        "Steps",
+        "SEC Step 1",
+        "SEC Step 2",
+        "SEC Step 3",
+        "SEC Step 4",
+        "SEC Step 5",
+        "SEC Step 6",
+        "SEC Step 7",
         "Research Analyst",
         "Financial Analyst",
         "Investment Advisor",

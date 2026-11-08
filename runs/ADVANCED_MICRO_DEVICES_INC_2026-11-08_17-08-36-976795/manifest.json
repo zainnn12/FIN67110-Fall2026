@@ -1,0 +1,38 @@
+{
+  "company": {
+    "ticker": "AMD",
+    "cik": 2488,
+    "name": "ADVANCED MICRO DEVICES INC"
+  },
+  "run_started": "2026-11-08T17:08:36-05:00",
+  "documents": [
+    {
+      "label": "10-K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+      "text_file": "10-K_000000248826000018.txt",
+      "accession_number": "0000002488-26-000018",
+      "accepted": "2026-02-03 18:14:52"
+    },
+    {
+      "label": "10-Q",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+      "text_file": "10-Q_000000248826000191.txt",
+      "accession_number": "0000002488-26-000191",
+      "accepted": "2026-11-03 18:00:17"
+    },
+    {
+      "label": "8-K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/amd-20261103.htm",
+      "text_file": "8-K_000000248826000188.txt",
+      "accession_number": "0000002488-26-000188",
+      "accepted": "2026-11-03 16:16:27"
+    },
+    {
+      "label": "8-K_EX-99.1",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm",
+      "text_file": "8-K_EX-99.1_000000248826000188.txt",
+      "accession_number": "0000002488-26-000188",
+      "accepted": "2026-11-03 16:16:27"
+    }
+  ]
+}

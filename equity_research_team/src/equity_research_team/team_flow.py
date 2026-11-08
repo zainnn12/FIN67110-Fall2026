@@ -419,7 +419,6 @@ class EquityResearchTeamFlow(Flow[TeamState]):
 
     @start()
     def run_steps(self) -> str:
-        self._record_node("Steps")
         if self.desk is None:
             raise ValueError("The Flow requires an EquityResearchDataDesk.")
         input_payload = {
@@ -432,6 +431,7 @@ class EquityResearchTeamFlow(Flow[TeamState]):
             "expected_output": "Saved filing texts, facts, and deterministic arithmetic.",
         }
         for step_number in range(1, 8):
+            self._record_node(f"SEC Step {step_number}")
             getattr(self.desk, f"step_{step_number}")()
         run_dir = self._run_dir()
         _save_json(run_dir / "nodes" / "01_steps_input.json", input_payload)

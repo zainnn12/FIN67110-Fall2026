@@ -1,0 +1,274 @@
+{
+  "company": {
+    "ticker": "AMD",
+    "cik": 2488,
+    "name": "ADVANCED MICRO DEVICES INC"
+  },
+  "generated_at": "2026-11-08T17:08:39-05:00",
+  "fiscal_year_period_end": "2025-12-27",
+  "prior_year_period_end": "2024-12-28",
+  "selection_rule": "For each metric, select the candidate US-GAAP tag whose latest annual period end is newest; break ties by candidate order. For revenue ties, the total-revenues candidate order prefers Revenues before RevenueFromContractWithCustomerExcludingAssessedTax. Read current and prior facts at the same period ends selected from revenue.",
+  "facts": {
+    "revenue": {
+      "label": "Total revenue",
+      "taxonomy": "us-gaap",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "xbrl_label": "Revenue from Contract with Customer, Excluding Assessed Tax",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 34639000000,
+        "start": "2024-12-29",
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 25785000000,
+        "start": "2023-12-31",
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024"
+      }
+    },
+    "operating_income": {
+      "label": "Operating income",
+      "taxonomy": "us-gaap",
+      "tag": "OperatingIncomeLoss",
+      "xbrl_label": "Operating Income (Loss)",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 3694000000,
+        "start": "2024-12-29",
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 1900000000,
+        "start": "2023-12-31",
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024"
+      }
+    },
+    "net_income": {
+      "label": "Net income",
+      "taxonomy": "us-gaap",
+      "tag": "NetIncomeLoss",
+      "xbrl_label": "Net Income (Loss) Attributable to Parent",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 4335000000,
+        "start": "2024-12-29",
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 1641000000,
+        "start": "2023-12-31",
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024"
+      }
+    },
+    "diluted_eps": {
+      "label": "Diluted EPS",
+      "taxonomy": "us-gaap",
+      "tag": "EarningsPerShareDiluted",
+      "xbrl_label": "Earnings Per Share, Diluted",
+      "unit": "USD/shares",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 2.65,
+        "start": "2024-12-29",
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 1,
+        "start": "2023-12-31",
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024"
+      }
+    },
+    "stockholders_equity": {
+      "label": "Stockholders' equity",
+      "taxonomy": "us-gaap",
+      "tag": "StockholdersEquity",
+      "xbrl_label": "Stockholders' Equity Attributable to Parent",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 62999000000,
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04"
+      },
+      "prior": {
+        "val": 57568000000,
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024Q4I"
+      }
+    },
+    "long_term_debt": {
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": "LongTermDebtNoncurrent",
+      "xbrl_label": "Long-term Debt, Excluding Current Maturities",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 2348000000,
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04"
+      },
+      "prior": {
+        "val": 1721000000,
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024Q4I"
+      }
+    },
+    "current_long_term_debt": {
+      "label": "Current portion of long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": "LongTermDebtCurrent",
+      "xbrl_label": "Long-term Debt, Current Maturities",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 874000000,
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04"
+      },
+      "prior": {
+        "val": 0,
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024Q4I"
+      }
+    },
+    "cash_from_operations": {
+      "label": "Cash from operations",
+      "taxonomy": "us-gaap",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "xbrl_label": "Net Cash Provided by (Used in) Operating Activities",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 7709000000,
+        "start": "2024-12-29",
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 3041000000,
+        "start": "2023-12-31",
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024"
+      }
+    },
+    "property_additions": {
+      "label": "Additions to property and equipment",
+      "taxonomy": "us-gaap",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "xbrl_label": "Payments to Acquire Property, Plant, and Equipment",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-12-27",
+      "current": {
+        "val": 974000000,
+        "start": "2024-12-29",
+        "end": "2025-12-27",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 636000000,
+        "start": "2023-12-31",
+        "end": "2024-12-28",
+        "accn": "0000002488-26-000018",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-04",
+        "frame": "CY2024"
+      }
+    }
+  }
+}

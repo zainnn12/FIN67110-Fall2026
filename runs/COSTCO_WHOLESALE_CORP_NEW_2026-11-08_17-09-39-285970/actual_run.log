@@ -1,0 +1,251 @@
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: 84317caa-7343-4afb-bcc2-9048a2721a0e                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.35                                                    │
+│  Latest version:  1.15.38                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: 84317caa-7343-4afb-bcc2-9048a2721a0e                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: run_steps                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Node: SEC Step 1
+
+[Step 1/7] Resolve ticker to CIK
+Ticker: COST
+Company: COSTCO WHOLESALE CORP /NEW
+CIK: 0000909832
+Node: SEC Step 2
+
+[Step 2/7] Select filings and read EDGAR acceptance times
+Submissions API filings examined: 1010
+Latest 10-K: accession 0000909832-26-000093; Accepted 2026-10-06 21:13:15
+Latest 10-Q: accession 0000909832-26-000051; Accepted 2026-06-03 16:43:00
+Latest 8-K reporting Item 2.02: accession 0000909832-26-000084; Accepted 2026-09-24 16:17:37
+Node: SEC Step 3
+
+[Step 3/7] Download filings and convert them to plain text
+Saved 10-K: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/10-K_000090983226000093.txt
+Saved 10-Q: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/10-Q_000090983226000051.txt
+Saved 8-K: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/8-K_000090983226000084.txt
+Saved 8-K_EX-99.1: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/8-K_EX-99.1_000090983226000084.txt
+Run folder: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970
+Node: SEC Step 4
+
+[Step 4/7] Fetch and align annual XBRL company facts
+Fiscal-year alignment: 2026-08-30 versus 2025-08-31
+- Total revenue [RevenueFromContractWithCustomerExcludingAssessedTax]
+  Current: 303,154,000,000 USD; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   275,235,000,000 USD; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+- Operating income [OperatingIncomeLoss]
+  Current: 11,685,000,000 USD; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   10,383,000,000 USD; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+- Net income [NetIncomeLoss]
+  Current: 9,226,000,000 USD; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   8,099,000,000 USD; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+- Diluted EPS [EarningsPerShareDiluted]
+  Current: 20.7600 USD/shares; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   18.2100 USD/shares; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+- Stockholders' equity [StockholdersEquity]
+  Current: 35,803,000,000 USD; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   29,164,000,000 USD; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+- Long-term debt [LongTermDebtNoncurrent]
+  Current: 3,914,000,000 USD; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   5,713,000,000 USD; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+- Current portion of long-term debt [LongTermDebtCurrent]
+  Current: 2,248,000,000 USD; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   75,000,000 USD; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+- Cash from operations [NetCashProvidedByUsedInOperatingActivities]
+  Current: 15,817,000,000 USD; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   13,335,000,000 USD; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+- Additions to property and equipment [PaymentsToAcquirePropertyPlantAndEquipment]
+  Current: 6,435,000,000 USD; period end 2026-08-30; filing 10-K 0000909832-26-000093 filed 2026-10-07
+  Prior:   5,498,000,000 USD; period end 2025-08-31; filing 10-K 0000909832-26-000093 filed 2026-10-07
+Saved facts: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/facts.json
+Saved facts: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/facts.csv
+Node: SEC Step 5
+
+[Step 5/7] Calculate financial metrics
+Revenue growth: (303,154,000,000 - 275,235,000,000) / 275,235,000,000 = 10.14%
+Operating margin: 11,685,000,000 / 303,154,000,000 = 3.85%
+Return on average equity: 9,226,000,000 / ((35,803,000,000 + 29,164,000,000) / 2) = 28.40%
+Debt to equity: (3,914,000,000 + 2,248,000,000) / 35,803,000,000 = 0.1721x
+Free cash flow: 15,817,000,000 - 6,435,000,000 = 9,382,000,000
+P/E: 992.13 / 20.76 = 47.7905x
+Node: SEC Step 6
+
+[Step 6/7] Find quarterly revenue and diluted EPS in the release
+Current-quarter revenue: $95,723 million
+Prior-year-quarter revenue: $86,156 million
+Revenue growth arithmetic: ($95,723 - $86,156) / $86,156 = 11.10%
+Current-quarter GAAP diluted EPS: $6.75
+Prior-year-quarter GAAP diluted EPS: $5.87
+Revenue source release line: Total revenue | 95,723 | 86,156 | 303,154 | 275,235
+GAAP diluted-EPS source release line: Diluted | $ | 6.75 | $ | 5.87 | $ | 20.76 | $ | 18.21
+Source release accession number: 0000909832-26-000084
+Node: SEC Step 7
+
+[Step 7/7] Collect peer facts and operating margins
+
+Peer: WMT | Walmart Inc. | CIK 0000104169
+Fiscal-year alignment: 2026-01-31 versus 2025-01-31
+- Total revenue [Revenues]
+  Current: 713,163,000,000 USD; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   680,985,000,000 USD; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+- Operating income [OperatingIncomeLoss]
+  Current: 29,825,000,000 USD; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   29,348,000,000 USD; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+- Net income [NetIncomeLoss]
+  Current: 21,893,000,000 USD; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   19,436,000,000 USD; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+- Diluted EPS [EarningsPerShareDiluted]
+  Current: 2.7300 USD/shares; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   2.4100 USD/shares; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+- Stockholders' equity [StockholdersEquity]
+  Current: 99,617,000,000 USD; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   91,013,000,000 USD; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+- Long-term debt [LongTermDebtNoncurrent]
+  Current: 34,624,000,000 USD; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   33,401,000,000 USD; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+- Current portion of long-term debt [LongTermDebtCurrent]
+  Current: 3,542,000,000 USD; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   2,598,000,000 USD; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+- Cash from operations [NetCashProvidedByUsedInOperatingActivities]
+  Current: 41,565,000,000 USD; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   36,443,000,000 USD; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+- Additions to property and equipment [PaymentsToAcquirePropertyPlantAndEquipment]
+  Current: 26,642,000,000 USD; period end 2026-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+  Prior:   23,783,000,000 USD; period end 2025-01-31; filing 10-K 0000104169-26-000055 filed 2026-03-13
+Operating margin: 29,825,000,000 / 713,163,000,000 = 4.18%
+Saved peer facts: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/facts_WMT.json
+Saved peer facts: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/facts_WMT.csv
+
+Peer: TGT | TARGET CORP | CIK 0000027419
+Fiscal-year alignment: 2026-01-31 versus 2025-02-01
+- Total revenue [RevenueFromContractWithCustomerExcludingAssessedTax]
+  Current: 104,780,000,000 USD; period end 2026-01-31; filing 10-K 0000027419-26-000016 filed 2026-03-11
+  Prior:   106,566,000,000 USD; period end 2025-02-01; filing 10-K 0000027419-26-000016 filed 2026-03-11
+- Operating income [OperatingIncomeLoss]
+  Current: 5,117,000,000 USD; period end 2026-01-31; filing 10-K 0000027419-26-000016 filed 2026-03-11
+  Prior:   5,566,000,000 USD; period end 2025-02-01; filing 10-K 0000027419-26-000016 filed 2026-03-11
+- Net income [NetIncomeLoss]
+  Current: 3,705,000,000 USD; period end 2026-01-31; filing 10-K 0000027419-26-000016 filed 2026-03-11
+  Prior:   4,091,000,000 USD; period end 2025-02-01; filing 10-K 0000027419-26-000016 filed 2026-03-11
+- Diluted EPS [EarningsPerShareDiluted]
+  Current: 8.1300 USD/shares; period end 2026-01-31; filing 10-K 0000027419-26-000016 filed 2026-03-11
+  Prior:   8.8600 USD/shares; period end 2025-02-01; filing 10-K 0000027419-26-000016 filed 2026-03-11
+- Stockholders' equity [StockholdersEquity]
+  Current: 16,165,000,000 USD; period end 2026-01-31; filing 10-K 0000027419-26-000016 filed 2026-03-11
+  Prior:   14,666,000,000 USD; period end 2025-02-01; filing 10-K 0000027419-26-000016 filed 2026-03-11
+- Long-term debt [LongTermDebtNoncurrent]
+  Current: N/A; period end N/A; filing N/A
+  Prior:   N/A; period end N/A; filing N/A
+- Current portion of long-term debt [LongTermDebtAndCapitalLeaseObligationsCurrent]
+  Current: 2,130,000,000 USD; period end 2026-01-31; filing 10-K 0000027419-26-000016 filed 2026-03-11
+  Prior:   1,636,000,000 USD; period end 2025-02-01; filing 10-K 0000027419-26-000016 filed 2026-03-11
+- Cash from operations [NetCashProvidedByUsedInOperatingActivities]
+  Current: 6,562,000,000 USD; period end 2026-01-31; filing 10-K 0000027419-26-000016 filed 2026-03-11
+  Prior:   7,367,000,000 USD; period end 2025-02-01; filing 10-K 0000027419-26-000016 filed 2026-03-11
+- Additions to property and equipment [PaymentsToAcquirePropertyPlantAndEquipment]
+  Current: 3,727,000,000 USD; period end 2026-01-31; filing 10-K 0000027419-26-000016 filed 2026-03-11
+  Prior:   2,891,000,000 USD; period end 2025-02-01; filing 10-K 0000027419-26-000016 filed 2026-03-11
+Operating margin: 5,117,000,000 / 104,780,000,000 = 4.88%
+Saved peer facts: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/facts_TGT.json
+Saved peer facts: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/facts_TGT.csv
+
+Peer: BJ | BJ's Wholesale Club Holdings, Inc. | CIK 0001531152
+Fiscal-year alignment: 2026-01-31 versus 2025-02-01
+- Total revenue [RevenueFromContractWithCustomerExcludingAssessedTax]
+  Current: 21,457,274,000 USD; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   20,501,804,000 USD; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+- Operating income [OperatingIncomeLoss]
+  Current: 816,604,000 USD; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   772,206,000 USD; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+- Net income [NetIncomeLoss]
+  Current: 578,377,000 USD; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   534,417,000 USD; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+- Diluted EPS [EarningsPerShareDiluted]
+  Current: 4.3800 USD/shares; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   4.0000 USD/shares; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+- Stockholders' equity [StockholdersEquity]
+  Current: 2,197,659,000 USD; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   1,847,454,000 USD; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+- Long-term debt [LongTermDebtNoncurrent]
+  Current: 399,099,000 USD; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   398,807,000 USD; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+- Current portion of long-term debt [LongTermDebtCurrent]
+  Current: 120,000,000 USD; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   175,000,000 USD; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+- Cash from operations [NetCashProvidedByUsedInOperatingActivities]
+  Current: 1,030,056,000 USD; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   900,872,000 USD; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+- Additions to property and equipment [PaymentsToAcquirePropertyPlantAndEquipment]
+  Current: 702,048,000 USD; period end 2026-01-31; filing 10-K 0001531152-26-000007 filed 2026-03-12
+  Prior:   587,983,000 USD; period end 2025-02-01; filing 10-K 0001531152-26-000007 filed 2026-03-12
+Operating margin: 816,604,000 / 21,457,274,000 = 3.81%
+Saved peer facts: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/facts_BJ.json
+Saved peer facts: /Users/zfashola/orca/workspaces/Session 01/char/runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/facts_BJ.csv
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: run_steps                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Node: Research Analyst
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: research_analyst                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Error executing listener research_analyst: Research Analyst model call failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+
+Role: Research Analyst
+╭─────────────────────────── ❌ Flow Method Failed ────────────────────────────╮
+│                                                                              │
+│  Method: research_analyst                                                    │
+│  Status: Failed                                                              │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── ❌ Flow Failure ───────────────────────────────╮
+│                                                                              │
+│  Flow Execution Failed                                                       │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: 84317caa-7343-4afb-bcc2-9048a2721a0e                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+ERROR: Research Analyst model call failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}

@@ -9,13 +9,20 @@
 - The Manager fails an analyst part when its `Insight:` line is absent or only
   restates a figure in the earnings release's first paragraph.
 - The Verifier checks all 3 Insight numbers. It skips only the Advisor thesis.
-- The local page accepts a ticker, optional peers, and an optional price. It
-  streams node names and displays the verified report.
+- The page child process adds the package `src` and workspace roots to its
+  `PYTHONPATH`. A regression test proves that it can import the package from an
+  unrelated working directory without relying on an installed package.
+- On the requested AMD inputs, the page endpoint streamed each SEC step and the
+  Research Analyst start. OpenAI returned HTTP 429
+  `credit_balance_exhausted`; the page returned the saved AMD report with the
+  label “Fallback — not a live agent-team run.” This was an endpoint test. The
+  browser control service was unavailable, so a visible form click was not
+  confirmed.
 - The saved seeded-error proof marks FY2026 diluted EPS of $21.76 as `wrong` and
   corrects it to $20.76 with tag `EarningsPerShareDiluted`, period
   2025-09-01 to 2026-08-30, and accession 0000909832-26-000093.
-- The agent-team test suite passes 11 tests, the repository test suite passes 19
-  tests, and the financial-analyst test suite passes 3 tests.
+- The latest test results are 15 agent-team tests, 19 repository tests, and 3
+  financial-analyst tests passed.
 
 Saved proof:
 
@@ -46,8 +53,44 @@ UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run kickoff --verify-only ../
 Start the page:
 
 ```bash
-UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page
+EQUITY_RESEARCH_PAGE_PORT=8001 UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page
 ```
+
+## Live run evidence and limits
+
+The requested COST run used ticker COST, peers WMT,TGT,BJ, and price 992.13. It
+completed SEC Steps 1–7, then stopped at Research Analyst because the API
+returned HTTP 429 `credit_balance_exhausted`. Its raw process output is saved at
+`runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/actual_run.log`.
+No verified report was produced in this new run folder. The prior clean report
+remains at `lab4_proofs/COST_clean/verified_report.md`; it is not the output of
+the new run.
+
+The actual node-order evidence is in the COST log above and in
+`runs/ADVANCED_MICRO_DEVICES_INC_2026-11-08_17-08-36-976795/ui_evidence.json`.
+Both records show SEC Steps 1–7 followed by Research Analyst. Both then record
+the real API error. Strategy Manager and Verifier did not run in these attempts.
+The AMD UI endpoint returned the saved fallback report, which has three lines
+beginning with `Insight:` and the previously confirmed PASS/PASS marks.
+
+Tests were run with these commands:
+
+```bash
+cd equity_research_team
+.venv/bin/python -m pytest -q
+# 15 passed
+
+cd ..
+equity_research_team/.venv/bin/python -m pytest -q tests
+# 19 passed
+
+cd financial_analyst_agent
+.venv/bin/python -m pytest -q
+# 3 passed
+```
+
+The staged changes include no `.env` file, API key, secret, temporary file, or
+virtual environment.
 
 ## Lab 05 Student Inputs
 

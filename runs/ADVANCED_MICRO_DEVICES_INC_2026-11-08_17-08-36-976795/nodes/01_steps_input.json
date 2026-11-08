@@ -1,0 +1,13 @@
+{
+  "task": "Run the seven deterministic SEC desk tools in numeric order.",
+  "context": {
+    "ticker": "AMD",
+    "peers": [
+      "NVDA",
+      "INTC",
+      "AVGO"
+    ],
+    "price": "466.84"
+  },
+  "expected_output": "Saved filing texts, facts, and deterministic arithmetic."
+}

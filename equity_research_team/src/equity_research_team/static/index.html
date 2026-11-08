@@ -48,6 +48,7 @@
     #status.running { background: #fff0d8; color: #84511e; }
     #status.complete { background: var(--lime); color: #27431a; }
     #status.failed { background: #ffe0d8; color: #8a2e20; }
+    #status.fallback { background: #fff0d8; color: #84511e; }
     .nodes { display: flex; flex-wrap: wrap; gap: 8px; min-height: 42px; padding: 18px 0 4px; }
     .node { border: 1px solid #b9c8bd; border-radius: 999px; background: #edf3ed; padding: 6px 10px; font-size: .8rem; font-weight: 750; animation: arrive .28s ease both; }
     @keyframes arrive { from { opacity: 0; transform: translateY(5px); } }
@@ -96,7 +97,7 @@
       </details>
       <div id="error" hidden></div>
       <section id="report-wrap" hidden>
-        <h2>Verified report</h2>
+        <h2 id="report-title">Verified report</h2>
         <p id="report-path"></p>
         <pre id="report"></pre>
       </section>
@@ -113,6 +114,7 @@
     const log = document.querySelector('#log');
     const error = document.querySelector('#error');
     const reportWrap = document.querySelector('#report-wrap');
+    const reportTitle = document.querySelector('#report-title');
     const report = document.querySelector('#report');
     const reportPath = document.querySelector('#report-path');
 
@@ -128,6 +130,7 @@
       log.textContent = '';
       error.hidden = true;
       reportWrap.hidden = true;
+      reportTitle.textContent = 'Verified report';
       placeholder.hidden = false;
       logWrap.hidden = false;
       setStatus('Queued');
@@ -162,6 +165,15 @@
           }
           if (item.kind === 'complete') {
             setStatus('Complete');
+            report.textContent = item.report;
+            reportPath.textContent = item.report_path;
+            reportWrap.hidden = false;
+            button.disabled = false;
+            stream.close();
+          }
+          if (item.kind === 'fallback') {
+            setStatus('Fallback');
+            reportTitle.textContent = item.label;
             report.textContent = item.report;
             reportPath.textContent = item.report_path;
             reportWrap.hidden = false;
