@@ -52,19 +52,23 @@ UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page
 
 The following items cannot be supplied by the coding agent:
 
-1. The student's 3 persona drafts, in the student's own words. Each draft must
-   include identity; reading method; given inputs; numbered criteria with a source;
-   what changes the view; and the required output ending in `Insight:`.
-2. The partner's hand marks for 2 core claims, written at the top of the partner
+1. The partner's hand marks for 2 core claims, written at the top of the partner
    report.
 6. The least-trusted Insight line and why, after the partner-company run exists.
 7. The team member whose agent desk is the starting point and what it lacks.
 
 The supplied Lab 05 information names Microsoft (MSFT), peers GOOGL, AMZN, and
 ORCL, and a $531.33 closing price dated October 27, 2026. It names Krishmi, Ansh,
-and Zainab and gives the team name Three Musketeers. A fallback report is saved
+and Zainab and gives the team name Three Musketeers. The three role files now
+contain the personas supplied by the team. SEC facts for AMZN were collected and
+saved at `runs/MICROSOFT_CORP_2026-11-08_15-44-42-604648/facts_AMZN.json` and
+`facts_AMZN.csv`. A fallback report is saved
 at `runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md`. Its two manual
 marks remain pending until a teammate confirms them directly against the release.
+
+The team reflection still needs a student's own response: identify the least
+trusted Insight and why; identify whose agent team the team starts from and what
+it lacks. No student has confirmed the partner's two source checks yet.
 
 The API account also needs available credit. On 2026-11-05, its live model call
 returned HTTP 429 `credit_balance_exhausted`. The saved proof tables are the
