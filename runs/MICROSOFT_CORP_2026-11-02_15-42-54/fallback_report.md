@@ -1,12 +1,12 @@
 Microsoft Corporation (MSFT) | FY2026 10-K accession 0001193125-26-323660 | FY27 Q1 10-Q accession 0001193125-26-436133 | October 28, 2026 8-K / Exhibit 99.1 accession 0001193125-26-436122
 fallback
 
-Partner manual checks: PENDING — a teammate must open the cited release lines and confirm both marks before these are changed to PASS or FAIL.
+Partner manual checks: PASS — Ansh opened the cited Microsoft earnings-release lines and confirmed both claims. These marks apply only to this Microsoft report.
 
 | Claim | Expected result | Source to check | Partner mark |
 |---|---|---|---|
-| FY27 Q1 total revenue | $92.279 billion, three months ended September 30, 2026, GAAP total revenue | Exhibit 99.1, saved lines 170-176; “Total revenue” | PENDING |
-| FY27 Q1 diluted EPS | $4.92 GAAP, three months ended September 30, 2026 | Exhibit 99.1, saved lines 170-172 and 190-192; “Diluted” | PENDING |
+| FY27 Q1 total revenue | $92.279 billion, three months ended September 30, 2026, GAAP total revenue | Exhibit 99.1, saved lines 170-176; “Total revenue” | PASS |
+| FY27 Q1 diluted EPS | $4.92 GAAP, three months ended September 30, 2026 | Exhibit 99.1, saved lines 170-172 and 190-192; “Diluted” | PASS |
 
 This is a course-approved fallback report. It combines the four role tasks in one response. It is not a successful live agent-team run. It uses the saved Microsoft FY2026 10-K, FY27 Q1 10-Q, and October 28, 2026 earnings release. Filing lines below refer to the saved plain-text files in this run folder.
 
@@ -92,4 +92,4 @@ The advisor changes the recommendation if a future filing invalidates the numeri
 
 The specific next-filing condition is whether the principal numerical thesis measure, Azure revenue growth, remains positive. If the next comparable reported period shows Azure revenue no longer growing, reassess the recommendation. The supplied price is $531.33 per share as of October 27, 2026; it is a team-provided input, not a filing fact.
 
-This fallback report is based on saved filing texts and facts. The existing seeded-error verifier marks for the Checkpoint 2 commit remain unchanged. The two partner manual checks above remain **PENDING** until a teammate opens the cited source and confirms both marks.
+This fallback report is based on saved filing texts and facts. The existing seeded-error verifier marks for the Checkpoint 2 commit remain unchanged. Ansh confirmed both Microsoft partner manual checks above against the cited release lines. These marks do not apply to AMD; AMD's separate partner checks remain pending in the AMD report.

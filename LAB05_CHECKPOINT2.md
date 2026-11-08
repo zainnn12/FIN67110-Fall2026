@@ -48,14 +48,19 @@ Start the page:
 UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page
 ```
 
-## Lab 05 student inputs still required
+## Lab 05 student inputs
 
-The following items cannot be supplied by the coding agent:
+Ansh opened the cited Microsoft earnings-release lines and confirmed the two
+Microsoft claims below. These PASS marks are written at the top of the Microsoft
+fallback report and apply only to Microsoft. They do not transfer to AMD.
 
-1. The partner's hand marks for 2 core claims, written at the top of the partner
-   report.
-6. The least-trusted Insight line and why, after the partner-company run exists.
-7. The team member whose agent desk is the starting point and what it lacks.
+| Microsoft claim | Expected result | Source checked | Partner mark |
+|---|---|---|---|
+| FY27 Q1 total revenue | $92.279 billion, three months ended September 30, 2026, GAAP total revenue | Exhibit 99.1, saved lines 170–176, “Total revenue” | PASS |
+| FY27 Q1 diluted EPS | $4.92 GAAP, three months ended September 30, 2026 | Exhibit 99.1, saved lines 170–172 and 190–192, “Diluted” | PASS |
+
+AMD remains the final partner-company report. Its two separate teammate checks
+remain PENDING until a teammate opens the AMD source and confirms both marks.
 
 The partner-company report is Advanced Micro Devices, Inc. (AMD). AMD reported
 Q3 2026 results on November 3, 2026. The peers are NVDA, INTC, and AVGO. The
@@ -77,14 +82,21 @@ for AMZN remain at
 `runs/MICROSOFT_CORP_2026-11-08_15-44-42-604648/facts_AMZN.json` and
 `facts_AMZN.csv`.
 
-The team reflection still needs a student's own response: identify the least
-trusted Insight and why; identify whose agent team the team starts from and what
-it lacks. No student has confirmed the partner's two source checks yet.
+The least-trusted Insight is the Microsoft Investment Advisor's claim that
+Devices and Consumer revenue decreased 3% to $15.484 billion while total
+company revenue increased 19%. The reported values and periods are verifiable
+against the Microsoft earnings release, but the conclusion that one quarter of
+segment weakness is important enough to support a Hold recommendation requires
+investor judgment. It may not show a lasting trend, and the filing cannot verify
+how much weight an investor should place on it.
 
-The API account also needs available credit. On 2026-11-05, its live model call
-returned HTTP 429 `credit_balance_exhausted`. The saved proof tables are the
-offline deterministic results. Run the commands above again after credit is
-available to save the model-assisted marks and the 2 required company runs.
+The Three Musketeers team starts from Zainab's agent desk. It has the fixed
+graph, Verifier, three analyst personas, user interface, saved filing evidence,
+seeded-error proof, and partner-company fallback report. It lacks a completed
+live model-assisted partner-company run because the OpenAI API account returned
+HTTP 429 `credit_balance_exhausted`. The course-approved fallback was used
+instead. A later live run can be completed if API credit becomes available, but
+it is not required for the current Checkpoint 2 submission.
 
 ## Draft gap-check line
 
