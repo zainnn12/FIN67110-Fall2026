@@ -55,13 +55,16 @@ The following items cannot be supplied by the coding agent:
 1. The student's 3 persona drafts, in the student's own words. Each draft must
    include identity; reading method; given inputs; numbered criteria with a source;
    what changes the view; and the required output ending in `Insight:`.
-2. The partner-picked ticker for a U.S. company that reported this month.
-3. The partner-picked company's peers and optional price.
-4. The 3 student names and 1 team name.
-5. The partner's hand marks for 2 core claims, written at the top of the partner
+2. The partner's hand marks for 2 core claims, written at the top of the partner
    report.
 6. The least-trusted Insight line and why, after the partner-company run exists.
 7. The team member whose agent desk is the starting point and what it lacks.
+
+The supplied Lab 05 information names Microsoft (MSFT), peers GOOGL, AMZN, and
+ORCL, and a $531.33 closing price dated October 27, 2026. It names Krishmi, Ansh,
+and Zainab and gives the team name Three Musketeers. A fallback report is saved
+at `runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md`. Its two manual
+marks remain pending until a teammate confirms them directly against the release.
 
 The API account also needs available credit. On 2026-11-05, its live model call
 returned HTTP 429 `credit_balance_exhausted`. The saved proof tables are the

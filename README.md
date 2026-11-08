@@ -43,6 +43,11 @@ error, and the clean 11-claim Costco report. See
 commands. Lab 05 adds the 3 required Insight checks and a local page that streams
 the fixed node order and displays the verified report.
 
+The Microsoft Lab 05 fallback report is in
+[`runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md`](runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md).
+It is a fallback, not a live run. Its 2 partner claim checks are pending teammate
+confirmation. The UI command is `cd equity_research_team && UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page`.
+
 This is a learning exercise, not financial advice.
 AI assistance: OpenAI Codex, Google Antigravity, and Orca. I verified the sources myself; the judgments are mine.
 Any remaining errors are my own.
