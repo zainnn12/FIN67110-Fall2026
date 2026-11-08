@@ -1,6 +1,13 @@
 Advanced Micro Devices, Inc. (AMD) | Form 10-K (accession 0000002488-26-000018) | Form 10-Q (accession 0000002488-26-000191) | Form 8-K and Exhibit 99.1 (accession 0000002488-26-000188)
 fallback
 
+Partner manual checks: PASS — Ansh opened the cited AMD earnings-release lines and confirmed both claims.
+
+| Claim | Expected result | Source checked | Partner mark |
+|---|---|---|---|
+| Q3 2026 GAAP net revenue | $13.377 billion, three months ended September 26, 2026 | Exhibit 99.1, GAAP quarterly results and income statement, “Revenue” / “Net revenue” | PASS |
+| Q3 2026 GAAP diluted EPS | $1.46, three months ended September 26, 2026 | Exhibit 99.1, GAAP quarterly results, “Diluted earnings per share” | PASS |
+
 This is a course-approved fallback report. It is not a successful live agent-team run. It uses the saved SEC filing texts and facts in this run folder, the provided closing price and peer list, and the four course role tasks combined for this report. The live model call was not run.
 
 ## 1. Overview
@@ -86,10 +93,3 @@ Average score = (4 + 4 + 2 + 3) ÷ 4 = 3.25, which maps to Hold under the suppli
 | Insight: Data Center revenue $8.5 billion, up 97% | PASS | Exhibit 99.1, “Segment Summary”; quote and line are included above. |
 | Insight: continuing operating cash $6,523 million / net income $6,108 million = 1.07 | PASS | 10-Q cash-flow statement; inputs and period are included above; ratio recomputed. |
 | Insight: customer-warrant impact $1,179 million and price-driven remeasurement | PASS | 10-Q cash-flow statement and Exhibit 99.1 reconciliation footnote (3); line and period are included above. |
-
-**Partner manual checks — pending.** Do not treat these as verified until a teammate opens the AMD report and the cited source and confirms each mark.
-
-| Check | Required value and period | Source | Mark |
-|---|---|---|---|
-| Q3 2026 total revenue | $13.377 billion; three months ended September 26, 2026; net revenue | AMD 8-K Exhibit 99.1, GAAP quarterly results and income statement, “Revenue” / “Net revenue” | PENDING |
-| Q3 2026 diluted EPS | $1.46 GAAP; three months ended September 26, 2026 | AMD 8-K Exhibit 99.1, GAAP quarterly results, “Diluted earnings per share” | PENDING |

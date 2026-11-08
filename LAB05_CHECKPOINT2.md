@@ -50,17 +50,20 @@ UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page
 
 ## Lab 05 student inputs
 
-Ansh opened the cited Microsoft earnings-release lines and confirmed the two
-Microsoft claims below. These PASS marks are written at the top of the Microsoft
-fallback report and apply only to Microsoft. They do not transfer to AMD.
+Ansh opened the cited earnings-release lines and confirmed both claims for
+Microsoft and AMD. Each pair of PASS marks is recorded at the top of its own
+company report. Microsoft marks apply only to Microsoft; AMD marks apply only
+to AMD.
 
 | Microsoft claim | Expected result | Source checked | Partner mark |
 |---|---|---|---|
 | FY27 Q1 total revenue | $92.279 billion, three months ended September 30, 2026, GAAP total revenue | Exhibit 99.1, saved lines 170–176, “Total revenue” | PASS |
 | FY27 Q1 diluted EPS | $4.92 GAAP, three months ended September 30, 2026 | Exhibit 99.1, saved lines 170–172 and 190–192, “Diluted” | PASS |
 
-AMD remains the final partner-company report. Its two separate teammate checks
-remain PENDING until a teammate opens the AMD source and confirms both marks.
+| AMD claim | Expected result | Source checked | Partner mark |
+|---|---|---|---|
+| Q3 2026 GAAP net revenue | $13.377 billion, three months ended September 26, 2026 | Exhibit 99.1, GAAP quarterly results and income statement, “Revenue” / “Net revenue” | PASS |
+| Q3 2026 GAAP diluted EPS | $1.46, three months ended September 26, 2026 | Exhibit 99.1, GAAP quarterly results, “Diluted earnings per share” | PASS |
 
 The partner-company report is Advanced Micro Devices, Inc. (AMD). AMD reported
 Q3 2026 results on November 3, 2026. The peers are NVDA, INTC, and AVGO. The
@@ -69,8 +72,9 @@ before the release; source: [AMD price history](https://ir.amd.com/stock-data/pr
 The fallback report and saved AMD filings and facts are in
 `runs/ADVANCED_MICRO_DEVICES_INC_2026-11-08_16-02-23-519971/`. The report is a
 fallback and not a successful live agent-team run. AMD's two teammate manual
-checks are PENDING. The required values and source references are at the top of
-the report; no Microsoft marks were transferred.
+checks are PASS, confirmed by Ansh against the cited release lines. The required
+values and source references are at the top of the report. The AMD report
+remains a fallback, not a successful live agent-team run.
 
 Microsoft (MSFT), peers GOOGL, AMZN, and ORCL, and the $531.33 close dated
 October 27, 2026 are earlier work. The Microsoft fallback remains saved at
