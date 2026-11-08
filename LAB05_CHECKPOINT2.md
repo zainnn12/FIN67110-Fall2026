@@ -48,59 +48,51 @@ Start the page:
 UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page
 ```
 
-## Lab 05 student inputs
+## Lab 05 Student Inputs — Final Report
 
-Ansh opened the cited earnings-release lines and confirmed both claims for
-Microsoft and AMD. Each pair of PASS marks is recorded at the top of its own
-company report. Microsoft marks apply only to Microsoft; AMD marks apply only
-to AMD.
+### Partner company and report
 
-| Microsoft claim | Expected result | Source checked | Partner mark |
-|---|---|---|---|
-| FY27 Q1 total revenue | $92.279 billion, three months ended September 30, 2026, GAAP total revenue | Exhibit 99.1, saved lines 170–176, “Total revenue” | PASS |
-| FY27 Q1 diluted EPS | $4.92 GAAP, three months ended September 30, 2026 | Exhibit 99.1, saved lines 170–172 and 190–192, “Diluted” | PASS |
+The partner company is Advanced Micro Devices, Inc. (AMD). AMD reported its Q3
+2026 results on November 3, 2026. The report compares AMD with NVIDIA (NVDA),
+Intel (INTC), and Broadcom (AVGO). It uses the supplied closing price of $466.84
+from November 2, 2026, the last close before the release. The price source is
+[AMD price history](https://ir.amd.com/stock-data/price-history).
 
-| AMD claim | Expected result | Source checked | Partner mark |
-|---|---|---|---|
-| Q3 2026 GAAP net revenue | $13.377 billion, three months ended September 26, 2026 | Exhibit 99.1, GAAP quarterly results and income statement, “Revenue” / “Net revenue” | PASS |
-| Q3 2026 GAAP diluted EPS | $1.46, three months ended September 26, 2026 | Exhibit 99.1, GAAP quarterly results, “Diluted earnings per share” | PASS |
+The AMD report and its saved filings and facts are in
+`runs/ADVANCED_MICRO_DEVICES_INC_2026-11-08_16-02-23-519971/`. It is a
+course-approved fallback report, not a successful live agent-team run. Ansh
+checked both claims against AMD's Exhibit 99.1 and confirmed them: Q3 2026 GAAP
+net revenue was $13.377 billion for the three months ended September 26, 2026
+(PASS), and Q3 2026 GAAP diluted EPS was $1.46 for that period (PASS). These
+marks appear at the top of the AMD report.
 
-The partner-company report is Advanced Micro Devices, Inc. (AMD). AMD reported
-Q3 2026 results on November 3, 2026. The peers are NVDA, INTC, and AVGO. The
-supplied closing price is $466.84 dated November 2, 2026, the final market close
-before the release; source: [AMD price history](https://ir.amd.com/stock-data/price-history).
-The fallback report and saved AMD filings and facts are in
-`runs/ADVANCED_MICRO_DEVICES_INC_2026-11-08_16-02-23-519971/`. The report is a
-fallback and not a successful live agent-team run. AMD's two teammate manual
-checks are PASS, confirmed by Ansh against the cited release lines. The required
-values and source references are at the top of the report. The AMD report
-remains a fallback, not a successful live agent-team run.
+### Earlier Microsoft report
 
-Microsoft (MSFT), peers GOOGL, AMZN, and ORCL, and the $531.33 close dated
-October 27, 2026 are earlier work. The Microsoft fallback remains saved at
-`runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md`; it is not the final
-partner-company report. Microsoft manual marks apply only to that report. The
-team is Krishmi, Ansh, and Zainab, and its name is Three Musketeers. The three
-company-neutral role files still contain the team personas. Earlier peer facts
-for AMZN remain at
-`runs/MICROSOFT_CORP_2026-11-08_15-44-42-604648/facts_AMZN.json` and
-`facts_AMZN.csv`.
+The Microsoft report is earlier work. It is saved at
+`runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md`. Ansh confirmed
+FY27 Q1 GAAP total revenue of $92.279 billion and GAAP diluted EPS of $4.92 for
+the three months ended September 30, 2026. Both marks are PASS in the Microsoft
+report. They apply only to Microsoft.
+
+### Team and reflection
+
+The team is Three Musketeers: Krishmi, Ansh, and Zainab. The team starts from
+Zainab's agent desk. It has the fixed graph, Verifier, three analyst personas,
+user interface, saved filing evidence, seeded-error proof, and partner-company
+fallback report.
 
 The least-trusted Insight is the Microsoft Investment Advisor's claim that
 Devices and Consumer revenue decreased 3% to $15.484 billion while total
-company revenue increased 19%. The reported values and periods are verifiable
-against the Microsoft earnings release, but the conclusion that one quarter of
-segment weakness is important enough to support a Hold recommendation requires
-investor judgment. It may not show a lasting trend, and the filing cannot verify
-how much weight an investor should place on it.
+company revenue increased 19%. The reported values and periods can be checked
+against Microsoft's earnings release. The judgment that one quarter of segment
+weakness is important enough to support a Hold recommendation is less certain.
+One quarter may not establish a lasting trend. The filing cannot decide how
+much weight an investor should give this result.
 
-The Three Musketeers team starts from Zainab's agent desk. It has the fixed
-graph, Verifier, three analyst personas, user interface, saved filing evidence,
-seeded-error proof, and partner-company fallback report. It lacks a completed
-live model-assisted partner-company run because the OpenAI API account returned
-HTTP 429 `credit_balance_exhausted`. The course-approved fallback was used
-instead. A later live run can be completed if API credit becomes available, but
-it is not required for the current Checkpoint 2 submission.
+The OpenAI API account returned HTTP 429 `credit_balance_exhausted`. The team
+did not complete a live model-assisted partner-company run. The course-approved
+fallback report was used. A live run can be completed if API credit becomes
+available, but it is not required for the current Checkpoint 2 submission.
 
 ## Draft gap-check line
 
