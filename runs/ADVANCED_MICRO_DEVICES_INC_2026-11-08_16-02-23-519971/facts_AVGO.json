@@ -1,0 +1,256 @@
+{
+  "company": {
+    "ticker": "AVGO",
+    "cik": 1730168,
+    "name": "Broadcom Inc."
+  },
+  "generated_at": "2026-11-08T16:02:25-05:00",
+  "fiscal_year_period_end": "2025-11-02",
+  "prior_year_period_end": "2024-11-03",
+  "selection_rule": "For each metric, select the candidate US-GAAP tag whose latest annual period end is newest; break ties by candidate order. For revenue ties, the total-revenues candidate order prefers Revenues before RevenueFromContractWithCustomerExcludingAssessedTax. Read current and prior facts at the same period ends selected from revenue.",
+  "facts": {
+    "revenue": {
+      "label": "Total revenue",
+      "taxonomy": "us-gaap",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "xbrl_label": "Revenue from Contract with Customer, Excluding Assessed Tax",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-11-02",
+      "current": {
+        "val": 63887000000,
+        "start": "2024-11-04",
+        "end": "2025-11-02",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 51574000000,
+        "start": "2023-10-30",
+        "end": "2024-11-03",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2024"
+      }
+    },
+    "operating_income": {
+      "label": "Operating income",
+      "taxonomy": "us-gaap",
+      "tag": "OperatingIncomeLoss",
+      "xbrl_label": "Operating Income (Loss)",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-11-02",
+      "current": {
+        "val": 25484000000,
+        "start": "2024-11-04",
+        "end": "2025-11-02",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 13463000000,
+        "start": "2023-10-30",
+        "end": "2024-11-03",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2024"
+      }
+    },
+    "net_income": {
+      "label": "Net income",
+      "taxonomy": "us-gaap",
+      "tag": "ProfitLoss",
+      "xbrl_label": "Net Income (Loss), Including Portion Attributable to Noncontrolling Interest",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-11-02",
+      "current": {
+        "val": 23126000000,
+        "start": "2024-11-04",
+        "end": "2025-11-02",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 5895000000,
+        "start": "2023-10-30",
+        "end": "2024-11-03",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2024"
+      }
+    },
+    "diluted_eps": {
+      "label": "Diluted EPS",
+      "taxonomy": "us-gaap",
+      "tag": "EarningsPerShareDiluted",
+      "xbrl_label": "Earnings Per Share, Diluted",
+      "unit": "USD/shares",
+      "tag_latest_period_end": "2025-11-02",
+      "current": {
+        "val": 4.77,
+        "start": "2024-11-04",
+        "end": "2025-11-02",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 1.23,
+        "start": "2023-10-30",
+        "end": "2024-11-03",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2024"
+      }
+    },
+    "stockholders_equity": {
+      "label": "Stockholders' equity",
+      "taxonomy": "us-gaap",
+      "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "xbrl_label": "Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-11-02",
+      "current": {
+        "val": 81292000000,
+        "end": "2025-11-02",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18"
+      },
+      "prior": {
+        "val": 67678000000,
+        "end": "2024-11-03",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18"
+      }
+    },
+    "long_term_debt": {
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": "LongTermDebtNoncurrent",
+      "xbrl_label": "Long-term Debt, Excluding Current Maturities",
+      "unit": "USD",
+      "tag_latest_period_end": "2021-10-31",
+      "current": null,
+      "prior": null
+    },
+    "current_long_term_debt": {
+      "label": "Current portion of long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": "LongTermDebtCurrent",
+      "xbrl_label": "Long-term Debt, Current Maturities",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-11-02",
+      "current": {
+        "val": 3152000000,
+        "end": "2025-11-02",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18"
+      },
+      "prior": {
+        "val": 1245000000,
+        "end": "2024-11-03",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2024Q3I"
+      }
+    },
+    "cash_from_operations": {
+      "label": "Cash from operations",
+      "taxonomy": "us-gaap",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "xbrl_label": "Net Cash Provided by (Used in) Operating Activities",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-11-02",
+      "current": {
+        "val": 27537000000,
+        "start": "2024-11-04",
+        "end": "2025-11-02",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 19962000000,
+        "start": "2023-10-30",
+        "end": "2024-11-03",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2024"
+      }
+    },
+    "property_additions": {
+      "label": "Additions to property and equipment",
+      "taxonomy": "us-gaap",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "xbrl_label": "Payments to Acquire Property, Plant, and Equipment",
+      "unit": "USD",
+      "tag_latest_period_end": "2025-11-02",
+      "current": {
+        "val": 623000000,
+        "start": "2024-11-04",
+        "end": "2025-11-02",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2025"
+      },
+      "prior": {
+        "val": 548000000,
+        "start": "2023-10-30",
+        "end": "2024-11-03",
+        "accn": "0001730168-25-000121",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-12-18",
+        "frame": "CY2024"
+      }
+    }
+  }
+}

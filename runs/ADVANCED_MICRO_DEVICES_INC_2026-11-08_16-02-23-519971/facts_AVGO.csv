@@ -1,0 +1,10 @@
+metric,label,taxonomy,tag,unit,tag_latest_period_end,current_value,current_start,current_end,current_form,current_accession,current_filed,prior_value,prior_start,prior_end,prior_form,prior_accession,prior_filed
+revenue,Total revenue,us-gaap,RevenueFromContractWithCustomerExcludingAssessedTax,USD,2025-11-02,63887000000,2024-11-04,2025-11-02,10-K,0001730168-25-000121,2025-12-18,51574000000,2023-10-30,2024-11-03,10-K,0001730168-25-000121,2025-12-18
+operating_income,Operating income,us-gaap,OperatingIncomeLoss,USD,2025-11-02,25484000000,2024-11-04,2025-11-02,10-K,0001730168-25-000121,2025-12-18,13463000000,2023-10-30,2024-11-03,10-K,0001730168-25-000121,2025-12-18
+net_income,Net income,us-gaap,ProfitLoss,USD,2025-11-02,23126000000,2024-11-04,2025-11-02,10-K,0001730168-25-000121,2025-12-18,5895000000,2023-10-30,2024-11-03,10-K,0001730168-25-000121,2025-12-18
+diluted_eps,Diluted EPS,us-gaap,EarningsPerShareDiluted,USD/shares,2025-11-02,4.77,2024-11-04,2025-11-02,10-K,0001730168-25-000121,2025-12-18,1.23,2023-10-30,2024-11-03,10-K,0001730168-25-000121,2025-12-18
+stockholders_equity,Stockholders' equity,us-gaap,StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest,USD,2025-11-02,81292000000,,2025-11-02,10-K,0001730168-25-000121,2025-12-18,67678000000,,2024-11-03,10-K,0001730168-25-000121,2025-12-18
+long_term_debt,Long-term debt,us-gaap,LongTermDebtNoncurrent,USD,2021-10-31,,,,,,,,,,,,
+current_long_term_debt,Current portion of long-term debt,us-gaap,LongTermDebtCurrent,USD,2025-11-02,3152000000,,2025-11-02,10-K,0001730168-25-000121,2025-12-18,1245000000,,2024-11-03,10-K,0001730168-25-000121,2025-12-18
+cash_from_operations,Cash from operations,us-gaap,NetCashProvidedByUsedInOperatingActivities,USD,2025-11-02,27537000000,2024-11-04,2025-11-02,10-K,0001730168-25-000121,2025-12-18,19962000000,2023-10-30,2024-11-03,10-K,0001730168-25-000121,2025-12-18
+property_additions,Additions to property and equipment,us-gaap,PaymentsToAcquirePropertyPlantAndEquipment,USD,2025-11-02,623000000,2024-11-04,2025-11-02,10-K,0001730168-25-000121,2025-12-18,548000000,2023-10-30,2024-11-03,10-K,0001730168-25-000121,2025-12-18

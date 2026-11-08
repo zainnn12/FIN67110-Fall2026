@@ -57,14 +57,25 @@ The following items cannot be supplied by the coding agent:
 6. The least-trusted Insight line and why, after the partner-company run exists.
 7. The team member whose agent desk is the starting point and what it lacks.
 
-The supplied Lab 05 information names Microsoft (MSFT), peers GOOGL, AMZN, and
-ORCL, and a $531.33 closing price dated October 27, 2026. It names Krishmi, Ansh,
-and Zainab and gives the team name Three Musketeers. The three role files now
-contain the personas supplied by the team. SEC facts for AMZN were collected and
-saved at `runs/MICROSOFT_CORP_2026-11-08_15-44-42-604648/facts_AMZN.json` and
-`facts_AMZN.csv`. A fallback report is saved
-at `runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md`. Its two manual
-marks remain pending until a teammate confirms them directly against the release.
+The partner-company report is Advanced Micro Devices, Inc. (AMD). AMD reported
+Q3 2026 results on November 3, 2026. The peers are NVDA, INTC, and AVGO. The
+supplied closing price is $466.84 dated November 2, 2026, the final market close
+before the release; source: [AMD price history](https://ir.amd.com/stock-data/price-history).
+The fallback report and saved AMD filings and facts are in
+`runs/ADVANCED_MICRO_DEVICES_INC_2026-11-08_16-02-23-519971/`. The report is a
+fallback and not a successful live agent-team run. AMD's two teammate manual
+checks are PENDING. The required values and source references are at the top of
+the report; no Microsoft marks were transferred.
+
+Microsoft (MSFT), peers GOOGL, AMZN, and ORCL, and the $531.33 close dated
+October 27, 2026 are earlier work. The Microsoft fallback remains saved at
+`runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md`; it is not the final
+partner-company report. Microsoft manual marks apply only to that report. The
+team is Krishmi, Ansh, and Zainab, and its name is Three Musketeers. The three
+company-neutral role files still contain the team personas. Earlier peer facts
+for AMZN remain at
+`runs/MICROSOFT_CORP_2026-11-08_15-44-42-604648/facts_AMZN.json` and
+`facts_AMZN.csv`.
 
 The team reflection still needs a student's own response: identify the least
 trusted Insight and why; identify whose agent team the team starts from and what
