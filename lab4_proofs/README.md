@@ -10,9 +10,10 @@ and facts files.
 | `COST_invented_growth_error` | Quarterly revenue growth changed to 15.10% while keeping inputs $95,723 and $86,156 | 11 correct, 1 wrong, 0 unsupported; recomputed as 11.10% |
 
 Each folder contains `verified_report.md` and `nodes/06_verifier_output.json`.
-The seeded-error table marks FY2026 diluted EPS of $21.76 as `wrong`, corrects
-it to $20.76, and gives tag `EarningsPerShareDiluted`, its period, accession
-number, and facts-file record.
+Offline deterministic verifier proof using saved SEC evidence. The seeded-error
+table marks FY2026 diluted EPS of $21.76 as `WRONG`, corrects it to $20.76, and
+gives tag `EarningsPerShareDiluted`, its period, accession number, and facts-file
+record. This proof is not a live model run.
 
 These saved tables use the deterministic offline semantic client in
 `../equity_research_team/scripts/generate_offline_proof_marks.py`. The client

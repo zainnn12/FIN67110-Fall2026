@@ -92,4 +92,4 @@ The advisor changes the recommendation if a future filing invalidates the numeri
 
 The specific next-filing condition is whether the principal numerical thesis measure, Azure revenue growth, remains positive. If the next comparable reported period shows Azure revenue no longer growing, reassess the recommendation. The supplied price is $531.33 per share as of October 27, 2026; it is a team-provided input, not a filing fact.
 
-This fallback report is based on saved filing texts and facts. The existing seeded-error verifier marks for the Checkpoint 2 commit remain unchanged. Ansh confirmed both Microsoft partner manual checks above against the cited release lines. These marks do not apply to AMD; AMD's separate partner checks remain pending in the AMD report.
+This fallback report is based on saved filing texts and facts. The existing seeded-error verifier marks for the Checkpoint 2 commit remain unchanged. Ansh confirmed both Microsoft partner manual checks above against the cited release lines. These marks apply only to Microsoft. AMD's separate partner checks are PASS/PASS in the AMD fallback report.

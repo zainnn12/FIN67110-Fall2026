@@ -61,21 +61,24 @@ The saved copies are:
 - Seeded diluted-EPS error: `lab4_proofs/COST_seeded_eps_error`
 - Invented revenue-growth error: `lab4_proofs/COST_invented_growth_error`
 
-Deterministic and stub-semantic test results:
+Offline deterministic verifier proof using saved SEC evidence. The saved proof
+tables below are not live model runs. Deterministic and stub-semantic test results:
 
 | Test | Correct | Wrong | Unsupported | Required correction |
 |---|---:|---:|---:|---|
 | Clean 11 core claims | 11 | 0 | 0 | None |
-| Seeded diluted EPS | 10 | 1 | 0 | `$21.76` → `$20.76`; tag `EarningsPerShareDiluted`; FY2026 period |
+| Seeded diluted EPS | 10 | 1 | 0 | `$21.76` marked `WRONG` → corrected to `$20.76`; tag `EarningsPerShareDiluted`; FY2026 period |
 | Invented quarterly revenue growth | 11 | 1 | 0 | `15.10%` → `11.10%`; code arithmetic from `$95,723` and `$86,156` |
 
 The offline test command reported **6 passed**. The original desk reported
 **19 passed**, and the earlier focused Financial Analyst Flow reported **3 passed**.
 
-The live `--verify-only` call reached the Verifier model. On 2026-11-05, the
-configured OpenAI account returned HTTP 429 `credit_balance_exhausted`. Therefore,
-the required live model semantic proof and the 2 new live COST runs still require
-API credit. The code, graph, deterministic proof, and saved proof copies are ready.
+The seeded-error proof above is an offline deterministic verifier proof using
+saved SEC evidence. The separate live `--verify-only` call reached the Verifier
+model on 2026-11-05, but OpenAI returned HTTP 429 `credit_balance_exhausted`.
+Later live COST and AMD attempts completed SEC Steps 1–7 and reached Research
+Analyst. They stopped at HTTP 429 `credit_balance_exhausted`; Strategy Manager
+and Verifier did not run. Those attempts are not complete live runs.
 
 ## Exact commands
 

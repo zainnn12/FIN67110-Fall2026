@@ -37,16 +37,19 @@ The report starts with the filings and accession numbers, followed by the run ti
 Labs 04 and 05 are in [`equity_research_team`](equity_research_team/). It uses CrewAI
 Flows to run the seven steps, the four roles, and a mandatory Verifier in a fixed
 code-defined order. The Verifier supports `--verify-only` for saved runs and has
-deterministic tests for the seeded diluted-EPS error, the invented revenue-growth
-error, and the clean 11-claim Costco report. See
+offline deterministic tests for the seeded diluted-EPS error, the invented revenue-growth
+error, and the clean 11-claim Costco report. The seeded-error proof is an offline
+deterministic verifier proof using saved SEC evidence; it is not a live model run. See
 [`LAB04_SUBMISSION.md`](LAB04_SUBMISSION.md) for the rubric evidence and exact
 commands. Lab 05 adds the 3 required Insight checks and a local page that streams
 the fixed node order and displays the verified report.
 
 The Microsoft Lab 05 fallback report is in
 [`runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md`](runs/MICROSOFT_CORP_2026-11-02_15-42-54/fallback_report.md).
-It is a fallback, not a live run. Its 2 partner claim checks are pending teammate
-confirmation. The UI command is `cd equity_research_team && UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page`.
+It is a fallback, not a live run. Ansh confirmed both Microsoft partner claim
+checks as PASS: FY27 Q1 GAAP total revenue of $92.279 billion and GAAP diluted
+EPS of $4.92. The Microsoft report records both marks. The UI command is
+`cd equity_research_team && UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page`.
 
 This is a learning exercise, not financial advice.
 AI assistance: OpenAI Codex, Google Antigravity, and Orca. I verified the sources myself; the judgments are mine.

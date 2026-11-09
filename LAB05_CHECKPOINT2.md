@@ -18,8 +18,9 @@
   label “Fallback — not a live agent-team run.” This was an endpoint test. The
   browser control service was unavailable, so a visible form click was not
   confirmed.
-- The saved seeded-error proof marks FY2026 diluted EPS of $21.76 as `wrong` and
-  corrects it to $20.76 with tag `EarningsPerShareDiluted`, period
+- Offline deterministic verifier proof using saved SEC evidence: the saved
+  seeded-error result marks FY2026 diluted EPS of $21.76 as `WRONG` and corrects
+  it to $20.76 with tag `EarningsPerShareDiluted`, period
   2025-09-01 to 2026-08-30, and accession 0000909832-26-000093.
 - The latest test results are 15 agent-team tests, 19 repository tests, and 3
   financial-analyst tests passed.
@@ -58,9 +59,10 @@ EQUITY_RESEARCH_PAGE_PORT=8001 UV_CACHE_DIR=/tmp/equity-research-team-uv-cache u
 
 ## Live run evidence and limits
 
-The requested COST run used ticker COST, peers WMT,TGT,BJ, and price 992.13. It
-completed SEC Steps 1–7, then stopped at Research Analyst because the API
-returned HTTP 429 `credit_balance_exhausted`. Its raw process output is saved at
+The live COST attempt used ticker COST, peers WMT,TGT,BJ, and price 992.13. The
+live COST and AMD attempts both completed SEC Steps 1–7 and reached Research
+Analyst. Each stopped because OpenAI returned HTTP 429
+`credit_balance_exhausted`. The COST raw process output is saved at
 `runs/COSTCO_WHOLESALE_CORP_NEW_2026-11-08_17-09-39-285970/actual_run.log`.
 No verified report was produced in this new run folder. The prior clean report
 remains at `lab4_proofs/COST_clean/verified_report.md`; it is not the output of
@@ -69,9 +71,10 @@ the new run.
 The actual node-order evidence is in the COST log above and in
 `runs/ADVANCED_MICRO_DEVICES_INC_2026-11-08_17-08-36-976795/ui_evidence.json`.
 Both records show SEC Steps 1–7 followed by Research Analyst. Both then record
-the real API error. Strategy Manager and Verifier did not run in these attempts.
-The AMD UI endpoint returned the saved fallback report, which has three lines
-beginning with `Insight:` and the previously confirmed PASS/PASS marks.
+the actual API error. Strategy Manager and Verifier did not run in these
+attempts. The AMD page endpoint returned the saved fallback report, which has
+three lines beginning with `Insight:` and Ansh's AMD manual PASS/PASS marks. A
+visible partner browser interaction has not been confirmed.
 
 Tests were run with these commands:
 

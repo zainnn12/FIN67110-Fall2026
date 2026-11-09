@@ -14,6 +14,8 @@ This is a course-approved fallback report. It is not a successful live agent-tea
 
 AMD sells products for data center, client, gaming and embedded markets. In the quarter ended September 26, 2026, GAAP net revenue was $13.377 billion, compared with $9.246 billion in the quarter ended September 27, 2025. The source is the 10-Q, “Condensed Consolidated Statements of Operations,” row “Net revenue”; the earnings release repeats the values in its GAAP quarterly results table. Revenue growth was ($13.377 billion − $9.246 billion) ÷ $9.246 billion = 44.7% (same source and periods).
 
+The main operating contrast is strong Data Center growth alongside lower Client and Gaming revenue: Data Center revenue was $8.5 billion, up 97%, while Client and Gaming revenue was $3.7 billion, down 8% (Exhibit 99.1, “Segment Summary”).
+
 GAAP diluted earnings per share was $1.46 for the quarter ended September 26, 2026, compared with $0.75 for the quarter ended September 27, 2025 (10-Q, “Condensed Consolidated Statements of Operations,” row “Diluted earnings per share”; earnings release, GAAP quarterly results table). The release’s first paragraph reports rounded quarterly revenue of $13.4 billion, GAAP gross margin of 54%, GAAP operating income of $2.8 billion, GAAP net income of $2.4 billion, and diluted earnings per share of $1.46. The detailed statements give the precise dollar values used below.
 
 ## 2. Market Positioning and Growth Outlook

@@ -18,7 +18,7 @@ after the Manager. There is no flag or graph branch that disables it.
 - `roles/`: one instruction file for each of the 4 team roles, plus the Verifier.
 - `src/equity_research_team/team_flow.py`: the fixed CrewAI Flow and Manager correction limit.
 - `src/equity_research_team/verifier.py`: code checks, model semantic check, marks, and corrections.
-- `tests/`: deterministic tests for the graph, call limits, clean 11 claims, seeded EPS error, and invented growth error.
+- `tests/`: offline deterministic tests for the graph, call limits, clean 11 claims, seeded EPS error, and invented growth error.
 - `../lab4_proofs/`: 3 copies of the saved Costco run used by the proof tests.
 
 Each full run saves the filing texts, facts, report, verified report, node order,
@@ -61,6 +61,10 @@ The commands read `API_KEY` and `SEC_USER_AGENT` from `../.env`. Do not put a
 secret in this project or commit a `.env` file.
 
 ## Verifier boundary
+
+Offline deterministic verifier proof using saved SEC evidence: the saved seeded
+Costco diluted EPS of $21.76 is marked `WRONG` and corrected to $20.76. This proof
+is not a live model run.
 
 The Verifier receives only the compiled report, saved filing texts, saved facts,
 and its code-check results. It does not receive the 4 role instruction files,
