@@ -1,0 +1,195 @@
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: 54c4ee9e-c39b-4f84-81da-7c3cfcfa0120                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.35                                                    │
+│  Latest version:  1.15.44                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: 54c4ee9e-c39b-4f84-81da-7c3cfcfa0120                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: run_steps                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Node: SEC Step 1
+
+[Step 1/7] Resolve ticker to CIK
+Ticker: NVDA
+Company: NVIDIA CORP
+CIK: 0001045810
+Node: SEC Step 2
+
+[Step 2/7] Select filings and read EDGAR acceptance times
+Submissions API filings examined: 1003
+Latest 10-K: accession 0001045810-26-000021; Accepted 2026-02-25 16:42:19
+Latest 10-Q: accession 0001045810-26-000075; Accepted 2026-08-26 16:36:00
+Latest 8-K reporting Item 2.02: accession 0001045810-26-000088; Accepted 2026-11-17 16:20:51
+Node: SEC Step 3
+
+[Step 3/7] Download filings and convert them to plain text
+Saved 10-K: /private/tmp/checkpoint3-completion/equity_research_team/runs/lab09/DESK_2026-11-20_22-59-43-273213/agent/NVIDIA_CORP_2026-11-20_22-59-44-568557/10-K_000104581026000021.txt
+Saved 10-Q: /private/tmp/checkpoint3-completion/equity_research_team/runs/lab09/DESK_2026-11-20_22-59-43-273213/agent/NVIDIA_CORP_2026-11-20_22-59-44-568557/10-Q_000104581026000075.txt
+Saved 8-K: /private/tmp/checkpoint3-completion/equity_research_team/runs/lab09/DESK_2026-11-20_22-59-43-273213/agent/NVIDIA_CORP_2026-11-20_22-59-44-568557/8-K_000104581026000088.txt
+Saved 8-K_EX-99.1: /private/tmp/checkpoint3-completion/equity_research_team/runs/lab09/DESK_2026-11-20_22-59-43-273213/agent/NVIDIA_CORP_2026-11-20_22-59-44-568557/8-K_EX-99.1_000104581026000088.txt
+Run folder: /private/tmp/checkpoint3-completion/equity_research_team/runs/lab09/DESK_2026-11-20_22-59-43-273213/agent/NVIDIA_CORP_2026-11-20_22-59-44-568557
+Node: SEC Step 4
+
+[Step 4/7] Fetch and align annual XBRL company facts
+Fiscal-year alignment: 2026-01-25 versus 2025-01-26
+- Total revenue [Revenues]
+  Current: 215,938,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   130,497,000,000 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Operating income [OperatingIncomeLoss]
+  Current: 130,387,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   81,453,000,000 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Net income [NetIncomeLoss]
+  Current: 120,067,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   72,880,000,000 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Diluted EPS [EarningsPerShareDiluted]
+  Current: 4.9000 USD/shares; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   2.9400 USD/shares; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Stockholders' equity [StockholdersEquity]
+  Current: 157,293,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   79,327,000,000 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Long-term debt [LongTermDebtNoncurrent]
+  Current: 7,469,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   8,463,000,000 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Current portion of long-term debt [LongTermDebtCurrent]
+  Current: 999,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   0 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Cash from operations [NetCashProvidedByUsedInOperatingActivities]
+  Current: 102,718,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   64,089,000,000 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Additions to property and equipment [PaymentsToAcquireProductiveAssets]
+  Current: 6,042,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   3,236,000,000 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Depreciation and amortization [DepreciationDepletionAndAmortization]
+  Current: 2,843,000,000 USD; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   1,864,000,000 USD; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+- Weighted-average diluted shares [WeightedAverageNumberOfDilutedSharesOutstanding]
+  Current: 24,514,000,000 shares; period end 2026-01-25; filing 10-K 0001045810-26-000021 filed 2026-02-25
+  Prior:   24,804,000,000 shares; period end 2025-01-26; filing 10-K 0001045810-26-000021 filed 2026-02-25
+Saved facts: /private/tmp/checkpoint3-completion/equity_research_team/runs/lab09/DESK_2026-11-20_22-59-43-273213/agent/NVIDIA_CORP_2026-11-20_22-59-44-568557/facts.json
+Saved facts: /private/tmp/checkpoint3-completion/equity_research_team/runs/lab09/DESK_2026-11-20_22-59-43-273213/agent/NVIDIA_CORP_2026-11-20_22-59-44-568557/facts.csv
+Node: SEC Step 5
+
+[Step 5/7] Calculate financial metrics
+Revenue growth: (215,938,000,000 - 130,497,000,000) / 130,497,000,000 = 65.47%
+Operating margin: 130,387,000,000 / 215,938,000,000 = 60.38%
+Return on average equity: 120,067,000,000 / ((157,293,000,000 + 79,327,000,000) / 2) = 101.49%
+Debt to equity: (7,469,000,000 + 999,000,000) / 157,293,000,000 = 0.0538x
+Free cash flow: 102,718,000,000 - 6,042,000,000 = 96,676,000,000
+P/E: N/A (--price was not supplied)
+Node: SEC Step 6
+
+[Step 6/7] Find quarterly revenue and diluted EPS in the release
+Current-quarter revenue: $115,844 million
+Prior-year-quarter revenue: $57,006 million
+Revenue growth arithmetic: ($115,844 - $57,006) / $57,006 = 103.21%
+Current-quarter GAAP diluted EPS: $2.70
+Prior-year-quarter GAAP diluted EPS: $1.30
+Revenue source release line: Revenue | $ | 115,844 | $ | 57,006 | $ | 293,681 | $ | 147,811
+GAAP diluted-EPS source release line: Diluted | $ | 2.70 | $ | 1.30 | $ | 7.55 | $ | 3.14
+Source release accession number: 0001045810-26-000088
+Node: SEC Step 7
+
+[Step 7/7] Collect peer facts and operating margins
+No peers supplied.
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: run_steps                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: research_analyst                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Node: Research Analyst
+
+Role: Research Analyst
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: research_analyst                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: financial_analyst                                                   │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Node: Financial Analyst
+
+Role: Financial Analyst
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: investment_advisor                                                  │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Node: Investment Advisor
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: financial_analyst                                                   │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+Role: Investment Advisor
+╭─────────────────────────── ❌ Flow Method Failed ────────────────────────────╮
+│                                                                              │
+│  Method: investment_advisor                                                  │
+│  Status: Failed                                                              │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── ❌ Flow Failure ───────────────────────────────╮
+│                                                                              │
+│  Flow Execution Failed                                                       │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: 54c4ee9e-c39b-4f84-81da-7c3cfcfa0120                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+

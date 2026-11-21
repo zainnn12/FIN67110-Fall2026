@@ -1,0 +1,24 @@
+{
+  "ticker": "NVDA",
+  "company": "NVIDIA Corporation",
+  "cik": 1045810,
+  "accession": "0001045810-26-000088",
+  "accepted": "2026-11-17 16:20:51 Eastern Time",
+  "retrieved_at": "2026-11-20T23:17:10-05:00",
+  "documents": [
+    {
+      "label": "filing_index",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/0001045810-26-000088-index.htm",
+      "raw_file": "filing_index_raw.htm",
+      "text_file": "filing_index.txt",
+      "sha256": "1baed8d35c7e83e4dd867b329408e8b17ac171e0c14268043243617164fa5663"
+    },
+    {
+      "label": "exhibit_99_1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
+      "raw_file": "exhibit_99_1_raw.htm",
+      "text_file": "exhibit_99_1.txt",
+      "sha256": "c20e573b531ab81df80e31b7da35f29a51ff47dc19f3df0e1a71c956f4aeab7b"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+EDGAR Filing Documents for 0001045810-26-000088
+SEC.gov
+EDGAR
+Latest Filings
+Filings search tools
+Filing Detail
+SEC Home
+»
+Company Search
+»
+Current Page
+Form 8-K
+- Current report
+SEC
+Accession
+No.
+0001045810-26-000088
+Filing Date
+2026-11-17
+Accepted
+2026-11-17 16:20:51
+Documents
+15
+Period of Report
+2026-11-17
+Items
+Item 2.02: Results of Operations and Financial Condition
+Item 9.01: Financial Statements and Exhibits
+Document Format Files
+Seq | Description | Document | Type | Size
+1 | 8-K | nvda-20261117.htm iXBRL | 8-K | 26811
+2 | EX-99.1 | q3fy27pr.htm | EX-99.1 | 348063
+3 | EX-99.2 | q3fy27cfocommentary.htm | EX-99.2 | 251464
+4 | EX-99.3 | supplementalfinancialinfor.htm | EX-99.3 | 240566
+8 | NVDA LOGO | nvdalogoa19.jpg | GRAPHIC | 13441
+Complete submission text file | 0001045810-26-000088.txt | 1062246
+Data Files
+Seq | Description | Document | Type | Size
+5 | XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT | nvda-20261117.xsd | EX-101.SCH | 2125
+6 | XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT | nvda-20261117_lab.xml | EX-101.LAB | 22403
+7 | XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT | nvda-20261117_pre.xml | EX-101.PRE | 13326
+18 | EXTRACTED XBRL INSTANCE DOCUMENT | nvda-20261117_htm.xml | XML | 2711
+Mailing Address
+2788 SAN TOMAS EXPRESSWAY
+SANTA CLARA
+CA
+95051
+Business Address
+2788 SAN TOMAS EXPRESSWAY
+SANTA CLARA
+CA
+95051
+408-486-2000
+NVIDIA CORP (Filer)
+CIK
+:
+0001045810 (see all company filings)
+EIN.
+:
+943177549
+| State of Incorp.:
+DE
+| Fiscal Year End:
+0131
+SIC
+:
+3674
+Semiconductors & Related Devices
+(CF Office: 04 Manufacturing)

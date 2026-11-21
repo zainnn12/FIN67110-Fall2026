@@ -1,0 +1,24 @@
+{
+  "ticker": "WMT",
+  "company": "Walmart Inc.",
+  "cik": 104169,
+  "accession": "0000104169-26-000168",
+  "accepted": "2026-11-19 06:58:52 Eastern Time",
+  "retrieved_at": "2026-11-20T23:17:10-05:00",
+  "documents": [
+    {
+      "label": "filing_index",
+      "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/0000104169-26-000168-index.htm",
+      "raw_file": "filing_index_raw.htm",
+      "text_file": "filing_index.txt",
+      "sha256": "d6414b1f9e38182b7eac0225292ab9d10334394f084a1b57fd035f66563cb15f"
+    },
+    {
+      "label": "exhibit_99_1",
+      "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
+      "raw_file": "exhibit_99_1_raw.htm",
+      "text_file": "exhibit_99_1.txt",
+      "sha256": "919c4823666f09a0d61db022bceb91178b8813b5260694a7d40b8b651b93a917"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+EDGAR Filing Documents for 0000104169-26-000168
+SEC.gov
+EDGAR
+Latest Filings
+Filings search tools
+Filing Detail
+SEC Home
+»
+Company Search
+»
+Current Page
+Form 8-K
+- Current report
+SEC
+Accession
+No.
+0000104169-26-000168
+Filing Date
+2026-11-19
+Accepted
+2026-11-19 06:58:52
+Documents
+59
+Period of Report
+2026-11-19
+Items
+Item 2.02: Results of Operations and Financial Condition
+Item 9.01: Financial Statements and Exhibits
+Interactive Data
+Document Format Files
+Seq | Description | Document | Type | Size
+1 | 8-K | wmt-20261119.htm iXBRL | 8-K | 35335
+2 | EX-99.1 | earningsreleasefy27q3.htm | EX-99.1 | 796969
+3 | EX-99.2 | earningspresentationfy27.htm | EX-99.2 | 71681
+8 | china_select-4480.jpg | GRAPHIC | 5469905
+9 | earningspresentationfy27001.jpg | GRAPHIC | 180194
+10 | earningspresentationfy27002.jpg | GRAPHIC | 118330
+11 | earningspresentationfy27003.jpg | GRAPHIC | 128074
+12 | earningspresentationfy27004.jpg | GRAPHIC | 122061
+13 | earningspresentationfy27005.jpg | GRAPHIC | 124753
+14 | earningspresentationfy27006.jpg | GRAPHIC | 100065
+15 | earningspresentationfy27007.jpg | GRAPHIC | 67427
+16 | earningspresentationfy27008.jpg | GRAPHIC | 86661
+17 | earningspresentationfy27009.jpg | GRAPHIC | 112501
+18 | earningspresentationfy27010.jpg | GRAPHIC | 86653
+19 | earningspresentationfy27011.jpg | GRAPHIC | 130958
+20 | earningspresentationfy27012.jpg | GRAPHIC | 118961
+21 | earningspresentationfy27013.jpg | GRAPHIC | 120990
+22 | earningspresentationfy27014.jpg | GRAPHIC | 100739
+23 | earningspresentationfy27015.jpg | GRAPHIC | 135342
+24 | earningspresentationfy27016.jpg | GRAPHIC | 157079
+25 | earningspresentationfy27017.jpg | GRAPHIC | 136311
+26 | earningspresentationfy27018.jpg | GRAPHIC | 101390
+27 | earningspresentationfy27019.jpg | GRAPHIC | 100005
+28 | earningspresentationfy27020.jpg | GRAPHIC | 114787
+29 | earningspresentationfy27021.jpg | GRAPHIC | 159493
+30 | earningspresentationfy27022.jpg | GRAPHIC | 122308
+31 | earningspresentationfy27023.jpg | GRAPHIC | 296509
+32 | earningspresentationfy27024.jpg | GRAPHIC | 183543
+33 | earningspresentationfy27025.jpg | GRAPHIC | 113823
+34 | earningspresentationfy27026.jpg | GRAPHIC | 109705
+35 | earningspresentationfy27027.jpg | GRAPHIC | 170077
+36 | earningspresentationfy27028.jpg | GRAPHIC | 133724
+37 | earningspresentationfy27029.jpg | GRAPHIC | 142488
+38 | earningspresentationfy27030.jpg | GRAPHIC | 116861
+39 | earningspresentationfy27031.jpg | GRAPHIC | 195659
+40 | earningspresentationfy27032.jpg | GRAPHIC | 195896
+41 | earningspresentationfy27033.jpg | GRAPHIC | 81877
+42 | earningspresentationfy27034.jpg | GRAPHIC | 183261
+43 | earningspresentationfy27035.jpg | GRAPHIC | 113773
+44 | earningspresentationfy27036.jpg | GRAPHIC | 111627
+45 | earningspresentationfy27037.jpg | GRAPHIC | 230852
+46 | earningspresentationfy27038.jpg | GRAPHIC | 79668
+47 | screenshot2026-11x05094937.jpg | GRAPHIC | 2006032
+48 | screenshot2026-11x05114455.jpg | GRAPHIC | 78434
+49 | screenshot2026-11x10092014.jpg | GRAPHIC | 1530254
+50 | spark.jpg | GRAPHIC | 2665
+51 | wmt-20261119_g1.jpg | GRAPHIC | 19205
+52 | wmt-sparkxsparkyellowxrgb0.gif | GRAPHIC | 35405
+Complete submission text file | 0000104169-26-000168.txt | 20800443
+Data Files
+Seq | Description | Document | Type | Size
+4 | XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT | wmt-20261119.xsd | EX-101.SCH | 4152
+5 | XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT | wmt-20261119_def.xml | EX-101.DEF | 19636
+6 | XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT | wmt-20261119_lab.xml | EX-101.LAB | 36361
+7 | XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT | wmt-20261119_pre.xml | EX-101.PRE | 20284
+62 | EXTRACTED XBRL INSTANCE DOCUMENT | wmt-20261119_htm.xml | XML | 8378
+Mailing Address
+1 CUSTOMER DRIVE
+BENTONVILLE
+AR
+72716
+Business Address
+1 CUSTOMER DRIVE
+BENTONVILLE
+AR
+72716
+5012734000
+Walmart Inc. (Filer)
+CIK
+:
+0000104169 (see all company filings)
+EIN.
+:
+710415188
+| State of Incorp.:
+DE
+| Fiscal Year End:
+0131
+Type:
+8-K
+| Act:
+34
+| File No.:
+001-06991
+| Film No.:
+261572277
+SIC
+:
+5331
+Retail-Variety Stores
+(CF Office: 07 Trade & Services)
