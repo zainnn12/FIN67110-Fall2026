@@ -1,0 +1,491 @@
+{
+  "end_date": "2026-10-17",
+  "endpoint": "https://api.financialdatasets.ai/prices",
+  "error": null,
+  "responses": [
+    {
+      "prices": [
+        {
+          "close": 22.0,
+          "high": 26.0,
+          "low": 21.0,
+          "open": 21.25,
+          "ticker": "ADIG",
+          "time": "2026-08-04",
+          "volume": 2805751
+        },
+        {
+          "close": 24.98,
+          "high": 25.75,
+          "low": 22.0,
+          "open": 22.67,
+          "ticker": "ADIG",
+          "time": "2026-08-05",
+          "volume": 1511018
+        },
+        {
+          "close": 26.3,
+          "high": 27.23,
+          "low": 25.75,
+          "open": 26.12,
+          "ticker": "ADIG",
+          "time": "2026-08-06",
+          "volume": 1272276
+        },
+        {
+          "close": 27.03,
+          "high": 27.46,
+          "low": 26.31,
+          "open": 26.31,
+          "ticker": "ADIG",
+          "time": "2026-08-07",
+          "volume": 819156
+        },
+        {
+          "close": 28.27,
+          "high": 28.91,
+          "low": 27.18,
+          "open": 28.34,
+          "ticker": "ADIG",
+          "time": "2026-08-10",
+          "volume": 3017809
+        },
+        {
+          "close": 27.92,
+          "high": 30.99,
+          "low": 27.02,
+          "open": 29.49,
+          "ticker": "ADIG",
+          "time": "2026-08-11",
+          "volume": 1507264
+        },
+        {
+          "close": 25.24,
+          "high": 29.18,
+          "low": 25.02,
+          "open": 28.62,
+          "ticker": "ADIG",
+          "time": "2026-08-12",
+          "volume": 1220267
+        },
+        {
+          "close": 25.82,
+          "high": 26.58,
+          "low": 22.57,
+          "open": 23.82,
+          "ticker": "ADIG",
+          "time": "2026-08-13",
+          "volume": 1925787
+        },
+        {
+          "close": 21.24,
+          "high": 25.56,
+          "low": 21.17,
+          "open": 25.56,
+          "ticker": "ADIG",
+          "time": "2026-08-14",
+          "volume": 2516919
+        },
+        {
+          "close": 21.43,
+          "high": 22.34,
+          "low": 20.56,
+          "open": 21.41,
+          "ticker": "ADIG",
+          "time": "2026-08-17",
+          "volume": 1689531
+        },
+        {
+          "close": 20.5,
+          "high": 21.67,
+          "low": 20.21,
+          "open": 21.15,
+          "ticker": "ADIG",
+          "time": "2026-08-18",
+          "volume": 1569343
+        },
+        {
+          "close": 21.36,
+          "high": 21.96,
+          "low": 20.26,
+          "open": 20.82,
+          "ticker": "ADIG",
+          "time": "2026-08-19",
+          "volume": 958816
+        },
+        {
+          "close": 22.59,
+          "high": 23.24,
+          "low": 21.16,
+          "open": 21.16,
+          "ticker": "ADIG",
+          "time": "2026-08-20",
+          "volume": 1500648
+        },
+        {
+          "close": 21.12,
+          "high": 23.48,
+          "low": 21.09,
+          "open": 22.47,
+          "ticker": "ADIG",
+          "time": "2026-08-21",
+          "volume": 985496
+        },
+        {
+          "close": 22.1,
+          "high": 23.16,
+          "low": 21.23,
+          "open": 21.23,
+          "ticker": "ADIG",
+          "time": "2026-08-24",
+          "volume": 754316
+        },
+        {
+          "close": 22.27,
+          "high": 23.05,
+          "low": 21.79,
+          "open": 21.79,
+          "ticker": "ADIG",
+          "time": "2026-08-25",
+          "volume": 763815
+        },
+        {
+          "close": 21.59,
+          "high": 22.31,
+          "low": 20.8,
+          "open": 21.78,
+          "ticker": "ADIG",
+          "time": "2026-08-26",
+          "volume": 994731
+        },
+        {
+          "close": 21.88,
+          "high": 22.33,
+          "low": 21.18,
+          "open": 21.98,
+          "ticker": "ADIG",
+          "time": "2026-08-27",
+          "volume": 610384
+        },
+        {
+          "close": 22.11,
+          "high": 22.38,
+          "low": 21.54,
+          "open": 22.1,
+          "ticker": "ADIG",
+          "time": "2026-08-28",
+          "volume": 712803
+        },
+        {
+          "close": 21.87,
+          "high": 22.65,
+          "low": 21.21,
+          "open": 22.19,
+          "ticker": "ADIG",
+          "time": "2026-08-31",
+          "volume": 1136872
+        },
+        {
+          "close": 20.34,
+          "high": 22.42,
+          "low": 20.09,
+          "open": 21.86,
+          "ticker": "ADIG",
+          "time": "2026-09-01",
+          "volume": 1144728
+        },
+        {
+          "close": 21.28,
+          "high": 21.61,
+          "low": 20.39,
+          "open": 20.41,
+          "ticker": "ADIG",
+          "time": "2026-09-02",
+          "volume": 1005947
+        },
+        {
+          "close": 20.42,
+          "high": 21.88,
+          "low": 20.21,
+          "open": 21.49,
+          "ticker": "ADIG",
+          "time": "2026-09-03",
+          "volume": 635951
+        },
+        {
+          "close": 20.65,
+          "high": 21.33,
+          "low": 20.39,
+          "open": 20.39,
+          "ticker": "ADIG",
+          "time": "2026-09-04",
+          "volume": 384911
+        },
+        {
+          "close": 20.89,
+          "high": 21.34,
+          "low": 20.26,
+          "open": 20.5,
+          "ticker": "ADIG",
+          "time": "2026-09-08",
+          "volume": 679467
+        },
+        {
+          "close": 20.66,
+          "high": 21.0,
+          "low": 20.17,
+          "open": 20.63,
+          "ticker": "ADIG",
+          "time": "2026-09-09",
+          "volume": 652831
+        },
+        {
+          "close": 21.41,
+          "high": 21.52,
+          "low": 20.25,
+          "open": 20.25,
+          "ticker": "ADIG",
+          "time": "2026-09-10",
+          "volume": 505062
+        },
+        {
+          "close": 20.53,
+          "high": 21.61,
+          "low": 20.33,
+          "open": 21.43,
+          "ticker": "ADIG",
+          "time": "2026-09-11",
+          "volume": 713786
+        },
+        {
+          "close": 20.35,
+          "high": 21.11,
+          "low": 20.16,
+          "open": 20.65,
+          "ticker": "ADIG",
+          "time": "2026-09-14",
+          "volume": 635162
+        },
+        {
+          "close": 20.44,
+          "high": 20.67,
+          "low": 20.03,
+          "open": 20.46,
+          "ticker": "ADIG",
+          "time": "2026-09-15",
+          "volume": 856900
+        },
+        {
+          "close": 20.99,
+          "high": 21.67,
+          "low": 20.33,
+          "open": 20.33,
+          "ticker": "ADIG",
+          "time": "2026-09-16",
+          "volume": 768878
+        },
+        {
+          "close": 21.64,
+          "high": 22.31,
+          "low": 21.39,
+          "open": 21.39,
+          "ticker": "ADIG",
+          "time": "2026-09-17",
+          "volume": 828863
+        },
+        {
+          "close": 20.7,
+          "high": 21.45,
+          "low": 20.41,
+          "open": 21.45,
+          "ticker": "ADIG",
+          "time": "2026-09-18",
+          "volume": 1214381
+        },
+        {
+          "close": 20.92,
+          "high": 21.38,
+          "low": 20.6,
+          "open": 21.07,
+          "ticker": "ADIG",
+          "time": "2026-09-21",
+          "volume": 663220
+        },
+        {
+          "close": 21.02,
+          "high": 21.54,
+          "low": 20.71,
+          "open": 20.92,
+          "ticker": "ADIG",
+          "time": "2026-09-22",
+          "volume": 838232
+        },
+        {
+          "close": 20.68,
+          "high": 21.47,
+          "low": 20.41,
+          "open": 21.11,
+          "ticker": "ADIG",
+          "time": "2026-09-23",
+          "volume": 462911
+        },
+        {
+          "close": 20.46,
+          "high": 20.62,
+          "low": 20.0,
+          "open": 20.52,
+          "ticker": "ADIG",
+          "time": "2026-09-24",
+          "volume": 747029
+        },
+        {
+          "close": 19.55,
+          "high": 20.85,
+          "low": 19.53,
+          "open": 20.74,
+          "ticker": "ADIG",
+          "time": "2026-09-25",
+          "volume": 579874
+        },
+        {
+          "close": 18.53,
+          "high": 20.41,
+          "low": 17.88,
+          "open": 19.53,
+          "ticker": "ADIG",
+          "time": "2026-09-28",
+          "volume": 745663
+        },
+        {
+          "close": 19.0,
+          "high": 19.46,
+          "low": 18.39,
+          "open": 18.79,
+          "ticker": "ADIG",
+          "time": "2026-09-29",
+          "volume": 629971
+        },
+        {
+          "close": 17.92,
+          "high": 19.09,
+          "low": 17.35,
+          "open": 18.94,
+          "ticker": "ADIG",
+          "time": "2026-09-30",
+          "volume": 1993796
+        },
+        {
+          "close": 17.98,
+          "high": 18.21,
+          "low": 17.11,
+          "open": 17.99,
+          "ticker": "ADIG",
+          "time": "2026-10-01",
+          "volume": 689341
+        },
+        {
+          "close": 17.83,
+          "high": 18.65,
+          "low": 17.83,
+          "open": 18.32,
+          "ticker": "ADIG",
+          "time": "2026-10-02",
+          "volume": 550334
+        },
+        {
+          "close": 17.62,
+          "high": 18.05,
+          "low": 17.37,
+          "open": 17.7,
+          "ticker": "ADIG",
+          "time": "2026-10-05",
+          "volume": 679912
+        },
+        {
+          "close": 17.82,
+          "high": 18.29,
+          "low": 17.6,
+          "open": 17.91,
+          "ticker": "ADIG",
+          "time": "2026-10-06",
+          "volume": 663652
+        },
+        {
+          "close": 17.53,
+          "high": 17.81,
+          "low": 17.23,
+          "open": 17.47,
+          "ticker": "ADIG",
+          "time": "2026-10-07",
+          "volume": 452281
+        },
+        {
+          "close": 17.2,
+          "high": 17.8,
+          "low": 16.77,
+          "open": 17.26,
+          "ticker": "ADIG",
+          "time": "2026-10-08",
+          "volume": 583714
+        },
+        {
+          "close": 16.8,
+          "high": 17.86,
+          "low": 16.79,
+          "open": 17.23,
+          "ticker": "ADIG",
+          "time": "2026-10-09",
+          "volume": 313221
+        },
+        {
+          "close": 16.95,
+          "high": 17.37,
+          "low": 16.48,
+          "open": 16.6,
+          "ticker": "ADIG",
+          "time": "2026-10-12",
+          "volume": 559018
+        },
+        {
+          "close": 16.51,
+          "high": 17.0,
+          "low": 16.12,
+          "open": 16.59,
+          "ticker": "ADIG",
+          "time": "2026-10-13",
+          "volume": 452167
+        },
+        {
+          "close": 15.5,
+          "high": 16.34,
+          "low": 15.0,
+          "open": 16.16,
+          "ticker": "ADIG",
+          "time": "2026-10-14",
+          "volume": 709012
+        },
+        {
+          "close": 15.7,
+          "high": 15.86,
+          "low": 15.0,
+          "open": 15.45,
+          "ticker": "ADIG",
+          "time": "2026-10-15",
+          "volume": 571880
+        },
+        {
+          "close": 15.48,
+          "high": 16.0,
+          "low": 15.3,
+          "open": 15.6,
+          "ticker": "ADIG",
+          "time": "2026-10-16",
+          "volume": 458498
+        }
+      ],
+      "ticker": "ADIG"
+    }
+  ],
+  "start_date": "2026-08-03",
+  "ticker": "ADIG"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Spinoff Seeker"
+  short_description: "Find and rank filing-proven U.S. spinoffs"
+  default_prompt: "Use $spinoff-seeker to run the filing-proven Lab 06 screen from 2025-11-18."
+policy:
+  allow_implicit_invocation: true
+

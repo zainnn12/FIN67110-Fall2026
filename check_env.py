@@ -1,8 +1,4 @@
-"""Check that the private course configuration can be read safely.
-
-This script prints only the first four characters of the API key. It never
-prints the complete key.
-"""
+"""Check that the private course configuration is present without printing it."""
 
 from pathlib import Path
 
@@ -32,15 +28,17 @@ def main() -> None:
 
     values = load_env(env_path)
     api_key = values.get("API_KEY")
+    financial_datasets_api_key = values.get("FINANCIAL_DATASETS_API_KEY")
     user_agent = values.get("SEC_USER_AGENT")
 
-    if not api_key or len(api_key) < 4:
+    if not api_key:
         raise SystemExit("ERROR: API_KEY is missing from .env.")
+    if not financial_datasets_api_key:
+        raise SystemExit("ERROR: FINANCIAL_DATASETS_API_KEY is missing from .env.")
     if not user_agent:
         raise SystemExit("ERROR: SEC_USER_AGENT is missing from .env.")
 
-    print(f"API_KEY={api_key[:4]}...")
-    print(f"SEC_USER_AGENT={user_agent}")
+    print("Required environment variables are present.")
 
 
 if __name__ == "__main__":

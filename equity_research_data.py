@@ -227,6 +227,20 @@ FACT_DEFINITIONS: tuple[FactDefinition, ...] = (
         ("USD",),
         False,
     ),
+    FactDefinition(
+        "depreciation_and_amortization",
+        "Depreciation and amortization",
+        ("DepreciationDepletionAndAmortization", "DepreciationDepletionAndAmortizationPropertyPlantAndEquipment"),
+        ("USD",),
+        False,
+    ),
+    FactDefinition(
+        "diluted_shares",
+        "Weighted-average diluted shares",
+        ("WeightedAverageNumberOfDilutedSharesOutstanding",),
+        ("shares",),
+        False,
+    ),
 )
 
 
@@ -1376,12 +1390,14 @@ class EquityResearchDataDesk:
         peers: Sequence[str],
         price: Decimal | None,
         base_dir: Path,
+        run_root: Path | None = None,
     ) -> None:
         self.client = client
         self.ticker = normalize_ticker(ticker)
         self.peers = [peer for peer in peers if peer != self.ticker]
         self.price = price
         self.base_dir = base_dir
+        self.run_root = run_root or (base_dir / "runs")
         self.run_started = datetime.now().astimezone()
         self.company: Company | None = None
         self.submissions_payload: dict[str, Any] | None = None
@@ -1409,7 +1425,7 @@ class EquityResearchDataDesk:
             # cannot select the same folder and overwrite saved evidence.
             stamp = self.run_started.strftime("%Y-%m-%d_%H-%M-%S-%f")
             folder = f"{safe_path_component(company.name)}_{stamp}"
-            self.output_dir = self.base_dir / "runs" / folder
+            self.output_dir = self.run_root / folder
             self.output_dir.mkdir(parents=True, exist_ok=False)
         return self.output_dir
 

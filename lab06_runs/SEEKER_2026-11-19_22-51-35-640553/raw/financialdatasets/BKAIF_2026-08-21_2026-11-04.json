@@ -1,0 +1,8 @@
+{
+  "end_date": "2026-11-04",
+  "endpoint": "https://api.financialdatasets.ai/prices",
+  "error": "HTTPError: 400 Client Error: Bad Request for url: https://api.financialdatasets.ai/prices?ticker=BKAIF&interval=day&start_date=2026-08-21&end_date=2026-11-04",
+  "responses": [],
+  "start_date": "2026-08-21",
+  "ticker": "BKAIF"
+}

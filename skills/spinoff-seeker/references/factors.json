@@ -1,0 +1,54 @@
+{
+  "configuration": "final",
+  "window_days_after_distribution": 90,
+  "missing_data_rule": "If a required fact, date, filing, or price is unavailable, leave it missing and list the company as unranked with the reason. Never estimate missing information.",
+  "factors": [
+    {
+      "id": "relative_company_size",
+      "name": "Relative company size",
+      "filing_rule": "Divide the spinoff’s total assets from its Form 10 information statement by the parent’s total assets from its closest comparable 10-K or 10-Q. Never estimate a missing value.",
+      "direction": "A smaller percentage receives more points.",
+      "weight_percent": 35,
+      "point_rule": [
+        "2 points when the ratio is 10% or less.",
+        "1 point when the ratio is greater than 10% and no more than 20%.",
+        "0 points when the ratio is greater than 20%."
+      ],
+      "sources": [
+        "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3."
+      ]
+    },
+    {
+      "id": "post_distribution_price_weakness",
+      "name": "Post-distribution price weakness",
+      "filing_and_price_rule": "Establish the distribution date from the information statement or distribution 8-K. Use the first regular closing price after distribution and compare it with the closing price 20 trading days later. Never use a when-issued price.",
+      "direction": "A larger price decline receives more points because it may indicate forced selling.",
+      "weight_percent": 40,
+      "point_rule": [
+        "2 points when the price decline is at least 15%.",
+        "1 point when the decline is at least 5% but less than 15%.",
+        "0 points when the decline is less than 5% or the price increases."
+      ],
+      "sources": [
+        "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3.",
+        "Seth Klarman, Margin of Safety, Chapter 10."
+      ]
+    },
+    {
+      "id": "insider_open_market_buying",
+      "name": "Insider open-market buying",
+      "filing_rule": "Count Form 4 transactions with transaction code P by officers or directors during the first 30 days after distribution. Exclude grants, awards, and sales.",
+      "direction": "Purchases by more distinct insiders receive more points.",
+      "weight_percent": 25,
+      "point_rule": [
+        "2 points for qualifying purchases by two or more distinct insiders.",
+        "1 point for a qualifying purchase by one insider.",
+        "0 points when there is no qualifying purchase."
+      ],
+      "sources": [
+        "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3."
+      ]
+    }
+  ]
+}
+

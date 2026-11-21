@@ -1,0 +1,8 @@
+{
+  "end_date": "2026-08-05",
+  "endpoint": "https://api.financialdatasets.ai/prices",
+  "error": "HTTPError: 400 Client Error: Bad Request for url: https://api.financialdatasets.ai/prices?ticker=OCTLF&interval=day&start_date=2026-05-22&end_date=2026-08-05",
+  "responses": [],
+  "start_date": "2026-05-22",
+  "ticker": "OCTLF"
+}

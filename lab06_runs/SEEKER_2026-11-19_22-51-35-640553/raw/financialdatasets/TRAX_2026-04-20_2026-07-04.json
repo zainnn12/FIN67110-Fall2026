@@ -1,0 +1,482 @@
+{
+  "end_date": "2026-07-04",
+  "endpoint": "https://api.financialdatasets.ai/prices",
+  "error": null,
+  "responses": [
+    {
+      "prices": [
+        {
+          "close": 18.6,
+          "high": 21.0,
+          "low": 14.79,
+          "open": 20.51,
+          "ticker": "TRAX",
+          "time": "2026-04-20",
+          "volume": 768818
+        },
+        {
+          "close": 17.0,
+          "high": 21.65,
+          "low": 16.59,
+          "open": 18.05,
+          "ticker": "TRAX",
+          "time": "2026-04-21",
+          "volume": 1031851
+        },
+        {
+          "close": 18.87,
+          "high": 19.8,
+          "low": 16.74,
+          "open": 17.65,
+          "ticker": "TRAX",
+          "time": "2026-04-22",
+          "volume": 843510
+        },
+        {
+          "close": 19.0,
+          "high": 19.84,
+          "low": 17.69,
+          "open": 18.99,
+          "ticker": "TRAX",
+          "time": "2026-04-23",
+          "volume": 519952
+        },
+        {
+          "close": 18.16,
+          "high": 20.69,
+          "low": 18.16,
+          "open": 20.2,
+          "ticker": "TRAX",
+          "time": "2026-04-24",
+          "volume": 762716
+        },
+        {
+          "close": 18.1,
+          "high": 19.0,
+          "low": 17.7,
+          "open": 17.78,
+          "ticker": "TRAX",
+          "time": "2026-04-27",
+          "volume": 425224
+        },
+        {
+          "close": 20.05,
+          "high": 21.66,
+          "low": 17.44,
+          "open": 17.44,
+          "ticker": "TRAX",
+          "time": "2026-04-28",
+          "volume": 572361
+        },
+        {
+          "close": 23.64,
+          "high": 25.58,
+          "low": 19.65,
+          "open": 19.82,
+          "ticker": "TRAX",
+          "time": "2026-04-29",
+          "volume": 714314
+        },
+        {
+          "close": 23.27,
+          "high": 24.53,
+          "low": 22.19,
+          "open": 23.64,
+          "ticker": "TRAX",
+          "time": "2026-04-30",
+          "volume": 391917
+        },
+        {
+          "close": 22.38,
+          "high": 25.11,
+          "low": 20.0,
+          "open": 23.29,
+          "ticker": "TRAX",
+          "time": "2026-05-01",
+          "volume": 594136
+        },
+        {
+          "close": 20.55,
+          "high": 22.8,
+          "low": 20.0,
+          "open": 21.52,
+          "ticker": "TRAX",
+          "time": "2026-05-04",
+          "volume": 783676
+        },
+        {
+          "close": 21.19,
+          "high": 22.2,
+          "low": 20.0,
+          "open": 20.59,
+          "ticker": "TRAX",
+          "time": "2026-05-05",
+          "volume": 342599
+        },
+        {
+          "close": 20.25,
+          "high": 21.84,
+          "low": 20.11,
+          "open": 21.41,
+          "ticker": "TRAX",
+          "time": "2026-05-06",
+          "volume": 647184
+        },
+        {
+          "close": 17.82,
+          "high": 20.49,
+          "low": 17.75,
+          "open": 20.1,
+          "ticker": "TRAX",
+          "time": "2026-05-07",
+          "volume": 542671
+        },
+        {
+          "close": 19.54,
+          "high": 19.82,
+          "low": 17.5,
+          "open": 18.12,
+          "ticker": "TRAX",
+          "time": "2026-05-08",
+          "volume": 355231
+        },
+        {
+          "close": 18.76,
+          "high": 20.41,
+          "low": 18.09,
+          "open": 19.42,
+          "ticker": "TRAX",
+          "time": "2026-05-11",
+          "volume": 345549
+        },
+        {
+          "close": 17.81,
+          "high": 18.99,
+          "low": 15.57,
+          "open": 18.6,
+          "ticker": "TRAX",
+          "time": "2026-05-12",
+          "volume": 1004560
+        },
+        {
+          "close": 18.43,
+          "high": 19.14,
+          "low": 17.41,
+          "open": 17.48,
+          "ticker": "TRAX",
+          "time": "2026-05-13",
+          "volume": 301909
+        },
+        {
+          "close": 18.16,
+          "high": 18.63,
+          "low": 17.68,
+          "open": 18.27,
+          "ticker": "TRAX",
+          "time": "2026-05-14",
+          "volume": 211576
+        },
+        {
+          "close": 16.9,
+          "high": 18.71,
+          "low": 16.76,
+          "open": 17.97,
+          "ticker": "TRAX",
+          "time": "2026-05-15",
+          "volume": 196058
+        },
+        {
+          "close": 17.79,
+          "high": 18.08,
+          "low": 16.45,
+          "open": 16.79,
+          "ticker": "TRAX",
+          "time": "2026-05-18",
+          "volume": 365873
+        },
+        {
+          "close": 16.66,
+          "high": 18.15,
+          "low": 16.45,
+          "open": 17.54,
+          "ticker": "TRAX",
+          "time": "2026-05-19",
+          "volume": 509015
+        },
+        {
+          "close": 16.16,
+          "high": 17.62,
+          "low": 15.4,
+          "open": 16.69,
+          "ticker": "TRAX",
+          "time": "2026-05-20",
+          "volume": 491174
+        },
+        {
+          "close": 16.76,
+          "high": 17.11,
+          "low": 15.46,
+          "open": 15.85,
+          "ticker": "TRAX",
+          "time": "2026-05-21",
+          "volume": 307275
+        },
+        {
+          "close": 17.18,
+          "high": 18.1,
+          "low": 16.8,
+          "open": 17.04,
+          "ticker": "TRAX",
+          "time": "2026-05-22",
+          "volume": 318536
+        },
+        {
+          "close": 17.05,
+          "high": 17.8,
+          "low": 16.21,
+          "open": 17.2,
+          "ticker": "TRAX",
+          "time": "2026-05-26",
+          "volume": 290822
+        },
+        {
+          "close": 16.14,
+          "high": 17.74,
+          "low": 15.79,
+          "open": 16.88,
+          "ticker": "TRAX",
+          "time": "2026-05-27",
+          "volume": 336127
+        },
+        {
+          "close": 15.82,
+          "high": 16.53,
+          "low": 15.63,
+          "open": 16.03,
+          "ticker": "TRAX",
+          "time": "2026-05-28",
+          "volume": 298222
+        },
+        {
+          "close": 15.96,
+          "high": 16.55,
+          "low": 15.26,
+          "open": 15.83,
+          "ticker": "TRAX",
+          "time": "2026-05-29",
+          "volume": 471518
+        },
+        {
+          "close": 18.09,
+          "high": 18.47,
+          "low": 15.1,
+          "open": 15.85,
+          "ticker": "TRAX",
+          "time": "2026-06-01",
+          "volume": 854741
+        },
+        {
+          "close": 16.14,
+          "high": 18.45,
+          "low": 16.01,
+          "open": 18.45,
+          "ticker": "TRAX",
+          "time": "2026-06-02",
+          "volume": 720352
+        },
+        {
+          "close": 15.32,
+          "high": 16.41,
+          "low": 14.72,
+          "open": 15.78,
+          "ticker": "TRAX",
+          "time": "2026-06-03",
+          "volume": 554896
+        },
+        {
+          "close": 18.2,
+          "high": 18.42,
+          "low": 14.9,
+          "open": 15.24,
+          "ticker": "TRAX",
+          "time": "2026-06-04",
+          "volume": 536153
+        },
+        {
+          "close": 16.6,
+          "high": 18.42,
+          "low": 16.55,
+          "open": 18.0,
+          "ticker": "TRAX",
+          "time": "2026-06-05",
+          "volume": 868752
+        },
+        {
+          "close": 15.75,
+          "high": 17.08,
+          "low": 15.34,
+          "open": 17.08,
+          "ticker": "TRAX",
+          "time": "2026-06-08",
+          "volume": 674679
+        },
+        {
+          "close": 15.97,
+          "high": 16.18,
+          "low": 15.42,
+          "open": 16.18,
+          "ticker": "TRAX",
+          "time": "2026-06-09",
+          "volume": 391021
+        },
+        {
+          "close": 16.42,
+          "high": 16.65,
+          "low": 15.73,
+          "open": 15.84,
+          "ticker": "TRAX",
+          "time": "2026-06-10",
+          "volume": 365430
+        },
+        {
+          "close": 17.03,
+          "high": 17.59,
+          "low": 15.97,
+          "open": 16.14,
+          "ticker": "TRAX",
+          "time": "2026-06-11",
+          "volume": 549979
+        },
+        {
+          "close": 17.64,
+          "high": 17.97,
+          "low": 16.88,
+          "open": 17.03,
+          "ticker": "TRAX",
+          "time": "2026-06-12",
+          "volume": 415306
+        },
+        {
+          "close": 17.88,
+          "high": 18.89,
+          "low": 17.41,
+          "open": 18.0,
+          "ticker": "TRAX",
+          "time": "2026-06-15",
+          "volume": 484306
+        },
+        {
+          "close": 17.14,
+          "high": 18.04,
+          "low": 16.78,
+          "open": 17.41,
+          "ticker": "TRAX",
+          "time": "2026-06-16",
+          "volume": 547651
+        },
+        {
+          "close": 18.17,
+          "high": 18.54,
+          "low": 17.09,
+          "open": 17.17,
+          "ticker": "TRAX",
+          "time": "2026-06-17",
+          "volume": 734366
+        },
+        {
+          "close": 17.42,
+          "high": 19.71,
+          "low": 17.06,
+          "open": 18.69,
+          "ticker": "TRAX",
+          "time": "2026-06-18",
+          "volume": 1915185
+        },
+        {
+          "close": 18.32,
+          "high": 18.45,
+          "low": 17.23,
+          "open": 17.52,
+          "ticker": "TRAX",
+          "time": "2026-06-22",
+          "volume": 524641
+        },
+        {
+          "close": 17.78,
+          "high": 19.1,
+          "low": 17.58,
+          "open": 18.57,
+          "ticker": "TRAX",
+          "time": "2026-06-23",
+          "volume": 544432
+        },
+        {
+          "close": 16.69,
+          "high": 18.66,
+          "low": 16.57,
+          "open": 17.76,
+          "ticker": "TRAX",
+          "time": "2026-06-24",
+          "volume": 481139
+        },
+        {
+          "close": 16.37,
+          "high": 17.95,
+          "low": 16.25,
+          "open": 16.44,
+          "ticker": "TRAX",
+          "time": "2026-06-25",
+          "volume": 580744
+        },
+        {
+          "close": 16.03,
+          "high": 16.91,
+          "low": 15.71,
+          "open": 16.3,
+          "ticker": "TRAX",
+          "time": "2026-06-26",
+          "volume": 1731941
+        },
+        {
+          "close": 17.01,
+          "high": 17.12,
+          "low": 15.69,
+          "open": 16.25,
+          "ticker": "TRAX",
+          "time": "2026-06-29",
+          "volume": 331489
+        },
+        {
+          "close": 20.12,
+          "high": 20.22,
+          "low": 17.02,
+          "open": 17.02,
+          "ticker": "TRAX",
+          "time": "2026-06-30",
+          "volume": 883263
+        },
+        {
+          "close": 18.59,
+          "high": 20.16,
+          "low": 17.59,
+          "open": 20.1,
+          "ticker": "TRAX",
+          "time": "2026-07-01",
+          "volume": 468641
+        },
+        {
+          "close": 19.3,
+          "high": 19.46,
+          "low": 18.19,
+          "open": 18.6,
+          "ticker": "TRAX",
+          "time": "2026-07-02",
+          "volume": 559253
+        }
+      ],
+      "ticker": "TRAX"
+    }
+  ],
+  "start_date": "2026-04-20",
+  "ticker": "TRAX"
+}

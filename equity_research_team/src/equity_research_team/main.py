@@ -63,6 +63,7 @@ def _parser() -> argparse.ArgumentParser:
         default=DEFAULT_OPENAI_MODEL,
         help=f"OpenAI model for all role calls (default: {DEFAULT_OPENAI_MODEL})",
     )
+    parser.add_argument("--run-root", type=Path, help="Directory where timestamped run folders are created")
     return parser
 
 
@@ -111,6 +112,7 @@ def run(argv: Sequence[str] | None = None) -> int:
         peers=peers,
         price=args.price,
         client=sec_client,
+        run_root=args.run_root.resolve() if args.run_root else None,
     )
     flow = EquityResearchTeamFlow(desk=desk, role_client=role_client)
     flow.kickoff(

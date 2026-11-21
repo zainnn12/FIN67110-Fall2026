@@ -816,6 +816,7 @@ def build_desk(
     price: Decimal | None,
     client: Any,
     base_dir: Path = WORKSPACE_DIR,
+    run_root: Path | None = None,
 ) -> EquityResearchDataDesk:
     return EquityResearchDataDesk(
         client=client,
@@ -823,6 +824,7 @@ def build_desk(
         peers=peers,
         price=price,
         base_dir=base_dir,
+        run_root=run_root,
     )
 
 

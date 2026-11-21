@@ -1,0 +1,497 @@
+{
+  "base_run": "/Users/zfashola/orca/workspaces/Session 01/char/lab06_runs/SEEKER_2026-11-19_22-51-35-640553",
+  "comparisons": [
+    {
+      "cik": 1958489,
+      "company": "Cortigent, Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 2,
+          "proof_points": 2,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2049860,
+      "company": "Electrified Materials Corp / IN",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 2,
+          "proof_points": 2,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2058873,
+      "company": "Qnity Electronics, Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2064953,
+      "company": "Solstice Advanced Materials Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2078008,
+      "company": "Versigent PLC",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2082247,
+      "company": "FedEx Freight Holding Company, Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 2,
+          "proof_points": 2,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2083632,
+      "company": "Octave Intelligence plc",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2088281,
+      "company": "Midera Food Processing, Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": 0,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2089271,
+      "company": "Honeywell Aerospace Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": 1,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2090312,
+      "company": "Mobility Global Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": 0,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2091349,
+      "company": "First Tracks Biotherapeutics, Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": 0,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2093101,
+      "company": "Atrium Therapeutics, Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": 2,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2104052,
+      "company": "Enviri Corp",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2105139,
+      "company": "ADI GLOBAL DISTRIBUTION INC.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": 1,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2108359,
+      "company": "BioKey (Cayman), Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 2,
+          "proof_points": 2,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2128626,
+      "company": "Vylor Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2130999,
+      "company": "Axiom Solutions International, Inc.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        }
+      ]
+    },
+    {
+      "cik": 2132873,
+      "company": "MSG Rangers Corp.",
+      "factor_checks": [
+        {
+          "factor_id": "relative_company_size",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "missing",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "post_distribution_price_weakness",
+          "original_points": null,
+          "proof_points": null,
+          "proof_status": "disabled",
+          "unchanged_or_removed": true
+        },
+        {
+          "factor_id": "insider_open_market_buying",
+          "original_points": 0,
+          "proof_points": 0,
+          "proof_status": "active",
+          "unchanged_or_removed": true
+        }
+      ]
+    }
+  ],
+  "final_configuration_preserved": true,
+  "final_factor_hash_after": "3b81c64be6d5fdadbb4b96d8d8cda4b987c03cc401853012fb21c354b1b52007",
+  "final_factor_hash_before": "3b81c64be6d5fdadbb4b96d8d8cda4b987c03cc401853012fb21c354b1b52007",
+  "status": "PASS",
+  "temporary_configuration": "/Users/zfashola/orca/workspaces/Session 01/char/lab06_runs/SEEKER_2026-11-19_22-51-35-640553/weight_zero_proof_2026-11-20_21-25-31-256338/temporary_factors_weight_zero.json",
+  "zero_factor_id": "post_distribution_price_weakness"
+}

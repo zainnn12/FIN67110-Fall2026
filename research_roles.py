@@ -350,6 +350,17 @@ def extract_ten_k_sections(text: str) -> dict[str, dict[str, Any]]:
     """Extract Item 1 and Item 7 while preserving full-document line numbers."""
     lines = text.splitlines()
 
+    def heading_at(index: int, item: str, title_word: str | None = None) -> bool:
+        if _is_heading(lines[index], item, title_word):
+            return True
+        if title_word is None or not _is_heading(lines[index], item):
+            return False
+        # SEC filings can put the item number and title on adjacent lines.
+        return any(
+            title_word.casefold() in lines[next_index].casefold()
+            for next_index in range(index + 1, min(index + 4, len(lines)))
+        )
+
     def section(
         start_item: str,
         title_word: str,
@@ -358,8 +369,8 @@ def extract_ten_k_sections(text: str) -> dict[str, dict[str, Any]]:
     ) -> dict[str, Any]:
         starts = [
             index
-            for index, line in enumerate(lines)
-            if _is_heading(line, start_item, title_word)
+            for index in range(len(lines))
+            if heading_at(index, start_item, title_word)
         ]
         if not starts:
             raise RoleWorkflowError(f"Could not find the 10-K {label} heading.")
@@ -368,7 +379,7 @@ def extract_ten_k_sections(text: str) -> dict[str, dict[str, Any]]:
             possible_ends = [
                 index
                 for index in range(possible_start + 1, len(lines))
-                if _is_heading(lines[index], end_item)
+                if heading_at(index, end_item)
             ]
             if possible_ends:
                 candidates.append((possible_start, possible_ends[0]))

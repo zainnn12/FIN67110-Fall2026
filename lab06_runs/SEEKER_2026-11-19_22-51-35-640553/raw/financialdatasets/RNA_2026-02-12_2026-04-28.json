@@ -1,0 +1,473 @@
+{
+  "end_date": "2026-04-28",
+  "endpoint": "https://api.financialdatasets.ai/prices",
+  "error": null,
+  "responses": [
+    {
+      "prices": [
+        {
+          "close": 72.91,
+          "high": 73.01,
+          "low": 72.87,
+          "open": 73.0,
+          "ticker": "RNA",
+          "time": "2026-02-12",
+          "volume": 3467503
+        },
+        {
+          "close": 72.87,
+          "high": 73.0,
+          "low": 72.75,
+          "open": 72.9,
+          "ticker": "RNA",
+          "time": "2026-02-13",
+          "volume": 2277252
+        },
+        {
+          "close": 72.86,
+          "high": 72.99,
+          "low": 72.76,
+          "open": 72.99,
+          "ticker": "RNA",
+          "time": "2026-02-17",
+          "volume": 2739742
+        },
+        {
+          "close": 72.83,
+          "high": 72.91,
+          "low": 72.75,
+          "open": 72.88,
+          "ticker": "RNA",
+          "time": "2026-02-18",
+          "volume": 1951419
+        },
+        {
+          "close": 72.86,
+          "high": 72.93,
+          "low": 72.75,
+          "open": 72.83,
+          "ticker": "RNA",
+          "time": "2026-02-19",
+          "volume": 2548122
+        },
+        {
+          "close": 72.86,
+          "high": 72.92,
+          "low": 72.73,
+          "open": 72.83,
+          "ticker": "RNA",
+          "time": "2026-02-20",
+          "volume": 8083145
+        },
+        {
+          "close": 72.92,
+          "high": 73.05,
+          "low": 72.81,
+          "open": 72.81,
+          "ticker": "RNA",
+          "time": "2026-02-23",
+          "volume": 3701303
+        },
+        {
+          "close": 72.75,
+          "high": 72.98,
+          "low": 72.73,
+          "open": 72.92,
+          "ticker": "RNA",
+          "time": "2026-02-24",
+          "volume": 5414206
+        },
+        {
+          "close": 72.8,
+          "high": 72.9,
+          "low": 72.68,
+          "open": 72.73,
+          "ticker": "RNA",
+          "time": "2026-02-25",
+          "volume": 12055793
+        },
+        {
+          "close": 14.75,
+          "high": 15.93,
+          "low": 13.06,
+          "open": 14.58,
+          "ticker": "RNA",
+          "time": "2026-02-27",
+          "volume": 7963593
+        },
+        {
+          "close": 14.91,
+          "high": 15.51,
+          "low": 13.81,
+          "open": 13.81,
+          "ticker": "RNA",
+          "time": "2026-03-02",
+          "volume": 3208689
+        },
+        {
+          "close": 15.67,
+          "high": 15.88,
+          "low": 14.44,
+          "open": 14.7,
+          "ticker": "RNA",
+          "time": "2026-03-03",
+          "volume": 2894980
+        },
+        {
+          "close": 16.54,
+          "high": 16.57,
+          "low": 15.32,
+          "open": 15.32,
+          "ticker": "RNA",
+          "time": "2026-03-04",
+          "volume": 2002943
+        },
+        {
+          "close": 15.47,
+          "high": 16.77,
+          "low": 15.25,
+          "open": 16.61,
+          "ticker": "RNA",
+          "time": "2026-03-05",
+          "volume": 1623780
+        },
+        {
+          "close": 14.82,
+          "high": 15.79,
+          "low": 14.71,
+          "open": 15.26,
+          "ticker": "RNA",
+          "time": "2026-03-06",
+          "volume": 1117192
+        },
+        {
+          "close": 14.79,
+          "high": 15.01,
+          "low": 14.0,
+          "open": 14.59,
+          "ticker": "RNA",
+          "time": "2026-03-09",
+          "volume": 829241
+        },
+        {
+          "close": 14.67,
+          "high": 15.34,
+          "low": 14.6,
+          "open": 14.82,
+          "ticker": "RNA",
+          "time": "2026-03-10",
+          "volume": 752499
+        },
+        {
+          "close": 14.8,
+          "high": 15.84,
+          "low": 14.6,
+          "open": 14.7,
+          "ticker": "RNA",
+          "time": "2026-03-11",
+          "volume": 738885
+        },
+        {
+          "close": 14.54,
+          "high": 14.76,
+          "low": 14.42,
+          "open": 14.7,
+          "ticker": "RNA",
+          "time": "2026-03-12",
+          "volume": 467847
+        },
+        {
+          "close": 13.75,
+          "high": 14.55,
+          "low": 13.57,
+          "open": 14.47,
+          "ticker": "RNA",
+          "time": "2026-03-13",
+          "volume": 692357
+        },
+        {
+          "close": 13.79,
+          "high": 13.99,
+          "low": 13.65,
+          "open": 13.77,
+          "ticker": "RNA",
+          "time": "2026-03-16",
+          "volume": 254805
+        },
+        {
+          "close": 13.77,
+          "high": 13.89,
+          "low": 13.61,
+          "open": 13.74,
+          "ticker": "RNA",
+          "time": "2026-03-17",
+          "volume": 308309
+        },
+        {
+          "close": 12.32,
+          "high": 13.76,
+          "low": 12.29,
+          "open": 13.76,
+          "ticker": "RNA",
+          "time": "2026-03-18",
+          "volume": 1758634
+        },
+        {
+          "close": 12.69,
+          "high": 12.87,
+          "low": 11.95,
+          "open": 12.3,
+          "ticker": "RNA",
+          "time": "2026-03-19",
+          "volume": 566831
+        },
+        {
+          "close": 13.13,
+          "high": 13.28,
+          "low": 12.32,
+          "open": 12.67,
+          "ticker": "RNA",
+          "time": "2026-03-20",
+          "volume": 1119414
+        },
+        {
+          "close": 13.2,
+          "high": 13.5,
+          "low": 12.99,
+          "open": 13.21,
+          "ticker": "RNA",
+          "time": "2026-03-23",
+          "volume": 408146
+        },
+        {
+          "close": 13.2,
+          "high": 13.5,
+          "low": 13.11,
+          "open": 13.18,
+          "ticker": "RNA",
+          "time": "2026-03-24",
+          "volume": 1210049
+        },
+        {
+          "close": 13.09,
+          "high": 13.41,
+          "low": 12.77,
+          "open": 13.41,
+          "ticker": "RNA",
+          "time": "2026-03-25",
+          "volume": 292520
+        },
+        {
+          "close": 13.1,
+          "high": 13.24,
+          "low": 12.95,
+          "open": 12.99,
+          "ticker": "RNA",
+          "time": "2026-03-26",
+          "volume": 230977
+        },
+        {
+          "close": 13.23,
+          "high": 13.28,
+          "low": 12.9,
+          "open": 13.0,
+          "ticker": "RNA",
+          "time": "2026-03-27",
+          "volume": 410779
+        },
+        {
+          "close": 13.55,
+          "high": 13.6,
+          "low": 13.0,
+          "open": 13.16,
+          "ticker": "RNA",
+          "time": "2026-03-30",
+          "volume": 566732
+        },
+        {
+          "close": 13.37,
+          "high": 13.53,
+          "low": 13.05,
+          "open": 13.41,
+          "ticker": "RNA",
+          "time": "2026-03-31",
+          "volume": 921417
+        },
+        {
+          "close": 13.47,
+          "high": 13.9,
+          "low": 13.36,
+          "open": 13.36,
+          "ticker": "RNA",
+          "time": "2026-04-01",
+          "volume": 304235
+        },
+        {
+          "close": 13.44,
+          "high": 13.71,
+          "low": 13.31,
+          "open": 13.4,
+          "ticker": "RNA",
+          "time": "2026-04-02",
+          "volume": 281726
+        },
+        {
+          "close": 13.67,
+          "high": 13.92,
+          "low": 13.44,
+          "open": 13.44,
+          "ticker": "RNA",
+          "time": "2026-04-06",
+          "volume": 172927
+        },
+        {
+          "close": 13.99,
+          "high": 13.99,
+          "low": 13.55,
+          "open": 13.61,
+          "ticker": "RNA",
+          "time": "2026-04-07",
+          "volume": 234898
+        },
+        {
+          "close": 13.7,
+          "high": 14.18,
+          "low": 13.54,
+          "open": 14.0,
+          "ticker": "RNA",
+          "time": "2026-04-08",
+          "volume": 213973
+        },
+        {
+          "close": 13.72,
+          "high": 13.93,
+          "low": 13.6,
+          "open": 13.71,
+          "ticker": "RNA",
+          "time": "2026-04-09",
+          "volume": 219233
+        },
+        {
+          "close": 12.71,
+          "high": 13.79,
+          "low": 12.63,
+          "open": 13.64,
+          "ticker": "RNA",
+          "time": "2026-04-10",
+          "volume": 1028056
+        },
+        {
+          "close": 13.3,
+          "high": 13.31,
+          "low": 12.66,
+          "open": 12.66,
+          "ticker": "RNA",
+          "time": "2026-04-13",
+          "volume": 1453814
+        },
+        {
+          "close": 14.02,
+          "high": 14.05,
+          "low": 13.18,
+          "open": 13.31,
+          "ticker": "RNA",
+          "time": "2026-04-14",
+          "volume": 670481
+        },
+        {
+          "close": 14.54,
+          "high": 14.6,
+          "low": 13.91,
+          "open": 14.0,
+          "ticker": "RNA",
+          "time": "2026-04-15",
+          "volume": 568270
+        },
+        {
+          "close": 14.03,
+          "high": 14.51,
+          "low": 13.88,
+          "open": 14.46,
+          "ticker": "RNA",
+          "time": "2026-04-16",
+          "volume": 275086
+        },
+        {
+          "close": 14.41,
+          "high": 14.62,
+          "low": 13.98,
+          "open": 13.99,
+          "ticker": "RNA",
+          "time": "2026-04-17",
+          "volume": 632810
+        },
+        {
+          "close": 14.3,
+          "high": 14.5,
+          "low": 14.2,
+          "open": 14.42,
+          "ticker": "RNA",
+          "time": "2026-04-20",
+          "volume": 548028
+        },
+        {
+          "close": 13.53,
+          "high": 14.3,
+          "low": 13.51,
+          "open": 14.24,
+          "ticker": "RNA",
+          "time": "2026-04-21",
+          "volume": 519524
+        },
+        {
+          "close": 13.66,
+          "high": 13.92,
+          "low": 13.5,
+          "open": 13.61,
+          "ticker": "RNA",
+          "time": "2026-04-22",
+          "volume": 583718
+        },
+        {
+          "close": 13.85,
+          "high": 14.8,
+          "low": 13.68,
+          "open": 14.01,
+          "ticker": "RNA",
+          "time": "2026-04-23",
+          "volume": 510999
+        },
+        {
+          "close": 13.49,
+          "high": 13.78,
+          "low": 13.46,
+          "open": 13.78,
+          "ticker": "RNA",
+          "time": "2026-04-24",
+          "volume": 196598
+        },
+        {
+          "close": 12.9,
+          "high": 13.66,
+          "low": 12.79,
+          "open": 13.59,
+          "ticker": "RNA",
+          "time": "2026-04-27",
+          "volume": 287666
+        },
+        {
+          "close": 12.55,
+          "high": 13.0,
+          "low": 12.51,
+          "open": 13.0,
+          "ticker": "RNA",
+          "time": "2026-04-28",
+          "volume": 452469
+        }
+      ],
+      "ticker": "RNA"
+    }
+  ],
+  "start_date": "2026-02-12",
+  "ticker": "RNA"
+}

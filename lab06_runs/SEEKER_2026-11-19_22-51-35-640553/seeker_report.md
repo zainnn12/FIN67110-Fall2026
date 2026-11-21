@@ -1,0 +1,242 @@
+Run date: 2026-11-19 | Price date: 2026-10-27 | Index date: 2026-11-19
+# Lab 06 Spinoff Seeker
+
+## Ranked in-window names
+No in-window name had every required active-factor input.
+
+## Unranked trading names
+- Qnity Electronics, Inc. (Q): Missing required input for Post-distribution price weakness.; Missing required input for Insider open-market buying.
+- Solstice Advanced Materials Inc. (SOLS): Missing required input for Relative company size.; Missing required input for Post-distribution price weakness.; Missing required input for Insider open-market buying.
+- Versigent PLC (VGNT): Missing required input for Relative company size.; Missing required input for Post-distribution price weakness.; Missing required input for Insider open-market buying.
+- FedEx Freight Holding Company, Inc. (FDXF): Missing required input for Post-distribution price weakness.; Missing required input for Insider open-market buying.
+- Octave Intelligence plc (OCTLF): Missing required input for Relative company size.; Missing required input for Post-distribution price weakness.
+- Midera Food Processing, Inc. (MFP): Outside the active ranking window.
+- Honeywell Aerospace Inc. (HONA): Outside the active ranking window.
+- Mobility Global Inc. (MBGL): Outside the active ranking window.
+- First Tracks Biotherapeutics, Inc. (TRAX): Outside the active ranking window.
+- Atrium Therapeutics, Inc. (RNA): Missing required input for Relative company size.
+- Enviri Corp (NVRI): Missing required input for Relative company size.; Missing required input for Post-distribution price weakness.; Missing required input for Insider open-market buying.
+- ADI GLOBAL DISTRIBUTION INC. (ADIG): Missing required input for Relative company size.
+- BioKey (Cayman), Inc. (BKAIF): Missing required input for Post-distribution price weakness.
+- Vylor Inc. (VYLR): Missing required input for Post-distribution price weakness.; Missing required input for Insider open-market buying.
+- MSG Rangers Corp. (MSGR): Missing required input for Relative company size.; Missing required input for Post-distribution price weakness.
+
+## Registered / watch list
+- Cortigent, Inc. (ticker unavailable): registered; 10-12B/A 0001753926-25-001532 https://www.sec.gov/Archives/edgar/data/1958489/0001753926-25-001532.txt
+- Electrified Materials Corp / IN (ticker unavailable): registered; 10-12B/A 0001477932-25-009149 https://www.sec.gov/Archives/edgar/data/2049860/0001477932-25-009149.txt
+- Axiom Solutions International, Inc. (AXM): registered; 10-12B/A 0001193125-26-465664 https://www.sec.gov/Archives/edgar/data/2130999/0001193125-26-465664.txt
+
+## Dropped filers
+- KiNRG, Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001213900-26-007267 https://www.sec.gov/Archives/edgar/data/95572/0001213900-26-007267.txt
+- American Fusion, Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0001079973-26-000309 https://www.sec.gov/Archives/edgar/data/96664/0001079973-26-000309.txt
+- QUALSTAR CORP: Form 10 has no information statement. Supporting filing: 10-12G 0001096906-26-001670 https://www.sec.gov/Archives/edgar/data/758938/0001096906-26-001670.txt
+- Longevity Diversified Holdings, Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0001829126-26-003888 https://www.sec.gov/Archives/edgar/data/787496/0001829126-26-003888.txt
+- Sparxx Corp: Form 10 has no information statement. Supporting filing: 10-12G/A 0001683168-26-003868 https://www.sec.gov/Archives/edgar/data/803097/0001683168-26-003868.txt
+- POSITRON CORP: Information statement does not show a parent distributing the business. Supporting filing: 10-12G 0001539497-25-002908 https://www.sec.gov/Archives/edgar/data/844985/0001539497-25-002908.txt
+- HyOrc Corp: Form 10 has no information statement. Supporting filing: 10-12G/A 0001493152-26-012036 https://www.sec.gov/Archives/edgar/data/1070789/0001493152-26-012036.txt
+- BIOMOLECULAR LIFE HOLDINGS, INC.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001493152-26-047964 https://www.sec.gov/Archives/edgar/data/1091326/0001493152-26-047964.txt
+- MINERALRITE Corp: Form 10 has no information statement. Supporting filing: 10-12G/A 0001539497-26-000849 https://www.sec.gov/Archives/edgar/data/1096296/0001539497-26-000849.txt
+- CS DIAGNOSTICS CORP.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001214659-26-003205 https://www.sec.gov/Archives/edgar/data/1106861/0001214659-26-003205.txt
+- BILI Social International, Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001683168-26-000980 https://www.sec.gov/Archives/edgar/data/1109262/0001683168-26-000980.txt
+- Glow Holdings, Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0001683168-26-004901 https://www.sec.gov/Archives/edgar/data/1114859/0001683168-26-004901.txt
+- ECOMINAS CORP.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001477932-26-002091 https://www.sec.gov/Archives/edgar/data/1115864/0001477932-26-002091.txt
+- TX Rail Products, Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G 0001437749-26-018183 https://www.sec.gov/Archives/edgar/data/1133798/0001437749-26-018183.txt
+- Adia Med, Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0001683168-25-008925 https://www.sec.gov/Archives/edgar/data/1160420/0001683168-25-008925.txt
+- HUMITECH INTERNATIONAL GROUP INC: Information statement does not show a parent distributing the business. Supporting filing: 10-12G 0001829126-25-009558 https://www.sec.gov/Archives/edgar/data/1170839/0001829126-25-009558.txt
+- Superstar Platforms Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001493152-25-027728 https://www.sec.gov/Archives/edgar/data/1192323/0001493152-25-027728.txt
+- AI Technology Group Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001477932-26-001197 https://www.sec.gov/Archives/edgar/data/1289047/0001477932-26-001197.txt
+- B-Scada, Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001493152-26-038756 https://www.sec.gov/Archives/edgar/data/1341878/0001493152-26-038756.txt
+- ALEXANDER TECH CORP: Form 10 has no information statement. Supporting filing: 10-12B 0001347491-26-000004 https://www.sec.gov/Archives/edgar/data/1347491/0001347491-26-000004.txt
+- HYDRO POWER TECHNOLOGIES, INC.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001376474-26-000461 https://www.sec.gov/Archives/edgar/data/1365359/0001376474-26-000461.txt
+- Zicix Corp: Form 10 has no information statement. Supporting filing: 10-12G/A 0001683168-25-009184 https://www.sec.gov/Archives/edgar/data/1465311/0001683168-25-009184.txt
+- ModuLink Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001683168-25-007099 https://www.sec.gov/Archives/edgar/data/1611046/0001683168-25-007099.txt
+- Barrel Energy Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001477932-26-002858 https://www.sec.gov/Archives/edgar/data/1631463/0001477932-26-002858.txt
+- Rise Companies Corp: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001628280-25-032586 https://www.sec.gov/Archives/edgar/data/1640967/0001628280-25-032586.txt
+- BioStem Technologies, Inc.: Form 10 has no information statement. Supporting filing: 10-12B/A 0001213900-26-084943 https://www.sec.gov/Archives/edgar/data/1658678/0001213900-26-084943.txt
+- Feel The World, Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G 0001079973-26-000972 https://www.sec.gov/Archives/edgar/data/1690455/0001079973-26-000972.txt
+- Private Bancorp of America, Inc.: Form 10 has no information statement. Supporting filing: 10-12B/A 0001193125-26-307732 https://www.sec.gov/Archives/edgar/data/1705284/0001193125-26-307732.txt
+- Leef Brands Inc.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001493152-26-012756 https://www.sec.gov/Archives/edgar/data/1711141/0001493152-26-012756.txt
+- JS BEAUTY LAND NETWORK TECHNOLOGY INC: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001493152-26-048210 https://www.sec.gov/Archives/edgar/data/1745931/0001493152-26-048210.txt
+- ADAMS STREET CREDIT SOLUTIONS FUND: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-227113 https://www.sec.gov/Archives/edgar/data/1772918/0001193125-26-227113.txt
+- Eyeonix AIQ, Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001171520-25-000364 https://www.sec.gov/Archives/edgar/data/1807689/0001171520-25-000364.txt
+- Broad Capital Acquisition Corp: Registrant is a fund, not a spinoff. Supporting filing: 10-12G 0001493152-26-047304 https://www.sec.gov/Archives/edgar/data/1865120/0001493152-26-047304.txt
+- Verses AI Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0001641172-25-025717 https://www.sec.gov/Archives/edgar/data/1879001/0001641172-25-025717.txt
+- American CryptoFed: Form 10 has no information statement. Supporting filing: 10-12G 0001881928-26-000006 https://www.sec.gov/Archives/edgar/data/1881928/0001881928-26-000006.txt
+- Sealy Industrial Partners IV, LP: Form 10 has no information statement. Supporting filing: 10-12G/A 0000950170-25-079641 https://www.sec.gov/Archives/edgar/data/1929017/0000950170-25-079641.txt
+- Partners Group Lending Fund, LLC: Form 10 has no information statement. Supporting filing: 10-12G/A 0001398344-25-022745 https://www.sec.gov/Archives/edgar/data/1938649/0001398344-25-022745.txt
+- Fidelity Core Real Estate Fund: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-280945 https://www.sec.gov/Archives/edgar/data/1953520/0001193125-26-280945.txt
+- Blackstone Private Equity Strategies Fund (TE) L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-25-211746 https://www.sec.gov/Archives/edgar/data/1953940/0001193125-25-211746.txt
+- MADE IN USA INC.: Form 10 has no information statement. Supporting filing: 10-12G 0001683168-25-009285 https://www.sec.gov/Archives/edgar/data/1977837/0001683168-25-009285.txt
+- Investcorp US Private Credit BDC II: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-089532 https://www.sec.gov/Archives/edgar/data/1984739/0001193125-26-089532.txt
+- Shefford & Companies, Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001477932-25-005945 https://www.sec.gov/Archives/edgar/data/1997284/0001477932-25-005945.txt
+- Kioni Holdings Ltd: Information statement does not show a parent distributing the business. Supporting filing: 10-12B 0002011134-26-000009 https://www.sec.gov/Archives/edgar/data/2011134/0002011134-26-000009.txt
+- Fortress Private Lending Fund: Form 10 has no information statement. Supporting filing: 10-12G/A 0001140361-25-028557 https://www.sec.gov/Archives/edgar/data/2012139/0001140361-25-028557.txt
+- Third Point Private Capital Partners: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-26-000253 https://www.sec.gov/Archives/edgar/data/2025369/0001104659-26-000253.txt
+- Eagle Point Trinity Senior Secured Lending Co: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-25-118913 https://www.sec.gov/Archives/edgar/data/2027033/0001104659-25-118913.txt
+- Grayscale Bittensor Trust (TAO): Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-25-312006 https://www.sec.gov/Archives/edgar/data/2029297/0001193125-25-312006.txt
+- EQT Private Equity Co LLC: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-25-223380 https://www.sec.gov/Archives/edgar/data/2032020/0001193125-25-223380.txt
+- Audax Private Credit Fund, LLC: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-25-209131 https://www.sec.gov/Archives/edgar/data/2033362/0001193125-25-209131.txt
+- Silver Point Private Credit Fund: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-134080 https://www.sec.gov/Archives/edgar/data/2033382/0001193125-26-134080.txt
+- Crestline Lending Solutions, LLC: Form 10 has no information statement. Supporting filing: 10-12G/A 0001628280-25-049005 https://www.sec.gov/Archives/edgar/data/2035713/0001628280-25-049005.txt
+- TARGATEK, INC.: Form 10 has no information statement. Supporting filing: 10-12G 0001096906-26-001725 https://www.sec.gov/Archives/edgar/data/2037250/0001096906-26-001725.txt
+- Ralliant Corp: Distribution date 2025-06-28 is before the requested start date 2025-11-18. Supporting filing: 10-12B/A 0001104659-25-053286 https://www.sec.gov/Archives/edgar/data/2041385/0001104659-25-053286.txt
+- TCW Steel City Perpetual Levered Fund LP: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-25-237195 https://www.sec.gov/Archives/edgar/data/2043133/0001193125-25-237195.txt
+- VistaOne, L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-25-137190 https://www.sec.gov/Archives/edgar/data/2044820/0001193125-25-137190.txt
+- Remora Capital Corp: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001213900-25-067875 https://www.sec.gov/Archives/edgar/data/2045370/0001213900-25-067875.txt
+- Ares Sports, Media & Entertainment Opportunities LP: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001104659-25-121226 https://www.sec.gov/Archives/edgar/data/2046946/0001104659-25-121226.txt
+- Blackstone Private Real Estate Credit & Income Fund: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-25-158250 https://www.sec.gov/Archives/edgar/data/2049733/0001193125-25-158250.txt
+- Blackstone Infrastructure Strategies (TE) L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-279443 https://www.sec.gov/Archives/edgar/data/2050229/0001193125-26-279443.txt
+- Macquarie Infrastructure Income Opportunities Fund: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-26-108351 https://www.sec.gov/Archives/edgar/data/2050809/0001104659-26-108351.txt
+- Apollo Origination II (Levered) Capital Trust: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-25-199183 https://www.sec.gov/Archives/edgar/data/2052152/0001193125-25-199183.txt
+- Apollo Origination II (UL) Capital Trust: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-25-199186 https://www.sec.gov/Archives/edgar/data/2052153/0001193125-25-199186.txt
+- Biointra, Corp: Form 10 has no information statement. Supporting filing: 10-12B/A 0002053365-26-000007 https://www.sec.gov/Archives/edgar/data/2053365/0002053365-26-000007.txt
+- CIFC Direct Lending Evergreen Fund: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-307369 https://www.sec.gov/Archives/edgar/data/2056516/0001193125-26-307369.txt
+- ISQ Open Infrastructure Co LLC: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001213900-25-061565 https://www.sec.gov/Archives/edgar/data/2059924/0001213900-25-061565.txt
+- G-INFRA LP: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-402669 https://www.sec.gov/Archives/edgar/data/2060192/0001193125-26-402669.txt
+- G-Private Equity LP: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-402689 https://www.sec.gov/Archives/edgar/data/2060316/0001193125-26-402689.txt
+- Sound Point Direct Lending BDC: Form 10 has no information statement. Supporting filing: 10-12G/A 0001829126-26-001261 https://www.sec.gov/Archives/edgar/data/2061174/0001829126-26-001261.txt
+- Macquarie Energy Transition Infrastructure Fund, L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001213900-26-107833 https://www.sec.gov/Archives/edgar/data/2062936/0001213900-26-107833.txt
+- Carlyle Private Equity Partners Fund, L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001628280-25-038306 https://www.sec.gov/Archives/edgar/data/2065337/0001628280-25-038306.txt
+- Antares Strategic Credit Fund II LLC: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-25-068429 https://www.sec.gov/Archives/edgar/data/2065397/0001104659-25-068429.txt
+- Orielle Acquisition Corp.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001213900-25-057931 https://www.sec.gov/Archives/edgar/data/2066067/0001213900-25-057931.txt
+- CNL Strategic Residential Credit, Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001999371-25-009255 https://www.sec.gov/Archives/edgar/data/2066337/0001999371-25-009255.txt
+- TCW SPECIALTY LENDING LLC: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-134548 https://www.sec.gov/Archives/edgar/data/2066811/0001193125-26-134548.txt
+- Versant Media Group, Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12B/A 0001193125-25-306792 https://www.sec.gov/Archives/edgar/data/2067876/0001193125-25-306792.txt
+- Blue Owl Digital Infrastructure Trust: Form 10 has no information statement. Supporting filing: 10-12G/A 0001628280-25-039061 https://www.sec.gov/Archives/edgar/data/2069692/0001628280-25-039061.txt
+- American Antimony Corp.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G 0001683168-26-008363 https://www.sec.gov/Archives/edgar/data/2069925/0001683168-26-008363.txt
+- Nuveen Churchill BDC V: Form 10 has no information statement. Supporting filing: 10-12G/A 0001628280-25-037264 https://www.sec.gov/Archives/edgar/data/2071136/0001628280-25-037264.txt
+- PIMCO Asset-Based Lending Co LLC: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-25-239603 https://www.sec.gov/Archives/edgar/data/2073537/0001193125-25-239603.txt
+- FBRED-C Feeder REIT Trust: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-25-093937 https://www.sec.gov/Archives/edgar/data/2073653/0001104659-25-093937.txt
+- Brookfield Private Equity Fund LP: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001104659-25-081887 https://www.sec.gov/Archives/edgar/data/2074065/0001104659-25-081887.txt
+- Apollo IG Core Replacement, L.P.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-25-326963 https://www.sec.gov/Archives/edgar/data/2074450/0001193125-25-326963.txt
+- Matternet, Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001213900-25-089462 https://www.sec.gov/Archives/edgar/data/2075109/0001213900-25-089462.txt
+- Var Acquisition Corp.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001213900-25-089482 https://www.sec.gov/Archives/edgar/data/2075239/0001213900-25-089482.txt
+- Stone Point Credit Income Fund - Select: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-25-093941 https://www.sec.gov/Archives/edgar/data/2077250/0001104659-25-093941.txt
+- Range Acquisition Corp.: Form 10 has no information statement. Supporting filing: 10-12G 0001213900-25-095532 https://www.sec.gov/Archives/edgar/data/2079320/0001213900-25-095532.txt
+- Macquarie Infrastructure Fund, L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001213900-25-091204 https://www.sec.gov/Archives/edgar/data/2079966/0001213900-25-091204.txt
+- Rithm Perpetual Life Residential Trust: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-25-115977 https://www.sec.gov/Archives/edgar/data/2081628/0001104659-25-115977.txt
+- Augusta SpinCo Corp: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001193125-25-327056 https://www.sec.gov/Archives/edgar/data/2082015/0001193125-25-327056.txt
+- Golub Capital Private Income Fund S: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-26-033965 https://www.sec.gov/Archives/edgar/data/2082557/0001104659-26-033965.txt
+- Golub Capital Private Income Fund I: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-26-033964 https://www.sec.gov/Archives/edgar/data/2082559/0001104659-26-033964.txt
+- Warburg Pincus Access Fund, L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-25-240555 https://www.sec.gov/Archives/edgar/data/2082826/0001193125-25-240555.txt
+- APS BDC, LLC: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-035874 https://www.sec.gov/Archives/edgar/data/2083477/0001193125-26-035874.txt
+- Sunbelt Rentals Holdings, Inc.: Form 10 has no information statement. Supporting filing: 10-12B/A 0001193125-26-050612 https://www.sec.gov/Archives/edgar/data/2083785/0001193125-26-050612.txt
+- Nuveen Farmland REIT: Form 10 has no information statement. Supporting filing: 10-12G/A 0000930413-25-003388 https://www.sec.gov/Archives/edgar/data/2085428/0000930413-25-003388.txt
+- Leach John Peter: Form 10 has no information statement. Supporting filing: 10-12G/A 0002088960-26-000009 https://www.sec.gov/Archives/edgar/data/2088960/0002088960-26-000009.txt
+- PennantPark Private Income Fund: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-25-309940 https://www.sec.gov/Archives/edgar/data/2089126/0001193125-25-309940.txt
+- BTCS Labs Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0001493152-25-016938 https://www.sec.gov/Archives/edgar/data/2089189/0001493152-25-016938.txt
+- HPS Real Assets Lending Co LP: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-177671 https://www.sec.gov/Archives/edgar/data/2089975/0001193125-26-177671.txt
+- Blackstone Multi-Strategy Hedge Fund L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-014271 https://www.sec.gov/Archives/edgar/data/2095486/0001193125-26-014271.txt
+- CVC-PE Global Private Equity Fund, LP: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-057161 https://www.sec.gov/Archives/edgar/data/2096330/0001193125-26-057161.txt
+- HarbourVest Private Equity Secondaries Fund L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-272445 https://www.sec.gov/Archives/edgar/data/2097887/0001193125-26-272445.txt
+- Primus Acquisition Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0001213900-25-115421 https://www.sec.gov/Archives/edgar/data/2098382/0001213900-25-115421.txt
+- Trinzic, Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12B/A 0001140361-26-042809 https://www.sec.gov/Archives/edgar/data/2101664/0001140361-26-042809.txt
+- Shefford Small Business, Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001477932-26-001917 https://www.sec.gov/Archives/edgar/data/2102386/0001477932-26-001917.txt
+- West Coast Community Bancorp: Form 10 has no information statement. Supporting filing: 10-12B 0001628280-26-059592 https://www.sec.gov/Archives/edgar/data/2105965/0001628280-26-059592.txt
+- TCW Specialty Lending IX LLC: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-116167 https://www.sec.gov/Archives/edgar/data/2107057/0001193125-26-116167.txt
+- HPS Net Lease Income REIT: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-149886 https://www.sec.gov/Archives/edgar/data/2107762/0001193125-26-149886.txt
+- JDEV Acquisition Corp: Form 10 has no information statement. Supporting filing: 10-12G/A 0001213900-26-035633 https://www.sec.gov/Archives/edgar/data/2108121/0001213900-26-035633.txt
+- Fidelity Private Credit Co II LLC: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-315714 https://www.sec.gov/Archives/edgar/data/2112554/0001193125-26-315714.txt
+- NEXROC Group, Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0002113098-26-000025 https://www.sec.gov/Archives/edgar/data/2113098/0002113098-26-000025.txt
+- HarbourVest Private Equity Secondaries Fund (TE) L.P.: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001193125-26-272456 https://www.sec.gov/Archives/edgar/data/2117580/0001193125-26-272456.txt
+- Core University Living Real Estate Income Trust: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-304935 https://www.sec.gov/Archives/edgar/data/2119505/0001193125-26-304935.txt
+- Imricor Medical Systems, Inc.: Form 10 has no information statement. Supporting filing: 10-12G/A 0001437749-26-017396 https://www.sec.gov/Archives/edgar/data/2121708/0001437749-26-017396.txt
+- Third Point Private Capital Income Fund: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-26-112422 https://www.sec.gov/Archives/edgar/data/2122354/0001104659-26-112422.txt
+- Monroe Capital Asset-Backed Finance Company, LP: Registrant is a fund, not a spinoff. Supporting filing: 10-12G/A 0001104659-26-110028 https://www.sec.gov/Archives/edgar/data/2125316/0001104659-26-110028.txt
+- Dance Emotion Studios Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001640334-26-001627 https://www.sec.gov/Archives/edgar/data/2125703/0001640334-26-001627.txt
+- JLM-WNCO Trust: Form 10 has no information statement. Supporting filing: 10-12G 0001437749-26-011469 https://www.sec.gov/Archives/edgar/data/2127486/0001437749-26-011469.txt
+- Margaree Acquisition Corp.: Form 10 has no information statement. Supporting filing: 10-12G 0001213900-26-058540 https://www.sec.gov/Archives/edgar/data/2129664/0001213900-26-058540.txt
+- Sagard Private Income Fund Inc.: Form 10 has no information statement. Supporting filing: 10-12G 0001193125-26-436342 https://www.sec.gov/Archives/edgar/data/2133018/0001193125-26-436342.txt
+- JBAAM Acquisition Corp II: Form 10 has no information statement. Supporting filing: 10-12G 0001731122-26-000719 https://www.sec.gov/Archives/edgar/data/2133917/0001731122-26-000719.txt
+- Platinum SpinCo, Inc.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G/A 0001193125-26-335481 https://www.sec.gov/Archives/edgar/data/2134183/0001193125-26-335481.txt
+- SLR Secured Specialty Lending Fund: Form 10 has no information statement. Supporting filing: 10-12G/A 0001193125-26-417638 https://www.sec.gov/Archives/edgar/data/2136418/0001193125-26-417638.txt
+- Tristar Marble Group Ltd.: Information statement does not show a parent distributing the business. Supporting filing: 10-12G 0001477932-26-007179 https://www.sec.gov/Archives/edgar/data/2139596/0001477932-26-007179.txt
+- Navesink Acquisition Corp: Form 10 has no information statement. Supporting filing: 10-12G 0001213900-26-118729 https://www.sec.gov/Archives/edgar/data/2142568/0001213900-26-118729.txt
+- American Residential Housing Trust: Form 10 has no information statement. Supporting filing: 10-12G 0001140361-26-043474 https://www.sec.gov/Archives/edgar/data/2145729/0001140361-26-043474.txt
+- Angel Oak Residential Evergreen Trust: Form 10 has no information statement. Supporting filing: 10-12G/A 0001104659-26-122722 https://www.sec.gov/Archives/edgar/data/2147245/0001104659-26-122722.txt
+- JLL Property Finance Trust: Form 10 has no information statement. Supporting filing: 10-12G/A 0001628280-26-073915 https://www.sec.gov/Archives/edgar/data/2150214/0001628280-26-073915.txt
+- Garry Oak Capital BDC LLC: Registrant is a fund, not a spinoff. Supporting filing: 10-12G 0001104659-26-129080 https://www.sec.gov/Archives/edgar/data/2159316/0001104659-26-129080.txt
+- Pretium Housing Income Trust: Form 10 has no information statement. Supporting filing: 10-12G 0001104659-26-130190 https://www.sec.gov/Archives/edgar/data/2163809/0001104659-26-130190.txt
+
+## Unavailable facts and limits
+- Cortigent, Inc.: Distribution ratio. Left blank; not estimated.
+- Cortigent, Inc.: Distribution date. Left blank; not estimated.
+- Cortigent, Inc.: Trading ticker. Left blank; not estimated.
+- Cortigent, Inc.: Post-distribution price weakness factor input. Left blank; not estimated.
+- Cortigent, Inc.: Insider open-market buying factor input. Left blank; not estimated.
+- Electrified Materials Corp / IN: Distribution ratio. Left blank; not estimated.
+- Electrified Materials Corp / IN: Record date. Left blank; not estimated.
+- Electrified Materials Corp / IN: Distribution date. Left blank; not estimated.
+- Electrified Materials Corp / IN: Trading ticker. Left blank; not estimated.
+- Electrified Materials Corp / IN: Post-distribution price weakness factor input. Left blank; not estimated.
+- Electrified Materials Corp / IN: Insider open-market buying factor input. Left blank; not estimated.
+- Qnity Electronics, Inc.: Distribution ratio. Left blank; not estimated.
+- Qnity Electronics, Inc.: Record date. Left blank; not estimated.
+- Qnity Electronics, Inc.: Distribution date. Left blank; not estimated.
+- Qnity Electronics, Inc.: Post-distribution price weakness factor input. Left blank; not estimated.
+- Qnity Electronics, Inc.: Insider open-market buying factor input. Left blank; not estimated.
+- Solstice Advanced Materials Inc.: Distribution ratio. Left blank; not estimated.
+- Solstice Advanced Materials Inc.: Record date. Left blank; not estimated.
+- Solstice Advanced Materials Inc.: Distribution date. Left blank; not estimated.
+- Solstice Advanced Materials Inc.: Parent CIK. Left blank; not estimated.
+- Solstice Advanced Materials Inc.: Parent total assets. Left blank; not estimated.
+- Solstice Advanced Materials Inc.: Relative company size factor input. Left blank; not estimated.
+- Solstice Advanced Materials Inc.: Post-distribution price weakness factor input. Left blank; not estimated.
+- Solstice Advanced Materials Inc.: Insider open-market buying factor input. Left blank; not estimated.
+- Versigent PLC: Distribution ratio. Left blank; not estimated.
+- Versigent PLC: Distribution date. Left blank; not estimated.
+- Versigent PLC: Parent CIK. Left blank; not estimated.
+- Versigent PLC: Parent total assets. Left blank; not estimated.
+- Versigent PLC: Relative company size factor input. Left blank; not estimated.
+- Versigent PLC: Post-distribution price weakness factor input. Left blank; not estimated.
+- Versigent PLC: Insider open-market buying factor input. Left blank; not estimated.
+- FedEx Freight Holding Company, Inc.: Distribution date. Left blank; not estimated.
+- FedEx Freight Holding Company, Inc.: Post-distribution price weakness factor input. Left blank; not estimated.
+- FedEx Freight Holding Company, Inc.: Insider open-market buying factor input. Left blank; not estimated.
+- Octave Intelligence plc: Distribution ratio. Left blank; not estimated.
+- Octave Intelligence plc: Parent CIK. Left blank; not estimated.
+- Octave Intelligence plc: Parent total assets. Left blank; not estimated.
+- Octave Intelligence plc: First regular close after distribution. Left blank; not estimated.
+- Octave Intelligence plc: Financial Datasets price request (HTTPError: 400 Client Error: Bad Request for url: https://api.financialdatasets.ai/prices?ticker=OCTLF&interval=day&start_date=2026-05-22&end_date=2026-08-05). Left blank; not estimated.
+- Octave Intelligence plc: Relative company size factor input. Left blank; not estimated.
+- Octave Intelligence plc: Post-distribution price weakness factor input. Left blank; not estimated.
+- Midera Food Processing, Inc.: Record date. Left blank; not estimated.
+- Honeywell Aerospace Inc.: Record date. Left blank; not estimated.
+- Mobility Global Inc.: Distribution ratio. Left blank; not estimated.
+- Atrium Therapeutics, Inc.: Distribution ratio. Left blank; not estimated.
+- Atrium Therapeutics, Inc.: Parent CIK. Left blank; not estimated.
+- Atrium Therapeutics, Inc.: Parent total assets. Left blank; not estimated.
+- Atrium Therapeutics, Inc.: Relative company size factor input. Left blank; not estimated.
+- Enviri Corp: Parent. Left blank; not estimated.
+- Enviri Corp: Distribution date. Left blank; not estimated.
+- Enviri Corp: Parent CIK. Left blank; not estimated.
+- Enviri Corp: Parent total assets. Left blank; not estimated.
+- Enviri Corp: Relative company size factor input. Left blank; not estimated.
+- Enviri Corp: Post-distribution price weakness factor input. Left blank; not estimated.
+- Enviri Corp: Insider open-market buying factor input. Left blank; not estimated.
+- ADI GLOBAL DISTRIBUTION INC.: Parent CIK. Left blank; not estimated.
+- ADI GLOBAL DISTRIBUTION INC.: Parent total assets. Left blank; not estimated.
+- ADI GLOBAL DISTRIBUTION INC.: Relative company size factor input. Left blank; not estimated.
+- BioKey (Cayman), Inc.: Distribution ratio. Left blank; not estimated.
+- BioKey (Cayman), Inc.: First regular close after distribution. Left blank; not estimated.
+- BioKey (Cayman), Inc.: Financial Datasets price request (HTTPError: 400 Client Error: Bad Request for url: https://api.financialdatasets.ai/prices?ticker=BKAIF&interval=day&start_date=2026-08-21&end_date=2026-11-04). Left blank; not estimated.
+- BioKey (Cayman), Inc.: Post-distribution price weakness factor input. Left blank; not estimated.
+- Vylor Inc.: Distribution ratio. Left blank; not estimated.
+- Vylor Inc.: Distribution date. Left blank; not estimated.
+- Vylor Inc.: Post-distribution price weakness factor input. Left blank; not estimated.
+- Vylor Inc.: Insider open-market buying factor input. Left blank; not estimated.
+- Axiom Solutions International, Inc.: Distribution ratio. Left blank; not estimated.
+- Axiom Solutions International, Inc.: Record date. Left blank; not estimated.
+- Axiom Solutions International, Inc.: Distribution date. Left blank; not estimated.
+- Axiom Solutions International, Inc.: Post-distribution price weakness factor input. Left blank; not estimated.
+- Axiom Solutions International, Inc.: Insider open-market buying factor input. Left blank; not estimated.
+- MSG Rangers Corp.: Record date. Left blank; not estimated.
+- MSG Rangers Corp.: Parent CIK. Left blank; not estimated.
+- MSG Rangers Corp.: Parent total assets. Left blank; not estimated.
+- MSG Rangers Corp.: Closing price 20 trading days after the first close. Left blank; not estimated.
+- MSG Rangers Corp.: Relative company size factor input. Left blank; not estimated.
+- MSG Rangers Corp.: Post-distribution price weakness factor input. Left blank; not estimated.
+
+First-price rule: each displayed first price is the earliest returned regular daily close strictly after the filing-proven distribution date. When-issued tickers and prices are rejected.
+
+screens, not recommendations

@@ -14,11 +14,19 @@ Create a local `.env` from `.env.example`, add your real values, and run:
 python check_env.py
 ```
 
-The program shows only the first four characters of the API key, followed by `...`, and the SEC user-agent contact. It uses only the Python standard library.
+The program confirms that the required variables are present. It does not print
+either API key or the SEC user-agent value. It uses only the Python standard
+library.
 
 ## Seven-step SEC desk and four research roles
 
-Install the dependencies and put `API_KEY` and `SEC_USER_AGENT` in the local `.env` file. The complete desk runs seven deterministic SEC-data steps. It then runs four separate model roles based on Francis and Zhang (2026), Figure 1: Research Analyst, Financial Analyst, Investment Advisor, and Strategy Manager.
+Install the dependencies and put `API_KEY`, `FINANCIAL_DATASETS_API_KEY`, and
+`SEC_USER_AGENT` in the local `.env` file. `API_KEY` is only for OpenAI model
+and Verifier calls. `FINANCIAL_DATASETS_API_KEY` is only for financial market
+data from `https://api.financialdatasets.ai`. The complete desk runs seven
+deterministic SEC-data steps. It then runs four separate model roles based on
+Francis and Zhang (2026), Figure 1: Research Analyst, Financial Analyst,
+Investment Advisor, and Strategy Manager.
 
 Run the desk with one primary ticker, one or more peer tickers, and the current share price:
 

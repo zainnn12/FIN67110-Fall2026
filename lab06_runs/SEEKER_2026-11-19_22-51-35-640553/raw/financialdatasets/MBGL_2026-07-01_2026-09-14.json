@@ -1,0 +1,482 @@
+{
+  "end_date": "2026-09-14",
+  "endpoint": "https://api.financialdatasets.ai/prices",
+  "error": null,
+  "responses": [
+    {
+      "prices": [
+        {
+          "close": 21.19,
+          "high": 21.5,
+          "low": 18.1,
+          "open": 20.3,
+          "ticker": "MBGL",
+          "time": "2026-07-01",
+          "volume": 97846365
+        },
+        {
+          "close": 19.8,
+          "high": 20.95,
+          "low": 19.8,
+          "open": 20.95,
+          "ticker": "MBGL",
+          "time": "2026-07-02",
+          "volume": 26968146
+        },
+        {
+          "close": 19.26,
+          "high": 19.46,
+          "low": 17.67,
+          "open": 18.85,
+          "ticker": "MBGL",
+          "time": "2026-07-06",
+          "volume": 35850604
+        },
+        {
+          "close": 21.2,
+          "high": 21.42,
+          "low": 19.25,
+          "open": 19.25,
+          "ticker": "MBGL",
+          "time": "2026-07-07",
+          "volume": 21719176
+        },
+        {
+          "close": 21.5,
+          "high": 21.97,
+          "low": 19.91,
+          "open": 20.72,
+          "ticker": "MBGL",
+          "time": "2026-07-08",
+          "volume": 17409515
+        },
+        {
+          "close": 22.26,
+          "high": 22.33,
+          "low": 20.82,
+          "open": 21.19,
+          "ticker": "MBGL",
+          "time": "2026-07-09",
+          "volume": 9072722
+        },
+        {
+          "close": 20.8,
+          "high": 21.72,
+          "low": 20.75,
+          "open": 21.53,
+          "ticker": "MBGL",
+          "time": "2026-07-10",
+          "volume": 5922016
+        },
+        {
+          "close": 20.26,
+          "high": 21.05,
+          "low": 20.0,
+          "open": 20.05,
+          "ticker": "MBGL",
+          "time": "2026-07-13",
+          "volume": 5462231
+        },
+        {
+          "close": 20.57,
+          "high": 21.29,
+          "low": 20.21,
+          "open": 20.38,
+          "ticker": "MBGL",
+          "time": "2026-07-14",
+          "volume": 6641961
+        },
+        {
+          "close": 21.0,
+          "high": 21.4,
+          "low": 20.26,
+          "open": 20.36,
+          "ticker": "MBGL",
+          "time": "2026-07-15",
+          "volume": 6074215
+        },
+        {
+          "close": 20.66,
+          "high": 21.37,
+          "low": 20.13,
+          "open": 21.24,
+          "ticker": "MBGL",
+          "time": "2026-07-16",
+          "volume": 5457088
+        },
+        {
+          "close": 20.11,
+          "high": 20.78,
+          "low": 19.89,
+          "open": 20.21,
+          "ticker": "MBGL",
+          "time": "2026-07-17",
+          "volume": 6113143
+        },
+        {
+          "close": 20.12,
+          "high": 20.63,
+          "low": 19.88,
+          "open": 20.4,
+          "ticker": "MBGL",
+          "time": "2026-07-20",
+          "volume": 4715402
+        },
+        {
+          "close": 19.86,
+          "high": 20.08,
+          "low": 19.45,
+          "open": 19.91,
+          "ticker": "MBGL",
+          "time": "2026-07-21",
+          "volume": 5170310
+        },
+        {
+          "close": 20.38,
+          "high": 20.44,
+          "low": 19.76,
+          "open": 19.85,
+          "ticker": "MBGL",
+          "time": "2026-07-22",
+          "volume": 4829379
+        },
+        {
+          "close": 20.7,
+          "high": 20.73,
+          "low": 19.8,
+          "open": 19.81,
+          "ticker": "MBGL",
+          "time": "2026-07-23",
+          "volume": 4398905
+        },
+        {
+          "close": 20.55,
+          "high": 21.34,
+          "low": 20.38,
+          "open": 20.67,
+          "ticker": "MBGL",
+          "time": "2026-07-24",
+          "volume": 4174818
+        },
+        {
+          "close": 20.62,
+          "high": 21.09,
+          "low": 20.3,
+          "open": 20.3,
+          "ticker": "MBGL",
+          "time": "2026-07-27",
+          "volume": 2890056
+        },
+        {
+          "close": 21.72,
+          "high": 22.0,
+          "low": 19.91,
+          "open": 20.0,
+          "ticker": "MBGL",
+          "time": "2026-07-28",
+          "volume": 6185326
+        },
+        {
+          "close": 21.47,
+          "high": 21.99,
+          "low": 21.26,
+          "open": 21.48,
+          "ticker": "MBGL",
+          "time": "2026-07-29",
+          "volume": 3845983
+        },
+        {
+          "close": 20.48,
+          "high": 21.26,
+          "low": 20.11,
+          "open": 21.24,
+          "ticker": "MBGL",
+          "time": "2026-07-30",
+          "volume": 2852981
+        },
+        {
+          "close": 20.38,
+          "high": 20.46,
+          "low": 19.91,
+          "open": 20.1,
+          "ticker": "MBGL",
+          "time": "2026-07-31",
+          "volume": 2924748
+        },
+        {
+          "close": 21.3,
+          "high": 21.31,
+          "low": 20.27,
+          "open": 20.27,
+          "ticker": "MBGL",
+          "time": "2026-08-03",
+          "volume": 2612636
+        },
+        {
+          "close": 21.21,
+          "high": 21.32,
+          "low": 20.75,
+          "open": 20.75,
+          "ticker": "MBGL",
+          "time": "2026-08-04",
+          "volume": 3327411
+        },
+        {
+          "close": 21.26,
+          "high": 21.57,
+          "low": 20.91,
+          "open": 21.06,
+          "ticker": "MBGL",
+          "time": "2026-08-05",
+          "volume": 3331715
+        },
+        {
+          "close": 20.73,
+          "high": 21.25,
+          "low": 20.39,
+          "open": 21.02,
+          "ticker": "MBGL",
+          "time": "2026-08-06",
+          "volume": 3519333
+        },
+        {
+          "close": 19.7,
+          "high": 20.7,
+          "low": 18.71,
+          "open": 20.37,
+          "ticker": "MBGL",
+          "time": "2026-08-07",
+          "volume": 10921349
+        },
+        {
+          "close": 19.0,
+          "high": 19.7,
+          "low": 18.68,
+          "open": 19.21,
+          "ticker": "MBGL",
+          "time": "2026-08-10",
+          "volume": 4390851
+        },
+        {
+          "close": 19.37,
+          "high": 19.8,
+          "low": 18.73,
+          "open": 18.73,
+          "ticker": "MBGL",
+          "time": "2026-08-11",
+          "volume": 4880528
+        },
+        {
+          "close": 19.62,
+          "high": 19.73,
+          "low": 19.1,
+          "open": 19.25,
+          "ticker": "MBGL",
+          "time": "2026-08-12",
+          "volume": 4563612
+        },
+        {
+          "close": 19.83,
+          "high": 20.0,
+          "low": 19.55,
+          "open": 19.75,
+          "ticker": "MBGL",
+          "time": "2026-08-13",
+          "volume": 3758935
+        },
+        {
+          "close": 20.34,
+          "high": 21.14,
+          "low": 19.89,
+          "open": 20.82,
+          "ticker": "MBGL",
+          "time": "2026-08-14",
+          "volume": 3655444
+        },
+        {
+          "close": 19.72,
+          "high": 20.34,
+          "low": 19.63,
+          "open": 20.22,
+          "ticker": "MBGL",
+          "time": "2026-08-17",
+          "volume": 3776854
+        },
+        {
+          "close": 19.82,
+          "high": 20.22,
+          "low": 19.38,
+          "open": 19.68,
+          "ticker": "MBGL",
+          "time": "2026-08-18",
+          "volume": 5744733
+        },
+        {
+          "close": 20.69,
+          "high": 21.13,
+          "low": 19.94,
+          "open": 19.94,
+          "ticker": "MBGL",
+          "time": "2026-08-19",
+          "volume": 6031545
+        },
+        {
+          "close": 20.2,
+          "high": 20.83,
+          "low": 20.03,
+          "open": 20.82,
+          "ticker": "MBGL",
+          "time": "2026-08-20",
+          "volume": 2616807
+        },
+        {
+          "close": 19.85,
+          "high": 20.45,
+          "low": 19.72,
+          "open": 20.3,
+          "ticker": "MBGL",
+          "time": "2026-08-21",
+          "volume": 2902601
+        },
+        {
+          "close": 19.7,
+          "high": 20.22,
+          "low": 19.54,
+          "open": 19.85,
+          "ticker": "MBGL",
+          "time": "2026-08-24",
+          "volume": 4663342
+        },
+        {
+          "close": 20.26,
+          "high": 20.36,
+          "low": 19.7,
+          "open": 19.78,
+          "ticker": "MBGL",
+          "time": "2026-08-25",
+          "volume": 3450054
+        },
+        {
+          "close": 20.55,
+          "high": 20.98,
+          "low": 20.16,
+          "open": 20.16,
+          "ticker": "MBGL",
+          "time": "2026-08-26",
+          "volume": 2855733
+        },
+        {
+          "close": 20.27,
+          "high": 20.8,
+          "low": 20.25,
+          "open": 20.42,
+          "ticker": "MBGL",
+          "time": "2026-08-27",
+          "volume": 3945649
+        },
+        {
+          "close": 20.24,
+          "high": 20.51,
+          "low": 19.97,
+          "open": 20.36,
+          "ticker": "MBGL",
+          "time": "2026-08-28",
+          "volume": 3055074
+        },
+        {
+          "close": 20.3,
+          "high": 20.58,
+          "low": 20.04,
+          "open": 20.04,
+          "ticker": "MBGL",
+          "time": "2026-08-31",
+          "volume": 4365846
+        },
+        {
+          "close": 19.83,
+          "high": 20.19,
+          "low": 19.7,
+          "open": 20.12,
+          "ticker": "MBGL",
+          "time": "2026-09-01",
+          "volume": 3485532
+        },
+        {
+          "close": 20.38,
+          "high": 20.83,
+          "low": 19.76,
+          "open": 19.9,
+          "ticker": "MBGL",
+          "time": "2026-09-02",
+          "volume": 3782168
+        },
+        {
+          "close": 20.46,
+          "high": 20.9,
+          "low": 20.26,
+          "open": 20.73,
+          "ticker": "MBGL",
+          "time": "2026-09-03",
+          "volume": 3626706
+        },
+        {
+          "close": 20.58,
+          "high": 20.61,
+          "low": 20.21,
+          "open": 20.33,
+          "ticker": "MBGL",
+          "time": "2026-09-04",
+          "volume": 3369379
+        },
+        {
+          "close": 20.52,
+          "high": 20.9,
+          "low": 19.97,
+          "open": 20.6,
+          "ticker": "MBGL",
+          "time": "2026-09-08",
+          "volume": 4594351
+        },
+        {
+          "close": 19.76,
+          "high": 20.53,
+          "low": 19.75,
+          "open": 20.45,
+          "ticker": "MBGL",
+          "time": "2026-09-09",
+          "volume": 3906365
+        },
+        {
+          "close": 20.19,
+          "high": 20.23,
+          "low": 19.74,
+          "open": 19.75,
+          "ticker": "MBGL",
+          "time": "2026-09-10",
+          "volume": 3359047
+        },
+        {
+          "close": 20.16,
+          "high": 20.36,
+          "low": 19.91,
+          "open": 20.23,
+          "ticker": "MBGL",
+          "time": "2026-09-11",
+          "volume": 2754433
+        },
+        {
+          "close": 20.26,
+          "high": 20.61,
+          "low": 20.22,
+          "open": 20.31,
+          "ticker": "MBGL",
+          "time": "2026-09-14",
+          "volume": 3742494
+        }
+      ],
+      "ticker": "MBGL"
+    }
+  ],
+  "start_date": "2026-07-01",
+  "ticker": "MBGL"
+}

@@ -1,0 +1,491 @@
+{
+  "end_date": "2026-09-19",
+  "endpoint": "https://api.financialdatasets.ai/prices",
+  "error": null,
+  "responses": [
+    {
+      "prices": [
+        {
+          "close": 36.6,
+          "high": 40.04,
+          "low": 34.65,
+          "open": 35.5,
+          "ticker": "MFP",
+          "time": "2026-07-07",
+          "volume": 8306000
+        },
+        {
+          "close": 39.0,
+          "high": 39.59,
+          "low": 36.06,
+          "open": 36.49,
+          "ticker": "MFP",
+          "time": "2026-07-08",
+          "volume": 1977430
+        },
+        {
+          "close": 44.0,
+          "high": 45.02,
+          "low": 38.2,
+          "open": 39.47,
+          "ticker": "MFP",
+          "time": "2026-07-09",
+          "volume": 2138826
+        },
+        {
+          "close": 41.44,
+          "high": 45.18,
+          "low": 40.9,
+          "open": 44.75,
+          "ticker": "MFP",
+          "time": "2026-07-10",
+          "volume": 1914531
+        },
+        {
+          "close": 42.6,
+          "high": 44.4,
+          "low": 40.0,
+          "open": 40.61,
+          "ticker": "MFP",
+          "time": "2026-07-13",
+          "volume": 1363917
+        },
+        {
+          "close": 43.5,
+          "high": 44.1,
+          "low": 42.2,
+          "open": 42.83,
+          "ticker": "MFP",
+          "time": "2026-07-14",
+          "volume": 1480950
+        },
+        {
+          "close": 43.47,
+          "high": 44.81,
+          "low": 43.08,
+          "open": 43.43,
+          "ticker": "MFP",
+          "time": "2026-07-15",
+          "volume": 1042463
+        },
+        {
+          "close": 44.68,
+          "high": 45.47,
+          "low": 43.02,
+          "open": 43.89,
+          "ticker": "MFP",
+          "time": "2026-07-16",
+          "volume": 893591
+        },
+        {
+          "close": 41.87,
+          "high": 45.02,
+          "low": 40.47,
+          "open": 44.11,
+          "ticker": "MFP",
+          "time": "2026-07-17",
+          "volume": 1109108
+        },
+        {
+          "close": 43.42,
+          "high": 44.18,
+          "low": 41.12,
+          "open": 42.0,
+          "ticker": "MFP",
+          "time": "2026-07-20",
+          "volume": 846733
+        },
+        {
+          "close": 45.84,
+          "high": 46.68,
+          "low": 43.61,
+          "open": 44.02,
+          "ticker": "MFP",
+          "time": "2026-07-21",
+          "volume": 1087167
+        },
+        {
+          "close": 44.68,
+          "high": 47.33,
+          "low": 43.22,
+          "open": 46.0,
+          "ticker": "MFP",
+          "time": "2026-07-22",
+          "volume": 1064969
+        },
+        {
+          "close": 47.75,
+          "high": 47.78,
+          "low": 44.16,
+          "open": 45.19,
+          "ticker": "MFP",
+          "time": "2026-07-23",
+          "volume": 995073
+        },
+        {
+          "close": 47.2,
+          "high": 48.86,
+          "low": 46.05,
+          "open": 46.73,
+          "ticker": "MFP",
+          "time": "2026-07-24",
+          "volume": 1229985
+        },
+        {
+          "close": 47.75,
+          "high": 48.5,
+          "low": 46.09,
+          "open": 46.86,
+          "ticker": "MFP",
+          "time": "2026-07-27",
+          "volume": 754174
+        },
+        {
+          "close": 46.58,
+          "high": 48.0,
+          "low": 45.06,
+          "open": 48.0,
+          "ticker": "MFP",
+          "time": "2026-07-28",
+          "volume": 1237947
+        },
+        {
+          "close": 46.61,
+          "high": 47.91,
+          "low": 44.85,
+          "open": 46.98,
+          "ticker": "MFP",
+          "time": "2026-07-29",
+          "volume": 788405
+        },
+        {
+          "close": 48.14,
+          "high": 48.66,
+          "low": 45.5,
+          "open": 47.26,
+          "ticker": "MFP",
+          "time": "2026-07-30",
+          "volume": 1162050
+        },
+        {
+          "close": 47.95,
+          "high": 49.86,
+          "low": 47.09,
+          "open": 48.45,
+          "ticker": "MFP",
+          "time": "2026-07-31",
+          "volume": 918271
+        },
+        {
+          "close": 47.29,
+          "high": 48.86,
+          "low": 46.75,
+          "open": 47.53,
+          "ticker": "MFP",
+          "time": "2026-08-03",
+          "volume": 495097
+        },
+        {
+          "close": 47.29,
+          "high": 48.03,
+          "low": 44.08,
+          "open": 47.5,
+          "ticker": "MFP",
+          "time": "2026-08-04",
+          "volume": 689315
+        },
+        {
+          "close": 46.67,
+          "high": 48.39,
+          "low": 45.85,
+          "open": 46.91,
+          "ticker": "MFP",
+          "time": "2026-08-05",
+          "volume": 695175
+        },
+        {
+          "close": 46.71,
+          "high": 48.5,
+          "low": 45.38,
+          "open": 46.66,
+          "ticker": "MFP",
+          "time": "2026-08-06",
+          "volume": 900966
+        },
+        {
+          "close": 45.92,
+          "high": 48.59,
+          "low": 45.78,
+          "open": 48.34,
+          "ticker": "MFP",
+          "time": "2026-08-07",
+          "volume": 637967
+        },
+        {
+          "close": 44.82,
+          "high": 47.22,
+          "low": 43.55,
+          "open": 45.92,
+          "ticker": "MFP",
+          "time": "2026-08-10",
+          "volume": 583507
+        },
+        {
+          "close": 44.95,
+          "high": 45.95,
+          "low": 44.15,
+          "open": 44.9,
+          "ticker": "MFP",
+          "time": "2026-08-11",
+          "volume": 766725
+        },
+        {
+          "close": 43.74,
+          "high": 46.02,
+          "low": 43.45,
+          "open": 45.49,
+          "ticker": "MFP",
+          "time": "2026-08-12",
+          "volume": 710045
+        },
+        {
+          "close": 43.08,
+          "high": 45.16,
+          "low": 42.5,
+          "open": 44.04,
+          "ticker": "MFP",
+          "time": "2026-08-13",
+          "volume": 743274
+        },
+        {
+          "close": 45.57,
+          "high": 46.08,
+          "low": 42.0,
+          "open": 42.07,
+          "ticker": "MFP",
+          "time": "2026-08-14",
+          "volume": 1260526
+        },
+        {
+          "close": 45.0,
+          "high": 46.44,
+          "low": 44.35,
+          "open": 45.6,
+          "ticker": "MFP",
+          "time": "2026-08-17",
+          "volume": 636448
+        },
+        {
+          "close": 42.91,
+          "high": 45.24,
+          "low": 42.85,
+          "open": 44.5,
+          "ticker": "MFP",
+          "time": "2026-08-18",
+          "volume": 549402
+        },
+        {
+          "close": 45.71,
+          "high": 45.95,
+          "low": 42.92,
+          "open": 43.05,
+          "ticker": "MFP",
+          "time": "2026-08-19",
+          "volume": 1098432
+        },
+        {
+          "close": 48.95,
+          "high": 49.05,
+          "low": 45.08,
+          "open": 46.73,
+          "ticker": "MFP",
+          "time": "2026-08-20",
+          "volume": 1386671
+        },
+        {
+          "close": 50.71,
+          "high": 51.62,
+          "low": 49.21,
+          "open": 49.48,
+          "ticker": "MFP",
+          "time": "2026-08-21",
+          "volume": 696983
+        },
+        {
+          "close": 48.75,
+          "high": 51.34,
+          "low": 48.19,
+          "open": 50.65,
+          "ticker": "MFP",
+          "time": "2026-08-24",
+          "volume": 422691
+        },
+        {
+          "close": 51.47,
+          "high": 51.88,
+          "low": 48.01,
+          "open": 48.54,
+          "ticker": "MFP",
+          "time": "2026-08-25",
+          "volume": 640630
+        },
+        {
+          "close": 48.44,
+          "high": 52.58,
+          "low": 47.73,
+          "open": 50.12,
+          "ticker": "MFP",
+          "time": "2026-08-26",
+          "volume": 509213
+        },
+        {
+          "close": 48.64,
+          "high": 49.57,
+          "low": 48.17,
+          "open": 48.36,
+          "ticker": "MFP",
+          "time": "2026-08-27",
+          "volume": 609120
+        },
+        {
+          "close": 46.77,
+          "high": 49.92,
+          "low": 46.11,
+          "open": 48.65,
+          "ticker": "MFP",
+          "time": "2026-08-28",
+          "volume": 529837
+        },
+        {
+          "close": 46.88,
+          "high": 47.29,
+          "low": 46.01,
+          "open": 46.66,
+          "ticker": "MFP",
+          "time": "2026-08-31",
+          "volume": 428653
+        },
+        {
+          "close": 44.2,
+          "high": 47.95,
+          "low": 44.07,
+          "open": 46.63,
+          "ticker": "MFP",
+          "time": "2026-09-01",
+          "volume": 345109
+        },
+        {
+          "close": 45.04,
+          "high": 45.36,
+          "low": 43.12,
+          "open": 44.16,
+          "ticker": "MFP",
+          "time": "2026-09-02",
+          "volume": 405496
+        },
+        {
+          "close": 44.01,
+          "high": 46.17,
+          "low": 43.2,
+          "open": 45.28,
+          "ticker": "MFP",
+          "time": "2026-09-03",
+          "volume": 509098
+        },
+        {
+          "close": 45.21,
+          "high": 45.88,
+          "low": 44.04,
+          "open": 44.04,
+          "ticker": "MFP",
+          "time": "2026-09-04",
+          "volume": 253561
+        },
+        {
+          "close": 42.91,
+          "high": 45.19,
+          "low": 42.83,
+          "open": 44.96,
+          "ticker": "MFP",
+          "time": "2026-09-08",
+          "volume": 306758
+        },
+        {
+          "close": 42.75,
+          "high": 43.89,
+          "low": 42.1,
+          "open": 42.64,
+          "ticker": "MFP",
+          "time": "2026-09-09",
+          "volume": 291511
+        },
+        {
+          "close": 41.57,
+          "high": 43.4,
+          "low": 41.2,
+          "open": 42.13,
+          "ticker": "MFP",
+          "time": "2026-09-10",
+          "volume": 291993
+        },
+        {
+          "close": 41.61,
+          "high": 42.76,
+          "low": 40.93,
+          "open": 41.86,
+          "ticker": "MFP",
+          "time": "2026-09-11",
+          "volume": 315298
+        },
+        {
+          "close": 41.51,
+          "high": 42.84,
+          "low": 40.28,
+          "open": 40.77,
+          "ticker": "MFP",
+          "time": "2026-09-14",
+          "volume": 482249
+        },
+        {
+          "close": 43.58,
+          "high": 43.95,
+          "low": 40.84,
+          "open": 41.6,
+          "ticker": "MFP",
+          "time": "2026-09-15",
+          "volume": 645299
+        },
+        {
+          "close": 44.27,
+          "high": 46.15,
+          "low": 43.47,
+          "open": 43.47,
+          "ticker": "MFP",
+          "time": "2026-09-16",
+          "volume": 1023197
+        },
+        {
+          "close": 44.99,
+          "high": 45.69,
+          "low": 44.39,
+          "open": 45.38,
+          "ticker": "MFP",
+          "time": "2026-09-17",
+          "volume": 415030
+        },
+        {
+          "close": 42.34,
+          "high": 45.32,
+          "low": 41.96,
+          "open": 45.32,
+          "ticker": "MFP",
+          "time": "2026-09-18",
+          "volume": 1690913
+        }
+      ],
+      "ticker": "MFP"
+    }
+  ],
+  "start_date": "2026-07-06",
+  "ticker": "MFP"
+}
