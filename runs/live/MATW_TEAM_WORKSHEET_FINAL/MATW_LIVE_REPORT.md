@@ -5,7 +5,8 @@ Filings read: 10-K (accession 0000063296-25-000070); 10-Q (accession 0000063296-
 - Filing Accepted: 2026-11-20 08:22:14 EST (UTC−05:00), accession 0000063296-26-000118.
 - First saved agent-team run: 2026-11-20T22:05:09-05:00. This was after the November 20 market close.
 - Pre-reaction view time: not captured. No pre-reaction view can be asserted from these files.
-- Commit time: to be recorded from the first commit that contains this report.
+- First report commit: `bda922d626e4c59cd0ba1129063360731b01e421` at 2026-11-20 22:52:13 EST (UTC−05:00).
+- Twenty-four-hour result: **inside the window**. The first report commit was before 2026-11-21 08:22:14 EST.
 - Twenty-four-hour deadline: 2026-11-21 08:22:14 EST.
 
 ## Team and verifier evidence
