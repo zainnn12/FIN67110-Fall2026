@@ -1,0 +1,5 @@
+{
+  "returncode": 1,
+  "stdout": "Node: Verifier\n\nRole: Verifier\n",
+  "stderr": "ERROR: Verifier model call failed: Error code: 429 - {'error': {'code': 'credit_balance_exhausted', 'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'param': None, 'type': 'insufficient_quota'}}\n"
+}

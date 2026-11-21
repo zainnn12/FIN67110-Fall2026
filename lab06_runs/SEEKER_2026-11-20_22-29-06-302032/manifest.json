@@ -1,0 +1,17 @@
+{
+  "dropped_count": 132,
+  "factor_sha256": "3b81c64be6d5fdadbb4b96d8d8cda4b987c03cc401853012fb21c354b1b52007",
+  "factor_weights": [
+    35,
+    40,
+    25
+  ],
+  "form10_candidate_count": 149,
+  "ranked_count": 0,
+  "registry_csv": "registry.csv",
+  "registry_json": "registry.json",
+  "report": "seeker_report.md",
+  "run_date": "2026-11-20",
+  "spinoff_count": 17,
+  "start_date": "2025-11-18"
+}

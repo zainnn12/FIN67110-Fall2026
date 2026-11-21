@@ -24,11 +24,7 @@ from equity_research_team.team_flow import PROJECT_DIR, WORKSPACE_DIR
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 TICKER_RE = re.compile(r"^[A-Za-z][A-Za-z0-9.-]{0,9}$")
 PACKAGE_SOURCE_DIR = PROJECT_DIR / "src"
-AMD_FALLBACK_DIR = (
-    WORKSPACE_DIR
-    / "runs"
-    / "ADVANCED_MICRO_DEVICES_INC_2026-11-08_16-02-23-519971"
-)
+ONE_DESK = WORKSPACE_DIR / "one_desk.py"
 
 
 @dataclass(frozen=True)
@@ -40,8 +36,8 @@ class RunInput:
     @classmethod
     def from_payload(cls, payload: Mapping[str, Any]) -> "RunInput":
         ticker = str(payload.get("ticker", "")).strip().upper()
-        if not TICKER_RE.fullmatch(ticker):
-            raise ValueError("Use a valid U.S. ticker with at most 10 characters.")
+        if ticker != "SCREEN" and not TICKER_RE.fullmatch(ticker):
+            raise ValueError("Use a valid U.S. ticker with at most 10 characters, or SCREEN.")
 
         peer_tokens = [
             item
@@ -82,18 +78,7 @@ _lock = threading.Lock()
 
 
 def build_command(run_input: RunInput) -> list[str]:
-    command = [
-        sys.executable,
-        "-u",
-        "-m",
-        "equity_research_team.main",
-        run_input.ticker,
-    ]
-    if run_input.peers:
-        command.extend(("--peers", run_input.peers))
-    if run_input.price:
-        command.extend(("--price", run_input.price))
-    return command
+    return [sys.executable, "-u", str(ONE_DESK), "run", run_input.ticker]
 
 
 def build_environment(base_env: Mapping[str, str] | None = None) -> dict[str, str]:
@@ -107,21 +92,6 @@ def build_environment(base_env: Mapping[str, str] | None = None) -> dict[str, st
         dict.fromkeys(path for path in import_paths if path)
     )
     return environment
-
-
-def fallback_report_for(run_input: RunInput) -> Path | None:
-    """Return the saved AMD fallback only for the requested AMD inputs."""
-    if run_input.ticker != "AMD" or run_input.peers != "NVDA,INTC,AVGO":
-        return None
-    if not run_input.price or Decimal(run_input.price) != Decimal("466.84"):
-        return None
-    report = AMD_FALLBACK_DIR / "fallback_report.md"
-    return report if report.is_file() else None
-
-
-def is_credit_balance_exhausted(output: str) -> bool:
-    lowered = output.lower()
-    return "429" in lowered and "credit_balance_exhausted" in lowered
 
 
 def _save_ui_evidence(record: RunRecord, run_input: RunInput) -> None:
@@ -141,10 +111,6 @@ def _save_ui_evidence(record: RunRecord, run_input: RunInput) -> None:
             item["name"] for item in events if item.get("kind") == "node"
         ],
         "report_path": record.report_path or None,
-        "fallback_label": next(
-            (item.get("label") for item in events if item.get("kind") == "fallback"),
-            None,
-        ),
         "events": events,
     }
     run_dir.mkdir(parents=True, exist_ok=True)
@@ -162,7 +128,7 @@ def _run_team(run_id: str, run_input: RunInput) -> None:
     record = _runs[run_id]
     record.status = "running"
     _emit(record, "status", status="running")
-    verified_path: Path | None = None
+    final_path: Path | None = None
     process_output: list[str] = []
     try:
         process = subprocess.Popen(
@@ -179,38 +145,24 @@ def _run_team(run_id: str, run_input: RunInput) -> None:
             line = raw_line.rstrip("\n")
             process_output.append(line)
             if line.startswith("Run folder: "):
-                record.run_dir = str(Path(line.removeprefix("Run folder: ").strip()).resolve())
+                candidate_dir = Path(line.removeprefix("Run folder: ").strip())
+                if not candidate_dir.is_absolute(): candidate_dir = WORKSPACE_DIR / candidate_dir
+                record.run_dir = str(candidate_dir.resolve())
             if line.startswith("Node: "):
                 _emit(record, "node", name=line.removeprefix("Node: "))
-            elif line.startswith("Verified report: "):
-                candidate = Path(line.removeprefix("Verified report: ").strip())
-                if not candidate.is_absolute():
-                    candidate = PROJECT_DIR / candidate
-                verified_path = candidate.resolve()
-                record.report_path = str(verified_path)
+            elif line.startswith("Final report: "):
+                candidate = Path(line.removeprefix("Final report: ").strip())
+                if not candidate.is_absolute(): candidate = WORKSPACE_DIR / candidate
+                final_path = candidate.resolve()
+                record.report_path = str(final_path)
             _emit(record, "log", line=line)
         return_code = process.wait()
         if return_code != 0:
-            combined_output = "\n".join(process_output)
-            fallback_path = fallback_report_for(run_input)
-            if is_credit_balance_exhausted(combined_output) and fallback_path:
-                record.report_path = str(fallback_path.resolve())
-                record.report = fallback_path.read_text(encoding="utf-8")
-                record.status = "fallback"
-                _emit(
-                    record,
-                    "fallback",
-                    status="fallback",
-                    label="Fallback — not a live agent-team run",
-                    report_path=record.report_path,
-                    report=record.report,
-                )
-                _save_ui_evidence(record, run_input)
-                return
-            raise RuntimeError(f"The agent team stopped with exit code {return_code}.")
-        if verified_path is None or not verified_path.is_file():
-            raise RuntimeError("The run ended without a saved verified report.")
-        record.report = verified_path.read_text(encoding="utf-8")
+            exact_error = next((line for line in reversed(process_output) if line.startswith("ERROR:")), None)
+            raise RuntimeError(exact_error or f"The joined desk stopped with exit code {return_code}.")
+        if final_path is None or not final_path.is_file():
+            raise RuntimeError("The run ended without a saved final report.")
+        record.report = final_path.read_text(encoding="utf-8")
         record.status = "complete"
         _emit(
             record,

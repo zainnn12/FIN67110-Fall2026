@@ -1,0 +1,9 @@
+{
+  "model": "gpt-6-astra",
+  "probe": "State your documented training-data knowledge cutoff.",
+  "live_probe_status": "not sent: the prior authorized OpenAI run exhausted the account credits; no model answer is recorded",
+  "provider_documented_cutoff": "2026-04-30",
+  "official_page_checked": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "page_check_date": "2026-11-20",
+  "source_type": "official OpenAI API model documentation"
+}

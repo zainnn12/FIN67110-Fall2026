@@ -12,13 +12,21 @@ from spinoff_worksheet_hook import validate_report
 from worksheet import aligned_owner_cash_flow, persona_call, save_market_data, calculate_liquidity
 
 def test_hook_passes_clean_and_refuses_seeded_amount_by_line(tmp_path):
-    (tmp_path/"facts.json").write_text(json.dumps({"facts":{"net_income":{"current":{"val":10}}}}))
-    (tmp_path/"worksheet.json").write_text(json.dumps({"computed":10}))
-    clean=tmp_path/"clean.md"; clean.write_text("Owner cash flow is 10 USD millions.\n")
+    (tmp_path/"facts.json").write_text(json.dumps({"facts":{"net_income":{"current":{"val":10},"prior":{"val":-5}}}}))
+    (tmp_path/"worksheet.json").write_text(json.dumps({"computed":10,"prior":-5}))
+    clean=tmp_path/"clean.md"; clean.write_text("Owner cash flow is 10 USD millions; prior net income was (5).\n")
     assert validate_report(clean,tmp_path)
-    seeded=tmp_path/"seeded.md"; seeded.write_text("Owner cash flow is 987654321 USD millions.\n")
+    seeded=tmp_path/"seeded.md"; seeded.write_text("Owner cash flow is 11 USD millions.\n")
     with pytest.raises(ValueError,match="line 1"):
         validate_report(seeded,tmp_path)
+
+def test_hook_keeps_parenthetical_negative_sign(tmp_path):
+    (tmp_path/"facts.json").write_text(json.dumps({"cash_flow":-5}))
+    good=tmp_path/"good.md";good.write_text("Cash flow: (5)\n")
+    bad=tmp_path/"bad.md";bad.write_text("Cash flow: 5\n")
+    assert validate_report(good,tmp_path)
+    with pytest.raises(ValueError,match="line 1"):
+        validate_report(bad,tmp_path)
 
 def test_owner_cash_flow_requires_matching_periods_and_accession():
     facts={"net_income":{"current":{"val":20,"start":"2025-01-01","end":"2025-12-31","accn":"A"}},
@@ -27,15 +35,44 @@ def test_owner_cash_flow_requires_matching_periods_and_accession():
            "diluted_shares":{"current":{"val":10,"start":"2025-01-01","end":"2025-12-31","accn":"A"}}}
     value,_,basis=aligned_owner_cash_flow({"worksheet_basis":"Form 10 comparable annual pro-forma","worksheet_facts":facts})
     assert value==Decimal("17")
-    assert basis=="aligned reported annual figures"
+    assert basis=="aligned Form 10 comparable annual pro-forma figures"
     facts["diluted_shares"]["current"]["end"]="2025-09-30"
     value,_,_=aligned_owner_cash_flow({"worksheet_basis":"Form 10 comparable annual pro-forma","worksheet_facts":facts})
     assert value is None
+
+def test_ttm_is_preferred_and_single_quarter_is_rejected():
+    def facts(amount):
+        return {key:{"current":{"val":value,"start":"2025-01-01","end":"2025-12-31","accn":"TTM"}} for key,value in {
+            "net_income":amount,"depreciation_and_amortization":5,"property_additions":-8,"diluted_shares":10}.items()}
+    data={"reported_after_spin_ttm":{"facts":facts(20)},"form10_comparable_annual_pro_forma":{"facts":facts(100)}}
+    value,_,basis=aligned_owner_cash_flow(data)
+    assert value==Decimal("17")
+    assert basis.startswith("aligned reported-after-spin trailing-twelve-month")
+    one_quarter=facts(20)
+    for item in one_quarter.values(): item["current"]["start"]="2025-10-01"
+    value,_,basis=aligned_owner_cash_flow({"reported_after_spin_ttm":{"facts":one_quarter}})
+    assert value is None and basis.startswith("not computed")
 
 def test_no_unidentified_annual_basis_is_not_computed():
     value,_,basis=aligned_owner_cash_flow({"facts":{}})
     assert value is None
     assert basis.startswith("not computed")
+
+def test_high_conviction_requires_all_five_known_inputs_and_liquidity(tmp_path):
+    closes={"closes":[{"close":"10","volume":"100000","date":"2026-01-01"},{"close":"10","volume":"100000","date":"2026-01-02"}]}
+    (tmp_path/"worksheet_closes.json").write_text(json.dumps(closes))
+    (tmp_path/"facts.json").write_text(json.dumps({
+        "owner_cash_flow_periods":[{"value":"10","period":"FY25","tag":"OCF25"},{"value":"12","period":"FY26","tag":"OCF26"}],
+        "parent_burden":{"status":"no_material_obligations","source":"10-Q accession X","section":"Debt note","amount":"none stated","period":"FY26"},
+        "insider_data_complete":True,"insider_purchases":[]
+    }))
+    known={"number":"known"}
+    result={"base_owner_cash_flow_usd_millions":"10","diluted_shares_millions":"1","last_eligible_close_usd":"50","low_equity_value_usd_millions":"66.6666666667","criterion_scores":{k:dict(known) for k in ("margin_of_safety","owner_cash_flow","parent_burden","insider_alignment","liquidity")}}
+    calculate_liquidity(result,tmp_path)
+    assert result["conviction"]=="High"
+    facts=json.loads((tmp_path/"facts.json").read_text());facts["parent_burden"]={"status":"not known"};(tmp_path/"facts.json").write_text(json.dumps(facts))
+    calculate_liquidity(result,tmp_path)
+    assert result["conviction"]=="Low"
 
 def test_persona_call_occurs_once_and_liquidity_uses_saved_volume(tmp_path):
     class FakeClient:

@@ -2,6 +2,7 @@
 """Deterministic owner-cash-flow worksheet for a saved team run."""
 from __future__ import annotations
 import argparse, json, os, re, sys
+from collections.abc import Mapping
 from datetime import date, timedelta
 from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from pathlib import Path
@@ -28,24 +29,37 @@ def fact_value(facts, key):
     return Decimal(str(current["val"])), item, current
 
 def aligned_owner_cash_flow(data):
-    basis=data.get("worksheet_basis")
-    if basis not in {"reported-after-spin trailing-twelve-month", "Form 10 comparable annual pro-forma"}:
-        return None, {}, "not computed: neither a valid reported-after-spin TTM nor comparable annual Form 10 pro-forma inputs are identified"
-    facts = data.get("worksheet_facts", data.get("facts", {}))
-    vals = {key: fact_value(facts, key) for key in ("net_income", "depreciation_and_amortization", "property_additions", "diluted_shares")}
-    periods = [v[2].get("end") for v in vals.values() if v[0] is not None]
-    accessions = [v[2].get("accn") for v in vals.values() if v[0] is not None]
-    if len(periods) != 4 or len(set(periods)) != 1 or len(set(accessions)) != 1:
-        return None, vals, "not computed: required annual figures are missing or not period- and filing-aligned"
-    if any(not v[2].get("start") for v in vals.values()):
-        return None, vals, "not computed: a required flow fact has no comparable annual start date"
-    starts = [v[2].get("start") for v in vals.values()]
-    if len(set(starts)) != 1:
-        return None, vals, "not computed: annual periods do not match"
-    income, da, capex, shares = [vals[k][0] for k in ("net_income", "depreciation_and_amortization", "property_additions", "diluted_shares")]
-    # SEC capex tags are cash outflows in XBRL. The worksheet formula subtracts capex spend.
-    base_usd = income + da - abs(capex)
-    return base_usd, vals, "aligned reported annual figures"
+    required=("net_income","depreciation_and_amortization","property_additions","diluted_shares")
+    candidates=[]
+    ttm=data.get("reported_after_spin_ttm")
+    if isinstance(ttm,Mapping): candidates.append(("reported-after-spin trailing-twelve-month",ttm.get("facts",ttm)))
+    if data.get("worksheet_basis")=="reported-after-spin trailing-twelve-month":
+        candidates.append(("reported-after-spin trailing-twelve-month",data.get("worksheet_facts",data.get("facts",{}))))
+    proforma=data.get("form10_comparable_annual_pro_forma")
+    if isinstance(proforma,Mapping): candidates.append(("Form 10 comparable annual pro-forma",proforma.get("facts",proforma)))
+    if data.get("worksheet_basis")=="Form 10 comparable annual pro-forma":
+        candidates.append(("Form 10 comparable annual pro-forma",data.get("worksheet_facts",data.get("facts",{}))))
+    if not candidates:
+        return None, {}, "not computed: neither reported-after-spin TTM nor comparable annual Form 10 pro-forma inputs are identified"
+    errors=[]
+    for basis,facts in candidates:
+        vals={key:fact_value(facts,key) for key in required}
+        if any(v[0] is None for v in vals.values()):
+            errors.append(f"{basis} has missing required figures");continue
+        points=[v[2] for v in vals.values()]
+        starts={p.get("start") for p in points}; ends={p.get("end") for p in points}; accs={p.get("accn") for p in points}
+        if len(starts)!=1 or len(ends)!=1 or len(accs)!=1 or None in starts or None in ends or None in accs:
+            errors.append(f"{basis} figures do not share one cited filing and matched start/end dates");continue
+        start=next(iter(starts));end=next(iter(ends))
+        from datetime import date
+        try: duration=(date.fromisoformat(end)-date.fromisoformat(start)).days
+        except (TypeError,ValueError): duration=0
+        if not 360 <= duration <= 370:
+            errors.append(f"{basis} is not a full comparable annual or trailing-twelve-month period");continue
+        income,da,capex,shares=[vals[k][0] for k in required]
+        base_usd=income+da-abs(capex)
+        return base_usd,vals,f"aligned {basis} figures"
+    return None, vals, "not computed: "+"; ".join(errors)
 
 def source_texts(run_dir):
     return [p.read_text(errors="replace") for p in run_dir.glob("*.txt") if p.is_file()]
@@ -87,7 +101,7 @@ def assemble(run_dir: Path, ticker: str):
         if price is not None:
             result["low_value_per_share_usd"] = str(low_eq / shares_m)
             result["mid_value_per_share_usd"] = str(mid_eq / shares_m)
-            result["view"] = "Computed" if price <= low_eq / shares_m else "Not cheap at last eligible close"
+            result["view"] = "Price is at or below low-case value" if price <= low_eq / shares_m else "Price is above low-case value"
             result["conviction"] = "Low"
         else:
             result["view"] = "Not computed: price unavailable"
@@ -130,6 +144,44 @@ def save_market_data(result, run_dir, api_key=None, reader=None):
         result["volume_end_date"]=close_rows[-1]["date"]
     return close_rows
 
+def score_persona_criteria(result,run_dir,data):
+    price=Decimal(result["last_eligible_close_usd"]) if result.get("last_eligible_close_usd") else None
+    low=Decimal(result["low_value_per_share_usd"]) if result.get("low_value_per_share_usd") else None
+    if price is not None and low is not None:
+        margin_score=2 if price<=low*Decimal("0.80") else (1 if price<=low else 0)
+        margin={"score":margin_score,"basis":"price compared with low-case value per share","number":str(price),"filing_tag":"saved daily close and deterministic low-case worksheet computation","period":result.get("price_date","not known"),"calculation":f"price {price} compared with 80% of low case {low*Decimal('0.80')} and low case {low}"}
+    else:
+        margin={"score":0,"basis":"not computed: price-to-low-case comparison unavailable","number":"not known","filing_tag":"not known","period":"not known","calculation":"not computed"}
+    periods=data.get("owner_cash_flow_periods",[])
+    if isinstance(periods,list) and periods:
+        valid=[x for x in periods if x.get("value") is not None and x.get("period") and x.get("tag")]
+        positive=[x for x in valid if Decimal(str(x["value"]))>0]
+        owner_score=min(2,len(positive))
+        owner={"score":owner_score,"basis":"positive valid owner-cash-flow periods only","number":"; ".join(str(x["value"]) for x in valid) or "not known","filing_tag":"; ".join(str(x["tag"]) for x in valid) or "not known","period":"; ".join(str(x["period"]) for x in valid) or "not known","calculation":f"{len(positive)} positive values among {len(valid)} valid cited periods"}
+    elif result.get("base_owner_cash_flow_usd_millions") is not None:
+        value=Decimal(result["base_owner_cash_flow_usd_millions"]); owner_score=1 if value>0 else 0
+        owner={"score":owner_score,"basis":"one valid base owner-cash-flow period; second comparable period not established","number":str(value),"filing_tag":"saved aligned XBRL facts","period":result.get("period","not known"),"calculation":"one positive valid period" if value>0 else "one nonpositive valid period"}
+    else:
+        owner={"score":0,"basis":"not known: valid comparable cash-flow periods are unavailable","number":"not known","filing_tag":"not known","period":"not known","calculation":"not computed"}
+    burden=data.get("parent_burden") or {}; burden_status=burden.get("status")
+    if burden_status=="no_material_obligations" and burden.get("source") and burden.get("section"):
+        parent={"score":2,"basis":"filing states no material inherited debt or restrictions","number":burden.get("amount","none stated"),"filing_tag":burden.get("source"),"period":burden.get("period","not known"),"calculation":burden.get("section")}
+    elif burden_status=="obligations_stated_manageable" and burden.get("amount") is not None and burden.get("owner_cash_flow") is not None and burden.get("source") and burden.get("calculation"):
+        parent={"score":1,"basis":"supported obligations shown manageable relative to owner cash flow","number":str(burden["amount"]),"filing_tag":burden["source"],"period":burden.get("period","not known"),"calculation":burden["calculation"]}
+    else:
+        parent={"score":0,"basis":"not known: inherited obligations or restrictions are not established","number":"not known","filing_tag":"not known","period":"not known","calculation":"not computed"}
+    purchases=data.get("insider_purchases",[]); distinct={str(x.get("insider_id")) for x in purchases if x.get("qualifying") is True and x.get("insider_id") and x.get("source") and x.get("period")}
+    if data.get("insider_data_complete") is True:
+        insider_score=2 if len(distinct)>=2 else (1 if len(distinct)==1 else 0)
+        insider={"score":insider_score,"basis":"distinct qualifying Form 4 code-P purchasers","number":str(len(distinct)),"filing_tag":"; ".join(sorted({str(x.get('source')) for x in purchases if x.get('qualifying') is True and x.get('source')})) or "Form 4 code-P search complete; none qualifying","period":"first 30 days after distribution","calculation":f"{len(distinct)} distinct qualifying insiders"}
+    else:
+        insider={"score":0,"basis":"not known: complete first-30-day Form 4 review is unavailable","number":"not known","filing_tag":"not known","period":"not known","calculation":"not computed"}
+    pct=Decimal(result["purchase_size_percent"]) if result.get("purchase_size_percent") is not None else None
+    liquidity_score=2 if pct is not None and pct<=Decimal("0.5") else (1 if pct is not None and pct<=Decimal("1") else 0)
+    liquidity={"score":liquidity_score,"basis":"median daily dollar volume compared with client purchase","number":result.get("median_daily_dollar_volume_usd") or "not known","filing_tag":"Financial Datasets daily close and volume" if pct is not None else "not known","period":f"{result.get('volume_start_date','not known')} to {result.get('volume_end_date','not known')}","calculation":f"{CONFIG['client_purchase_usd']} / {result.get('median_daily_dollar_volume_usd') or 'not known'} × 100 = {result.get('purchase_size_percent') or 'not known'}%"}
+    result["criterion_scores"]={"margin_of_safety":margin,"owner_cash_flow":owner,"parent_burden":parent,"insider_alignment":insider,"liquidity":liquidity}
+    return result
+
 def calculate_liquidity(result, run_dir):
     close_rows=json.loads((run_dir/"worksheet_closes.json").read_text()).get("closes",[])
     if close_rows:
@@ -145,17 +197,19 @@ def calculate_liquidity(result, run_dir):
     if result["base_owner_cash_flow_usd_millions"] is not None and result["diluted_shares_millions"] and result["last_eligible_close_usd"]:
         low=Decimal(result.get("low_equity_value_usd_millions",0))/Decimal(result["diluted_shares_millions"])
         result["low_value_per_share_usd"]=str(low)
-        result["view"]="Computed" if Decimal(result["last_eligible_close_usd"])<=low else "Not cheap at last eligible close"
-        result["conviction"]="Low"
+        price=Decimal(result["last_eligible_close_usd"])
+        result["view"]="Price is at or below low-case value" if price<=low else "Price is above low-case value"
+        data=json.loads((run_dir/"facts.json").read_text()) if (run_dir/"facts.json").exists() else {}
+        score_persona_criteria(result,run_dir,data)
+        scores=result.get("criterion_scores",{})
+        known_all=all(item.get("number") not in (None,"not known") for item in scores.values())
+        positive=Decimal(result["base_owner_cash_flow_usd_millions"])>0
+        pct=Decimal(result["purchase_size_percent"]) if result.get("purchase_size_percent") else None
+        result["conviction"]="High" if price<=low*Decimal("0.80") and positive and known_all and pct is not None and pct<=Decimal("1") else "Low"
     pct=Decimal(result["purchase_size_percent"]) if result.get("purchase_size_percent") else None
     liquidity_score=2 if pct is not None and pct<=Decimal("0.5") else (1 if pct is not None and pct<=Decimal("1") else 0)
-    result["criterion_scores"]={
-        "margin_of_safety":{"score":0,"basis":"not computed: price-to-low-case comparison unavailable","number":"not known","filing_tag":"not known","period":"not known","calculation":"not computed"},
-        "owner_cash_flow":{"score":0,"basis":"not known: valid comparable historical/pro-forma and reported-after-spin cash flow is unavailable","number":"not known","filing_tag":"not known","period":"not known","calculation":"not computed"},
-        "parent_burden":{"score":0,"basis":"not known: inherited debt or restrictions are not established","number":"not known","filing_tag":"not known","period":"not known","calculation":"not computed"},
-        "insider_alignment":{"score":0,"basis":"not known: qualifying code-P Form 4 purchases for the complete window are unavailable","number":"not known","filing_tag":"not known","period":"not known","calculation":"not computed"},
-        "liquidity":{"score":liquidity_score,"basis":"saved daily close multiplied by saved daily volume; median daily dollar volume compared with the client purchase","number":result.get("median_daily_dollar_volume_usd") or "not known","filing_tag":"Financial Datasets daily close and volume","period":f"{result.get('volume_start_date','not known')} to {result.get('volume_end_date','not known')}","calculation":f"{CONFIG['client_purchase_usd']} / {result.get('median_daily_dollar_volume_usd') or 'not known'} × 100 = {result.get('purchase_size_percent') or 'not known'}%"},
-    }
+    data=json.loads((run_dir/"facts.json").read_text()) if (run_dir/"facts.json").exists() else {}
+    score_persona_criteria(result,run_dir,data)
     return result
 
 def format_output(result, persona):

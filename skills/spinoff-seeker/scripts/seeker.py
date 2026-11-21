@@ -482,9 +482,7 @@ def extract_parent_name(
             continue
         value = re.sub(r"\s+", " ", match.group("parent")).strip(" ,.;")
         value = _trim_parent_candidate(value)
-        if value.lower().startswith(("the distribution", "our common")):
-            continue
-        if not value or re.search(r"\b(?:resident for tax purposes|functional currency|other businesses following|from 20\d{2} until 20\d{2})\b", value, re.I):
+        if not _plausible_parent_entity_name(value):
             continue
         return {
             "value": value,
@@ -511,6 +509,20 @@ def _trim_parent_candidate(value: str) -> str:
         flags=re.I,
     )[0]
     return value.strip(" ,.;:’'\"()")
+
+
+def _plausible_parent_entity_name(value: str) -> bool:
+    """Accept only short entity-style names; leave unmatched facts unavailable."""
+    value = value.strip()
+    if not value or len(value) > 100:
+        return False
+    if re.search(r"\b(?:resident for tax purposes|functional currency|from 20\d{2} until 20\d{2})\b", value, re.I):
+        return False
+    words = re.findall(r"[A-Za-z][A-Za-z&.'’\-]*", value)
+    if not words or len(words) > 7 or not words[0][0].isupper():
+        return False
+    particles = {"de", "del", "der", "di", "du", "and", "the", "of", "for"}
+    return all(word[0].isupper() or word.casefold() in particles for word in words)
 
 
 def extract_total_assets(
@@ -1119,6 +1131,38 @@ def _download_parent_distribution_evidence(
             return
 
 
+def _save_cited_fact_sources(
+    client: SecClient, raw_sec: Path, records: Sequence[Mapping[str, Any]]
+) -> list[dict[str, str]]:
+    """Persist any cited SEC source not already present in the run evidence."""
+    existing_names = {path.name for path in raw_sec.rglob("*") if path.is_file()}
+    saved: list[dict[str, str]] = []
+    for record in records:
+        facts = record.get("facts")
+        if not isinstance(facts, Mapping):
+            continue
+        for name, fact in facts.items():
+            if not isinstance(fact, Mapping):
+                continue
+            source = fact.get("source")
+            if not isinstance(source, Mapping):
+                continue
+            url = str(source.get("url", ""))
+            accession = str(source.get("accession", ""))
+            match = re.search(r"/data/(\d+)/", url)
+            if not url or not accession or not match:
+                continue
+            compact = accession.replace("-", "")
+            if any(compact in filename or accession in filename for filename in existing_names):
+                continue
+            cik = int(match.group(1))
+            destination = raw_sec / f"CIK{cik:010d}" / "cited_sources" / f"{source.get('form','SEC')}_{compact}.txt"
+            _save_sec_resource(client, url, destination)
+            existing_names.add(destination.name)
+            saved.append({"fact": str(name), "accession": accession, "url": url, "path": str(destination)})
+    return saved
+
+
 def run_live_seeker(
     *,
     start_date: date,
@@ -1253,10 +1297,6 @@ def run_live_seeker(
                 parent_cik = int(parent_record["cik_str"])
                 # Use the canonical SEC registrant name after a source-backed match.
                 parent_fact["value"] = str(parent_record.get("title", "")).strip()
-            else:
-                # A prose fragment is not an established parent identity.
-                facts["parent"] = None
-                parent_fact = None
 
         parent_assets = None
         if parent_record is not None and parent_cik is not None:
@@ -1463,6 +1503,8 @@ def run_live_seeker(
         "records": records,
         "dropped": dropped,
     }
+    cited_source_files = _save_cited_fact_sources(client, raw_sec, records)
+    _write_json(run_dir / "cited_source_files.json", cited_source_files)
     evaluation = evaluate_snapshot(snapshot, factors)
     _write_json(run_dir / "evaluation_snapshot.json", snapshot)
     _write_json(run_dir / "evaluation_final.json", evaluation)

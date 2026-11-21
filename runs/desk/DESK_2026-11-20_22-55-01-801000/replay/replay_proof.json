@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "network_calls": 0,
+  "networking": "disabled by file-only implementation",
+  "byte_identical": true,
+  "sha256_saved": "5d6a7bc404626c4720a75a2294bf5cc541859108151ecad26ac5068c1172abf0",
+  "sha256_replay": "5d6a7bc404626c4720a75a2294bf5cc541859108151ecad26ac5068c1172abf0"
+}

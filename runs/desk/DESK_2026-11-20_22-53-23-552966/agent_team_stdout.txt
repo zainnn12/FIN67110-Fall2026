@@ -1,0 +1,63 @@
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: a065a4ab-c152-44fe-b18c-b3ec7b905846                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.35                                                    │
+│  Latest version:  1.15.44                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: a065a4ab-c152-44fe-b18c-b3ec7b905846                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: run_steps                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Node: SEC Step 1
+
+[Step 1/7] Resolve ticker to CIK
+Ticker: MSGR
+Company: MSG Rangers Corp.
+CIK: 0002132873
+Node: SEC Step 2
+
+[Step 2/7] Select filings and read EDGAR acceptance times
+╭─────────────────────────── ❌ Flow Method Failed ────────────────────────────╮
+│                                                                              │
+│  Method: run_steps                                                           │
+│  Status: Failed                                                              │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── ❌ Flow Failure ───────────────────────────────╮
+│                                                                              │
+│  Flow Execution Failed                                                       │
+│  Name: EquityResearchTeamFlow                                                │
+│  ID: a065a4ab-c152-44fe-b18c-b3ec7b905846                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+

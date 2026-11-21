@@ -1,0 +1,669 @@
+{
+  "run": "lab06_runs/SEEKER_2026-11-20_22-29-06-302032",
+  "citation_count": 62,
+  "quote_matches": 62,
+  "all_quotes_supported": true,
+  "citations": [
+    {
+      "company": "Cortigent, Inc.",
+      "ticker": "",
+      "fact": "parent",
+      "accession": "0001753926-25-001532",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0001958489/Form10_0001753926-25-001532_information.txt",
+        "raw/sec/CIK0001958489/Form10_0001753926-25-001532.txt"
+      ]
+    },
+    {
+      "company": "Cortigent, Inc.",
+      "ticker": "",
+      "fact": "record_date",
+      "accession": "0001753926-25-001582",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0001266806/cited_sources/8-K_000175392625001582.htm",
+        "raw/sec/CIK0001958489/parent_CIK0001266806/parent_8-K_000175392625001582.txt",
+        "raw/sec/CIK0001958489/parent_CIK0001266806/parent_8-K_000175392625001582.html"
+      ]
+    },
+    {
+      "company": "Cortigent, Inc.",
+      "ticker": "",
+      "fact": "spinoff_total_assets",
+      "accession": "0001753926-25-001532",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0001958489/Form10_0001753926-25-001532_information.txt"
+      ]
+    },
+    {
+      "company": "Electrified Materials Corp / IN",
+      "ticker": "",
+      "fact": "parent",
+      "accession": "0001477932-25-009149",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002049860/Form10_0001477932-25-009149.txt",
+        "raw/sec/CIK0002049860/Form10_0001477932-25-009149_information.txt"
+      ]
+    },
+    {
+      "company": "Electrified Materials Corp / IN",
+      "ticker": "",
+      "fact": "spinoff_total_assets",
+      "accession": "0001477932-25-009149",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002049860/Form10_0001477932-25-009149_information.txt"
+      ]
+    },
+    {
+      "company": "Qnity Electronics, Inc.",
+      "ticker": "Q",
+      "fact": "distribution_ratio",
+      "accession": "0001666700-25-000054",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002058873/parent_CIK0001666700/parent_8-K_000166670025000054.txt",
+        "raw/sec/CIK0001666700/cited_sources/8-K_000166670025000054.htm",
+        "raw/sec/CIK0002058873/parent_CIK0001666700/parent_8-K_000166670025000054.html"
+      ]
+    },
+    {
+      "company": "Qnity Electronics, Inc.",
+      "ticker": "Q",
+      "fact": "parent",
+      "accession": "0001193125-25-223466",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002058873/Form10_0001193125-25-223466_information.txt"
+      ]
+    },
+    {
+      "company": "Qnity Electronics, Inc.",
+      "ticker": "Q",
+      "fact": "record_date",
+      "accession": "0001666700-25-000054",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002058873/parent_CIK0001666700/parent_8-K_000166670025000054.txt",
+        "raw/sec/CIK0001666700/cited_sources/8-K_000166670025000054.htm",
+        "raw/sec/CIK0002058873/parent_CIK0001666700/parent_8-K_000166670025000054.html"
+      ]
+    },
+    {
+      "company": "Qnity Electronics, Inc.",
+      "ticker": "Q",
+      "fact": "spinoff_total_assets",
+      "accession": "0001193125-25-223466",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002058873/Form10_0001193125-25-223466_information.txt"
+      ]
+    },
+    {
+      "company": "Versigent PLC",
+      "ticker": "VGNT",
+      "fact": "distribution_date",
+      "accession": "0001193125-26-138225",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002078008/parent_CIK0001521332/parent_8-K_000119312526138225.txt",
+        "raw/sec/CIK0001521332/cited_sources/8-K_000119312526138225.htm",
+        "raw/sec/CIK0002078008/parent_CIK0001521332/parent_8-K_000119312526138225.html"
+      ]
+    },
+    {
+      "company": "Versigent PLC",
+      "ticker": "VGNT",
+      "fact": "parent",
+      "accession": "0001193125-26-096776",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002078008/Form10_0001193125-26-096776_information.txt",
+        "raw/sec/CIK0002078008/Form10_0001193125-26-096776.txt"
+      ]
+    },
+    {
+      "company": "Versigent PLC",
+      "ticker": "VGNT",
+      "fact": "record_date",
+      "accession": "0001193125-26-096776",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002078008/Form10_0001193125-26-096776_information.txt",
+        "raw/sec/CIK0002078008/Form10_0001193125-26-096776.txt"
+      ]
+    },
+    {
+      "company": "Versigent PLC",
+      "ticker": "VGNT",
+      "fact": "spinoff_total_assets",
+      "accession": "0001193125-26-096776",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002078008/Form10_0001193125-26-096776_information.txt"
+      ]
+    },
+    {
+      "company": "FedEx Freight Holding Company, Inc.",
+      "ticker": "FDXF",
+      "fact": "distribution_ratio",
+      "accession": "0001104659-26-060233",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0001048911/cited_sources/8-K_000110465926060233.htm",
+        "raw/sec/CIK0002082247/parent_CIK0001048911/parent_8-K_000110465926060233.txt",
+        "raw/sec/CIK0002082247/parent_CIK0001048911/parent_8-K_000110465926060233.html"
+      ]
+    },
+    {
+      "company": "FedEx Freight Holding Company, Inc.",
+      "ticker": "FDXF",
+      "fact": "parent",
+      "accession": "0001104659-26-041977",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002082247/Form10_0001104659-26-041977_information.txt",
+        "raw/sec/CIK0002082247/Form10_0001104659-26-041977.txt"
+      ]
+    },
+    {
+      "company": "FedEx Freight Holding Company, Inc.",
+      "ticker": "FDXF",
+      "fact": "record_date",
+      "accession": "0001104659-26-041977",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002082247/Form10_0001104659-26-041977_information.txt"
+      ]
+    },
+    {
+      "company": "FedEx Freight Holding Company, Inc.",
+      "ticker": "FDXF",
+      "fact": "spinoff_total_assets",
+      "accession": "0001104659-26-041977",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002082247/Form10_0001104659-26-041977_information.txt"
+      ]
+    },
+    {
+      "company": "Octave Intelligence plc",
+      "ticker": "OCTLF",
+      "fact": "distribution_date",
+      "accession": "0001628280-26-027570",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002083632/Form10_0001628280-26-027570_information.txt",
+        "raw/sec/CIK0002083632/Form10_0001628280-26-027570.txt"
+      ]
+    },
+    {
+      "company": "Octave Intelligence plc",
+      "ticker": "OCTLF",
+      "fact": "parent",
+      "accession": "0001628280-26-027570",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002083632/Form10_0001628280-26-027570_information.txt"
+      ]
+    },
+    {
+      "company": "Octave Intelligence plc",
+      "ticker": "OCTLF",
+      "fact": "record_date",
+      "accession": "0001628280-26-027570",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002083632/Form10_0001628280-26-027570_information.txt",
+        "raw/sec/CIK0002083632/Form10_0001628280-26-027570.txt"
+      ]
+    },
+    {
+      "company": "Octave Intelligence plc",
+      "ticker": "OCTLF",
+      "fact": "spinoff_total_assets",
+      "accession": "0001628280-26-027570",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002083632/Form10_0001628280-26-027570_information.txt"
+      ]
+    },
+    {
+      "company": "Midera Food Processing, Inc.",
+      "ticker": "MFP",
+      "fact": "distribution_date",
+      "accession": "0001193125-26-295648",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0000769520/cited_sources/8-K_000119312526295648.htm",
+        "raw/sec/CIK0002088281/parent_CIK0000769520/parent_8-K_000119312526295648.txt",
+        "raw/sec/CIK0002088281/parent_CIK0000769520/parent_8-K_000119312526295648.html"
+      ]
+    },
+    {
+      "company": "Midera Food Processing, Inc.",
+      "ticker": "MFP",
+      "fact": "distribution_ratio",
+      "accession": "0001193125-26-241891",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002088281/Form10_0001193125-26-241891_information.txt",
+        "raw/sec/CIK0002088281/Form10_0001193125-26-241891.txt"
+      ]
+    },
+    {
+      "company": "Midera Food Processing, Inc.",
+      "ticker": "MFP",
+      "fact": "parent",
+      "accession": "0001193125-26-241891",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002088281/Form10_0001193125-26-241891_information.txt",
+        "raw/sec/CIK0002088281/Form10_0001193125-26-241891.txt"
+      ]
+    },
+    {
+      "company": "Midera Food Processing, Inc.",
+      "ticker": "MFP",
+      "fact": "spinoff_total_assets",
+      "accession": "0001193125-26-241891",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002088281/Form10_0001193125-26-241891_information.txt"
+      ]
+    },
+    {
+      "company": "Honeywell Aerospace Inc.",
+      "ticker": "HONA",
+      "fact": "distribution_date",
+      "accession": "0001628280-26-041399",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002089271/Form10_0001628280-26-041399_information.txt"
+      ]
+    },
+    {
+      "company": "Honeywell Aerospace Inc.",
+      "ticker": "HONA",
+      "fact": "distribution_ratio",
+      "accession": "0001628280-26-041399",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002089271/Form10_0001628280-26-041399.txt",
+        "raw/sec/CIK0002089271/Form10_0001628280-26-041399_information.txt"
+      ]
+    },
+    {
+      "company": "Honeywell Aerospace Inc.",
+      "ticker": "HONA",
+      "fact": "parent",
+      "accession": "0001628280-26-041399",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002089271/Form10_0001628280-26-041399_information.txt"
+      ]
+    },
+    {
+      "company": "Honeywell Aerospace Inc.",
+      "ticker": "HONA",
+      "fact": "spinoff_total_assets",
+      "accession": "0001628280-26-041399",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002089271/Form10_0001628280-26-041399_information.txt"
+      ]
+    },
+    {
+      "company": "Mobility Global Inc.",
+      "ticker": "MBGL",
+      "fact": "distribution_date",
+      "accession": "0001104659-26-066592",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002090312/Form10_0001104659-26-066592_information.txt"
+      ]
+    },
+    {
+      "company": "Mobility Global Inc.",
+      "ticker": "MBGL",
+      "fact": "record_date",
+      "accession": "0001104659-26-066592",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002090312/Form10_0001104659-26-066592_information.txt",
+        "raw/sec/CIK0002090312/cited_sources/10-12B/A_000110465926066592.txt",
+        "raw/sec/CIK0002090312/Form10_0001104659-26-066592.txt"
+      ]
+    },
+    {
+      "company": "Mobility Global Inc.",
+      "ticker": "MBGL",
+      "fact": "spinoff_total_assets",
+      "accession": "0001104659-26-066592",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002090312/Form10_0001104659-26-066592_information.txt"
+      ]
+    },
+    {
+      "company": "First Tracks Biotherapeutics, Inc.",
+      "ticker": "TRAX",
+      "fact": "distribution_date",
+      "accession": "0001193125-26-129178",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002091349/Form10_0001193125-26-129178_information.txt"
+      ]
+    },
+    {
+      "company": "First Tracks Biotherapeutics, Inc.",
+      "ticker": "TRAX",
+      "fact": "distribution_ratio",
+      "accession": "0001193125-26-129178",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002091349/Form10_0001193125-26-129178_information.txt",
+        "raw/sec/CIK0002091349/Form10_0001193125-26-129178.txt"
+      ]
+    },
+    {
+      "company": "First Tracks Biotherapeutics, Inc.",
+      "ticker": "TRAX",
+      "fact": "parent",
+      "accession": "0001193125-26-129178",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002091349/Form10_0001193125-26-129178_information.txt",
+        "raw/sec/CIK0002091349/Form10_0001193125-26-129178.txt"
+      ]
+    },
+    {
+      "company": "First Tracks Biotherapeutics, Inc.",
+      "ticker": "TRAX",
+      "fact": "record_date",
+      "accession": "0001193125-26-129178",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002091349/Form10_0001193125-26-129178_information.txt",
+        "raw/sec/CIK0002091349/Form10_0001193125-26-129178.txt"
+      ]
+    },
+    {
+      "company": "First Tracks Biotherapeutics, Inc.",
+      "ticker": "TRAX",
+      "fact": "spinoff_total_assets",
+      "accession": "0001193125-26-129178",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002091349/Form10_0001193125-26-129178_information.txt"
+      ]
+    },
+    {
+      "company": "Atrium Therapeutics, Inc.",
+      "ticker": "RNA",
+      "fact": "distribution_date",
+      "accession": "0001193125-26-055010",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002093101/Form10_0001193125-26-055010_information.txt"
+      ]
+    },
+    {
+      "company": "Atrium Therapeutics, Inc.",
+      "ticker": "RNA",
+      "fact": "parent",
+      "accession": "0001193125-26-055010",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002093101/Form10_0001193125-26-055010_information.txt",
+        "raw/sec/CIK0002093101/Form10_0001193125-26-055010.txt",
+        "raw/sec/CIK0002093101/cited_sources/10-12B/A_000119312526055010.txt"
+      ]
+    },
+    {
+      "company": "Atrium Therapeutics, Inc.",
+      "ticker": "RNA",
+      "fact": "record_date",
+      "accession": "0001193125-26-055010",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002093101/Form10_0001193125-26-055010_information.txt"
+      ]
+    },
+    {
+      "company": "Atrium Therapeutics, Inc.",
+      "ticker": "RNA",
+      "fact": "spinoff_total_assets",
+      "accession": "0001193125-26-055010",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002093101/Form10_0001193125-26-055010_information.txt"
+      ]
+    },
+    {
+      "company": "Enviri Corp",
+      "ticker": "NVRI",
+      "fact": "distribution_ratio",
+      "accession": "0002104052-26-000013",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002104052/Form10_0002104052-26-000013.txt",
+        "raw/sec/CIK0002104052/Form10_0002104052-26-000013_information.txt"
+      ]
+    },
+    {
+      "company": "Enviri Corp",
+      "ticker": "NVRI",
+      "fact": "record_date",
+      "accession": "0002104052-26-000013",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002104052/Form10_0002104052-26-000013_information.txt"
+      ]
+    },
+    {
+      "company": "Enviri Corp",
+      "ticker": "NVRI",
+      "fact": "spinoff_total_assets",
+      "accession": "0002104052-26-000013",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002104052/Form10_0002104052-26-000013_information.txt"
+      ]
+    },
+    {
+      "company": "ADI GLOBAL DISTRIBUTION INC.",
+      "ticker": "ADIG",
+      "fact": "distribution_date",
+      "accession": "0001213900-26-074253",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002105139/Form10_0001213900-26-074253_information.txt"
+      ]
+    },
+    {
+      "company": "ADI GLOBAL DISTRIBUTION INC.",
+      "ticker": "ADIG",
+      "fact": "distribution_ratio",
+      "accession": "0001213900-26-074253",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002105139/Form10_0001213900-26-074253.txt",
+        "raw/sec/CIK0002105139/Form10_0001213900-26-074253_information.txt"
+      ]
+    },
+    {
+      "company": "ADI GLOBAL DISTRIBUTION INC.",
+      "ticker": "ADIG",
+      "fact": "parent",
+      "accession": "0001213900-26-074253",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002105139/Form10_0001213900-26-074253.txt",
+        "raw/sec/CIK0002105139/Form10_0001213900-26-074253_information.txt"
+      ]
+    },
+    {
+      "company": "ADI GLOBAL DISTRIBUTION INC.",
+      "ticker": "ADIG",
+      "fact": "record_date",
+      "accession": "0001213900-26-074253",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002105139/Form10_0001213900-26-074253.txt",
+        "raw/sec/CIK0002105139/Form10_0001213900-26-074253_information.txt"
+      ]
+    },
+    {
+      "company": "ADI GLOBAL DISTRIBUTION INC.",
+      "ticker": "ADIG",
+      "fact": "spinoff_total_assets",
+      "accession": "0001213900-26-074253",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002105139/Form10_0001213900-26-074253_information.txt"
+      ]
+    },
+    {
+      "company": "BioKey (Cayman), Inc.",
+      "ticker": "BKAIF",
+      "fact": "distribution_date",
+      "accession": "0001213900-26-094152",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002108359/parent_CIK0001173313/parent_8-K_000121390026094152.html",
+        "raw/sec/CIK0002108359/parent_CIK0001173313/parent_8-K_000121390026094152.txt",
+        "raw/sec/CIK0001173313/cited_sources/8-K_000121390026094152.htm"
+      ]
+    },
+    {
+      "company": "BioKey (Cayman), Inc.",
+      "ticker": "BKAIF",
+      "fact": "parent",
+      "accession": "0001213900-26-061646",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002108359/Form10_0001213900-26-061646.txt",
+        "raw/sec/CIK0002108359/Form10_0001213900-26-061646_information.txt"
+      ]
+    },
+    {
+      "company": "BioKey (Cayman), Inc.",
+      "ticker": "BKAIF",
+      "fact": "record_date",
+      "accession": "0001213900-26-094152",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002108359/parent_CIK0001173313/parent_8-K_000121390026094152.html",
+        "raw/sec/CIK0002108359/parent_CIK0001173313/parent_8-K_000121390026094152.txt",
+        "raw/sec/CIK0001173313/cited_sources/8-K_000121390026094152.htm"
+      ]
+    },
+    {
+      "company": "BioKey (Cayman), Inc.",
+      "ticker": "BKAIF",
+      "fact": "spinoff_total_assets",
+      "accession": "0001213900-26-061646",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002108359/Form10_0001213900-26-061646_information.txt"
+      ]
+    },
+    {
+      "company": "Vylor Inc.",
+      "ticker": "VYLR",
+      "fact": "parent",
+      "accession": "0001193125-26-396054",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002128626/Form10_0001193125-26-396054.txt",
+        "raw/sec/CIK0002128626/Form10_0001193125-26-396054_information.txt"
+      ]
+    },
+    {
+      "company": "Vylor Inc.",
+      "ticker": "VYLR",
+      "fact": "record_date",
+      "accession": "0001193125-26-396054",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002128626/Form10_0001193125-26-396054.txt",
+        "raw/sec/CIK0002128626/Form10_0001193125-26-396054_information.txt"
+      ]
+    },
+    {
+      "company": "Vylor Inc.",
+      "ticker": "VYLR",
+      "fact": "spinoff_total_assets",
+      "accession": "0001193125-26-396054",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002128626/Form10_0001193125-26-396054_information.txt"
+      ]
+    },
+    {
+      "company": "Axiom Solutions International, Inc.",
+      "ticker": "AXM",
+      "fact": "parent",
+      "accession": "0001193125-26-465664",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002130999/Form10_0001193125-26-465664_information.txt",
+        "raw/sec/CIK0002130999/Form10_0001193125-26-465664.txt"
+      ]
+    },
+    {
+      "company": "Axiom Solutions International, Inc.",
+      "ticker": "AXM",
+      "fact": "spinoff_total_assets",
+      "accession": "0001193125-26-465664",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002130999/Form10_0001193125-26-465664_information.txt"
+      ]
+    },
+    {
+      "company": "MSG Rangers Corp.",
+      "ticker": "MSGR",
+      "fact": "distribution_date",
+      "accession": "0001193125-26-409182",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002132873/Form10_0001193125-26-409182_information.txt"
+      ]
+    },
+    {
+      "company": "MSG Rangers Corp.",
+      "ticker": "MSGR",
+      "fact": "distribution_ratio",
+      "accession": "0001193125-26-409182",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002132873/Form10_0001193125-26-409182_information.txt"
+      ]
+    },
+    {
+      "company": "MSG Rangers Corp.",
+      "ticker": "MSGR",
+      "fact": "parent",
+      "accession": "0001193125-26-409182",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002132873/Form10_0001193125-26-409182_information.txt"
+      ]
+    },
+    {
+      "company": "MSG Rangers Corp.",
+      "ticker": "MSGR",
+      "fact": "spinoff_total_assets",
+      "accession": "0001193125-26-409182",
+      "quote_found": true,
+      "saved_documents": [
+        "raw/sec/CIK0002132873/Form10_0001193125-26-409182_information.txt"
+      ]
+    }
+  ]
+}

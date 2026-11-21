@@ -1,0 +1,27 @@
+{
+  "source_registry": "lab06_runs/SEEKER_2026-11-20_22-29-06-302032/registry.json",
+  "company": "MSG Rangers Corp.",
+  "ticker": "MSGR",
+  "parent": "Madison Square Garden Sports Corp",
+  "distribution_date": "2026-10-26",
+  "form10_accession": "0001193125-26-409182",
+  "first_regular_close": {
+    "close": "177.61",
+    "source": "Financial Datasets historical close",
+    "ticker": "MSGR",
+    "trading_date": "2026-10-27"
+  },
+  "factor_inputs": {
+    "distinct_qualifying_insiders": 0,
+    "price_decline_percent": null,
+    "relative_company_size_ratio": null
+  },
+  "missing_inputs": [
+    "Record date",
+    "Parent CIK",
+    "Parent total assets",
+    "Closing price 20 trading days after the first close",
+    "Relative company size factor input",
+    "Post-distribution price weakness factor input"
+  ]
+}

@@ -4,15 +4,18 @@ import json,re
 from decimal import Decimal,InvalidOperation
 from pathlib import Path
 
-NUMBER=re.compile(r"(?<![A-Za-z])\$?\(?-?\d[\d,]*(?:\.\d+)?\)?\s*(?:%|x|million|billion|thousand)?",re.I)
+NUMBER=re.compile(r"(?<![A-Za-z0-9])(?:\(\s*\$?\s*\d[\d,]*(?:\.\d+)?\s*\)|-?\$?\d[\d,]*(?:\.\d+)?)(?:\s*(?:%|x|million|billion|thousand))?",re.I)
 
 def normalize(value):
-    raw=re.sub(r"[,$()\s]", "", value).casefold()
+    raw=value.strip().casefold()
+    negative=raw.startswith("(") or raw.startswith("-")
+    raw=re.sub(r"[,$()\s]", "", raw)
     raw=raw.removesuffix("million").removesuffix("billion").removesuffix("thousand")
     is_percent=raw.endswith("%")
     raw=raw.removesuffix("%")
     try:
         number=Decimal(raw)
+        if negative: number=-abs(number)
         return str((number/100 if is_percent else number).normalize())
     except InvalidOperation: return None
 
@@ -48,4 +51,19 @@ def validate_report(report_path:Path,run_dir:Path):
             if token is not None and token not in allowed:
                 raise ValueError(f"Numerical claim refused at line {line_no}: {match.group(0).strip()}")
     return True
+
+def main():
+    import argparse
+    parser=argparse.ArgumentParser(description="Validate report numbers against saved run evidence.")
+    parser.add_argument("report",type=Path)
+    parser.add_argument("--evidence",type=Path,required=True)
+    args=parser.parse_args()
+    try:
+        validate_report(args.report,args.evidence)
+    except ValueError as exc:
+        print(str(exc)); return 1
+    print("HOOK PASS")
+    return 0
+
+if __name__=="__main__": raise SystemExit(main())
 

@@ -2,6 +2,53 @@
 
 Coursework and an AI-assisted equity-research desk for Purdue University's FIN 67110, Fall 2026.
 
+The desk uses a file-based pipeline from the seeker to the deterministic pick, from the agent team’s saved run to the worksheet, and from the worksheet to the final report; the hook guards every worksheet and report output, and no model chooses the execution order or recomputes a skill’s numbers.
+
+The Three Musketeers own a factor-check feature that fixes each factor’s definition, direction, weight, point rule, and evaluation window before any return is observed, records every comparison it runs, and reports the resulting hit rate without changing the rules after seeing the outcomes.
+
+## Checkpoint 3: one-desk run
+
+Use Python 3.10 through 3.13. Install the locked environment:
+
+```bash
+uv sync --project equity_research_team --locked
+```
+
+Create an ignored local `.env` with `API_KEY`, `FINANCIAL_DATASETS_API_KEY`, and `SEC_USER_AGENT`. `API_KEY` is only for OpenAI model and Verifier calls. `FINANCIAL_DATASETS_API_KEY` is only for the financialdatasets.ai `X-API-KEY` header. `SEC_USER_AGENT` is only for SEC requests. Check presence without displaying values with `python check_env.py`.
+
+Run tests without credentials or network access:
+
+```bash
+UV_CACHE_DIR=/tmp/checkpoint3-uv-cache uv run --project equity_research_team --locked pytest -q equity_research_team/tests tests
+```
+
+Run the deterministic joined desk from the repository root:
+
+```bash
+uv run --project equity_research_team --locked python one_desk.py run TICKER --run-root runs/desk
+uv run --project equity_research_team --locked python one_desk.py run SCREEN --run-root runs/desk
+```
+
+Each command creates one `runs/desk/DESK_<timestamp>` folder. It contains each part’s output, elapsed-time records, saved filings, the worksheet, hook results, the final report, and a manifest. A screen with no ranked name says “not applicable” and does not pick a company. A ticker outside the seeker registry has “not applicable” spinoff sections. A failed part stops the pipeline, keeps the folder, and writes the exact command error to `failure.json`.
+
+Replay a saved run without network access:
+
+```bash
+uv run --project equity_research_team --locked python one_desk.py replay runs/desk/DESK_<timestamp>
+```
+
+Replay writes `replay/final_report.md` and `replay/replay_proof.json`, including the content comparison and network-call count. Start the Lab 05 web page with `cd equity_research_team && uv run page`. Enter a ticker or `SCREEN`; the page runs the joined command and displays its saved final report. The UI tests mock the command and do not need credentials.
+
+The join statement above describes pipeline and guard joins: the seeker writes the registry for the deterministic picker, the agent team writes its run files for the worksheet, and the assembler quotes the guarded worksheet. The factor-check feature is a separate fixed-file evaluation and never changes production factor rules.
+
+Roles:
+
+- Zainab — Integration and live-record lead: owns the starting agent desk, connects the team’s tools under one command, and maintains the final live record and submission evidence.
+- Ansh — Verification and evidence lead: checks report claims against SEC filings, runs the clean and seeded-error verification tests, and records the resulting marks.
+- Krishmi — Seeker and valuation lead: manages the factor definitions and spinoff screen, runs the investor worksheet, and documents the valuation assumptions and results.
+
+Limitations: Lab 06 has no ranked names. The prospective factor-check has zero comparisons and does not validate the factor. WRDS access is pending. The MSGR agent run and Lab 09 verified reports are blocked by unavailable OpenAI API credits. Any missing filing, price, or valuation input remains blank or “not known.” The desk produces screens, not recommendations. See [Checkpoint 3 evidence](CHECKPOINT3_SUBMISSION.md).
+
 ## Secret handling
 
 API keys and vendor credentials belong only in a local `.env` file. The repository ignores `.env`, raw licensed-vendor data, and local exports. `.env.example` contains placeholders only.
@@ -60,5 +107,4 @@ EPS of $4.92. The Microsoft report records both marks. The UI command is
 `cd equity_research_team && UV_CACHE_DIR=/tmp/equity-research-team-uv-cache uv run page`.
 
 This is a learning exercise, not financial advice.
-AI assistance: OpenAI Codex, Google Antigravity, and Orca. I verified the sources myself; the judgments are mine.
-Any remaining errors are my own.
+AI assistance: OpenAI Codex, Google Antigravity, and Orca. The Checkpoint 3 page labels automated audits and pending human checks. It does not represent automated checks as teammate review.

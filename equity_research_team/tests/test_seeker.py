@@ -14,6 +14,10 @@ SCRIPTS_DIR = (
     / "spinoff-seeker"
     / "scripts"
 )
+WORKSPACE_DIR = SCRIPTS_DIR.parents[2]
+if str(WORKSPACE_DIR) not in sys.path:
+    sys.path.insert(0, str(WORKSPACE_DIR))
+from equity_research_data import DownloadedResource
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
@@ -29,6 +33,7 @@ from seeker import (  # noqa: E402
     FINAL_FACTORS_PATH,
     evaluate_snapshot,
     load_factors,
+    _save_cited_fact_sources,
     extract_parent_name,
     prove_zero_weight,
     render_report,
@@ -42,11 +47,30 @@ def test_parent_extractor_trims_prose_and_rejects_unresolved_fragments():
         form="10-12B", accession="0000000000-26-000001", url="https://www.sec.gov/example",
     )
     assert cleaned["value"] == "Honeywell"
+    exact_parent = extract_parent_name(
+        "the distribution by Madison Square Garden Sports Corp. (\u201cMSG Sports\u201d) to holders",
+        form="10-12B/A", accession="0000000000-26-000001", url="https://www.sec.gov/example",
+    )
+    assert exact_parent["value"] == "Madison Square Garden Sports Corp"
     unresolved = extract_parent_name(
         "The company, which is resident for tax purposes in Switzerland, distributed shares.",
         form="10-12B", accession="0000000000-26-000001", url="https://www.sec.gov/example",
     )
     assert unresolved is None
+
+
+def test_cited_fact_source_is_saved_once(tmp_path):
+    class Client:
+        calls=0
+        def fetch(self,url):
+            self.calls+=1
+            return DownloadedResource(url,b"source evidence","text/plain","utf-8")
+    client=Client()
+    records=[{"facts":{"distribution_date":{"source":{"url":"https://www.sec.gov/Archives/edgar/data/123/000000000126000001/doc.txt","accession":"0000000001-26-000001","form":"8-K"}}}}]
+    saved=_save_cited_fact_sources(client,tmp_path,records)
+    assert client.calls==1 and len(saved)==1
+    _save_cited_fact_sources(client,tmp_path,records)
+    assert client.calls==1
 
 
 class FakeResponse:

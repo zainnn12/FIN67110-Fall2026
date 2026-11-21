@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "validated_at": "2026-11-20T23:19:35-05:00",
+  "hook": "skills/spinoff-worksheet/spinoff_worksheet_hook.py",
+  "report_path": "MATW_LIVE_REPORT.md",
+  "report_sha256": "750d73f1af89b43802a7d7fa6e2a55d9b0da4698c7aec1866bf2788c1e61d51c",
+  "worksheet_path": "worksheet.md",
+  "worksheet_sha256": "8762e10118178d3b24021280ed2f816a40e3d68fe9ea2e1bacdac38c75b5e0f0",
+  "evidence_directory": ".",
+  "seeded_copy_proofs": "runs/lab07/hook_proofs and runs/lab08/hook_proofs"
+}

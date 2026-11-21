@@ -1,0 +1,70 @@
+{
+  "feature": "Three Musketeers factor-check",
+  "factor_file": "skills/spinoff-seeker/references/factors.json",
+  "entry_day": "first regular closing price after distribution",
+  "holding_period": "20 trading days after entry close",
+  "comparison_benchmark": "SPY regular close over the same dates; no benchmark data is substituted or estimated",
+  "sample_rule": "Only distributions after preregistration time can enter this prospective comparison; all three factor inputs must be available before entry.",
+  "outcome_rule": "Compare each eligible name\u2019s 20-trading-day price return with SPY return over the same close-to-close interval; report hit only when the frozen weighted score predicts a positive excess return.",
+  "weights_percent": [
+    35,
+    40,
+    25
+  ],
+  "limitations": [
+    "No future post-preregistration distribution has a complete 20-trading-day outcome in saved evidence.",
+    "No WRDS/CRSP dataset is available.",
+    "No Financial Datasets benchmark series is substituted for WRDS/CRSP.",
+    "The available historical Lab 06 returns were observed before this preregistration and are excluded."
+  ],
+  "preregistered_at": "2026-11-20T23:28:08-05:00",
+  "factors_sha256": "3b81c64be6d5fdadbb4b96d8d8cda4b987c03cc401853012fb21c354b1b52007",
+  "factor_definitions": [
+    {
+      "id": "relative_company_size",
+      "name": "Relative company size",
+      "filing_rule": "Divide the spinoff\u2019s total assets from its Form 10 information statement by the parent\u2019s total assets from its closest comparable 10-K or 10-Q. Never estimate a missing value.",
+      "direction": "A smaller percentage receives more points.",
+      "weight_percent": 35,
+      "point_rule": [
+        "2 points when the ratio is 10% or less.",
+        "1 point when the ratio is greater than 10% and no more than 20%.",
+        "0 points when the ratio is greater than 20%."
+      ],
+      "sources": [
+        "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3."
+      ]
+    },
+    {
+      "id": "post_distribution_price_weakness",
+      "name": "Post-distribution price weakness",
+      "filing_and_price_rule": "Establish the distribution date from the information statement or distribution 8-K. Use the first regular closing price after distribution and compare it with the closing price 20 trading days later. Never use a when-issued price.",
+      "direction": "A larger price decline receives more points because it may indicate forced selling.",
+      "weight_percent": 40,
+      "point_rule": [
+        "2 points when the price decline is at least 15%.",
+        "1 point when the decline is at least 5% but less than 15%.",
+        "0 points when the decline is less than 5% or the price increases."
+      ],
+      "sources": [
+        "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3.",
+        "Seth Klarman, Margin of Safety, Chapter 10."
+      ]
+    },
+    {
+      "id": "insider_open_market_buying",
+      "name": "Insider open-market buying",
+      "filing_rule": "Count Form 4 transactions with transaction code P by officers or directors during the first 30 days after distribution. Exclude grants, awards, and sales.",
+      "direction": "Purchases by more distinct insiders receive more points.",
+      "weight_percent": 25,
+      "point_rule": [
+        "2 points for qualifying purchases by two or more distinct insiders.",
+        "1 point for a qualifying purchase by one insider.",
+        "0 points when there is no qualifying purchase."
+      ],
+      "sources": [
+        "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3."
+      ]
+    }
+  ]
+}

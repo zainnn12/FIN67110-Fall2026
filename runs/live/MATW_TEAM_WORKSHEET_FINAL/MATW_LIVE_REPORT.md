@@ -33,6 +33,6 @@ Codex evidence audit, authorized by the instructor and relayed by Zainab on Nove
 
 - Verified team report: `verified_report.md`
 - Worksheet: `worksheet.md`
-- Hook result: PASS at generation time; the same hook must be rerun after the commit-time update.
+- Hook result: PASS on the saved report and worksheet after the commit-time update. Evidence: `hook_result.json`; clean and seeded hook copies are under `runs/lab07/hook_proofs/` and `runs/lab08/hook_proofs/`.
 - SEC manifest and source documents: `manifest.json`, `10-K_*.txt`, `10-Q_*.txt`, `8-K_*.txt`, and `8-K_EX-99.1_*.txt`.
 - Saved closing prices and volumes: `worksheet_closes.json`. The normalized dated data, rather than the raw provider response, is preserved.
