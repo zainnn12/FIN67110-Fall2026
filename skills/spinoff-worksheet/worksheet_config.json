@@ -1,0 +1,19 @@
+{
+  "valuation_method": "owner-of-cash-flow capitalization, separate low and midpoint cases",
+  "owner_cash_flow_formula": "after-tax earnings + depreciation and amortization - capital expenditures",
+  "source_hierarchy": [
+    "reported-after-spin trailing-twelve-month figures assembled from comparable periods",
+    "comparable annual pro-forma figures from the Form 10",
+    "otherwise not computed"
+  ],
+  "never_annualize_single_quarter": true,
+  "never_combine_mismatched_periods": true,
+  "never_substitute_adjusted_ebitda": true,
+  "low_case": {"haircut": "0.20", "growth_rate": "0", "required_return": "0.12"},
+  "midpoint_case": {"haircut": "0", "growth_rate": "0.02", "required_return": "0.10"},
+  "units": {"source_statement_values": "reported", "normalized_cash_flow_and_equity_value": "USD millions", "shares": "millions", "per_share_and_price": "USD per share", "client_purchase": "USD"},
+  "rounding": {"arithmetic": "Decimal full precision", "USD_millions": 2, "shares_millions": 3, "per_share_USD": 2, "percent": 1, "tolerance_USD": "0.01"},
+  "client_purchase_usd": "10000",
+  "liquidity_max_purchase_fraction": "0.01",
+  "conviction": {"high_requires_price_at_most_fraction_low_value": "0.80", "high_requires_positive_owner_cash_flow": true, "high_requires_no_critical_missing_input": true, "high_requires_purchase_at_most_fraction_median_daily_dollar_volume": "0.01"}
+}

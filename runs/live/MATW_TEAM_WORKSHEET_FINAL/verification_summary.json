@@ -1,0 +1,8 @@
+{
+  "counts": {
+    "correct": 16,
+    "wrong": 4,
+    "unsupported": 37
+  },
+  "status": "NOT CLEAN: wrong and unsupported claims remain; no complete pass is claimed"
+}

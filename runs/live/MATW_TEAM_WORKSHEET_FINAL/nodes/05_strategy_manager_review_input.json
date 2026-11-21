@@ -1,0 +1,611 @@
+{
+  "task": "Check and draft the five required report parts.",
+  "context": {
+    "research_analyst_output": {
+      "business_model": [
+        {
+          "claim": "Overview: Memorialization sells physical products to cemeteries, funeral homes and crematories, making it the principal operating revenue engine. Its offering spans burial products, cremation equipment and related supplies rather than depending exclusively on traditional burial demand.",
+          "quote": "The Memorialization segment manufactures and markets a full line of memorialization products used primarily in cemeteries, funeral homes, and crematories. The segment's products, which are sold principally in North America, Europe and Australia, include cast bronze memorials, granite memorials, caskets, cremation-related products, embalming chemicals and related tools/supplies, cremation and incineration equipment and other memorialization products.",
+          "filing": "10-K",
+          "accession_number": "0000063296-25-000070",
+          "line_start": 2203,
+          "line_end": 2203
+        },
+        {
+          "claim": "Industrial Technologies earns revenue from engineered equipment, product identification and automation systems. The historical description includes warehouse automation, which was subsequently sold and should not be treated as an ongoing growth engine.",
+          "quote": "The Industrial Technologies segment includes the design, manufacturing, service and sales of high-tech custom energy storage solutions; product identification and warehouse automation technologies and solutions, including order fulfillment systems for identifying, tracking, picking and conveying consumer and industrial products; and coating and converting lines for the packaging, pharma, foil, décor and tissue industries.",
+          "filing": "10-K",
+          "accession_number": "0000063296-25-000070",
+          "line_start": 2229,
+          "line_end": 2229
+        },
+        {
+          "claim": "Equipment sales support aftermarket opportunities: proprietary marking inks can encourage repeat purchases, although the supplied material does not quantify recurring revenue or customer retention.",
+          "quote": "The Company develops inks exclusively for the use with its marking equipment, which is critical to ensure ongoing equipment reliability and mark quality.",
+          "filing": "10-K",
+          "accession_number": "0000063296-25-000070",
+          "line_start": 2239,
+          "line_end": 2239
+        },
+        {
+          "claim": "Business momentum is mixed: fiscal 2026 consolidated sales declined 30.2% to $1,046.103 million, with divestitures impairing comparability (Earnings release, year ended September 30, 2026, L70–72). The retained Memorialization business grew, as detailed separately below.",
+          "quote": "Sales | $ | 256,705 | $ | 318,841 | (19.5) | % | $ | 1,046,103 | $ | 1,497,689 | (30.2) | %",
+          "filing": "Earnings release",
+          "accession_number": "0000063296-26-000118",
+          "line_start": 72,
+          "line_end": 72
+        }
+      ],
+      "competitive_position": [
+        {
+          "claim": "Market Positioning and Growth Outlook: Broad product coverage and company-owned casket distribution support customer service and cross-selling. These are plausible competitive advantages, not proof of pricing power; the filing explicitly describes intense competition.",
+          "quote": "The segment's casket products are primarily sold through Company-owned distribution centers throughout the United States. The casket business is highly competitive and the Company competes with other manufacturers based on product quality, price, service, design availability and breadth of product line.",
+          "filing": "10-K",
+          "accession_number": "0000063296-25-000070",
+          "line_start": 2225,
+          "line_end": 2225
+        },
+        {
+          "claim": "The fiscal 2025 backlog disclosure provides some demand visibility: cremation and incineration equipment generally covered four to six months of sales and mausoleums approximately nine to twelve months (10-K, fiscal 2025, L2294). These durations do not establish market share, backlog value or current demand strength.",
+          "quote": "Cremation and incineration equipment sales backlogs vary in a range of four to six months of sales. Backlogs vary in a range of approximately nine to twelve months of sales for mausoleums.",
+          "filing": "10-K",
+          "accession_number": "0000063296-25-000070",
+          "line_start": 2294,
+          "line_end": 2294
+        },
+        {
+          "claim": "Memorialization is the clearest reported growth engine: management reported fiscal 2026 sales growth of 4%, partly acquisition-driven, alongside adjusted EBITDA margin expansion (Earnings release, year ended September 30, 2026, L46). This supports resilience but does not establish organic growth.",
+          "quote": "Memorialization achieved record annual sales, up 4%, driven in part by The Dodge Company acquisition, while adjusted EBITDA also reached a record level with margin expansion.",
+          "filing": "Earnings release",
+          "accession_number": "0000063296-26-000118",
+          "line_start": 46,
+          "line_end": 46
+        }
+      ],
+      "catalysts": [
+        {
+          "claim": "Main catalyst: portfolio simplification has already enabled deleveraging. The warehouse automation sale in December 2025 helped reduce debt by $100.4 million year over year in fiscal 2026 (Earnings release, L47). Further progress could improve financial flexibility, but asset-sale proceeds are not recurring operating cash generation.",
+          "quote": "The December 2025 sale of our warehouse automation business helped reduce debt by $100.4 million year over year. We remain focused on further debt reduction while delivering competitive shareholder returns through quarterly dividends.",
+          "filing": "Earnings release",
+          "accession_number": "0000063296-26-000118",
+          "line_start": 47,
+          "line_end": 47
+        },
+        {
+          "claim": "Product identification offers a retained-business growth opportunity: management reported sales growth of 14% in the fiscal fourth quarter of 2026, while warning that engineering still faced litigation-related customer delays (Earnings release, quarter ended September 30, 2026, L42). No product-level revenue base or profit contribution is supplied.",
+          "quote": "Sales for the Memorialization segment outperformed the same quarter a year ago, corporate and other non-operating costs declined, and product identification sales grew 14%. Our engineering business continues to face customer delays related to ongoing litigation.",
+          "filing": "Earnings release",
+          "accession_number": "0000063296-26-000118",
+          "line_start": 42,
+          "line_end": 42
+        }
+      ],
+      "recent_developments": [
+        {
+          "claim": "Industrial Technologies deteriorated despite portfolio restructuring: adjusted EBITDA moved from positive $27.936 million in fiscal 2025 to negative $16.297 million in fiscal 2026 (Earnings release, years ended September 30, L93–103). Divestitures limit like-for-like comparisons, but the remaining segment's reported loss is a material weakness.",
+          "quote": "Industrial Technologies | (3,092) | 11,015 | (16,297) | 27,936",
+          "filing": "Earnings release",
+          "accession_number": "0000063296-26-000118",
+          "line_start": 103,
+          "line_end": 103
+        },
+        {
+          "claim": "Most important disclosed risk: weak cash conversion threatens the sustainability of deleveraging. Operating cash outflow increased to $57.977 million in fiscal 2026 from $23.550 million in fiscal 2025 (Earnings release, years ended September 30, L139–150), despite the reported positive final quarter.",
+          "quote": "Net cash (used in) provided by operating activities | (57,977) | (23,550)",
+          "filing": "Earnings release",
+          "accession_number": "0000063296-26-000118",
+          "line_start": 150,
+          "line_end": 150
+        },
+        {
+          "claim": "Management withheld full-year fiscal 2027 guidance while reviewing strategy, citing economic uncertainty and engineering litigation (Earnings release, outlook for fiscal 2027, L48). Consequently, continued segment improvement and further restructuring benefits remain unquantified.",
+          "quote": "As we enter fiscal 2027, economic uncertainty and litigation affecting our engineering business remain significant considerations. The leadership transition is progressing well, but work remains to define our go-forward strategies. Accordingly, we are not providing full-year fiscal 2027 guidance at this time.",
+          "filing": "Earnings release",
+          "accession_number": "0000063296-26-000118",
+          "line_start": 48,
+          "line_end": 48
+        }
+      ],
+      "limitations": [
+        "The supplied annual report predates the latest earnings release. Historical descriptions of the portfolio and backlog should not be treated as current after subsequent divestitures. No latest-year annual-report risk section or XBRL facts were supplied.",
+        "The supplied material does not quantify organic Memorialization growth, recurring-revenue share, customer retention, current backlog value or market share. Management's leadership and product-quality assertions are not independent evidence of competitive superiority.",
+        "Adjusted EBITDA excludes material expenses and incorporates an equity-method investment contribution; it is not equivalent to operating cash flow. The earnings release also contains inconsistent period labeling in its investment-contribution discussion at L51, so that figure is not used here.",
+        "Score table — analyst judgments; higher scores indicate stronger business conditions, including less risk pressure.\nCriterion | Score | Supporting number, period and source\nBusiness momentum | 3/5 | Consolidated sales fell 30.2%, while Memorialization sales rose 4%; fiscal year ended September 30, 2026; Earnings release L72 and L46.\nCompetitive durability | 3/5 | Cremation/incineration equipment backlog generally covered four to six months of sales; fiscal 2025 disclosure; 10-K L2294. Historical visibility, not proof of a moat.\nCatalyst strength | 3/5 | Debt declined $100.4 million year over year, helped by the warehouse automation sale; fiscal 2026; Earnings release L47. Further benefits are not quantified.\nRisk pressure | 1/5 | Operating cash outflow of $57.977 million versus $23.550 million; fiscal years ended September 30, 2026 and 2025; Earnings release L139–150.",
+        "What would change the view: downgrade the outlook if the next filing shows that Memorialization, the main reported growth engine, has stopped growing or turned negative. Product identification growth alone would not establish a broad recovery."
+      ],
+      "insight": {
+        "line": "Insight: Deleveraging has not yet been matched by sustainable operating cash generation: fiscal 2026 operating cash outflow was $57.977 million versus $23.550 million in fiscal 2025 (Earnings release, years ended September 30, accession 0000063296-26-000118, L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+        "quote": "Net cash (used in) provided by operating activities | (57,977) | (23,550)",
+        "filing": "Earnings release",
+        "accession_number": "0000063296-26-000118",
+        "line_start": 150,
+        "line_end": 150
+      }
+    },
+    "financial_analyst_output": {
+      "statement_analysis": [
+        {
+          "conclusion": "The saved annual facts describe fiscal 2024 versus fiscal 2023, not the latest fiscal year in the supplied release. Revenue declined, operating income turned negative, and diluted EPS moved from profit to loss.",
+          "evidence": [
+            {
+              "metric": "Total revenue",
+              "value": "Current: $1,795,737,000; prior: $1,880,896,000",
+              "filing": "10-K, filed 2024-11-22",
+              "accession_number": "0000063296-24-000094",
+              "source_reference": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "period": "Current: 2023-10-01 through 2024-09-30; prior: 2022-10-01 through 2023-09-30"
+            },
+            {
+              "metric": "Operating income (loss)",
+              "value": "Current: -$12,323,000; prior: $88,117,000",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:OperatingIncomeLoss",
+              "period": "Current: 2023-10-01 through 2024-09-30; prior: 2022-10-01 through 2023-09-30"
+            },
+            {
+              "metric": "Net income (loss) attributable to parent",
+              "value": "Current: -$59,660,000; prior: $39,291,000",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:NetIncomeLoss; supplied XBRL label: Net Income (Loss) Attributable to Parent",
+              "period": "Current: 2023-10-01 through 2024-09-30; prior: 2022-10-01 through 2023-09-30"
+            },
+            {
+              "metric": "GAAP diluted EPS",
+              "value": "Current: -$1.93 per share; prior: $1.26 per share",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:EarningsPerShareDiluted",
+              "period": "Current: 2023-10-01 through 2024-09-30; prior: 2022-10-01 through 2023-09-30"
+            },
+            {
+              "metric": "Weighted-average diluted shares",
+              "value": "Current: 30,913,000 shares; prior: 31,289,000 shares",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "period": "Current: 2023-10-01 through 2024-09-30; prior: 2022-10-01 through 2023-09-30"
+            }
+          ],
+          "ratio_arithmetic": "Supplied revenue growth: (1,795,737,000 - 1,880,896,000) / 1,880,896,000 = -4.53%. Operating-income growth formula: (-12,323,000 - 88,117,000) / 88,117,000; no evaluated calculator result was supplied.",
+          "definition": "Revenue is consolidated revenue from contracts with customers excluding assessed tax. Operating income and diluted EPS are GAAP measures. Fiscal periods follow the fact start/end dates, not the filing's fiscal-year metadata."
+        },
+        {
+          "conclusion": "Fiscal 2024 generated positive operating cash flow despite the net loss. Capital expenditures were lower than in fiscal 2023, and the supplied calculation establishes positive fiscal 2024 free cash flow.",
+          "evidence": [
+            {
+              "metric": "Operating cash flow",
+              "value": "Current: $79,282,000; prior: $79,524,000",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+              "period": "Current: 2023-10-01 through 2024-09-30; prior: 2022-10-01 through 2023-09-30"
+            },
+            {
+              "metric": "Property and equipment additions",
+              "value": "Current: $45,218,000; prior: $50,598,000",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+              "period": "Current: 2023-10-01 through 2024-09-30; prior: 2022-10-01 through 2023-09-30"
+            },
+            {
+              "metric": "Depreciation, depletion and amortization",
+              "value": "Current: $94,770,000; prior: $96,530,000",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:DepreciationDepletionAndAmortization; corroborated by MD&A L2848",
+              "period": "Current: 2023-10-01 through 2024-09-30; prior: 2022-10-01 through 2023-09-30"
+            }
+          ],
+          "ratio_arithmetic": "Supplied fiscal 2024 free cash flow: 79,282,000 - 45,218,000 = $34,064,000. Cash-conversion formulas: fiscal 2024, 79,282,000 / -59,660,000; fiscal 2023, 79,524,000 / 39,291,000. Cash-conversion results were not supplied.",
+          "definition": "Free cash flow is operating cash flow less the positive magnitude of property and equipment expenditure. Cash conversion is operating cash flow divided by net income attributable to parent using the saved fact definition. A negative earnings denominator makes the conventional cash-conversion threshold unsuitable."
+        },
+        {
+          "conclusion": "At the saved fiscal 2024 balance-sheet date, noncurrent debt was lower but current maturities were higher than a year earlier. Equity also declined, and the supplied debt-to-equity ratio indicates material leverage.",
+          "evidence": [
+            {
+              "metric": "Stockholders' equity attributable to parent",
+              "value": "$437,158,000",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:StockholdersEquity",
+              "period": "2024-09-30"
+            },
+            {
+              "metric": "Stockholders' equity attributable to parent",
+              "value": "$525,668,000",
+              "filing": "10-K, filed 2024-11-22",
+              "accession_number": "0000063296-24-000094",
+              "source_reference": "us-gaap:StockholdersEquity",
+              "period": "2023-09-30"
+            },
+            {
+              "metric": "Noncurrent long-term debt; current maturities",
+              "value": "$769,614,000; $6,853,000",
+              "filing": "10-K, filed 2025-11-21",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:LongTermDebtNoncurrent; us-gaap:LongTermDebtCurrent",
+              "period": "2024-09-30"
+            },
+            {
+              "metric": "Noncurrent long-term debt; current maturities",
+              "value": "$786,484,000; $3,696,000",
+              "filing": "10-K, filed 2024-11-22",
+              "accession_number": "0000063296-24-000094",
+              "source_reference": "us-gaap:LongTermDebtNoncurrent; us-gaap:LongTermDebtCurrent",
+              "period": "2023-09-30"
+            }
+          ],
+          "ratio_arithmetic": "Supplied fiscal 2024 debt to equity: (769,614,000 + 6,853,000) / 437,158,000 = 1.7762x.",
+          "definition": "Debt here includes the supplied noncurrent long-term debt and current maturities only. The denominator is period-end parent equity. This is not net debt, total liabilities to equity, or a covenant leverage ratio."
+        }
+      ],
+      "ratio_analysis": [
+        {
+          "conclusion": "The supplied revenue-growth calculation shows contraction in fiscal 2024.",
+          "evidence": [
+            {
+              "metric": "Current and prior total revenue",
+              "value": "$1,795,737,000; $1,880,896,000",
+              "filing": "10-K",
+              "accession_number": "0000063296-24-000094",
+              "source_reference": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "period": "2023-10-01 through 2024-09-30; 2022-10-01 through 2023-09-30"
+            }
+          ],
+          "ratio_arithmetic": "(1,795,737,000 - 1,880,896,000) / 1,880,896,000 = -4.53%",
+          "definition": "Annual revenue growth equals current annual consolidated revenue less prior annual consolidated revenue, divided by prior annual consolidated revenue."
+        },
+        {
+          "conclusion": "The supplied fiscal 2024 operating margin is negative.",
+          "evidence": [
+            {
+              "metric": "Operating loss",
+              "value": "-$12,323,000",
+              "filing": "10-K",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:OperatingIncomeLoss",
+              "period": "2023-10-01 through 2024-09-30"
+            },
+            {
+              "metric": "Total revenue",
+              "value": "$1,795,737,000",
+              "filing": "10-K",
+              "accession_number": "0000063296-24-000094",
+              "source_reference": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "period": "2023-10-01 through 2024-09-30"
+            }
+          ],
+          "ratio_arithmetic": "-12,323,000 / 1,795,737,000 = -0.69%",
+          "definition": "GAAP operating income or loss divided by consolidated revenue for the same annual period. Inputs come from different filing vintages but cover identical dates."
+        },
+        {
+          "conclusion": "The supplied return on average equity is negative for fiscal 2024.",
+          "evidence": [
+            {
+              "metric": "Net loss attributable to parent; closing parent equity",
+              "value": "-$59,660,000; $437,158,000",
+              "filing": "10-K",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:NetIncomeLoss; us-gaap:StockholdersEquity",
+              "period": "Net loss: 2023-10-01 through 2024-09-30; equity: 2024-09-30"
+            },
+            {
+              "metric": "Opening parent equity",
+              "value": "$525,668,000",
+              "filing": "10-K",
+              "accession_number": "0000063296-24-000094",
+              "source_reference": "us-gaap:StockholdersEquity",
+              "period": "2023-09-30"
+            }
+          ],
+          "ratio_arithmetic": "-59,660,000 / ((437,158,000 + 525,668,000) / 2) = -12.39%",
+          "definition": "Annual net income attributable to parent divided by the simple average of opening and closing parent stockholders' equity."
+        },
+        {
+          "conclusion": "The supplied fiscal 2024 debt-to-equity ratio is above parity.",
+          "evidence": [
+            {
+              "metric": "Noncurrent debt; current maturities; parent equity",
+              "value": "$769,614,000; $6,853,000; $437,158,000",
+              "filing": "10-K",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:LongTermDebtNoncurrent; us-gaap:LongTermDebtCurrent; us-gaap:StockholdersEquity",
+              "period": "2024-09-30"
+            }
+          ],
+          "ratio_arithmetic": "(769,614,000 + 6,853,000) / 437,158,000 = 1.7762x",
+          "definition": "Supplied long-term debt, including current maturities, divided by period-end parent equity; cash is not deducted."
+        },
+        {
+          "conclusion": "The supplied fiscal 2024 free-cash-flow calculation is positive, but it is historical and should not be substituted for the later release's cash-flow results.",
+          "evidence": [
+            {
+              "metric": "Operating cash flow; capital expenditure",
+              "value": "$79,282,000; $45,218,000",
+              "filing": "10-K",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:NetCashProvidedByUsedInOperatingActivities; us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+              "period": "2023-10-01 through 2024-09-30"
+            }
+          ],
+          "ratio_arithmetic": "79,282,000 - 45,218,000 = 34,064,000",
+          "definition": "Operating cash flow less capital expenditures; not cash flow after acquisitions, dividends, or debt repayments."
+        }
+      ],
+      "quarterly_analysis": [
+        {
+          "conclusion": "Fourth-quarter fiscal 2026 consolidated sales contracted, while the GAAP diluted loss per share narrowed. The quarter remained loss-making.",
+          "evidence": [
+            {
+              "metric": "Consolidated sales",
+              "value": "Current: $256,705 thousand; prior: $318,841 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L69-L72; L72: Sales | $ | 256,705 | $ | 318,841 | (19.5) | % | $ | 1,046,103 | $ | 1,497,689 | (30.2) | %",
+              "period": "Three months ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "GAAP diluted EPS",
+              "value": "Current: -$0.62; prior: -$0.88",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L86: Loss per share -- diluted | $ | (0.62) | $ | (0.88) | (29.5) | % | $ | (0.68) | $ | (0.79) | (13.9) | %",
+              "period": "Three months ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Gross profit and reported gross margin; operating loss and reported operating margin",
+              "value": "Current: $94,722 thousand and 36.9%; -$8,533 thousand and -3.3%. Prior: $115,833 thousand and 36.3%; -$11,360 thousand and -3.6%",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L74-L75 and L79-L80; quarterly columns defined at L70-L71",
+              "period": "Three months ended 2026-09-30 and 2025-09-30"
+            }
+          ],
+          "ratio_arithmetic": "Supplied quarterly sales growth: ($256,705 - $318,841) / $318,841 = -19.49%. Gross-margin formulas: 94,722 / 256,705 and 115,833 / 318,841. Operating-margin formulas: -8,533 / 256,705 and -11,360 / 318,841. Margin percentages above are release-reported, not new calculator outputs.",
+          "definition": "Quarterly growth uses consolidated sales, not segment or retained-business sales. Gross margin is gross profit divided by sales; operating margin is GAAP operating income or loss divided by sales. GAAP diluted EPS is not adjusted EPS."
+        },
+        {
+          "conclusion": "The release's annual results show lower sales and operating profit despite higher reported margins. Net divestiture gains exceed reported operating profit, so the positive operating margin should not be treated as evidence of recurring operating strength.",
+          "evidence": [
+            {
+              "metric": "Consolidated sales and reported change",
+              "value": "Current: $1,046,103 thousand; prior: $1,497,689 thousand; reported change: -30.2%",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L69-L72, annual columns",
+              "period": "Years ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Gross profit and reported gross margin",
+              "value": "Current: $384,571 thousand and 36.8%; prior: $507,593 thousand and 33.9%",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L74-L75, annual columns",
+              "period": "Years ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Operating profit and reported operating margin",
+              "value": "Current: $72,595 thousand and 6.9%; prior: $75,453 thousand and 5.0%; reported operating-profit change: -3.8%",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L79-L80, annual columns",
+              "period": "Years ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Net gain on divestitures",
+              "value": "Current: $104,481 thousand; prior: $53,067 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L78, annual columns",
+              "period": "Years ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Portfolio comparability",
+              "value": "Prior-year consolidated results include the divested business through closing; the equity-method investment is reported on a one-quarter lag. The warehouse automation business was sold in December 2025.",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L47 and L50",
+              "period": "Fiscal 2026 versus fiscal 2025"
+            }
+          ],
+          "ratio_arithmetic": "Annual sales-growth formula: (1,046,103 - 1,497,689) / 1,497,689; release reports -30.2%. Operating-profit-growth formula: (72,595 - 75,453) / 75,453; release reports -3.8%. Gross-margin formulas: 384,571 / 1,046,103 and 507,593 / 1,497,689. Operating-margin formulas: 72,595 / 1,046,103 and 75,453 / 1,497,689. No additional evaluated ratios are introduced.",
+          "definition": "These are annual consolidated GAAP figures from the release, distinct from the quarterly comparison and the saved fiscal 2024 facts. Reported growth is not organic growth; GAAP operating profit includes the displayed divestiture gains."
+        },
+        {
+          "conclusion": "Annual operating cash flow was negative in both release periods, notwithstanding the release's statement that the latest quarter generated positive operating cash flow. Fiscal 2026 operating cash outflow was larger than the net loss; a positive quotient of these two negative amounts would not indicate strong cash conversion.",
+          "evidence": [
+            {
+              "metric": "Net loss; operating cash flow; capital expenditures",
+              "value": "Fiscal 2026: -$21,397 thousand; -$57,977 thousand; -$18,237 thousand. Fiscal 2025: -$24,471 thousand; -$23,550 thousand; -$35,818 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L138-L143, L150 and L152",
+              "period": "Years ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Working-capital cash-flow adjustment; divestiture proceeds",
+              "value": "Fiscal 2026: -$63,076 thousand; $242,176 thousand. Fiscal 2025: -$45,394 thousand; $230,053 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L146 and L155",
+              "period": "Years ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Quarterly operating cash flow disclosure",
+              "value": "Positive; no quarterly amount supplied",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L31-L33",
+              "period": "Fourth quarter ended 2026-09-30"
+            }
+          ],
+          "ratio_arithmetic": "Cash-conversion formulas: fiscal 2026, -57,977 / -21,397; fiscal 2025, -23,550 / -24,471. Free-cash-flow formulas in $thousand: fiscal 2026, -57,977 - 18,237; fiscal 2025, -23,550 - 35,818. No deterministic results for these calculations were supplied.",
+          "definition": "Cash conversion is annual operating cash flow divided by annual GAAP net income or loss. Free cash flow subtracts the positive magnitude of capital spending from operating cash flow. Divestiture proceeds are investing cash flows, not operating cash generation."
+        },
+        {
+          "conclusion": "The latest release shows lower debt and current liabilities, but also lower cash and equity. Liquidity therefore appears improved on a current-assets-versus-current-liabilities basis, while cash generation remains a constraint.",
+          "evidence": [
+            {
+              "metric": "Cash; current assets; current liabilities",
+              "value": "Current: $26,143 thousand; $463,787 thousand; $240,017 thousand. Prior: $32,433 thousand; $520,168 thousand; $350,480 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L112-L115, L119 and L128",
+              "period": "2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Current debt maturities; noncurrent debt; total shareholders' equity",
+              "value": "Current: $16,053 thousand; $594,355 thousand; $465,618 thousand. Prior: $7,230 thousand; $703,602 thousand; $480,942 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L126, L129 and L133",
+              "period": "2026-09-30 and 2025-09-30"
+            }
+          ],
+          "ratio_arithmetic": "Current-ratio formulas: 463,787 / 240,017 and 520,168 / 350,480. Debt-to-equity formulas: (594,355 + 16,053) / 465,618 and (703,602 + 7,230) / 480,942. No evaluated calculator results were supplied.",
+          "definition": "Current ratio is current assets divided by current liabilities at the same date. Release-based debt to equity uses reported noncurrent debt plus current maturities divided by total shareholders' equity; its equity label differs from the parent-equity label in the saved facts."
+        }
+      ],
+      "peer_analysis": [
+        {
+          "conclusion": "No peer comparison or relative valuation conclusion is supportable.",
+          "evidence": [],
+          "ratio_arithmetic": "Not available: the supplied peer-facts list is empty.",
+          "definition": "A valid peer comparison requires identified fiscal periods, matching GAAP or adjusted definitions, and comparable revenue, earnings, debt and equity measures."
+        }
+      ],
+      "valuation_insights": [
+        {
+          "conclusion": "Financial score table — latest supplied annual release, fiscal year ended 2026-09-30: Growth quality | 1/5, weak; Profitability | 2/5, weak-to-mixed; Cash conversion | 1/5, weak; Balance-sheet strength | 3/5, mixed; Valuation | not scored because price is absent. Growth reflects declining reported sales and operating profit. Profitability recognizes higher gross margin but discounts operating profit supported by divestiture gains. Cash generation is weak because operating cash flow is negative. Balance-sheet strength balances lower debt and current liabilities against lower cash and negative operating cash flow.",
+          "evidence": [
+            {
+              "metric": "Growth-quality score inputs",
+              "value": "Sales: $1,046,103 thousand versus $1,497,689 thousand, reported -30.2%; operating profit: $72,595 thousand versus $75,453 thousand, reported -3.8%",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L72 and L79, annual columns",
+              "period": "Years ended 2026-09-30 and 2025-09-30"
+            },
+            {
+              "metric": "Profitability score inputs",
+              "value": "Gross profit: $384,571 thousand; sales: $1,046,103 thousand; reported gross margin: 36.8%; operating profit: $72,595 thousand; reported operating margin: 6.9%; net divestiture gains: $104,481 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L72, L74-L75 and L78-L80, annual columns",
+              "period": "Year ended 2026-09-30"
+            },
+            {
+              "metric": "Cash-conversion score inputs",
+              "value": "Operating cash flow: -$57,977 thousand; net loss: -$21,397 thousand; capital expenditure outflow: $18,237 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L143, L150 and L152",
+              "period": "Year ended 2026-09-30"
+            },
+            {
+              "metric": "Balance-sheet score inputs",
+              "value": "Cash: $26,143 thousand; current assets: $463,787 thousand; current liabilities: $240,017 thousand; noncurrent debt: $594,355 thousand; current debt: $16,053 thousand; total equity: $465,618 thousand",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L115, L119, L126, L128-L129 and L133",
+              "period": "2026-09-30"
+            }
+          ],
+          "ratio_arithmetic": "Score-supporting formulas, using release amounts in $thousand: revenue growth = (1,046,103 - 1,497,689) / 1,497,689; operating-profit growth = (72,595 - 75,453) / 75,453; gross margin = 384,571 / 1,046,103; operating margin = 72,595 / 1,046,103; cash conversion = -57,977 / -21,397; free cash flow = -57,977 - 18,237; current ratio = 463,787 / 240,017; debt to equity = (594,355 + 16,053) / 465,618. Only release-reported percentages are used as evaluated results.",
+          "definition": "Scores are qualitative analyst judgments on a scale where 1 is weak, 3 is mixed and 5 is strong, not additional calculated ratios. They apply to the latest annual release, not the saved fiscal 2024 ratio set. Missing market-price evidence is not assigned a neutral valuation score."
+        },
+        {
+          "conclusion": "P/E cannot be calculated because no share price or price date was supplied. Negative GAAP diluted EPS also prevents a conventional positive earnings-multiple interpretation.",
+          "evidence": [
+            {
+              "metric": "Saved annual GAAP diluted EPS",
+              "value": "-$1.93 per share",
+              "filing": "10-K",
+              "accession_number": "0000063296-25-000070",
+              "source_reference": "us-gaap:EarningsPerShareDiluted",
+              "period": "2023-10-01 through 2024-09-30"
+            },
+            {
+              "metric": "Latest annual GAAP diluted EPS",
+              "value": "-$0.68 per share",
+              "filing": "8-K Exhibit 99.1, earnings release",
+              "accession_number": "0000063296-26-000118",
+              "source_reference": "L86, fiscal 2026 annual column",
+              "period": "Year ended 2026-09-30"
+            }
+          ],
+          "ratio_arithmetic": "Supplied P/E result: N/A (--price was not supplied).",
+          "definition": "P/E is a supplied dated share price divided by compatible annual or trailing diluted EPS. Quarterly EPS is not annualized, and adjusted EPS is not substituted for GAAP EPS."
+        }
+      ],
+      "calculator_requests": [],
+      "limitations": [
+        "No additional evaluated model arithmetic is introduced. Missing growth, margin, liquidity, cash-conversion and later-period free-cash-flow outputs are shown as formulas only; the supplied deterministic calculations and release-reported percentages remain separately identified.",
+        "The saved facts are anchored to the revenue selection's fiscal 2024 and fiscal 2023 period ends. Other tags have latest available annual period ends of 2025-09-30, but the selected current/prior observations remain fiscal 2024/fiscal 2023. Filing fiscal-year metadata must not relabel those observations.",
+        "The fiscal 2024 ratios combine revenue from accession 0000063296-24-000094 with other inputs principally from accession 0000063296-25-000070. MD&A L2798 in the latter filing corroborates the saved revenue amounts, but the supplied material does not establish that every presentation difference across filing vintages has been reconciled.",
+        "The supplied NetIncomeLoss fact is labeled attributable to parent. For fiscal 2023 it is $39,291,000, whereas consolidated net income in MD&A L2842 is $39,136 thousand and L2845 shows a $155 thousand loss attributable to noncontrolling interests. These differently scoped amounts are not substituted for one another.",
+        "The fiscal 2026 release is unaudited and is kept separate from the saved fiscal 2024 annual calculations. Its fiscal 2025 comparative presentation is not automatically interchangeable with every fiscal 2025 line in the earlier MD&A.",
+        "Portfolio changes described in release L47 and L50 limit interpretation of reported fiscal 2026 sales contraction as organic deterioration. No comparable retained-business growth calculation is supplied.",
+        "The release reports positive fourth-quarter operating cash flow at L31-L33 but provides only annual cash-flow amounts at L138-L166; a quarterly cash-conversion ratio cannot be calculated.",
+        "The view would weaken if a subsequent filing showed operating cash flow below positive net income, producing cash conversion below 1.0x. With losses, that ratio threshold is not reliable: positive cash flow divided by a loss is negative, while two negative inputs can produce a superficially positive ratio. The latest annual release already shows operating cash flow below net loss, which is adverse on an absolute cash basis.",
+        "No share price, price date, or peer facts were supplied. P/E, relative valuation and a defensible numeric valuation score are unavailable."
+      ],
+      "insight": {
+        "line": "Insight: Fiscal 2024 consolidated revenue declined 4.53%, calculated as ($1,795,737 thousand - $1,880,896 thousand) / $1,880,896 thousand; 10-K accession 0000063296-25-000070, MD&A L2798, with fiscal-year columns identified at L2791-L2793.",
+        "quote": "L2791: Years Ended September 30,\nL2792: 2025 | 2024 | 2023\nL2793: (Dollar amounts in thousands)\nL2794: Sales to external customers:\nL2795: Memorialization | $ | 809,514 | $ | 829,731 | $ | 842,997\nL2796: Industrial Technologies | 342,229 | 433,156 | 505,751\nL2797: Brand Solutions | 345,946 | 532,850 | 532,148\nL2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896",
+        "filing": "10-K",
+        "accession_number": "0000063296-25-000070",
+        "line_start": 2791,
+        "line_end": 2798
+      }
+    },
+    "investment_advisor_output": {
+      "thesis": "Retained-business resilience and asset-sale-assisted deleveraging do not yet establish a self-funding recovery; negative operating cash generation outweighs those improvements until the next filing demonstrates otherwise.",
+      "recommendation": "Sell",
+      "deciding_number": "-$57.977 million in fiscal 2026 operating cash flow",
+      "deciding_number_source": "Both analyst outputs; Earnings release, accession 0000063296-26-000118, L150, fiscal year ended September 30, 2026. Reported as (57,977) in thousands.",
+      "rationale": "Investment Recommendation: Sell. The deciding number shows that operations consumed cash despite reported profitability and debt reduction. Asset disposals can improve the balance sheet without repairing recurring cash generation. Both analysts agree on this weakness. The Research Analyst's emphasis on retained-business growth and the Financial Analyst's weaker consolidated assessment reflect different scopes rather than contradictory evidence; divestitures impair consolidated comparability.\n\nCriterion scores — advisor judgments, not filing facts. All earnings-release references below are accession 0000063296-26-000118:\n• Earnings strength: 1/5. Fiscal 2026 sales fell 30.2% (L72), operating profit fell 3.8% (L79), and the reported operating margin was 6.9% (L80). Divestiture gains supported profitability, while operating cash flow was -$57.977 million (L150).\n• Catalyst credibility: 3/5. Debt declined $100.4 million year over year, helped by the warehouse automation sale (L47). This is realized progress, but not a recurring operating catalyst.\n• Valuation attractiveness: 1/5, provisionally reflecting unverified attractiveness rather than demonstrated overvaluation. Annual GAAP diluted EPS was -$0.68 (L86); no price or comparable peer periods were supplied. A calculated multiple and defensible market-valuation score are therefore unavailable; this required score is an evidence-availability judgment only.\n• Risk-and-reward balance: 2/5. Memorialization sales growth of 4% provides a positive retained-business indicator (L46), but operating cash outflow of $57.977 million is the stronger downside evidence (L150).\n\nThe four-score average is 1.75/5, placing the recommendation in Sell territory without an override. The missing valuation evidence limits confidence; this is a cash-generation recommendation, not a claim that the shares are expensive.\n\nFuture Developments and Strategic Recommendations: The main upside catalyst is portfolio simplification translating into further debt reduction. Prioritize operating cash recovery over assuming additional disposal proceeds will sustain deleveraging. Change the recommendation to Hold if the next filing establishes positive operating cash flow over a comparable annual or trailing-annual period, invalidating the cash-consumption premise; a positive isolated quarter would not suffice.",
+      "risks": [
+        "Main downside risk: continued operating cash consumption could undermine asset-sale-assisted deleveraging.",
+        "Engineering litigation and customer delays threaten recovery; Industrial Technologies reported negative adjusted EBITDA.",
+        "Memorialization growth was partly acquisition-driven and does not establish organic momentum.",
+        "Management withheld full-year guidance while reviewing strategy.",
+        "Absent price and peer evidence prevents assessing whether existing valuation already compensates for these weaknesses."
+      ],
+      "insight": {
+        "line": "Insight: Fiscal 2026 operating cash outflow of $57.977 million shows that deleveraging was not accompanied by positive annual operating cash generation (Earnings release, accession 0000063296-26-000118, L150).",
+        "quote": "Net cash (used in) provided by operating activities | (57,977) | (23,550)",
+        "filing": "Earnings release",
+        "accession_number": "0000063296-26-000118",
+        "line_start": 150,
+        "line_end": 150
+      }
+    },
+    "deterministic_citation_issues": [],
+    "deterministic_insight_issues": {
+      "Research Analyst": [
+        "The cited filing line does not contain every Insight number."
+      ],
+      "Financial Analyst": [
+        "The Insight quote is not on its cited filing line range.",
+        "The cited filing line does not contain every Insight number."
+      ],
+      "Investment Advisor": [
+        "The cited filing line does not contain every Insight number."
+      ]
+    },
+    "earnings_release_first_paragraph": "PITTSBURGH, PA, November 19, 2026 - Matthews International Corporation (NASDAQ GSM: MATW) today announced financial results for the quarter and fiscal year ended September 30, 2026, and shared the perspectives of new President and Chief Executive Officer Michael J. Whitehead on the Company’s results and direction.",
+    "final_pass": false
+  },
+  "expected_output": {
+    "failures": "Any failing report part and one responsible role",
+    "overview": "Overview prose",
+    "market_positioning_and_growth_outlook": "Positioning and outlook prose",
+    "valuation_insights": "Valuation prose",
+    "future_developments_and_strategic_recommendations": "Forward view prose",
+    "investment_recommendation": "Recommendation prose with one deciding number"
+  }
+}

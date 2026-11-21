@@ -1,0 +1,23 @@
+{
+  "node_order": [
+    "SEC Step 1",
+    "SEC Step 2",
+    "SEC Step 3",
+    "SEC Step 4",
+    "SEC Step 5",
+    "SEC Step 6",
+    "SEC Step 7",
+    "Research Analyst",
+    "Financial Analyst",
+    "Investment Advisor",
+    "Strategy Manager",
+    "Verifier"
+  ],
+  "role_call_counts": {
+    "Research Analyst": 2,
+    "Financial Analyst": 2,
+    "Investment Advisor": 2,
+    "Strategy Manager": 1,
+    "Verifier": 1
+  }
+}

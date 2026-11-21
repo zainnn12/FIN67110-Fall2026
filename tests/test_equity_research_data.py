@@ -8,6 +8,7 @@ from equity_research_data import (
     REVENUE_LINE_RE,
     Company,
     DeskError,
+    SecClient,
     calculate_metrics,
     extract_aligned_facts,
     find_exhibit_991_url,
@@ -15,6 +16,28 @@ from equity_research_data import (
     matching_release_lines,
     parse_quarterly_release_metrics,
 )
+
+
+def test_sec_disk_cache_avoids_duplicate_filing_fetch(tmp_path):
+    class Response:
+        content=b"sec evidence"
+        headers={"Content-Type":"text/plain"}
+        encoding="utf-8"
+        status_code=200
+        def raise_for_status(self): pass
+    class Session:
+        def __init__(self): self.calls=0
+        def mount(self,*args): pass
+        def get(self,*args,**kwargs): self.calls+=1; return Response()
+    first=SecClient("test-agent",min_interval=0,cache_dir=tmp_path/"cache")
+    first.session=Session()
+    url="https://www.sec.gov/Archives/edgar/data/1/000000000126000001/doc.htm"
+    assert first.fetch(url).content==b"sec evidence"
+    assert first.session.calls==1
+    second=SecClient("test-agent",min_interval=0,cache_dir=tmp_path/"cache")
+    second.session=Session()
+    assert second.fetch(url).content==b"sec evidence"
+    assert second.session.calls==0
 
 
 def duration_point(

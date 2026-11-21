@@ -1,0 +1,121 @@
+{
+  "business_model": [
+    {
+      "claim": "Overview: Memorialization sells physical products to cemeteries, funeral homes and crematories, making it the principal operating revenue engine. Its offering spans burial products, cremation equipment and related supplies rather than depending exclusively on traditional burial demand.",
+      "quote": "The Memorialization segment manufactures and markets a full line of memorialization products used primarily in cemeteries, funeral homes, and crematories. The segment's products, which are sold principally in North America, Europe and Australia, include cast bronze memorials, granite memorials, caskets, cremation-related products, embalming chemicals and related tools/supplies, cremation and incineration equipment and other memorialization products.",
+      "filing": "10-K",
+      "accession_number": "0000063296-25-000070",
+      "line_start": 2203,
+      "line_end": 2203
+    },
+    {
+      "claim": "Industrial Technologies earns revenue from engineered equipment, product identification and automation systems. The historical description includes warehouse automation, which was subsequently sold and should not be treated as an ongoing growth engine.",
+      "quote": "The Industrial Technologies segment includes the design, manufacturing, service and sales of high-tech custom energy storage solutions; product identification and warehouse automation technologies and solutions, including order fulfillment systems for identifying, tracking, picking and conveying consumer and industrial products; and coating and converting lines for the packaging, pharma, foil, décor and tissue industries.",
+      "filing": "10-K",
+      "accession_number": "0000063296-25-000070",
+      "line_start": 2229,
+      "line_end": 2229
+    },
+    {
+      "claim": "Equipment sales support aftermarket opportunities: proprietary marking inks can encourage repeat purchases, although the supplied material does not quantify recurring revenue or customer retention.",
+      "quote": "The Company develops inks exclusively for the use with its marking equipment, which is critical to ensure ongoing equipment reliability and mark quality.",
+      "filing": "10-K",
+      "accession_number": "0000063296-25-000070",
+      "line_start": 2239,
+      "line_end": 2239
+    },
+    {
+      "claim": "Business momentum is mixed: fiscal 2026 consolidated sales declined 30.2% to $1,046.103 million, with divestitures impairing comparability (Earnings release, year ended September 30, 2026, L70–72). The retained Memorialization business grew, as detailed separately below.",
+      "quote": "Sales | $ | 256,705 | $ | 318,841 | (19.5) | % | $ | 1,046,103 | $ | 1,497,689 | (30.2) | %",
+      "filing": "Earnings release",
+      "accession_number": "0000063296-26-000118",
+      "line_start": 72,
+      "line_end": 72
+    }
+  ],
+  "competitive_position": [
+    {
+      "claim": "Market Positioning and Growth Outlook: Broad product coverage and company-owned casket distribution support customer service and cross-selling. These are plausible competitive advantages, not proof of pricing power; the filing explicitly describes intense competition.",
+      "quote": "The segment's casket products are primarily sold through Company-owned distribution centers throughout the United States. The casket business is highly competitive and the Company competes with other manufacturers based on product quality, price, service, design availability and breadth of product line.",
+      "filing": "10-K",
+      "accession_number": "0000063296-25-000070",
+      "line_start": 2225,
+      "line_end": 2225
+    },
+    {
+      "claim": "The fiscal 2025 backlog disclosure provides some demand visibility: cremation and incineration equipment generally covered four to six months of sales and mausoleums approximately nine to twelve months (10-K, fiscal 2025, L2294). These durations do not establish market share, backlog value or current demand strength.",
+      "quote": "Cremation and incineration equipment sales backlogs vary in a range of four to six months of sales. Backlogs vary in a range of approximately nine to twelve months of sales for mausoleums.",
+      "filing": "10-K",
+      "accession_number": "0000063296-25-000070",
+      "line_start": 2294,
+      "line_end": 2294
+    },
+    {
+      "claim": "Memorialization is the clearest reported growth engine: management reported fiscal 2026 sales growth of 4%, partly acquisition-driven, alongside adjusted EBITDA margin expansion (Earnings release, year ended September 30, 2026, L46). This supports resilience but does not establish organic growth.",
+      "quote": "Memorialization achieved record annual sales, up 4%, driven in part by The Dodge Company acquisition, while adjusted EBITDA also reached a record level with margin expansion.",
+      "filing": "Earnings release",
+      "accession_number": "0000063296-26-000118",
+      "line_start": 46,
+      "line_end": 46
+    }
+  ],
+  "catalysts": [
+    {
+      "claim": "Main catalyst: portfolio simplification has already enabled deleveraging. The warehouse automation sale in December 2025 helped reduce debt by $100.4 million year over year in fiscal 2026 (Earnings release, L47). Further progress could improve financial flexibility, but asset-sale proceeds are not recurring operating cash generation.",
+      "quote": "The December 2025 sale of our warehouse automation business helped reduce debt by $100.4 million year over year. We remain focused on further debt reduction while delivering competitive shareholder returns through quarterly dividends.",
+      "filing": "Earnings release",
+      "accession_number": "0000063296-26-000118",
+      "line_start": 47,
+      "line_end": 47
+    },
+    {
+      "claim": "Product identification offers a retained-business growth opportunity: management reported sales growth of 14% in the fiscal fourth quarter of 2026, while warning that engineering still faced litigation-related customer delays (Earnings release, quarter ended September 30, 2026, L42). No product-level revenue base or profit contribution is supplied.",
+      "quote": "Sales for the Memorialization segment outperformed the same quarter a year ago, corporate and other non-operating costs declined, and product identification sales grew 14%. Our engineering business continues to face customer delays related to ongoing litigation.",
+      "filing": "Earnings release",
+      "accession_number": "0000063296-26-000118",
+      "line_start": 42,
+      "line_end": 42
+    }
+  ],
+  "recent_developments": [
+    {
+      "claim": "Industrial Technologies deteriorated despite portfolio restructuring: adjusted EBITDA moved from positive $27.936 million in fiscal 2025 to negative $16.297 million in fiscal 2026 (Earnings release, years ended September 30, L93–103). Divestitures limit like-for-like comparisons, but the remaining segment's reported loss is a material weakness.",
+      "quote": "Industrial Technologies | (3,092) | 11,015 | (16,297) | 27,936",
+      "filing": "Earnings release",
+      "accession_number": "0000063296-26-000118",
+      "line_start": 103,
+      "line_end": 103
+    },
+    {
+      "claim": "Most important disclosed risk: weak cash conversion threatens the sustainability of deleveraging. Operating cash outflow increased to $57.977 million in fiscal 2026 from $23.550 million in fiscal 2025 (Earnings release, years ended September 30, L139–150), despite the reported positive final quarter.",
+      "quote": "Net cash (used in) provided by operating activities | (57,977) | (23,550)",
+      "filing": "Earnings release",
+      "accession_number": "0000063296-26-000118",
+      "line_start": 150,
+      "line_end": 150
+    },
+    {
+      "claim": "Management withheld full-year fiscal 2027 guidance while reviewing strategy, citing economic uncertainty and engineering litigation (Earnings release, outlook for fiscal 2027, L48). Consequently, continued segment improvement and further restructuring benefits remain unquantified.",
+      "quote": "As we enter fiscal 2027, economic uncertainty and litigation affecting our engineering business remain significant considerations. The leadership transition is progressing well, but work remains to define our go-forward strategies. Accordingly, we are not providing full-year fiscal 2027 guidance at this time.",
+      "filing": "Earnings release",
+      "accession_number": "0000063296-26-000118",
+      "line_start": 48,
+      "line_end": 48
+    }
+  ],
+  "limitations": [
+    "The supplied annual report predates the latest earnings release. Historical descriptions of the portfolio and backlog should not be treated as current after subsequent divestitures. No latest-year annual-report risk section or XBRL facts were supplied.",
+    "The supplied material does not quantify organic Memorialization growth, recurring-revenue share, customer retention, current backlog value or market share. Management's leadership and product-quality assertions are not independent evidence of competitive superiority.",
+    "Adjusted EBITDA excludes material expenses and incorporates an equity-method investment contribution; it is not equivalent to operating cash flow. The earnings release also contains inconsistent period labeling in its investment-contribution discussion at L51, so that figure is not used here.",
+    "Score table — analyst judgments; higher scores indicate stronger business conditions, including less risk pressure.\nCriterion | Score | Supporting number, period and source\nBusiness momentum | 3/5 | Consolidated sales fell 30.2%, while Memorialization sales rose 4%; fiscal year ended September 30, 2026; Earnings release L72 and L46.\nCompetitive durability | 3/5 | Cremation/incineration equipment backlog generally covered four to six months of sales; fiscal 2025 disclosure; 10-K L2294. Historical visibility, not proof of a moat.\nCatalyst strength | 3/5 | Debt declined $100.4 million year over year, helped by the warehouse automation sale; fiscal 2026; Earnings release L47. Further benefits are not quantified.\nRisk pressure | 1/5 | Operating cash outflow of $57.977 million versus $23.550 million; fiscal years ended September 30, 2026 and 2025; Earnings release L139–150.",
+    "What would change the view: downgrade the outlook if the next filing shows that Memorialization, the main reported growth engine, has stopped growing or turned negative. Product identification growth alone would not establish a broad recovery."
+  ],
+  "insight": {
+    "line": "Insight: Deleveraging has not yet been matched by sustainable operating cash generation: fiscal 2026 operating cash outflow was $57.977 million versus $23.550 million in fiscal 2025 (Earnings release, years ended September 30, accession 0000063296-26-000118, L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+    "quote": "Net cash (used in) provided by operating activities | (57,977) | (23,550)",
+    "filing": "Earnings release",
+    "accession_number": "0000063296-26-000118",
+    "line_start": 150,
+    "line_end": 150
+  }
+}

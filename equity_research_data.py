@@ -9,8 +9,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import io
 import json
+import os
 import re
 import sys
 import time
@@ -262,6 +264,7 @@ class SecClient:
         self,
         user_agent: str,
         min_interval: float = MIN_SEC_REQUEST_INTERVAL_SECONDS,
+        cache_dir: Path | None = None,
     ) -> None:
         if not user_agent.strip():
             raise DeskError("SEC_USER_AGENT is empty in .env.")
@@ -270,6 +273,8 @@ class SecClient:
         self._last_request_started = 0.0
         self._resource_cache: dict[str, DownloadedResource] = {}
         self._json_cache: dict[str, Any] = {}
+        configured_cache = os.environ.get("EQUITY_DESK_SEC_CACHE_DIR")
+        self.cache_dir = cache_dir or (Path(configured_cache) if configured_cache else None)
 
         retry = Retry(
             total=4,
@@ -296,6 +301,14 @@ class SecClient:
         self._validate_sec_url(url)
         if url in self._resource_cache:
             return self._resource_cache[url]
+
+        cache_path = None
+        if self.cache_dir is not None:
+            cache_path = self.cache_dir / (hashlib.sha256(url.encode("utf-8")).hexdigest() + ".bin")
+            if cache_path.is_file():
+                resource = DownloadedResource(url=url, content=cache_path.read_bytes(), content_type="", encoding="utf-8")
+                self._resource_cache[url] = resource
+                return resource
 
         elapsed = time.monotonic() - self._last_request_started
         if elapsed < self.min_interval:
@@ -326,6 +339,9 @@ class SecClient:
             encoding=response.encoding,
         )
         self._resource_cache[url] = resource
+        if cache_path is not None:
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            cache_path.write_bytes(resource.content)
         return resource
 
     def get_json(self, url: str) -> Any:

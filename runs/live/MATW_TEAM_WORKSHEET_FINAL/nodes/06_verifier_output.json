@@ -1,0 +1,1600 @@
+{
+  "claims": [
+    {
+      "claim_id": "N001",
+      "report_line": 10,
+      "statement": "Memorialization supplies burial products, cremation equipment and related supplies to cemeteries, funeral homes and crematories (10-K, fiscal 2025, L2203). Latest reported momentum is mixed: consolidated sales declined 30.2%, while Memorialization sales increased 4%, partly acquisition-driven (Earnings release, fiscal year ended September 30, 2026, L72 and L46).",
+      "reported": "10",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: No matching filing excerpt supplied for L2203.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. '10' is part of the form name 10-K, not a financial quantity.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N002",
+      "report_line": 10,
+      "statement": "Memorialization supplies burial products, cremation equipment and related supplies to cemeteries, funeral homes and crematories (10-K, fiscal 2025, L2203). Latest reported momentum is mixed: consolidated sales declined 30.2%, while Memorialization sales increased 4%, partly acquisition-driven (Earnings release, fiscal year ended September 30, 2026, L72 and L46).",
+      "reported": "30.2%",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Earnings release L72 is cited in the report but not supplied as a saved excerpt.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The supplied filing excerpts do not include the consolidated sales decline.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N003",
+      "report_line": 10,
+      "statement": "Memorialization supplies burial products, cremation equipment and related supplies to cemeteries, funeral homes and crematories (10-K, fiscal 2025, L2203). Latest reported momentum is mixed: consolidated sales declined 30.2%, while Memorialization sales increased 4%, partly acquisition-driven (Earnings release, fiscal year ended September 30, 2026, L72 and L46).",
+      "reported": "4%",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "4%",
+      "evidence": "Possible filing support: facts.json; tag NetIncomeLoss; value 39291000 USD; period 2022-10-01 to 2023-09-30.\nModel source: facts.json, us-gaap:NetIncomeLoss, fiscal 2023; unrelated metric and period.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. Fiscal 2023 net income does not support fiscal 2026 Memorialization sales growth.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N004",
+      "report_line": 12,
+      "statement": "Operating cash generation remains a concern. The earnings release reports operating cash-flow amounts of **(57,977)** for fiscal 2026 and **(23,550)** for fiscal 2025, **in thousands of dollars**. These convert to operating cash outflows of **$57.977 million** and **$23.550 million**, respectively; the million-dollar figures are unit conversions, not amounts printed in the cash-flow row.",
+      "reported": "57,977",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150: Net cash (used in) provided by operating activities | (57,977) | (23,550).",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved for this uncited occurrence. The separately supplied cash-flow excerpt corroborates the amount.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N005",
+      "report_line": 12,
+      "statement": "Operating cash generation remains a concern. The earnings release reports operating cash-flow amounts of **(57,977)** for fiscal 2026 and **(23,550)** for fiscal 2025, **in thousands of dollars**. These convert to operating cash outflows of **$57.977 million** and **$23.550 million**, respectively; the million-dollar figures are unit conversions, not amounts printed in the cash-flow row.",
+      "reported": "23,550",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150: Net cash (used in) provided by operating activities | (57,977) | (23,550).",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved for this uncited occurrence. The separately supplied cash-flow excerpt corroborates the amount.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N006",
+      "report_line": 12,
+      "statement": "Operating cash generation remains a concern. The earnings release reports operating cash-flow amounts of **(57,977)** for fiscal 2026 and **(23,550)** for fiscal 2025, **in thousands of dollars**. These convert to operating cash outflows of **$57.977 million** and **$23.550 million**, respectively; the million-dollar figures are unit conversions, not amounts printed in the cash-flow row.",
+      "reported": "$57.977 million",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The million-dollar amount is a valid conversion of the separately supplied filing amount, not its printed unit.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N007",
+      "report_line": 12,
+      "statement": "Operating cash generation remains a concern. The earnings release reports operating cash-flow amounts of **(57,977)** for fiscal 2026 and **(23,550)** for fiscal 2025, **in thousands of dollars**. These convert to operating cash outflows of **$57.977 million** and **$23.550 million**, respectively; the million-dollar figures are unit conversions, not amounts printed in the cash-flow row.",
+      "reported": "$23.550 million",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The million-dollar amount is a valid conversion of the separately supplied filing amount, not its printed unit.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N008",
+      "report_line": 16,
+      "statement": "- L140 establishes the period: “Year Ended September 30,”",
+      "reported": "30,",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: 8-K_EX-99.1_000006329626000118.txt, L140: Year Ended September 30,",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The extracted token is a calendar day, not a financial amount; the supplied excerpt confirms the date.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N009",
+      "report_line": 18,
+      "statement": "- L150 reports the amounts: “Net cash (used in) provided by operating activities | (57,977) | (23,550)”",
+      "reported": "57,977",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved for this occurrence. The separately supplied L150 confirms the quoted amount.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N010",
+      "report_line": 18,
+      "statement": "- L150 reports the amounts: “Net cash (used in) provided by operating activities | (57,977) | (23,550)”",
+      "reported": "23,550",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved for this occurrence. The separately supplied L150 confirms the quoted amount.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N011",
+      "report_line": 22,
+      "statement": "Insight: Annual operating cash outflow worsened in fiscal 2026: reported amounts of (57,977) and (23,550), in thousands, convert to outflows of $57.977 million and $23.550 million for fiscal 2026 and fiscal 2025, respectively (Earnings release, accession 0000063296-26-000118; L139: \"(In thousands)\"; L140: \"Year Ended September 30,\"; L141: \"2026 | 2025\"; L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+      "reported": "57,977",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": true,
+      "semantic_explanation": "The operating cash-flow row reports (57,977), in thousands, for the year ended September 30, 2026.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N012",
+      "report_line": 22,
+      "statement": "Insight: Annual operating cash outflow worsened in fiscal 2026: reported amounts of (57,977) and (23,550), in thousands, convert to outflows of $57.977 million and $23.550 million for fiscal 2026 and fiscal 2025, respectively (Earnings release, accession 0000063296-26-000118; L139: \"(In thousands)\"; L140: \"Year Ended September 30,\"; L141: \"2026 | 2025\"; L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+      "reported": "23,550",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": true,
+      "semantic_explanation": "The operating cash-flow row reports (23,550), in thousands, in the fiscal 2025 comparative column.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N013",
+      "report_line": 22,
+      "statement": "Insight: Annual operating cash outflow worsened in fiscal 2026: reported amounts of (57,977) and (23,550), in thousands, convert to outflows of $57.977 million and $23.550 million for fiscal 2026 and fiscal 2025, respectively (Earnings release, accession 0000063296-26-000118; L139: \"(In thousands)\"; L140: \"Year Ended September 30,\"; L141: \"2026 | 2025\"; L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+      "reported": "$57.977 million",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": true,
+      "semantic_explanation": "The explicitly identified conversion is correct: a fiscal 2026 outflow of $57,977 thousand equals $57.977 million. The filing prints thousands, not millions.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N014",
+      "report_line": 22,
+      "statement": "Insight: Annual operating cash outflow worsened in fiscal 2026: reported amounts of (57,977) and (23,550), in thousands, convert to outflows of $57.977 million and $23.550 million for fiscal 2026 and fiscal 2025, respectively (Earnings release, accession 0000063296-26-000118; L139: \"(In thousands)\"; L140: \"Year Ended September 30,\"; L141: \"2026 | 2025\"; L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+      "reported": "$23.550 million",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": true,
+      "semantic_explanation": "The explicitly identified conversion is correct: a fiscal 2025 outflow of $23,550 thousand equals $23.550 million. The filing prints thousands, not millions.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N015",
+      "report_line": 22,
+      "statement": "Insight: Annual operating cash outflow worsened in fiscal 2026: reported amounts of (57,977) and (23,550), in thousands, convert to outflows of $57.977 million and $23.550 million for fiscal 2026 and fiscal 2025, respectively (Earnings release, accession 0000063296-26-000118; L139: \"(In thousands)\"; L140: \"Year Ended September 30,\"; L141: \"2026 | 2025\"; L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+      "reported": "30,",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "wrong",
+      "deterministic_reason": "The cited saved line contains a different number.",
+      "corrected_value": "8",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L140–141: Year Ended September 30, | 2026 | 2025.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic wrong result preserved. This is a date-token extraction issue: the supplied excerpt actually states September 30, so it does not establish a substantive date error.",
+      "final_mark": "wrong"
+    },
+    {
+      "claim_id": "N016",
+      "report_line": 22,
+      "statement": "Insight: Annual operating cash outflow worsened in fiscal 2026: reported amounts of (57,977) and (23,550), in thousands, convert to outflows of $57.977 million and $23.550 million for fiscal 2026 and fiscal 2025, respectively (Earnings release, accession 0000063296-26-000118; L139: \"(In thousands)\"; L140: \"Year Ended September 30,\"; L141: \"2026 | 2025\"; L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+      "reported": "57,977",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": true,
+      "semantic_explanation": "The quotation accurately reproduces fiscal 2026 operating cash used of (57,977), in thousands.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N017",
+      "report_line": 22,
+      "statement": "Insight: Annual operating cash outflow worsened in fiscal 2026: reported amounts of (57,977) and (23,550), in thousands, convert to outflows of $57.977 million and $23.550 million for fiscal 2026 and fiscal 2025, respectively (Earnings release, accession 0000063296-26-000118; L139: \"(In thousands)\"; L140: \"Year Ended September 30,\"; L141: \"2026 | 2025\"; L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+      "reported": "23,550",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": true,
+      "semantic_explanation": "The quotation accurately reproduces fiscal 2025 operating cash used of (23,550), in thousands.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N018",
+      "report_line": 26,
+      "statement": "Broad product coverage and company-owned casket distribution may support service and cross-selling, but they do not establish pricing power or a durable moat; the filing explicitly describes the casket business as highly competitive (10-K, accession 0000063296-25-000070, L2225). Management reported Memorialization sales growth of 4% for the year ended September 30, 2026, partly attributable to The Dodge Company acquisition, so this is not evidence of equivalent organic growth (earnings release, accession 0000063296-26-000118, L46: “Memorialization achieved record annual sales, up 4%, driven in part by The Dodge Company acquisition”). Product identification sales grew 14% in the quarter ended September 30, 2026, while engineering continued to experience litigation-related customer delays (same release, L42). These disclosures support selective retained-business opportunities, not a demonstrated broad recovery. Management withheld full-year fiscal 2027 guidance while reviewing strategy, limiting confidence in a quantified growth outlook (same release, L48).",
+      "reported": "10",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: No matching saved excerpt supplied for L2225.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. '10' belongs to the form identifier, not a quantitative operating claim.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N019",
+      "report_line": 26,
+      "statement": "Broad product coverage and company-owned casket distribution may support service and cross-selling, but they do not establish pricing power or a durable moat; the filing explicitly describes the casket business as highly competitive (10-K, accession 0000063296-25-000070, L2225). Management reported Memorialization sales growth of 4% for the year ended September 30, 2026, partly attributable to The Dodge Company acquisition, so this is not evidence of equivalent organic growth (earnings release, accession 0000063296-26-000118, L46: “Memorialization achieved record annual sales, up 4%, driven in part by The Dodge Company acquisition”). Product identification sales grew 14% in the quarter ended September 30, 2026, while engineering continued to experience litigation-related customer delays (same release, L42). These disclosures support selective retained-business opportunities, not a demonstrated broad recovery. Management withheld full-year fiscal 2027 guidance while reviewing strategy, limiting confidence in a quantified growth outlook (same release, L48).",
+      "reported": "4%",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "4%",
+      "evidence": "Possible filing support: facts.json; tag NetIncomeLoss; value 39291000 USD; period 2022-10-01 to 2023-09-30.\nModel source: facts.json, us-gaap:NetIncomeLoss; earnings release L46 is not supplied as a saved excerpt.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The suggested fiscal 2023 net-income fact cannot verify fiscal 2026 segment sales growth.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N020",
+      "report_line": 26,
+      "statement": "Broad product coverage and company-owned casket distribution may support service and cross-selling, but they do not establish pricing power or a durable moat; the filing explicitly describes the casket business as highly competitive (10-K, accession 0000063296-25-000070, L2225). Management reported Memorialization sales growth of 4% for the year ended September 30, 2026, partly attributable to The Dodge Company acquisition, so this is not evidence of equivalent organic growth (earnings release, accession 0000063296-26-000118, L46: “Memorialization achieved record annual sales, up 4%, driven in part by The Dodge Company acquisition”). Product identification sales grew 14% in the quarter ended September 30, 2026, while engineering continued to experience litigation-related customer delays (same release, L42). These disclosures support selective retained-business opportunities, not a demonstrated broad recovery. Management withheld full-year fiscal 2027 guidance while reviewing strategy, limiting confidence in a quantified growth outlook (same release, L48).",
+      "reported": "4%",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "4%",
+      "evidence": "Possible filing support: facts.json; tag NetIncomeLoss; value 39291000 USD; period 2022-10-01 to 2023-09-30.\nModel source: facts.json, us-gaap:NetIncomeLoss; earnings release L46 is not supplied as a saved excerpt.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The report's quotation is not independently corroborated by the supplied filing excerpts; the suggested net-income fact is unrelated.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N021",
+      "report_line": 26,
+      "statement": "Broad product coverage and company-owned casket distribution may support service and cross-selling, but they do not establish pricing power or a durable moat; the filing explicitly describes the casket business as highly competitive (10-K, accession 0000063296-25-000070, L2225). Management reported Memorialization sales growth of 4% for the year ended September 30, 2026, partly attributable to The Dodge Company acquisition, so this is not evidence of equivalent organic growth (earnings release, accession 0000063296-26-000118, L46: “Memorialization achieved record annual sales, up 4%, driven in part by The Dodge Company acquisition”). Product identification sales grew 14% in the quarter ended September 30, 2026, while engineering continued to experience litigation-related customer delays (same release, L42). These disclosures support selective retained-business opportunities, not a demonstrated broad recovery. Management withheld full-year fiscal 2027 guidance while reviewing strategy, limiting confidence in a quantified growth outlook (same release, L48).",
+      "reported": "14%",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Earnings release L42 is cited in the report but not supplied as a saved excerpt.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. No supplied filing excerpt verifies the quarterly product identification growth rate.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N022",
+      "report_line": 36,
+      "statement": "Scores are analyst judgments: 1 = weak, 3 = mixed, 5 = strong. The table uses the unaudited earnings release, accession **0000063296-26-000118**. Annual comparisons are for years ended **September 30, 2026 and 2025**; balance-sheet inputs are at **September 30, 2026**. Dollar inputs are in thousands. Formulas without supplied calculator results remain unevaluated.",
+      "reported": "1",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "1",
+      "evidence": "Possible filing support: facts.json; tag EarningsPerShareDiluted; value 1.26 USD/shares; period 2022-10-01 to 2023-09-30.\nModel source: Compiled report scoring methodology; no filing source.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. This is an analyst-defined scoring convention, not a filing fact; diluted EPS is unrelated.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N023",
+      "report_line": 36,
+      "statement": "Scores are analyst judgments: 1 = weak, 3 = mixed, 5 = strong. The table uses the unaudited earnings release, accession **0000063296-26-000118**. Annual comparisons are for years ended **September 30, 2026 and 2025**; balance-sheet inputs are at **September 30, 2026**. Dollar inputs are in thousands. Formulas without supplied calculator results remain unevaluated.",
+      "reported": "3",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Compiled report scoring methodology; no filing source.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. This is an analyst-defined scoring convention, not a filing fact.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N024",
+      "report_line": 36,
+      "statement": "Scores are analyst judgments: 1 = weak, 3 = mixed, 5 = strong. The table uses the unaudited earnings release, accession **0000063296-26-000118**. Annual comparisons are for years ended **September 30, 2026 and 2025**; balance-sheet inputs are at **September 30, 2026**. Dollar inputs are in thousands. Formulas without supplied calculator results remain unevaluated.",
+      "reported": "5",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Compiled report scoring methodology; no filing source.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. This is an analyst-defined scoring convention, not a filing fact.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N025",
+      "report_line": 40,
+      "statement": "Growth quality | 1/5",
+      "reported": "1",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "1",
+      "evidence": "Possible filing support: facts.json; tag EarningsPerShareDiluted; value 1.26 USD/shares; period 2022-10-01 to 2023-09-30.\nModel source: Compiled report financial score table.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The growth-quality score is analyst judgment; the suggested EPS fact does not verify it.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N026",
+      "report_line": 40,
+      "statement": "Growth quality | 1/5",
+      "reported": "5",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Compiled report financial score table.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. Five is the analyst scale maximum, not a filing metric.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N027",
+      "report_line": 41,
+      "statement": "Profitability | 2/5",
+      "reported": "2",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "2",
+      "evidence": "Possible filing support: facts.json; tag RevenueFromContractWithCustomerExcludingAssessedTax; value 1795737000 USD; period 2023-10-01 to 2024-09-30.\nModel source: Compiled report financial score table.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The profitability score is analyst judgment; the suggested revenue fact does not verify it.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N028",
+      "report_line": 41,
+      "statement": "Profitability | 2/5",
+      "reported": "5",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Compiled report financial score table.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. Five is the analyst scale maximum, not a filing metric.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N029",
+      "report_line": 42,
+      "statement": "Cash conversion | 1/5",
+      "reported": "1",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "1",
+      "evidence": "Possible filing support: facts.json; tag EarningsPerShareDiluted; value 1.26 USD/shares; period 2022-10-01 to 2023-09-30.\nModel source: Compiled report financial score table.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The cash-conversion score is analyst judgment; the suggested EPS fact does not verify it.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N030",
+      "report_line": 42,
+      "statement": "Cash conversion | 1/5",
+      "reported": "5",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Compiled report financial score table.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. Five is the analyst scale maximum, not a filing metric.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N031",
+      "report_line": 43,
+      "statement": "Balance-sheet strength | 3/5",
+      "reported": "3",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Compiled report financial score table.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The balance-sheet score is analyst judgment, not a filing-reported measure.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N032",
+      "report_line": 43,
+      "statement": "Balance-sheet strength | 3/5",
+      "reported": "5",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Compiled report financial score table.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. Five is the analyst scale maximum, not a filing metric.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N033",
+      "report_line": 46,
+      "statement": "**Historical calculations remain separate.** For fiscal 2024 (October 1, 2023–September 30, 2024), the supplied calculator gives operating margin = −12,323,000 / 1,795,737,000 = **−0.69%**; free cash flow = 79,282,000 − 45,218,000 = **$34,064,000**; return on average parent equity = −59,660,000 / ((437,158,000 + 525,668,000) / 2) = **−12.39%**; and debt to parent equity at September 30, 2024 = (769,614,000 + 6,853,000) / 437,158,000 = **1.7762x**. Revenue uses `us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax`, accession **0000063296-24-000094**. Other inputs use `us-gaap:OperatingIncomeLoss`, `us-gaap:NetCashProvidedByUsedInOperatingActivities`, `us-gaap:PaymentsToAcquirePropertyPlantAndEquipment`, `us-gaap:NetIncomeLoss`, `us-gaap:StockholdersEquity`, `us-gaap:LongTermDebtNoncurrent`, and `us-gaap:LongTermDebtCurrent`, accession **0000063296-25-000070**, except opening equity at September 30, 2023, which comes from accession **0000063296-24-000094**.",
+      "reported": "-0.69%",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-24-000094",
+      "line_ranges": [],
+      "expression": "12,323,000 / 1,795,737,000",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The ratio has more than one plausible definition, but the report gives no definition.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: facts.json: us-gaap:OperatingIncomeLoss = −12,323,000 USD, accession 0000063296-25-000070; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax = 1,795,737,000 USD, accession 0000063296-24-000094; both fiscal 2024.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. Contrary to its stated reason, the report defines the ratio, and saved fiscal 2024 facts corroborate its inputs; the percentage is derived rather than directly reported.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N034",
+      "report_line": 46,
+      "statement": "**Historical calculations remain separate.** For fiscal 2024 (October 1, 2023–September 30, 2024), the supplied calculator gives operating margin = −12,323,000 / 1,795,737,000 = **−0.69%**; free cash flow = 79,282,000 − 45,218,000 = **$34,064,000**; return on average parent equity = −59,660,000 / ((437,158,000 + 525,668,000) / 2) = **−12.39%**; and debt to parent equity at September 30, 2024 = (769,614,000 + 6,853,000) / 437,158,000 = **1.7762x**. Revenue uses `us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax`, accession **0000063296-24-000094**. Other inputs use `us-gaap:OperatingIncomeLoss`, `us-gaap:NetCashProvidedByUsedInOperatingActivities`, `us-gaap:PaymentsToAcquirePropertyPlantAndEquipment`, `us-gaap:NetIncomeLoss`, `us-gaap:StockholdersEquity`, `us-gaap:LongTermDebtNoncurrent`, and `us-gaap:LongTermDebtCurrent`, accession **0000063296-25-000070**, except opening equity at September 30, 2023, which comes from accession **0000063296-24-000094**.",
+      "reported": "$34,064,000",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-24-000094",
+      "line_ranges": [],
+      "expression": "79,282,000 - 45,218,000",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The ratio has more than one plausible definition, but the report gives no definition.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: facts.json, accession 0000063296-25-000070: us-gaap:NetCashProvidedByUsedInOperatingActivities = 79,282,000 USD; us-gaap:PaymentsToAcquirePropertyPlantAndEquipment = 45,218,000 USD; fiscal 2024.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The report does define free cash flow, and saved facts corroborate the subtraction; the result is derived, not directly reported.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N035",
+      "report_line": 46,
+      "statement": "**Historical calculations remain separate.** For fiscal 2024 (October 1, 2023–September 30, 2024), the supplied calculator gives operating margin = −12,323,000 / 1,795,737,000 = **−0.69%**; free cash flow = 79,282,000 − 45,218,000 = **$34,064,000**; return on average parent equity = −59,660,000 / ((437,158,000 + 525,668,000) / 2) = **−12.39%**; and debt to parent equity at September 30, 2024 = (769,614,000 + 6,853,000) / 437,158,000 = **1.7762x**. Revenue uses `us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax`, accession **0000063296-24-000094**. Other inputs use `us-gaap:OperatingIncomeLoss`, `us-gaap:NetCashProvidedByUsedInOperatingActivities`, `us-gaap:PaymentsToAcquirePropertyPlantAndEquipment`, `us-gaap:NetIncomeLoss`, `us-gaap:StockholdersEquity`, `us-gaap:LongTermDebtNoncurrent`, and `us-gaap:LongTermDebtCurrent`, accession **0000063296-25-000070**, except opening equity at September 30, 2023, which comes from accession **0000063296-24-000094**.",
+      "reported": "-12.39%",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-24-000094",
+      "line_ranges": [],
+      "expression": "59,660,000 / ((437,158,000 + 525,668,000) / 2)",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The ratio has more than one plausible definition, but the report gives no definition.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: facts.json: us-gaap:NetIncomeLoss = −59,660,000 USD and us-gaap:StockholdersEquity at September 30, 2024 = 437,158,000 USD, accession 0000063296-25-000070; opening equity = 525,668,000 USD, accession 0000063296-24-000094.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The report explicitly defines average parent equity, and saved facts corroborate its inputs; the return is derived.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N036",
+      "report_line": 46,
+      "statement": "**Historical calculations remain separate.** For fiscal 2024 (October 1, 2023–September 30, 2024), the supplied calculator gives operating margin = −12,323,000 / 1,795,737,000 = **−0.69%**; free cash flow = 79,282,000 − 45,218,000 = **$34,064,000**; return on average parent equity = −59,660,000 / ((437,158,000 + 525,668,000) / 2) = **−12.39%**; and debt to parent equity at September 30, 2024 = (769,614,000 + 6,853,000) / 437,158,000 = **1.7762x**. Revenue uses `us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax`, accession **0000063296-24-000094**. Other inputs use `us-gaap:OperatingIncomeLoss`, `us-gaap:NetCashProvidedByUsedInOperatingActivities`, `us-gaap:PaymentsToAcquirePropertyPlantAndEquipment`, `us-gaap:NetIncomeLoss`, `us-gaap:StockholdersEquity`, `us-gaap:LongTermDebtNoncurrent`, and `us-gaap:LongTermDebtCurrent`, accession **0000063296-25-000070**, except opening equity at September 30, 2023, which comes from accession **0000063296-24-000094**.",
+      "reported": "1.7762x",
+      "source_kind": "ratio",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-24-000094",
+      "line_ranges": [],
+      "expression": "769,614,000 + 6,853,000) / 437,158,000",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The ratio has more than one plausible definition, but the report gives no definition.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: facts.json, accession 0000063296-25-000070: us-gaap:LongTermDebtNoncurrent = 769,614,000 USD; us-gaap:LongTermDebtCurrent = 6,853,000 USD; us-gaap:StockholdersEquity = 437,158,000 USD.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The report defines debt to parent equity including current maturities, and saved facts corroborate its inputs; the ratio is derived.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N037",
+      "report_line": 48,
+      "statement": "**Insight provenance correction:** the revenue decline is a supplied calculator-derived result, not a percentage printed in the quoted filing line. The 10-K's L2791–L2793 identify years ended September 30, columns ordered 2025 / 2024 / 2023, and dollar amounts in thousands. Thus L2798's 1,795,737 and 1,880,896 are fiscal 2024 and fiscal 2023 consolidated sales, respectively—not fiscal 2025 revenue inputs. The corrected evidence quote reproduces only L2798, and its metadata range is correspondingly L2798–L2798.",
+      "reported": "10",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: 10-K_000006329625000070.txt, source document identifier.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. '10' is part of the form name rather than a financial quantity.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N038",
+      "report_line": 48,
+      "statement": "**Insight provenance correction:** the revenue decline is a supplied calculator-derived result, not a percentage printed in the quoted filing line. The 10-K's L2791–L2793 identify years ended September 30, columns ordered 2025 / 2024 / 2023, and dollar amounts in thousands. Thus L2798's 1,795,737 and 1,880,896 are fiscal 2024 and fiscal 2023 consolidated sales, respectively—not fiscal 2025 revenue inputs. The corrected evidence quote reproduces only L2798, and its metadata range is correspondingly L2798–L2798.",
+      "reported": "30,",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax: period ends 2024-09-30 and 2023-09-30.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. This is a calendar-day token. Saved revenue facts corroborate September 30 year-ends, but the cited header excerpt is absent.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N039",
+      "report_line": 48,
+      "statement": "**Insight provenance correction:** the revenue decline is a supplied calculator-derived result, not a percentage printed in the quoted filing line. The 10-K's L2791–L2793 identify years ended September 30, columns ordered 2025 / 2024 / 2023, and dollar amounts in thousands. Thus L2798's 1,795,737 and 1,880,896 are fiscal 2024 and fiscal 2023 consolidated sales, respectively—not fiscal 2025 revenue inputs. The corrected evidence quote reproduces only L2798, and its metadata range is correspondingly L2798–L2798.",
+      "reported": "1,795,737",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "1,795,737",
+      "evidence": "Possible filing support: facts.json; tag RevenueFromContractWithCustomerExcludingAssessedTax; value 1795737000 USD; period 2023-10-01 to 2024-09-30.\nModel source: 10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2024, 1,795,737,000 USD, accession 0000063296-24-000094.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved for this occurrence. The supplied revenue fact independently corroborates fiscal 2024 sales after conversion to thousands.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N040",
+      "report_line": 48,
+      "statement": "**Insight provenance correction:** the revenue decline is a supplied calculator-derived result, not a percentage printed in the quoted filing line. The 10-K's L2791–L2793 identify years ended September 30, columns ordered 2025 / 2024 / 2023, and dollar amounts in thousands. Thus L2798's 1,795,737 and 1,880,896 are fiscal 2024 and fiscal 2023 consolidated sales, respectively—not fiscal 2025 revenue inputs. The corrected evidence quote reproduces only L2798, and its metadata range is correspondingly L2798–L2798.",
+      "reported": "1,880,896",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "1,880,896",
+      "evidence": "Possible filing support: facts.json; tag RevenueFromContractWithCustomerExcludingAssessedTax; value 1880896000 USD; period 2022-10-01 to 2023-09-30.\nModel source: 10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2023, 1,880,896,000 USD, accession 0000063296-24-000094.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved for this occurrence. The supplied revenue fact independently corroborates fiscal 2023 sales after conversion to thousands.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N041",
+      "report_line": 50,
+      "statement": "The view would weaken if the next filing showed operating cash flow below positive net income, producing cash conversion below 1.0x. With a net loss, the quotient requires separate interpretation rather than mechanical application of that threshold.",
+      "reported": "1.0x",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Compiled report monitoring condition.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. This is an analyst's prospective threshold, not an observed filing value.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N042",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "4.53%",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "wrong",
+      "deterministic_reason": "The cited saved line contains a different number.",
+      "corrected_value": "1,000.00%",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: 10-K_000006329625000070.txt, L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896. Fiscal 2024 and 2023 periods corroborated by facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic wrong result preserved. L2798 reports sales amounts, not 4.53%. The report correctly labels the percentage as derived, and the stated calculation rounds to a 4.53% decline.",
+      "final_mark": "wrong"
+    },
+    {
+      "claim_id": "N043",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "$1,795,737 thousand",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: 10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 2023-10-01 through 2024-09-30, 1,795,737,000 USD.",
+      "semantic_supported": true,
+      "semantic_explanation": "L2798 contains the sales amount. The saved revenue fact confirms $1,795,737 thousand for the year ended September 30, 2024.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N044",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "$1,880,896 thousand",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: 10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 2022-10-01 through 2023-09-30, 1,880,896,000 USD.",
+      "semantic_supported": true,
+      "semantic_explanation": "L2798 contains the sales amount. The saved revenue fact confirms $1,880,896 thousand for the year ended September 30, 2023.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N045",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "$1,880,896 thousand",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: 10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2023, 1,880,896,000 USD.",
+      "semantic_supported": true,
+      "semantic_explanation": "The denominator is the supported fiscal 2023 consolidated revenue amount, expressed in thousands.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N046",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "1,497,689",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: 10-K_000006329625000070.txt, L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896.",
+      "semantic_supported": true,
+      "semantic_explanation": "The quotation accurately reproduces 1,497,689 as the first amount in the consolidated sales row; it is not used as the fiscal 2024 or 2023 calculation input.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N047",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "1,795,737",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: 10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2024.",
+      "semantic_supported": true,
+      "semantic_explanation": "The quoted amount matches L2798, and the saved revenue fact corroborates its fiscal 2024 period and thousand-dollar presentation.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N048",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "1,880,896",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: 10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2023.",
+      "semantic_supported": true,
+      "semantic_explanation": "The quoted amount matches L2798, and the saved revenue fact corroborates its fiscal 2023 period and thousand-dollar presentation.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N049",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "10",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "Form 10-K; not a financial value.",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: 10-K_000006329625000070.txt, document identifier and L2798.",
+      "semantic_supported": false,
+      "semantic_explanation": "The deterministic match is not a valid numerical claim: '10' is part of the form identifier, and L2798 does not report a quantity of 10.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N050",
+      "report_line": 52,
+      "statement": "Insight: Consolidated revenue for fiscal 2024 (year ended September 30, 2024) declined 4.53% versus fiscal 2023 (year ended September 30, 2023), a calculator-derived result—not a filing-reported percentage—calculated as ($1,795,737 thousand − $1,880,896 thousand) / $1,880,896 thousand; exact supporting quotation: “L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896” (10-K, accession 0000063296-25-000070, L2798; L2791–L2793 identify the September 30 fiscal-year columns as 2025 / 2024 / 2023 and the units as thousands).",
+      "reported": "30",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-25-000070",
+      "line_ranges": [
+        [
+          2798,
+          2798
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "wrong",
+      "deterministic_reason": "The cited saved line contains a different number.",
+      "corrected_value": "10",
+      "evidence": "10-K_000006329625000070.txt, lines 2798-2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896\nModel source: facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, period ends 2024-09-30 and 2023-09-30.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic wrong result preserved. L2798 contains sales amounts, not a fiscal-year-end header. Saved facts corroborate September 30, but the cited L2791–2793 excerpt is not supplied.",
+      "final_mark": "wrong"
+    },
+    {
+      "claim_id": "N051",
+      "report_line": 56,
+      "statement": "The central strategic test is whether portfolio simplification produces operating cash recovery rather than continued dependence on disposal proceeds. Management stated that the warehouse automation sale helped reduce debt by $100.4 million year over year in fiscal 2026 (earnings release, accession 0000063296-26-000118, L47: “The December 2025 sale of our warehouse automation business helped reduce debt by $100.4 million year over year.”). This is realized balance-sheet progress, not recurring operating cash generation. Prioritize monitoring annual operating cash flow, acquisition-independent Memorialization demand, and resolution of engineering customer delays; these are analytical priorities, not disclosed management commitments (same release, L42, L46 and L150). With full-year fiscal 2027 guidance withheld, further restructuring benefits should remain unquantified (same release, L48). Reconsider the recommendation if a subsequent filing establishes positive operating cash flow over a comparable annual or trailing-annual period; an isolated positive quarter would not resolve the annual cash-consumption concern.",
+      "reported": "$100.4 million",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Earnings release L47 is quoted in the report but not supplied as a saved excerpt.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The supplied saved excerpts do not verify the debt reduction amount.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N052",
+      "report_line": 56,
+      "statement": "The central strategic test is whether portfolio simplification produces operating cash recovery rather than continued dependence on disposal proceeds. Management stated that the warehouse automation sale helped reduce debt by $100.4 million year over year in fiscal 2026 (earnings release, accession 0000063296-26-000118, L47: “The December 2025 sale of our warehouse automation business helped reduce debt by $100.4 million year over year.”). This is realized balance-sheet progress, not recurring operating cash generation. Prioritize monitoring annual operating cash flow, acquisition-independent Memorialization demand, and resolution of engineering customer delays; these are analytical priorities, not disclosed management commitments (same release, L42, L46 and L150). With full-year fiscal 2027 guidance withheld, further restructuring benefits should remain unquantified (same release, L48). Reconsider the recommendation if a subsequent filing establishes positive operating cash flow over a comparable annual or trailing-annual period; an isolated positive quarter would not resolve the annual cash-consumption concern.",
+      "reported": "$100.4 million",
+      "source_kind": "unsourced",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [],
+      "expression": "",
+      "deterministic_mark": "unsupported",
+      "deterministic_reason": "The report supplies no filing line or XBRL tag for this number.",
+      "corrected_value": "Remove this number until a filing source is supplied.",
+      "evidence": "No matching saved filing fact or cited filing line was found.\nModel source: Earnings release L47 is quoted in the report but not supplied as a saved excerpt.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic unsupported result preserved. The report's quotation is not independently corroborated by the supplied saved excerpts.",
+      "final_mark": "unsupported"
+    },
+    {
+      "claim_id": "N053",
+      "report_line": 85,
+      "statement": "Insight: Fiscal 2026 operating cash flow was −$57.977 million, demonstrating annual cash consumption rather than a self-funding recovery; the exact supporting text is L139: \"(In thousands)\", L140: \"Year Ended September 30,\", L141: \"2026 | 2025\", and L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\" (Earnings release, accession 0000063296-26-000118, L139–150).",
+      "reported": "$57.977 million",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150: Net cash (used in) provided by operating activities | (57,977) | (23,550).",
+      "semantic_supported": true,
+      "semantic_explanation": "Fiscal 2026 operating cash used is (57,977) thousand, equivalent to −$57.977 million. The annual period, sign and metric match; the investment thesis is not evaluated.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N054",
+      "report_line": 85,
+      "statement": "Insight: Fiscal 2026 operating cash flow was −$57.977 million, demonstrating annual cash consumption rather than a self-funding recovery; the exact supporting text is L139: \"(In thousands)\", L140: \"Year Ended September 30,\", L141: \"2026 | 2025\", and L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\" (Earnings release, accession 0000063296-26-000118, L139–150).",
+      "reported": "30,",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "wrong",
+      "deterministic_reason": "The cited saved line contains a different number.",
+      "corrected_value": "8",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L140–141: Year Ended September 30, | 2026 | 2025.",
+      "semantic_supported": false,
+      "semantic_explanation": "Deterministic wrong result preserved. This is a date-token extraction issue: the supplied excerpt explicitly states September 30, so no substantive date discrepancy is established.",
+      "final_mark": "wrong"
+    },
+    {
+      "claim_id": "N055",
+      "report_line": 85,
+      "statement": "Insight: Fiscal 2026 operating cash flow was −$57.977 million, demonstrating annual cash consumption rather than a self-funding recovery; the exact supporting text is L139: \"(In thousands)\", L140: \"Year Ended September 30,\", L141: \"2026 | 2025\", and L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\" (Earnings release, accession 0000063296-26-000118, L139–150).",
+      "reported": "57,977",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": true,
+      "semantic_explanation": "The quotation correctly reports fiscal 2026 operating cash used of (57,977), in thousands.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N056",
+      "report_line": 85,
+      "statement": "Insight: Fiscal 2026 operating cash flow was −$57.977 million, demonstrating annual cash consumption rather than a self-funding recovery; the exact supporting text is L139: \"(In thousands)\", L140: \"Year Ended September 30,\", L141: \"2026 | 2025\", and L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\" (Earnings release, accession 0000063296-26-000118, L139–150).",
+      "reported": "23,550",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–141 and L150.",
+      "semantic_supported": true,
+      "semantic_explanation": "The quotation correctly reports the fiscal 2025 comparative operating cash used of (23,550), in thousands; it does not attribute this amount to fiscal 2026.",
+      "final_mark": "correct"
+    },
+    {
+      "claim_id": "N057",
+      "report_line": 85,
+      "statement": "Insight: Fiscal 2026 operating cash flow was −$57.977 million, demonstrating annual cash consumption rather than a self-funding recovery; the exact supporting text is L139: \"(In thousands)\", L140: \"Year Ended September 30,\", L141: \"2026 | 2025\", and L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\" (Earnings release, accession 0000063296-26-000118, L139–150).",
+      "reported": "150",
+      "source_kind": "line",
+      "tags": [],
+      "periods": [],
+      "accession_number": "0000063296-26-000118",
+      "line_ranges": [
+        [
+          139,
+          150
+        ]
+      ],
+      "expression": "",
+      "deterministic_mark": "correct",
+      "deterministic_reason": "The number appears on the cited saved line after spacing and formatting normalization.",
+      "corrected_value": "",
+      "evidence": "8-K_EX-99.1_000006329626000118.txt, lines 139-150: (In thousands) Year Ended September 30, 2026 | 2025 Cash flows from operating activities: Net loss | $ | (21,397) | $ | (24,471) Adjustments to reconcile net loss to net cash flows from operating activities: Depreciation and amortization | 48,568 | 71,746 Changes in working capital items | (63,076) | (45,394) Gain on divestitures, net | (104,481) | (53,067) Loss on debt extinguishment | 16,343 | — Other operating activities | 66,066 | 27,636 Net cash (used in) provided by operating activities | (57,977) | (23,550)\nModel source: 8-K_EX-99.1_000006329626000118.txt, L139–150; L150: Net cash (used in) provided by operating activities | (57,977) | (23,550).",
+      "semantic_supported": true,
+      "semantic_explanation": "150 is a source-line locator, not a financial amount. The supplied excerpt range ends at L150 and contains the cited operating cash-flow row.",
+      "final_mark": "correct"
+    }
+  ],
+  "counts": {
+    "correct": 16,
+    "wrong": 4,
+    "unsupported": 37
+  },
+  "semantic_output": {
+    "checks": [
+      {
+        "claim_id": "N001",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. '10' is part of the form name 10-K, not a financial quantity.",
+        "corrected_value": "Form 10-K",
+        "source": "No matching filing excerpt supplied for L2203."
+      },
+      {
+        "claim_id": "N002",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The supplied filing excerpts do not include the consolidated sales decline.",
+        "corrected_value": "Not ascertainable from supplied filing evidence.",
+        "source": "Earnings release L72 is cited in the report but not supplied as a saved excerpt."
+      },
+      {
+        "claim_id": "N003",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. Fiscal 2023 net income does not support fiscal 2026 Memorialization sales growth.",
+        "corrected_value": "Not ascertainable from supplied filing evidence.",
+        "source": "facts.json, us-gaap:NetIncomeLoss, fiscal 2023; unrelated metric and period."
+      },
+      {
+        "claim_id": "N004",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved for this uncited occurrence. The separately supplied cash-flow excerpt corroborates the amount.",
+        "corrected_value": "Fiscal 2026 operating cash flow: −$57,977 thousand.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150: Net cash (used in) provided by operating activities | (57,977) | (23,550)."
+      },
+      {
+        "claim_id": "N005",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved for this uncited occurrence. The separately supplied cash-flow excerpt corroborates the amount.",
+        "corrected_value": "Fiscal 2025 operating cash flow: −$23,550 thousand.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150: Net cash (used in) provided by operating activities | (57,977) | (23,550)."
+      },
+      {
+        "claim_id": "N006",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The million-dollar amount is a valid conversion of the separately supplied filing amount, not its printed unit.",
+        "corrected_value": "Fiscal 2026: −$57,977 thousand, equivalent to a $57.977 million outflow.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N007",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The million-dollar amount is a valid conversion of the separately supplied filing amount, not its printed unit.",
+        "corrected_value": "Fiscal 2025: −$23,550 thousand, equivalent to a $23.550 million outflow.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N008",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The extracted token is a calendar day, not a financial amount; the supplied excerpt confirms the date.",
+        "corrected_value": "Year Ended September 30.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L140: Year Ended September 30,"
+      },
+      {
+        "claim_id": "N009",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved for this occurrence. The separately supplied L150 confirms the quoted amount.",
+        "corrected_value": "Fiscal 2026 operating cash flow: −$57,977 thousand.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N010",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved for this occurrence. The separately supplied L150 confirms the quoted amount.",
+        "corrected_value": "Fiscal 2025 operating cash flow: −$23,550 thousand.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N011",
+        "supported": true,
+        "explanation": "The operating cash-flow row reports (57,977), in thousands, for the year ended September 30, 2026.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N012",
+        "supported": true,
+        "explanation": "The operating cash-flow row reports (23,550), in thousands, in the fiscal 2025 comparative column.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N013",
+        "supported": true,
+        "explanation": "The explicitly identified conversion is correct: a fiscal 2026 outflow of $57,977 thousand equals $57.977 million. The filing prints thousands, not millions.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N014",
+        "supported": true,
+        "explanation": "The explicitly identified conversion is correct: a fiscal 2025 outflow of $23,550 thousand equals $23.550 million. The filing prints thousands, not millions.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N015",
+        "supported": false,
+        "explanation": "Deterministic wrong result preserved. This is a date-token extraction issue: the supplied excerpt actually states September 30, so it does not establish a substantive date error.",
+        "corrected_value": "Year Ended September 30; columns 2026 and 2025.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L140–141: Year Ended September 30, | 2026 | 2025."
+      },
+      {
+        "claim_id": "N016",
+        "supported": true,
+        "explanation": "The quotation accurately reproduces fiscal 2026 operating cash used of (57,977), in thousands.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N017",
+        "supported": true,
+        "explanation": "The quotation accurately reproduces fiscal 2025 operating cash used of (23,550), in thousands.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N018",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. '10' belongs to the form identifier, not a quantitative operating claim.",
+        "corrected_value": "Form 10-K",
+        "source": "No matching saved excerpt supplied for L2225."
+      },
+      {
+        "claim_id": "N019",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The suggested fiscal 2023 net-income fact cannot verify fiscal 2026 segment sales growth.",
+        "corrected_value": "Not ascertainable from supplied filing evidence.",
+        "source": "facts.json, us-gaap:NetIncomeLoss; earnings release L46 is not supplied as a saved excerpt."
+      },
+      {
+        "claim_id": "N020",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The report's quotation is not independently corroborated by the supplied filing excerpts; the suggested net-income fact is unrelated.",
+        "corrected_value": "Not ascertainable from supplied filing evidence.",
+        "source": "facts.json, us-gaap:NetIncomeLoss; earnings release L46 is not supplied as a saved excerpt."
+      },
+      {
+        "claim_id": "N021",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. No supplied filing excerpt verifies the quarterly product identification growth rate.",
+        "corrected_value": "Not ascertainable from supplied filing evidence.",
+        "source": "Earnings release L42 is cited in the report but not supplied as a saved excerpt."
+      },
+      {
+        "claim_id": "N022",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. This is an analyst-defined scoring convention, not a filing fact; diluted EPS is unrelated.",
+        "corrected_value": "Analyst scale: 1 = weak.",
+        "source": "Compiled report scoring methodology; no filing source."
+      },
+      {
+        "claim_id": "N023",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. This is an analyst-defined scoring convention, not a filing fact.",
+        "corrected_value": "Analyst scale: 3 = mixed.",
+        "source": "Compiled report scoring methodology; no filing source."
+      },
+      {
+        "claim_id": "N024",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. This is an analyst-defined scoring convention, not a filing fact.",
+        "corrected_value": "Analyst scale: 5 = strong.",
+        "source": "Compiled report scoring methodology; no filing source."
+      },
+      {
+        "claim_id": "N025",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The growth-quality score is analyst judgment; the suggested EPS fact does not verify it.",
+        "corrected_value": "Analyst-assigned score of 1/5; no filing-reported value.",
+        "source": "Compiled report financial score table."
+      },
+      {
+        "claim_id": "N026",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. Five is the analyst scale maximum, not a filing metric.",
+        "corrected_value": "Five-point analyst scale.",
+        "source": "Compiled report financial score table."
+      },
+      {
+        "claim_id": "N027",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The profitability score is analyst judgment; the suggested revenue fact does not verify it.",
+        "corrected_value": "Analyst-assigned score of 2/5; no filing-reported value.",
+        "source": "Compiled report financial score table."
+      },
+      {
+        "claim_id": "N028",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. Five is the analyst scale maximum, not a filing metric.",
+        "corrected_value": "Five-point analyst scale.",
+        "source": "Compiled report financial score table."
+      },
+      {
+        "claim_id": "N029",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The cash-conversion score is analyst judgment; the suggested EPS fact does not verify it.",
+        "corrected_value": "Analyst-assigned score of 1/5; no filing-reported value.",
+        "source": "Compiled report financial score table."
+      },
+      {
+        "claim_id": "N030",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. Five is the analyst scale maximum, not a filing metric.",
+        "corrected_value": "Five-point analyst scale.",
+        "source": "Compiled report financial score table."
+      },
+      {
+        "claim_id": "N031",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The balance-sheet score is analyst judgment, not a filing-reported measure.",
+        "corrected_value": "Analyst-assigned score of 3/5; no filing-reported value.",
+        "source": "Compiled report financial score table."
+      },
+      {
+        "claim_id": "N032",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. Five is the analyst scale maximum, not a filing metric.",
+        "corrected_value": "Five-point analyst scale.",
+        "source": "Compiled report financial score table."
+      },
+      {
+        "claim_id": "N033",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. Contrary to its stated reason, the report defines the ratio, and saved fiscal 2024 facts corroborate its inputs; the percentage is derived rather than directly reported.",
+        "corrected_value": "Fiscal 2024 derived operating margin: −0.69%.",
+        "source": "facts.json: us-gaap:OperatingIncomeLoss = −12,323,000 USD, accession 0000063296-25-000070; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax = 1,795,737,000 USD, accession 0000063296-24-000094; both fiscal 2024."
+      },
+      {
+        "claim_id": "N034",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The report does define free cash flow, and saved facts corroborate the subtraction; the result is derived, not directly reported.",
+        "corrected_value": "Fiscal 2024 derived free cash flow: $34,064,000.",
+        "source": "facts.json, accession 0000063296-25-000070: us-gaap:NetCashProvidedByUsedInOperatingActivities = 79,282,000 USD; us-gaap:PaymentsToAcquirePropertyPlantAndEquipment = 45,218,000 USD; fiscal 2024."
+      },
+      {
+        "claim_id": "N035",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The report explicitly defines average parent equity, and saved facts corroborate its inputs; the return is derived.",
+        "corrected_value": "Fiscal 2024 derived return on average parent equity: −12.39%.",
+        "source": "facts.json: us-gaap:NetIncomeLoss = −59,660,000 USD and us-gaap:StockholdersEquity at September 30, 2024 = 437,158,000 USD, accession 0000063296-25-000070; opening equity = 525,668,000 USD, accession 0000063296-24-000094."
+      },
+      {
+        "claim_id": "N036",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The report defines debt to parent equity including current maturities, and saved facts corroborate its inputs; the ratio is derived.",
+        "corrected_value": "September 30, 2024 derived debt to parent equity: 1.7762x.",
+        "source": "facts.json, accession 0000063296-25-000070: us-gaap:LongTermDebtNoncurrent = 769,614,000 USD; us-gaap:LongTermDebtCurrent = 6,853,000 USD; us-gaap:StockholdersEquity = 437,158,000 USD."
+      },
+      {
+        "claim_id": "N037",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. '10' is part of the form name rather than a financial quantity.",
+        "corrected_value": "Form 10-K",
+        "source": "10-K_000006329625000070.txt, source document identifier."
+      },
+      {
+        "claim_id": "N038",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. This is a calendar-day token. Saved revenue facts corroborate September 30 year-ends, but the cited header excerpt is absent.",
+        "corrected_value": "Fiscal year ended September 30.",
+        "source": "facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax: period ends 2024-09-30 and 2023-09-30."
+      },
+      {
+        "claim_id": "N039",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved for this occurrence. The supplied revenue fact independently corroborates fiscal 2024 sales after conversion to thousands.",
+        "corrected_value": "Fiscal 2024 consolidated revenue: $1,795,737 thousand.",
+        "source": "10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2024, 1,795,737,000 USD, accession 0000063296-24-000094."
+      },
+      {
+        "claim_id": "N040",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved for this occurrence. The supplied revenue fact independently corroborates fiscal 2023 sales after conversion to thousands.",
+        "corrected_value": "Fiscal 2023 consolidated revenue: $1,880,896 thousand.",
+        "source": "10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2023, 1,880,896,000 USD, accession 0000063296-24-000094."
+      },
+      {
+        "claim_id": "N041",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. This is an analyst's prospective threshold, not an observed filing value.",
+        "corrected_value": "Analytical threshold of 1.0x; no filing-reported value.",
+        "source": "Compiled report monitoring condition."
+      },
+      {
+        "claim_id": "N042",
+        "supported": false,
+        "explanation": "Deterministic wrong result preserved. L2798 reports sales amounts, not 4.53%. The report correctly labels the percentage as derived, and the stated calculation rounds to a 4.53% decline.",
+        "corrected_value": "Filing amounts: fiscal 2024 $1,795,737 thousand and fiscal 2023 $1,880,896 thousand; derived growth −4.53%, not a printed filing percentage.",
+        "source": "10-K_000006329625000070.txt, L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896. Fiscal 2024 and 2023 periods corroborated by facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax."
+      },
+      {
+        "claim_id": "N043",
+        "supported": true,
+        "explanation": "L2798 contains the sales amount. The saved revenue fact confirms $1,795,737 thousand for the year ended September 30, 2024.",
+        "corrected_value": "",
+        "source": "10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 2023-10-01 through 2024-09-30, 1,795,737,000 USD."
+      },
+      {
+        "claim_id": "N044",
+        "supported": true,
+        "explanation": "L2798 contains the sales amount. The saved revenue fact confirms $1,880,896 thousand for the year ended September 30, 2023.",
+        "corrected_value": "",
+        "source": "10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 2022-10-01 through 2023-09-30, 1,880,896,000 USD."
+      },
+      {
+        "claim_id": "N045",
+        "supported": true,
+        "explanation": "The denominator is the supported fiscal 2023 consolidated revenue amount, expressed in thousands.",
+        "corrected_value": "",
+        "source": "10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2023, 1,880,896,000 USD."
+      },
+      {
+        "claim_id": "N046",
+        "supported": true,
+        "explanation": "The quotation accurately reproduces 1,497,689 as the first amount in the consolidated sales row; it is not used as the fiscal 2024 or 2023 calculation input.",
+        "corrected_value": "",
+        "source": "10-K_000006329625000070.txt, L2798: Consolidated Sales | $ | 1,497,689 | $ | 1,795,737 | $ | 1,880,896."
+      },
+      {
+        "claim_id": "N047",
+        "supported": true,
+        "explanation": "The quoted amount matches L2798, and the saved revenue fact corroborates its fiscal 2024 period and thousand-dollar presentation.",
+        "corrected_value": "",
+        "source": "10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2024."
+      },
+      {
+        "claim_id": "N048",
+        "supported": true,
+        "explanation": "The quoted amount matches L2798, and the saved revenue fact corroborates its fiscal 2023 period and thousand-dollar presentation.",
+        "corrected_value": "",
+        "source": "10-K_000006329625000070.txt, L2798; facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, fiscal 2023."
+      },
+      {
+        "claim_id": "N049",
+        "supported": false,
+        "explanation": "The deterministic match is not a valid numerical claim: '10' is part of the form identifier, and L2798 does not report a quantity of 10.",
+        "corrected_value": "Form 10-K; not a financial value.",
+        "source": "10-K_000006329625000070.txt, document identifier and L2798."
+      },
+      {
+        "claim_id": "N050",
+        "supported": false,
+        "explanation": "Deterministic wrong result preserved. L2798 contains sales amounts, not a fiscal-year-end header. Saved facts corroborate September 30, but the cited L2791–2793 excerpt is not supplied.",
+        "corrected_value": "Fiscal years ended September 30, 2024 and September 30, 2023.",
+        "source": "facts.json, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, period ends 2024-09-30 and 2023-09-30."
+      },
+      {
+        "claim_id": "N051",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The supplied saved excerpts do not verify the debt reduction amount.",
+        "corrected_value": "Not ascertainable from supplied filing evidence.",
+        "source": "Earnings release L47 is quoted in the report but not supplied as a saved excerpt."
+      },
+      {
+        "claim_id": "N052",
+        "supported": false,
+        "explanation": "Deterministic unsupported result preserved. The report's quotation is not independently corroborated by the supplied saved excerpts.",
+        "corrected_value": "Not ascertainable from supplied filing evidence.",
+        "source": "Earnings release L47 is quoted in the report but not supplied as a saved excerpt."
+      },
+      {
+        "claim_id": "N053",
+        "supported": true,
+        "explanation": "Fiscal 2026 operating cash used is (57,977) thousand, equivalent to −$57.977 million. The annual period, sign and metric match; the investment thesis is not evaluated.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150: Net cash (used in) provided by operating activities | (57,977) | (23,550)."
+      },
+      {
+        "claim_id": "N054",
+        "supported": false,
+        "explanation": "Deterministic wrong result preserved. This is a date-token extraction issue: the supplied excerpt explicitly states September 30, so no substantive date discrepancy is established.",
+        "corrected_value": "Year Ended September 30; columns 2026 and 2025.",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L140–141: Year Ended September 30, | 2026 | 2025."
+      },
+      {
+        "claim_id": "N055",
+        "supported": true,
+        "explanation": "The quotation correctly reports fiscal 2026 operating cash used of (57,977), in thousands.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N056",
+        "supported": true,
+        "explanation": "The quotation correctly reports the fiscal 2025 comparative operating cash used of (23,550), in thousands; it does not attribute this amount to fiscal 2026.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–141 and L150."
+      },
+      {
+        "claim_id": "N057",
+        "supported": true,
+        "explanation": "150 is a source-line locator, not a financial amount. The supplied excerpt range ends at L150 and contains the cited operating cash-flow row.",
+        "corrected_value": "",
+        "source": "8-K_EX-99.1_000006329626000118.txt, L139–150; L150: Net cash (used in) provided by operating activities | (57,977) | (23,550)."
+      }
+    ]
+  }
+}

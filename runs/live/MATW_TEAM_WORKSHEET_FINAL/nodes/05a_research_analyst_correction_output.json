@@ -1,0 +1,16 @@
+{
+  "corrected_parts": [
+    {
+      "part": "Overview",
+      "content": "## Overview\n\nMemorialization supplies burial products, cremation equipment and related supplies to cemeteries, funeral homes and crematories (10-K, fiscal 2025, L2203). Latest reported momentum is mixed: consolidated sales declined 30.2%, while Memorialization sales increased 4%, partly acquisition-driven (Earnings release, fiscal year ended September 30, 2026, L72 and L46).\n\nOperating cash generation remains a concern. The earnings release reports operating cash-flow amounts of **(57,977)** for fiscal 2026 and **(23,550)** for fiscal 2025, **in thousands of dollars**. These convert to operating cash outflows of **$57.977 million** and **$23.550 million**, respectively; the million-dollar figures are unit conversions, not amounts printed in the cash-flow row.\n\nVerified evidence from the Earnings release, accession **0000063296-26-000118**:\n- L139 establishes units: “(In thousands)”\n- L140 establishes the period: “Year Ended September 30,”\n- L141 establishes column order: “2026 | 2025”\n- L150 reports the amounts: “Net cash (used in) provided by operating activities | (57,977) | (23,550)”\n\nThe larger annual operating cash outflow warrants caution about the sustainability of deleveraging."
+    }
+  ],
+  "insight": {
+    "line": "Insight: Annual operating cash outflow worsened in fiscal 2026: reported amounts of (57,977) and (23,550), in thousands, convert to outflows of $57.977 million and $23.550 million for fiscal 2026 and fiscal 2025, respectively (Earnings release, accession 0000063296-26-000118; L139: \"(In thousands)\"; L140: \"Year Ended September 30,\"; L141: \"2026 | 2025\"; L150: \"Net cash (used in) provided by operating activities | (57,977) | (23,550)\").",
+    "quote": "(In thousands)\nYear Ended September 30,\n2026 | 2025\nCash flows from operating activities:\nNet loss | $ | (21,397) | $ | (24,471)\nAdjustments to reconcile net loss to net cash flows from operating activities:\nDepreciation and amortization | 48,568 | 71,746\nChanges in working capital items | (63,076) | (45,394)\nGain on divestitures, net | (104,481) | (53,067)\nLoss on debt extinguishment | 16,343 | —\nOther operating activities | 66,066 | 27,636\nNet cash (used in) provided by operating activities | (57,977) | (23,550)",
+    "filing": "Earnings release",
+    "accession_number": "0000063296-26-000118",
+    "line_start": 139,
+    "line_end": 150
+  }
+}

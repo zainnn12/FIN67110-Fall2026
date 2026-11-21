@@ -1,0 +1,52 @@
+{
+  "ticker": "MATW",
+  "run_dir": "/private/tmp/checkpoint3-completion/runs/live/MATW_TEAM_WORKSHEET_FINAL",
+  "source_basis": "not computed: neither a valid reported-after-spin TTM nor comparable annual Form 10 pro-forma inputs are identified",
+  "base_owner_cash_flow_usd_millions": null,
+  "period": null,
+  "diluted_shares_millions": null,
+  "last_eligible_close_usd": "19.37",
+  "low_value_per_share_usd": null,
+  "mid_value_per_share_usd": null,
+  "median_daily_dollar_volume_usd": "12792983.26",
+  "purchase_size_percent": "0.07816785027200918888719002357",
+  "view": "Not computed",
+  "conviction": "Not computed",
+  "inputs": {
+    "net_income": {
+      "value": null,
+      "tag": null,
+      "period_start": null,
+      "period_end": null,
+      "accession": null,
+      "form": null
+    },
+    "depreciation_and_amortization": {
+      "value": null,
+      "tag": null,
+      "period_start": null,
+      "period_end": null,
+      "accession": null,
+      "form": null
+    },
+    "property_additions": {
+      "value": null,
+      "tag": null,
+      "period_start": null,
+      "period_end": null,
+      "accession": null,
+      "form": null
+    },
+    "diluted_shares": {
+      "value": null,
+      "tag": null,
+      "period_start": null,
+      "period_end": null,
+      "accession": null,
+      "form": null
+    }
+  },
+  "price_date": "2026-11-19",
+  "volume_start_date": "2026-07-23",
+  "volume_end_date": "2026-11-19"
+}
