@@ -1,5 +1,128 @@
 {
-  "status": "PENDING WRDS LOGIN \u2014 no authorized credentials available.",
+  "status": "complete",
   "provider": "WRDS / CRSP",
-  "substitution": "none"
+  "event_count": 8,
+  "source_table": "crsp.dsf_v2",
+  "crsp_data_availability": {
+    "ticker": "COST",
+    "first_date": "1972-12-14",
+    "last_date": "2025-12-31",
+    "row_count": 10926
+  },
+  "summary": {
+    "complete_reactions": 8,
+    "positive_reactions": 2,
+    "mean_reaction_percent": "-1.977736679324163364381306051",
+    "median_reaction_percent": "-1.211701313548072472846480770"
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": {
+      "event_count_is_eight": true,
+      "accessions_are_unique": true,
+      "all_reactions_are_complete": true,
+      "single_permno": true,
+      "source_rows_are_present": true,
+      "event_windows_are_within_crsp_data": true
+    },
+    "saved_source_row_count": 54
+  },
+  "rows": [
+    {
+      "ticker": "COST",
+      "permno": 87055,
+      "accession": "0000909832-24-000012",
+      "accepted_at": "2024-03-07T21:37:05+00:00",
+      "last_close_before_date": "2024-03-07",
+      "last_close_before": 785.59,
+      "first_close_after_date": "2024-03-08",
+      "first_close_after": 725.56,
+      "reaction_formula": "(first_close_after / last_close_before - 1) * 100",
+      "reaction_percent": "-7.641390547232016700823584820"
+    },
+    {
+      "ticker": "COST",
+      "permno": 87055,
+      "accession": "0000909832-24-000026",
+      "accepted_at": "2024-05-30T20:26:46+00:00",
+      "last_close_before_date": "2024-05-30",
+      "last_close_before": 815.34,
+      "first_close_after_date": "2024-05-31",
+      "first_close_after": 809.89,
+      "reaction_formula": "(first_close_after / last_close_before - 1) * 100",
+      "reaction_percent": "-0.6684328010400569087742536900"
+    },
+    {
+      "ticker": "COST",
+      "permno": 87055,
+      "accession": "0000909832-24-000043",
+      "accepted_at": "2024-09-26T20:17:15+00:00",
+      "last_close_before_date": "2024-09-26",
+      "last_close_before": 901.44,
+      "first_close_after_date": "2024-09-27",
+      "first_close_after": 885.62,
+      "reaction_formula": "(first_close_after / last_close_before - 1) * 100",
+      "reaction_percent": "-1.754969826056088036918707850"
+    },
+    {
+      "ticker": "COST",
+      "permno": 87055,
+      "accession": "0000909832-24-000075",
+      "accepted_at": "2024-12-12T21:18:05+00:00",
+      "last_close_before_date": "2024-12-12",
+      "last_close_before": 988.39,
+      "first_close_after_date": "2024-12-13",
+      "first_close_after": 989.35,
+      "reaction_formula": "(first_close_after / last_close_before - 1) * 100",
+      "reaction_percent": "0.097127652040186566031627200"
+    },
+    {
+      "ticker": "COST",
+      "permno": 87055,
+      "accession": "0000909832-25-000012",
+      "accepted_at": "2025-03-06T21:21:08+00:00",
+      "last_close_before_date": "2025-03-06",
+      "last_close_before": 1026.62,
+      "first_close_after_date": "2025-03-07",
+      "first_close_after": 964.31,
+      "reaction_formula": "(first_close_after / last_close_before - 1) * 100",
+      "reaction_percent": "-6.069431727416181254992110030"
+    },
+    {
+      "ticker": "COST",
+      "permno": 87055,
+      "accession": "0000909832-25-000031",
+      "accepted_at": "2025-05-29T20:24:57+00:00",
+      "last_close_before_date": "2025-05-29",
+      "last_close_before": 1008.74,
+      "first_close_after_date": "2025-05-30",
+      "first_close_after": 1040.18,
+      "reaction_formula": "(first_close_after / last_close_before - 1) * 100",
+      "reaction_percent": "3.116759521779645894878759600"
+    },
+    {
+      "ticker": "COST",
+      "permno": 87055,
+      "accession": "0000909832-25-000093",
+      "accepted_at": "2025-09-25T20:16:57+00:00",
+      "last_close_before_date": "2025-09-25",
+      "last_close_before": 943.31,
+      "first_close_after_date": "2025-09-26",
+      "first_close_after": 915.95,
+      "reaction_formula": "(first_close_after / last_close_before - 1) * 100",
+      "reaction_percent": "-2.900425098854035258822656390"
+    },
+    {
+      "ticker": "COST",
+      "permno": 87055,
+      "accession": "0000909832-25-000164",
+      "accepted_at": "2025-12-11T21:22:04+00:00",
+      "last_close_before_date": "2025-12-11",
+      "last_close_before": 884.48,
+      "first_close_after_date": "2025-12-12",
+      "first_close_after": 884.47,
+      "reaction_formula": "(first_close_after / last_close_before - 1) * 100",
+      "reaction_percent": "-0.0011306078147612156295224300"
+    }
+  ]
 }

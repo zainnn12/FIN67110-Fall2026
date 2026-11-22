@@ -8,15 +8,17 @@ Command:
 UV_CACHE_DIR=/private/tmp/checkpoint3-uv-cache uv run --project equity_research_team --locked pytest -q equity_research_team/tests tests
 ```
 
-Result: **61 passed**. This was the full test run after the final CRSP price-sign change, worksheet/hook/desk changes, and empty-screen timing regression test.
+Result: **67 passed**. This was the full test run after the WRDS dependency, authentication, current CRSP CIZ query, saved-evidence recalculation, worksheet/hook/desk changes, and empty-screen timing regression test.
 
 ## Environment and secret handling
 
 - `python check_env.py`: required variable names present; no values printed.
+- `WRDS_USERNAME` was loaded from the ignored worktree-root `.env` through `python-dotenv`; no value was printed or saved.
 - `git check-ignore .env`: `.env` is ignored.
 - `git ls-files --error-unmatch .env`: no tracked `.env`.
 - Tracked-file secret-pattern scan: PASS, 0 files flagged. No key values were printed.
 - Saved-artifact scan: PASS, 378 non-raw files scanned, 0 files flagged. Raw SEC and Financial Datasets payloads were excluded from the pattern scan; they contain downloaded source data, not request headers.
+- Intended WRDS update scan: PASS, 12 files scanned, 0 files flagged. The ignored `.env` remained untracked and was not read into any saved artifact.
 
 ## Saved command proofs
 
@@ -28,7 +30,10 @@ Result: **61 passed**. This was the full test run after the final CRSP price-sig
 - Hook seeded final report (+$0.01): `runs/lab08/hook_proofs/seeded_result.txt`, refused at line 20.
 - Empty screen: `runs/desk/DESK_2026-11-20_22-55-01-801000/final_report.md`, not applicable; no ticker picked.
 - Offline replay: `runs/desk/DESK_2026-11-20_22-55-01-801000/replay/replay_proof.json`, byte-identical, 0 network calls.
-- WRDS: `runs/wrds/crsp_reaction.json`, PENDING WRDS LOGIN; no provider substitution.
+- WRDS smoke test: connected; `crsp_available` was `true`. No full library list or credential value was printed or saved.
+- WRDS / CRSP run: `runs/wrds/crsp_reaction.json`, PASS. Eight unique Costco events produced eight complete reactions from 54 saved `crsp.dsf_v2` source rows. One PERMNO was present, and all event windows were inside the subscribed data range.
+- Saved-evidence recalculation: PASS. The offline test independently selected the before/after closes and recalculated all eight event reactions, the mean, and the median from `runs/wrds/costco_crsp_daily.csv`.
+- CRSP cutoff: the account's Costco CIZ rows run through 2025-12-31. The analysis uses the latest eight Item 2.02 filings with complete windows through that date and does not represent 2026 SEC events as analyzed.
 
 ## External failures
 

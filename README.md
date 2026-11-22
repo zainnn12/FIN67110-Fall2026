@@ -47,7 +47,7 @@ Roles:
 - Ansh — Verification and evidence lead: checks report claims against SEC filings, runs the clean and seeded-error verification tests, and records the resulting marks.
 - Krishmi — Seeker and valuation lead: manages the factor definitions and spinoff screen, runs the investor worksheet, and documents the valuation assumptions and results.
 
-Limitations: Lab 06 has no ranked names. The prospective factor-check has zero comparisons and does not validate the factor. WRDS access is pending. The MSGR agent run and Lab 09 verified reports are blocked by unavailable OpenAI API credits. Any missing filing, price, or valuation input remains blank or “not known.” The desk produces screens, not recommendations. See [Checkpoint 3 evidence](CHECKPOINT3_SUBMISSION.md).
+Limitations: Lab 06 has no ranked names. The prospective factor-check has zero comparisons and does not validate the factor. The Costco WRDS / CRSP eight-event analysis is complete, but the subscribed CIZ snapshot ends on December 31, 2025 and cannot measure the three 2026 SEC events. The MSGR agent run and Lab 09 verified reports are blocked by unavailable OpenAI API credits. Any missing filing, price, or valuation input remains blank or “not known.” The desk produces screens, not recommendations. See [Checkpoint 3 evidence](CHECKPOINT3_SUBMISSION.md).
 
 ## Secret handling
 
