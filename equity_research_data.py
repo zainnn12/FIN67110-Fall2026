@@ -563,7 +563,9 @@ def select_required_filings(
     client: SecClient,
     company: Company,
     filings: Sequence[Filing],
-) -> dict[str, Filing]:
+    *,
+    spinoff_date: str | None = None,
+) -> dict[str, Any]:
     ordered = sorted(filings, key=filing_sort_key, reverse=True)
 
     def latest_form(form: str) -> Filing | None:
@@ -578,9 +580,28 @@ def select_required_filings(
 
     ten_k = latest_form("10-K")
     ten_q = latest_form("10-Q")
-    if ten_k is None or ten_q is None:
-        missing = "10-K" if ten_k is None else "10-Q"
-        raise DeskError(f"No {missing} with a primary document was found.")
+    periodic = [
+        filing
+        for filing in filings
+        if filing.form.upper() in {"10-K", "10-Q"}
+        and bool(filing.primary_document)
+    ]
+    if spinoff_date:
+        periodic = [filing for filing in periodic if filing.filing_date > spinoff_date]
+        periodic.sort(key=lambda filing: (filing.filing_date, filing.acceptance_datetime))
+    else:
+        periodic.sort(key=filing_sort_key, reverse=True)
+    if not periodic:
+        qualifier = f" after {spinoff_date}" if spinoff_date else ""
+        raise DeskError(f"No primary 10-Q or 10-K was found{qualifier}.")
+    primary = periodic[0]
+    primary_form = primary.form.upper()
+    reason = (
+        f"First available primary {primary_form} filed after the "
+        f"{spinoff_date} distribution date. Its reported period is recorded separately."
+        if spinoff_date
+        else f"Latest available primary {primary_form}; no distribution date was supplied."
+    )
 
     eight_k_candidates = [
         filing
@@ -605,7 +626,33 @@ def select_required_filings(
     if item_202_filing is None:
         raise DeskError("No 8-K primary document reporting Item 2.02 was found.")
 
-    return {"10-K": ten_k, "10-Q": ten_q, "8-K": item_202_filing}
+    return {
+        "primary": primary,
+        "primary_form": primary_form,
+        "selection_reason": reason,
+        "10-K": ten_k,
+        "10-Q": ten_q,
+        "8-K": item_202_filing,
+    }
+
+
+def apply_primary_filing_scope(
+    fact_set: dict[str, Any], primary_form: str
+) -> dict[str, Any]:
+    """Prevent annual-aligned XBRL values from being used under a 10-Q fallback."""
+    if primary_form == "10-Q":
+        for fact in fact_set.get("facts", {}).values():
+            fact["current"] = None
+            fact["prior"] = None
+        fact_set["annual_only_metrics_status"] = (
+            "not established: the selected primary filing is a 10-Q and "
+            "the aligned-facts extractor only selects annual periods"
+        )
+    else:
+        fact_set["annual_only_metrics_status"] = (
+            "available only when supported by the selected 10-K"
+        )
+    return fact_set
 
 
 def parse_filing_index(
@@ -783,6 +830,8 @@ def serializable_point(point: dict[str, Any] | None) -> dict[str, Any] | None:
 def extract_aligned_facts(
     company: Company,
     company_facts: dict[str, Any],
+    *,
+    allow_missing_annual: bool = False,
 ) -> dict[str, Any]:
     selected = {
         definition.key: select_fact_tag(company_facts, definition)
@@ -800,11 +849,11 @@ def extract_aligned_facts(
         },
         reverse=True,
     )
-    if not revenue_ends:
+    if not revenue_ends and not allow_missing_annual:
         raise DeskError(
             f"No annual total-revenue fact was found for {company.ticker}."
         )
-    current_end = revenue_ends[0]
+    current_end = revenue_ends[0] if revenue_ends else None
     prior_end = revenue_ends[1] if len(revenue_ends) > 1 else None
 
     facts: dict[str, Any] = {}
@@ -832,7 +881,7 @@ def extract_aligned_facts(
     return {
         "company": asdict(company),
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
-        "fiscal_year_period_end": current_end.isoformat(),
+        "fiscal_year_period_end": current_end.isoformat() if current_end else "not established",
         "prior_year_period_end": prior_end.isoformat() if prior_end else None,
         "selection_rule": (
             "For each metric, select the candidate US-GAAP tag whose latest "
@@ -1407,6 +1456,7 @@ class EquityResearchDataDesk:
         price: Decimal | None,
         base_dir: Path,
         run_root: Path | None = None,
+        spinoff_date: str | None = None,
     ) -> None:
         self.client = client
         self.ticker = normalize_ticker(ticker)
@@ -1414,11 +1464,12 @@ class EquityResearchDataDesk:
         self.price = price
         self.base_dir = base_dir
         self.run_root = run_root or (base_dir / "runs")
+        self.spinoff_date = spinoff_date
         self.run_started = datetime.now().astimezone()
         self.company: Company | None = None
         self.submissions_payload: dict[str, Any] | None = None
         self.filings: list[Filing] | None = None
-        self.selected_filings: dict[str, Filing] | None = None
+        self.selected_filings: dict[str, Any] | None = None
         self.index_html: dict[str, str] = {}
         self.output_dir: Path | None = None
         self.document_texts: dict[str, str] = {}
@@ -1451,12 +1502,16 @@ class EquityResearchDataDesk:
         company = self.ensure_company()
         payload, filings = fetch_submission_filings(self.client, company)
         try:
-            selected = select_required_filings(self.client, company, filings)
+            selected = select_required_filings(
+                self.client, company, filings, spinoff_date=self.spinoff_date
+            )
         except DeskError:
             payload, filings = fetch_submission_filings(
                 self.client, company, include_history=True
             )
-            selected = select_required_filings(self.client, company, filings)
+            selected = select_required_filings(
+                self.client, company, filings, spinoff_date=self.spinoff_date
+            )
         self.submissions_payload = payload
         self.filings = filings
         self.selected_filings = selected
@@ -1464,7 +1519,11 @@ class EquityResearchDataDesk:
 
     def ensure_index_details(self) -> None:
         company = self.ensure_company()
-        for label, filing in self.ensure_filings().items():
+        selected = self.ensure_filings()
+        for label, filing in (
+            (selected["primary_form"], selected["primary"]),
+            ("8-K", selected["8-K"]),
+        ):
             if filing.accepted_from_index is not None and label in self.index_html:
                 continue
             accepted, html = parse_filing_index(self.client, company, filing)
@@ -1474,11 +1533,19 @@ class EquityResearchDataDesk:
     def ensure_fact_set(self) -> dict[str, Any]:
         if self.fact_set is None:
             company = self.ensure_company()
+            selected = self.ensure_filings()
             url = SEC_COMPANY_FACTS_URL.format(cik=company.padded_cik)
             payload = self.client.get_json(url)
             if not isinstance(payload, dict):
                 raise DeskError("Unexpected structure in SEC company facts.")
-            self.fact_set = extract_aligned_facts(company, payload)
+            self.fact_set = extract_aligned_facts(
+                company,
+                payload,
+                allow_missing_annual=selected["primary_form"] == "10-Q",
+            )
+            self.fact_set = apply_primary_filing_scope(
+                self.fact_set, selected["primary_form"]
+            )
         return self.fact_set
 
     def ensure_release_text(self) -> str:
@@ -1506,13 +1573,17 @@ class EquityResearchDataDesk:
         self.ensure_index_details()
         selected = self.ensure_filings()
         print(f"Submissions API filings examined: {len(self.filings or [])}")
-        labels = (
-            ("Latest 10-K", "10-K"),
-            ("Latest 10-Q", "10-Q"),
-            ("Latest 8-K reporting Item 2.02", "8-K"),
+        print(
+            f"Selected primary filing: {selected['primary_form']} accession "
+            f"{selected['primary'].accession_number}; filing date "
+            f"{selected['primary'].filing_date}; period "
+            f"{selected['primary'].report_date or 'not established'}; reason "
+            f"{selected['selection_reason']}"
         )
-        for display, key in labels:
-            filing = selected[key]
+        for display, filing in (
+            ("Selected primary filing", selected["primary"]),
+            ("Latest 8-K reporting Item 2.02", selected["8-K"]),
+        ):
             print(
                 f"{display}: accession {filing.accession_number}; "
                 f"Accepted {filing.accepted_from_index}"
@@ -1525,12 +1596,15 @@ class EquityResearchDataDesk:
         self.ensure_index_details()
         output_dir = self.ensure_output_dir()
 
-        downloads: list[tuple[str, str, Filing | None]] = []
-        for key in ("10-K", "10-Q", "8-K"):
-            filing = selected[key]
-            downloads.append(
-                (key, filing.primary_document_url(company.cik), filing)
-            )
+        primary = selected["primary"]
+        downloads: list[tuple[str, str, Filing | None]] = [
+            (
+                selected["primary_form"],
+                primary.primary_document_url(company.cik),
+                primary,
+            ),
+            ("8-K", selected["8-K"].primary_document_url(company.cik), selected["8-K"]),
+        ]
         exhibit_url = find_exhibit_991_url(
             selected["8-K"].index_url(company.cik), self.index_html["8-K"]
         )
@@ -1562,6 +1636,18 @@ class EquityResearchDataDesk:
         manifest = {
             "company": asdict(company),
             "run_started": self.run_started.isoformat(timespec="seconds"),
+            "filing_selection": {
+                "form": selected["primary_form"],
+                "accession": primary.accession_number,
+                "filing_date": primary.filing_date,
+                "period": primary.report_date or "not established",
+                "reason": selected["selection_reason"],
+            },
+            "annual_only_facts": (
+                "not established from the selected 10-Q; no annual filing was selected"
+                if selected["primary_form"] == "10-Q"
+                else "not applicable; selected filing is a 10-K"
+            ),
             "documents": manifest_documents,
         }
         save_json(output_dir / "manifest.json", manifest)
@@ -1625,11 +1711,12 @@ class EquityResearchDataDesk:
 
     def run_roles(self, api_key: str, model: str) -> Path:
         selected = self.ensure_filings()
-        ten_k_text = self.document_texts.get("10-K")
-        if ten_k_text is None:
+        primary_form = selected["primary_form"]
+        primary_text = self.document_texts.get(primary_form)
+        if primary_text is None:
             company = self.ensure_company()
-            ten_k_text = resource_to_plain_text(
-                self.client.fetch(selected["10-K"].primary_document_url(company.cik))
+            primary_text = resource_to_plain_text(
+                self.client.fetch(selected["primary"].primary_document_url(company.cik))
             )
         release_text = self.ensure_release_text()
         fact_set = self.ensure_fact_set()
@@ -1676,13 +1763,21 @@ class EquityResearchDataDesk:
             output_dir=self.ensure_output_dir(),
             run_started=self.run_started,
             filings={
-                "10-K": selected["10-K"].accession_number,
-                "10-Q": selected["10-Q"].accession_number,
+                "primary_form": primary_form,
+                "primary_accession": selected["primary"].accession_number,
+                "filing_selection": {
+                    "form": primary_form,
+                    "accession": selected["primary"].accession_number,
+                    "filing_date": selected["primary"].filing_date,
+                    "period": selected["primary"].report_date or "not established",
+                    "reason": selected["selection_reason"],
+                },
                 "8-K": selected["8-K"].accession_number,
             },
-            ten_k_text=ten_k_text,
+            ten_k_text=primary_text,
             release_text=release_text,
             financial_context=financial_context,
+            primary_form=primary_form,
         )
 
     def run(

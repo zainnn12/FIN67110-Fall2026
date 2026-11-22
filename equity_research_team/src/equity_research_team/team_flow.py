@@ -76,7 +76,7 @@ INSIGHT_SCHEMA: dict[str, Any] = {
     "properties": {
         "line": {"type": "string"},
         "quote": {"type": "string"},
-        "filing": {"type": "string", "enum": ["10-K", "Earnings release"]},
+        "filing": {"type": "string", "enum": ["10-K", "10-Q", "Earnings release"]},
         "accession_number": {"type": "string"},
         "line_start": {"type": "integer"},
         "line_end": {"type": "integer"},
@@ -314,13 +314,36 @@ class EquityResearchTeamFlow(Flow[TeamState]):
             raise ValueError("The desk is unavailable.")
         return self.desk.ensure_filings()
 
-    def _ten_k_text(self) -> str:
+    def _primary_form(self) -> str:
+        selected = self._selected_filings()
+        return str(selected.get("primary_form") or "10-K")
+
+    def _primary_filing(self) -> Any:
+        selected = self._selected_filings()
+        return selected.get("primary") or selected[self._primary_form()]
+
+    def _primary_text(self) -> str:
         if self.desk is None:
             raise ValueError("The desk is unavailable.")
-        text = self.desk.document_texts.get("10-K")
+        form = self._primary_form()
+        text = self.desk.document_texts.get(form)
         if text is None:
-            raise ValueError("The Steps node did not retain the saved 10-K text.")
+            raise ValueError(f"The Steps node did not retain the saved {form} text.")
         return text
+
+    def _primary_sections(self) -> dict[str, Any]:
+        form = self._primary_form()
+        text = self._primary_text()
+        if form == "10-K":
+            return extract_ten_k_sections(text)
+        numbered = number_document_lines(text)
+        full_filing = {
+            "label": "Full 10-Q filing; use only explicitly reported periods and facts.",
+            "line_start": 1,
+            "line_end": len(text.splitlines()),
+            "text": numbered,
+        }
+        return {"business": full_filing, "md_and_a": full_filing}
 
     def _insight_issues(self, role: str, output: Mapping[str, Any]) -> list[str]:
         insight = output.get("insight")
@@ -337,9 +360,9 @@ class EquityResearchTeamFlow(Flow[TeamState]):
 
         filing = str(insight.get("filing", ""))
         sources = {
-            "10-K": (
-                self._ten_k_text().splitlines(),
-                self._selected_filings()["10-K"].accession_number,
+            self._primary_form(): (
+                self._primary_text().splitlines(),
+                self._primary_filing().accession_number,
             ),
             "Earnings release": (
                 self.desk.ensure_release_text().splitlines(),
@@ -347,7 +370,7 @@ class EquityResearchTeamFlow(Flow[TeamState]):
             ),
         }
         if filing not in sources:
-            issues.append("The Insight cites neither the 10-K nor the earnings release.")
+            issues.append("The Insight cites neither the selected primary filing nor the earnings release.")
             return issues
 
         source_lines, expected_accession = sources[filing]
@@ -447,16 +470,17 @@ class EquityResearchTeamFlow(Flow[TeamState]):
     def research_analyst(self, _: str) -> dict[str, Any]:
         self._record_node(ROLE_RESEARCH)
         selected = self._selected_filings()
-        sections = extract_ten_k_sections(self._ten_k_text())
+        sections = self._primary_sections()
         release_text = self.desk.ensure_release_text()
         request = {
             "task": (
-                "Analyze the supplied filing sections for the business model, competitive "
+                "Analyze the selected primary 10-Q or 10-K for the business model, competitive "
                 "position, catalysts, risks, and recent developments."
             ),
             "context": {
-                "ten_k": {
-                    "accession_number": selected["10-K"].accession_number,
+                "primary_filing": {
+                    "accession_number": self._primary_filing().accession_number,
+                    "form": self._primary_form(),
                     "business_section": sections["business"],
                     "md_and_a_section": sections["md_and_a"],
                 },
@@ -484,7 +508,7 @@ class EquityResearchTeamFlow(Flow[TeamState]):
         selected = self._selected_filings()
         fact_set = self.desk.ensure_fact_set()
         release_text = self.desk.ensure_release_text()
-        ten_k_sections = extract_ten_k_sections(self._ten_k_text())
+        ten_k_sections = self._primary_sections()
         peer_context = []
         for ticker in self.state.peers:
             peer_facts = self.desk.peer_fact_sets.get(ticker)
@@ -504,7 +528,14 @@ class EquityResearchTeamFlow(Flow[TeamState]):
                 "source, tag or line, period, input, and ratio definition."
             ),
             "context": {
-                "step_4_facts": fact_set,
+                "step_4_facts": {
+                    **fact_set,
+                    "annual_only_metrics": (
+                        "not established from the selected 10-Q"
+                        if self._primary_form() == "10-Q"
+                        else "supported only where the selected 10-K reports them"
+                    ),
+                },
                 "step_5_ratios": [
                     {"name": name, "arithmetic": arithmetic}
                     for name, arithmetic in calculate_metrics(fact_set, self.desk.price)
@@ -521,7 +552,11 @@ class EquityResearchTeamFlow(Flow[TeamState]):
                         release_text
                     ),
                 },
-                "ten_k_md_and_a_for_insight": ten_k_sections["md_and_a"],
+                "primary_filing_for_insight": {
+                    "form": self._primary_form(),
+                    "accession_number": self._primary_filing().accession_number,
+                    "text": ten_k_sections["md_and_a"],
+                },
                 "step_7_peers": peer_context,
             },
             "expected_output": _expected_financial_output(),
@@ -571,9 +606,10 @@ class EquityResearchTeamFlow(Flow[TeamState]):
     def _manager_request(self) -> dict[str, Any]:
         citation_issues = validate_research_citations(
             self.state.research_output,
-            ten_k_text=self._ten_k_text(),
+            ten_k_text=self._primary_text(),
             release_text=self.desk.ensure_release_text(),
-            ten_k_accession=self._selected_filings()["10-K"].accession_number,
+            ten_k_accession=self._primary_filing().accession_number,
+            primary_form=self._primary_form(),
             release_accession=self._selected_filings()["8-K"].accession_number,
         )
         insight_issues = self._all_insight_issues()
@@ -775,8 +811,15 @@ class EquityResearchTeamFlow(Flow[TeamState]):
         report = compile_report_markdown(
             manager_output,
             {
-                "10-K": selected["10-K"].accession_number,
-                "10-Q": selected["10-Q"].accession_number,
+                "primary_form": self._primary_form(),
+                "primary_accession": self._primary_filing().accession_number,
+                "filing_selection": {
+                    "form": self._primary_form(),
+                    "accession": self._primary_filing().accession_number,
+                    "filing_date": getattr(self._primary_filing(), "filing_date", "not established"),
+                    "period": getattr(self._primary_filing(), "report_date", None) or "not established",
+                    "reason": selected.get("selection_reason", "not established"),
+                },
                 "8-K": selected["8-K"].accession_number,
             },
             self.desk.run_started,
@@ -817,6 +860,7 @@ def build_desk(
     client: Any,
     base_dir: Path = WORKSPACE_DIR,
     run_root: Path | None = None,
+    spinoff_date: str | None = None,
 ) -> EquityResearchDataDesk:
     return EquityResearchDataDesk(
         client=client,
@@ -825,6 +869,7 @@ def build_desk(
         price=price,
         base_dir=base_dir,
         run_root=run_root,
+        spinoff_date=spinoff_date,
     )
 
 

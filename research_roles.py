@@ -65,7 +65,7 @@ SOURCE_CLAIM_SCHEMA = _strict_object(
         "quote": {"type": "string"},
         "filing": {
             "type": "string",
-            "enum": ["10-K", "Earnings release"],
+            "enum": ["10-K", "10-Q", "Earnings release"],
         },
         "accession_number": {"type": "string"},
         "line_start": {"type": "integer"},
@@ -419,10 +419,11 @@ def validate_research_citations(
     release_text: str,
     ten_k_accession: str,
     release_accession: str,
+    primary_form: str = "10-K",
 ) -> list[str]:
     """Check line ranges, accession numbers, and exact quotes deterministically."""
     sources = {
-        "10-K": (ten_k_text.splitlines(), ten_k_accession),
+        primary_form: (ten_k_text.splitlines(), ten_k_accession),
         "Earnings release": (release_text.splitlines(), release_accession),
     }
     issues: list[str] = []
@@ -697,12 +698,23 @@ def compile_report_markdown(
     run_started: datetime,
 ) -> str:
     """Put the filing list and run time on the required first two lines."""
-    first_line = (
-        "Filings read: "
-        f"10-K (accession {filings['10-K']}); "
-        f"10-Q (accession {filings['10-Q']}); "
-        f"8-K Item 2.02 and Exhibit 99.1 (accession {filings['8-K']})"
-    )
+    if "primary_form" in filings:
+        selection = filings.get("filing_selection", {})
+        first_line = (
+            "Filings read: "
+            f"{filings['primary_form']} (accession {filings['primary_accession']}; "
+            f"filed {selection.get('filing_date', 'not established')}; "
+            f"period {selection.get('period', 'not established')}; "
+            f"selected because {selection.get('reason', 'not established')}); "
+            f"8-K Item 2.02 and Exhibit 99.1 (accession {filings['8-K']})"
+        )
+    else:
+        first_line = (
+            "Filings read: "
+            f"10-K (accession {filings['10-K']}); "
+            f"10-Q (accession {filings['10-Q']}); "
+            f"8-K Item 2.02 and Exhibit 99.1 (accession {filings['8-K']})"
+        )
     second_line = f"Run time: {run_started.isoformat(timespec='seconds')}"
     sections = (
         ("Overview", "overview"),
@@ -735,17 +747,28 @@ def run_four_role_workflow(
     ten_k_text: str,
     release_text: str,
     financial_context: Mapping[str, Any],
+    primary_form: str = "10-K",
 ) -> Path:
     """Run all four roles, permit one correction pass, and save the report."""
-    sections = extract_ten_k_sections(ten_k_text)
+    if primary_form == "10-K":
+        sections = extract_ten_k_sections(ten_k_text)
+    else:
+        section = {
+            "label": "Full 10-Q filing; use only explicitly reported periods and facts.",
+            "line_start": 1,
+            "line_end": len(ten_k_text.splitlines()),
+            "text": number_document_lines(ten_k_text),
+        }
+        sections = {"business": section, "md_and_a": section}
     research_request = {
         "task": (
             "Analyze the business model, competitive position, catalysts, and "
             "recent developments from the supplied filing sections."
         ),
         "context": {
-            "ten_k": {
-                "accession_number": filings["10-K"],
+            "primary_filing": {
+                "form": primary_form,
+                "accession_number": filings.get("primary_accession", filings.get("10-K", "not established")),
                 "business_section": sections["business"],
                 "md_and_a_section": sections["md_and_a"],
             },
@@ -797,8 +820,9 @@ def run_four_role_workflow(
         research_output,
         ten_k_text=ten_k_text,
         release_text=release_text,
-        ten_k_accession=filings["10-K"],
+        ten_k_accession=filings.get("primary_accession", filings.get("10-K", "not established")),
         release_accession=filings["8-K"],
+        primary_form=primary_form,
     )
     manager_output = role_client.call(
         role=ROLE_MANAGER,
@@ -877,8 +901,9 @@ def run_four_role_workflow(
             research_output,
             ten_k_text=ten_k_text,
             release_text=release_text,
-            ten_k_accession=filings["10-K"],
+            ten_k_accession=filings.get("primary_accession", filings.get("10-K", "not established")),
             release_accession=filings["8-K"],
+            primary_form=primary_form,
         )
         manager_output = role_client.call(
             role=ROLE_MANAGER,

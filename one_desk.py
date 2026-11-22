@@ -129,7 +129,13 @@ def run_desk(ticker:str,*,run_root:Path|None=None,registry_path:Path|None=None) 
             return final
         selected=pick
     record=registry_row(selected,current_registry)
-    team_out=run_command("agent_team",[sys.executable,"-u","-m","equity_research_team.main",selected,"--run-root",str(run_dir/"agent")],run_dir,cwd=TEAM_PROJECT,env=env)
+    team_command=[sys.executable,"-u","-m","equity_research_team.main",selected,"--run-root",str(run_dir/"agent")]
+    if record:
+        distribution=record.get("facts",{}).get("distribution_date") or {}
+        spinoff_date=distribution.get("value")
+        if spinoff_date:
+            team_command.extend(["--spinoff-date",str(spinoff_date)])
+    team_out=run_command("agent_team",team_command,run_dir,cwd=TEAM_PROJECT,env=env)
     team_dir=find_team_run(team_out)
     worksheet_out=run_command("worksheet",[sys.executable,str(WORKSHEET),str(team_dir),selected],run_dir,env=env)
     match=re.search(r"(?m)^Worksheet: (.+)$",worksheet_out)

@@ -7,15 +7,96 @@ from equity_research_data import (
     DILUTED_EPS_LINE_RE,
     REVENUE_LINE_RE,
     Company,
+    DownloadedResource,
+    Filing,
     DeskError,
     SecClient,
     calculate_metrics,
+    apply_primary_filing_scope,
     extract_aligned_facts,
     find_exhibit_991_url,
     format_quarterly_release_metrics,
     matching_release_lines,
     parse_quarterly_release_metrics,
+    select_required_filings,
 )
+
+
+def _periodic_filing(form: str, filing_date: str, accession: str) -> Filing:
+    return Filing(
+        accession_number=accession,
+        form=form,
+        filing_date=filing_date,
+        report_date="2026-09-30",
+        primary_document=f"{form.replace('-', '').lower()}.htm",
+        items="2.02" if form == "8-K" else "",
+        acceptance_datetime=f"{filing_date}T18:00:00",
+    )
+
+
+class _Item202Client:
+    def fetch(self, url: str) -> DownloadedResource:
+        return DownloadedResource(
+            url=url,
+            content=b"<html><body>Item 2.02 Results of Operations</body></html>",
+            content_type="text/html",
+            encoding="utf-8",
+        )
+
+
+def test_primary_filing_selection_keeps_standard_10k_form():
+    k = _periodic_filing("10-K", "2026-11-02", "annual-accession")
+    q = _periodic_filing("10-Q", "2026-11-03", "quarter-accession")
+    eight_k = _periodic_filing("8-K", "2026-11-04", "release-accession")
+    selected = select_required_filings(
+        _Item202Client(), Company("TST", 1, "Test Co"), [k, q, eight_k],
+        spinoff_date="2026-10-26",
+    )
+    assert selected["primary_form"] == "10-K"
+    assert selected["primary"].accession_number == "annual-accession"
+    assert selected["primary"].report_date == "2026-09-30"
+    assert "First available primary 10-K" in selected["selection_reason"]
+
+
+def test_primary_filing_selection_uses_10q_when_no_10k_exists():
+    q = _periodic_filing("10-Q", "2026-11-02", "quarter-accession")
+    eight_k = _periodic_filing("8-K", "2026-11-03", "release-accession")
+    selected = select_required_filings(
+        _Item202Client(), Company("TST", 1, "Test Co"), [q, eight_k],
+        spinoff_date="2026-10-26",
+    )
+    assert selected["primary_form"] == "10-Q"
+    assert selected["primary"].accession_number == "quarter-accession"
+    assert selected["primary"].report_date == "2026-09-30"
+    assert "after the 2026-10-26 distribution date" in selected["selection_reason"]
+
+
+def test_registration_statement_is_not_selected_as_primary_periodic_filing():
+    registration = _periodic_filing("10-12B/A", "2026-10-01", "registration-accession")
+    eight_k = _periodic_filing("8-K", "2026-11-03", "release-accession")
+    with unittest.TestCase().assertRaisesRegex(DeskError, "No primary 10-Q or 10-K"):
+        select_required_filings(
+            _Item202Client(), Company("TST", 1, "Test Co"), [registration, eight_k],
+            spinoff_date="2026-10-26",
+        )
+
+
+def test_annual_only_metrics_are_not_established_for_10q_fallback():
+    facts = {"facts": {"revenue": {"current": {"val": 123}, "prior": {"val": 100}}}}
+    result = apply_primary_filing_scope(facts, "10-Q")
+    assert result["facts"]["revenue"] == {"current": None, "prior": None}
+    assert result["annual_only_metrics_status"].startswith("not established")
+
+
+def test_10q_fallback_can_continue_without_annual_revenue_facts():
+    result = extract_aligned_facts(
+        Company("TST", 1, "Test Co"), {"facts": {"us-gaap": {}}},
+        allow_missing_annual=True,
+    )
+    result = apply_primary_filing_scope(result, "10-Q")
+    assert result["fiscal_year_period_end"] == "not established"
+    assert result["facts"]["revenue"]["current"] is None
+    assert result["annual_only_metrics_status"].startswith("not established")
 
 
 def test_sec_disk_cache_avoids_duplicate_filing_fetch(tmp_path):

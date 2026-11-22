@@ -64,6 +64,7 @@ def _parser() -> argparse.ArgumentParser:
         help=f"OpenAI model for all role calls (default: {DEFAULT_OPENAI_MODEL})",
     )
     parser.add_argument("--run-root", type=Path, help="Directory where timestamped run folders are created")
+    parser.add_argument("--spinoff-date", help="Distribution date used to select the first later primary 10-Q or 10-K")
     return parser
 
 
@@ -113,6 +114,7 @@ def run(argv: Sequence[str] | None = None) -> int:
         price=args.price,
         client=sec_client,
         run_root=args.run_root.resolve() if args.run_root else None,
+        spinoff_date=args.spinoff_date,
     )
     flow = EquityResearchTeamFlow(desk=desk, role_client=role_client)
     flow.kickoff(

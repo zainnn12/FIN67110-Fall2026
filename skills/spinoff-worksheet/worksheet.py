@@ -110,16 +110,19 @@ def assemble(run_dir: Path, ticker: str):
 PERSONA_SCHEMA={"type":"object","properties":{"analysis":{"type":"string"},"insight":{"type":"string"}},"required":["analysis","insight"],"additionalProperties":False}
 
 def persona_call(result, run_dir, client=None):
-    if client is None:
-        api_key=read_openai_api_key(ROOT)
-        client=OpenAIRoleClient(api_key=api_key, model=DEFAULT_OPENAI_MODEL)
     verified_path=run_dir/"verified_report.md"
     if not verified_path.is_file(): raise ValueError("A saved verified team report is required for the persona call.")
     release_paths=sorted(run_dir.glob("8-K_EX-99.1_*.txt"))
     release=release_paths[0].read_text(errors="replace") if release_paths else ""
     first_paragraph=" ".join([line.strip() for line in release.splitlines() if line.strip()][:18])
     evidence={"verified_team_report":verified_path.read_text(),"worksheet_computations":result,"saved_filing_facts":json.loads((run_dir/"facts.json").read_text()),"earnings_release_opening_paragraph_candidate":first_paragraph,"saved_earnings_release":release}
-    return client.call(role="Investor Persona", instructions=(PERSONA+"\n\nUse only this saved evidence. Do not calculate, derive, annualize, estimate, or invent numbers. Do not present any model-derived numerical claim. Return a short evidence-bound analysis and one filing-supported Insight absent from the quoted release opening paragraph. Include the exact accession and saved-text line citation. If evidence does not support this comparison, state that clearly."), request={"task":"Apply the persona to the saved verified run. Do not perform calculations.","context":evidence,"expected_output":{"analysis":"A short prose analysis; no calculations.","insight":"One filing-supported claim absent from the release opening paragraph, with exact accession and saved-text line citation."}}, schema_name="spinoff_persona", output_schema=PERSONA_SCHEMA)
+    instructions=(PERSONA+"\n\nUse only this saved evidence. Do not calculate, derive, annualize, estimate, or invent numbers. Do not present any model-derived numerical claim. Return a short evidence-bound analysis and one filing-supported Insight absent from the quoted release opening paragraph. Include the exact accession and saved-text line citation. If evidence does not support this comparison, state that clearly.")
+    request={"task":"Apply the persona to the saved verified run. Do not perform calculations.","context":evidence,"expected_output":{"analysis":"A short prose analysis; no calculations.","insight":"One filing-supported claim absent from the release opening paragraph, with exact accession and saved-text line citation."}}
+    (run_dir/"persona_model_input.json").write_text(json.dumps({"role":"Investor Persona","instructions":instructions,"request":request,"schema_name":"spinoff_persona","output_schema":PERSONA_SCHEMA},indent=2)+"\n")
+    if client is None:
+        api_key=read_openai_api_key(ROOT)
+        client=OpenAIRoleClient(api_key=api_key, model=DEFAULT_OPENAI_MODEL)
+    return client.call(role="Investor Persona", instructions=instructions, request=request, schema_name="spinoff_persona", output_schema=PERSONA_SCHEMA)
 
 def save_market_data(result, run_dir, api_key=None, reader=None):
     if reader is None:
