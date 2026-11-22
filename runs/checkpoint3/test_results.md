@@ -52,3 +52,12 @@ Result: **67 passed**. This was the full test run after the WRDS dependency, aut
 - The timing-corrected SCREEN run completed with no rankable company and saved individual part timings.
 - NVDA and WMT saved filings, facts, and initial analyst outputs; both stopped at the Investment Advisor call on HTTP 429. Their joined reports remain pending.
 - The local page health endpoint passed. Its valid MSGR request stopped on HTTP 429 before any node output or final report was produced.
+
+## Submission evidence validation (2026-11-22)
+
+- Full locked offline suite after the Checkpoint 3 page and fallback-report edits: **72 passed**.
+- No OpenAI API request was made for this submission update.
+- Credential scan over tracked submission files and the new fallback reports: PASS, zero matches.
+- Unsupported instructor or professor attribution scan: PASS, zero matches.
+- Relative links in `CHECKPOINT3_SUBMISSION.md`: checked against repository files.
+- `.env`: ignored and untracked.
