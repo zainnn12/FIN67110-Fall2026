@@ -107,7 +107,7 @@ from November 2, 2026, the last close before the release. The price source is
 
 The AMD report and its saved filings and facts are in
 `runs/ADVANCED_MICRO_DEVICES_INC_2026-11-08_16-02-23-519971/`. It is a
-course-approved fallback report, not a successful live agent-team run. Ansh
+fallback report, not a successful live agent-team run. Ansh
 checked both claims against AMD's Exhibit 99.1 and confirmed them: Q3 2026 GAAP
 net revenue was $13.377 billion for the three months ended September 26, 2026
 (PASS), and Q3 2026 GAAP diluted EPS was $1.46 for that period (PASS). These
@@ -137,7 +137,7 @@ One quarter may not establish a lasting trend. The filing cannot decide how
 much weight an investor should give this result.
 
 The OpenAI API account returned HTTP 429 `credit_balance_exhausted`. The team
-did not complete a live model-assisted partner-company run. The course-approved
+did not complete a live model-assisted partner-company run. The
 fallback report was used. A live run can be completed if API credit becomes
 available, but it is not required for the current Checkpoint 2 submission.
 

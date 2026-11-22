@@ -8,7 +8,7 @@ Partner-confirmed company: Microsoft Corporation (MSFT)
 - [Microsoft completed human audit](runs/MICROSOFT_CORP_2026-11-02_15-42-54/report_audit.md)
 - [Microsoft filing manifest](runs/MICROSOFT_CORP_2026-11-02_15-42-54/manifest.json)
 
-The report uses Microsoft’s October 28, 2026 earnings release. Partner Ansh Doshi (AD) manually marked Claims 9 and 11 Correct at the top of the report. The report is labeled `fallback` because the model API returned an insufficient-credit error, as permitted by the course fallback rule.
+The report uses Microsoft’s October 28, 2026 earnings release. Partner Ansh Doshi (AD) manually marked Claims 9 and 11 Correct at the top of the report. The report is labeled `fallback` because the model API returned an insufficient-credit error.
 
 Microsoft audit results:
 

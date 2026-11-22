@@ -23,7 +23,7 @@ Liquidity: $10,000 purchase / 12,792,983.26 median daily dollar volume = 0.1%; d
 
 ## Core claim evidence audit
 
-Codex evidence audit, authorized by the instructor and relayed by Zainab on November 20, 2026.
+Automated evidence audit.
 
 - **PASS:** The earnings release states operating cash flow of (57,977) and (23,550), in thousands, in the fiscal 2026 and fiscal 2025 columns. Exhibit 99.1 lines 139–141 identify units and column periods; line 150 gives the row. No conversion is used in this claim.
 - **PASS:** The saved financial-datasets daily-close response records the November 19 close of $19.37 for MATW. This predates the filing acceptance and is the last eligible close saved before the release. Source: `worksheet_closes.json`.

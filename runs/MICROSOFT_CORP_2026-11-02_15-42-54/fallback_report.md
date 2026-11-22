@@ -8,7 +8,7 @@ Partner manual checks: PASS — Ansh opened the cited Microsoft earnings-release
 | FY27 Q1 total revenue | $92.279 billion, three months ended September 30, 2026, GAAP total revenue | Exhibit 99.1, saved lines 170-176; “Total revenue” | PASS |
 | FY27 Q1 diluted EPS | $4.92 GAAP, three months ended September 30, 2026 | Exhibit 99.1, saved lines 170-172 and 190-192; “Diluted” | PASS |
 
-This is a course-approved fallback report. It combines the four role tasks in one response. It is not a successful live agent-team run. It uses the saved Microsoft FY2026 10-K, FY27 Q1 10-Q, and October 28, 2026 earnings release. Filing lines below refer to the saved plain-text files in this run folder.
+This is a fallback report. It combines the four role tasks in one response. It is not a successful live agent-team run. It uses the saved Microsoft FY2026 10-K, FY27 Q1 10-Q, and October 28, 2026 earnings release. Filing lines below refer to the saved plain-text files in this run folder.
 
 ## 1. Overview
 

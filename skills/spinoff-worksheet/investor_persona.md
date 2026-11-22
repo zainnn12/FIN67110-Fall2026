@@ -1,6 +1,6 @@
-# Team-confirmed investor persona
+# Investor persona
 
-Supplied by Zainab as a team-confirmed persona.
+Persona used for worksheet inputs.
 
 ## 1. Identity
 

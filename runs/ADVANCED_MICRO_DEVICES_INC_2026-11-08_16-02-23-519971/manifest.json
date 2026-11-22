@@ -12,7 +12,7 @@
     "price_source": "https://ir.amd.com/stock-data/price-history",
     "price_reason": "Final market close before AMD's November 3, 2026 earnings release",
     "release_date": "2026-11-03",
-    "report_type": "course-approved fallback; no live model run"
+    "report_type": "fallback report; no live model run"
   },
   "documents": [
     {

@@ -8,7 +8,7 @@ Partner manual checks: PASS — Ansh opened the cited AMD earnings-release lines
 | Q3 2026 GAAP net revenue | $13.377 billion, three months ended September 26, 2026 | Exhibit 99.1, GAAP quarterly results and income statement, “Revenue” / “Net revenue” | PASS |
 | Q3 2026 GAAP diluted EPS | $1.46, three months ended September 26, 2026 | Exhibit 99.1, GAAP quarterly results, “Diluted earnings per share” | PASS |
 
-This is a course-approved fallback report. It is not a successful live agent-team run. It uses the saved SEC filing texts and facts in this run folder, the provided closing price and peer list, and the four course role tasks combined for this report. The live model call was not run.
+This is a fallback report. It is not a successful live agent-team run. It uses the saved SEC filing texts and facts in this run folder, the provided closing price and peer list, and the four course role tasks combined for this report. The live model call was not run.
 
 ## 1. Overview
 
