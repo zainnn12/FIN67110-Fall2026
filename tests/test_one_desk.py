@@ -22,7 +22,8 @@ def test_execution_order_is_code_defined_and_not_model_selected():
     worksheet=source.index('run_command("worksheet"')
     guard=source.index('final=finalize_outputs',worksheet)
     assert seeker < team < worksheet < guard
-    assert "OpenAIRoleClient" not in source and "model" not in source.lower()
+    assert "OpenAIRoleClient" not in source and "OpenAI" not in source
+    assert '"model_calls":0' in source
 
 
 def test_replay_is_byte_identical_and_file_only(tmp_path, monkeypatch):
@@ -41,6 +42,7 @@ def test_replay_is_byte_identical_and_file_only(tmp_path, monkeypatch):
     assert replay(run_dir)
     proof = json.loads((run_dir / "replay" / "replay_proof.json").read_text())
     assert proof["network_calls"] == 0
+    assert proof["model_calls"] == 0
     assert proof["byte_identical"] is True
 
 

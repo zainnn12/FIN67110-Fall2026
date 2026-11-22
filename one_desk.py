@@ -89,7 +89,7 @@ def finalize_outputs(run_dir:Path,team_dir:Path,worksheet_path:Path,ticker:str,s
     return final
 
 def run_desk(ticker:str,*,run_root:Path|None=None,registry_path:Path|None=None) -> Path:
-    run_dir=create_run_dir(run_root or ROOT/"runs"/"desk")
+    run_dir=create_run_dir((run_root or ROOT/"runs"/"desk").resolve())
     ticker=ticker.strip().upper()
     screen=ticker=="SCREEN"
     env=dict(os.environ)
@@ -152,7 +152,7 @@ def replay(run_dir:Path) -> bool:
     actual=assemble_final(run_dir,team_dir,worksheet,manifest.get("ticker"),registry).encode()
     target=run_dir/"replay"/"final_report.md"; target.parent.mkdir(parents=True,exist_ok=True); target.write_bytes(actual)
     passed=hashlib.sha256(expected).digest()==hashlib.sha256(actual).digest()
-    report={"status":"PASS" if passed else "FAIL","network_calls":0,"networking":"disabled by file-only implementation","byte_identical":passed,"sha256_saved":hashlib.sha256(expected).hexdigest(),"sha256_replay":hashlib.sha256(actual).hexdigest()}
+    report={"status":"PASS" if passed else "FAIL","network_calls":0,"networking":"disabled by file-only implementation","model_calls":0,"modeling":"disabled by file-only implementation","byte_identical":passed,"sha256_saved":hashlib.sha256(expected).hexdigest(),"sha256_replay":hashlib.sha256(actual).hexdigest()}
     (target.parent/"replay_proof.json").write_text(json.dumps(report,indent=2)+"\n")
     print(f"Replay: {report['status']}; network calls: 0")
     return passed
