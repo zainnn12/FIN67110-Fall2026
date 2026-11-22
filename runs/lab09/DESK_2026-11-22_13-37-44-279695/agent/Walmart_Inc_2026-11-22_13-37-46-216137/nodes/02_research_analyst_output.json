@@ -1,0 +1,114 @@
+{
+  "business_model": [
+    {
+      "claim": "Overview: The business earns revenue through merchandise sales in U.S. mass-market retail, international retail and wholesale operations, and U.S. membership warehouse clubs, supported by websites and mobile applications. Customers and members can shop digitally while stores and clubs fulfill orders.",
+      "quote": "The Company is engaged in the operation of retail and wholesale stores and clubs, as well as eCommerce websites and mobile applications, located throughout the U.S., Africa, Canada, Central America, Chile, China, India and Mexico.",
+      "filing": "10-Q",
+      "accession_number": "0000104169-26-000154",
+      "line_start": 1455,
+      "line_end": 1455
+    },
+    {
+      "claim": "Merchandise and related sales dominate revenue: for the quarter ended July 31, 2026, net sales were $186,100 million, versus $1,837 million of membership and other income, producing $187,937 million of total revenue. Membership and other income is not exclusively subscription revenue (10-Q, lines 1068–1073 and 1745).",
+      "quote": "Net sales | $ | 186,100 | $ | 175,750 | $ | 361,784 | $ | 339,731\nMembership and other income | 1,837 | 1,652 | 3,904 | 3,280\nTotal revenues | 187,937 | 177,402 | 365,688 | 343,011",
+      "filing": "10-Q",
+      "accession_number": "0000104169-26-000154",
+      "line_start": 1071,
+      "line_end": 1073
+    },
+    {
+      "claim": "Digital monetization extends beyond online merchandise: reported eCommerce sales include certain advertising arrangements, fulfillment services and data insights. Consequently, eCommerce growth should not be interpreted solely as growth in online retail orders.",
+      "quote": "Net sales related to eCommerce include omnichannel sales where a customer initiates an order digitally and the order is fulfilled through a store or club, as well as net sales from other business offerings that are part of the Company's ecosystem such as certain advertising arrangements, fulfillment services and data insights.",
+      "filing": "10-Q",
+      "accession_number": "0000104169-26-000154",
+      "line_start": 1542,
+      "line_end": 1542
+    }
+  ],
+  "competitive_position": [
+    {
+      "claim": "Market Positioning and Growth Outlook: The physical network provides infrastructure for store- and club-fulfilled delivery, rather than simply competing with digital sales. The company reported 11,000 units at July 31, 2026, versus 10,797 a year earlier (10-Q, lines 1726–1727 and 1742). Delivery-led eCommerce growth supports the usefulness of that network, but does not establish superior unit economics or market share (10-Q, line 1750).",
+      "quote": "Unit counts at period end | 11,000 | 10,797 | 11,000 | 10,797",
+      "filing": "10-Q",
+      "accession_number": "0000104169-26-000154",
+      "line_start": 1742,
+      "line_end": 1742
+    },
+    {
+      "claim": "Score table — analyst judgments; higher scores indicate stronger business conditions, including lower pressure for the risk criterion.\n\nCriterion | Score | Supporting number and period | Source\nBusiness momentum | 4/5 | Total revenue grew 5.9%; eCommerce net sales grew 23%, quarter ended July 31, 2026 | 10-Q, line 1750\nCompetitive durability | 4/5 | 11,000 operating units at July 31, 2026, versus 10,797 a year earlier; substantial fulfillment infrastructure, not proof of customer lock-in | 10-Q, lines 1726–1727, 1742\nCatalyst strength | 4/5 | $7,659 million invested in U.S. supply chain, customer-facing initiatives, technology and other, six months ended July 31, 2026 | 10-Q, lines 1694–1700\nRisk pressure | 2/5 | U.S. mass-market retail operating expenses increased 72 basis points as a share of sales, quarter ended July 31, 2026 | 10-Q, line 1778",
+      "quote": "eCommerce net sales grew $8.2 billion or 23% and $16.7 billion or 24% for the three and six months ended July 31, 2026, respectively, primarily driven by store and club-fulfilled delivery.",
+      "filing": "10-Q",
+      "accession_number": "0000104169-26-000154",
+      "line_start": 1750,
+      "line_end": 1750
+    }
+  ],
+  "catalysts": [
+    {
+      "claim": "Main catalyst: Automation and omnichannel investment could expand delivery capacity and improve productivity. U.S. spending on supply chain, customer-facing initiatives, technology and other reached $7,659 million in the six months ended July 31, 2026, versus $6,688 million a year earlier (10-Q, lines 1694–1700). These expenditures support the growth strategy, but the filing does not quantify their incremental return.",
+      "quote": "Our strategy includes allocating the majority of our capital to higher-return areas focused on automation such as eCommerce, supply chain and store and club investments. The following table provides additional detail regarding our capital expenditures:\n(Amounts in millions) | Six Months Ended July 31,\nAllocation of Capital Expenditures | 2026 | 2025\nSupply chain, customer-facing initiatives, technology and other | $ | 7,659 | $ | 6,688",
+      "filing": "10-Q",
+      "accession_number": "0000104169-26-000154",
+      "line_start": 1694,
+      "line_end": 1697
+    },
+    {
+      "claim": "Higher-margin advertising is another potential earnings driver. Global advertising grew 25% and global membership fee revenue grew 17% in fiscal third-quarter 2027 (earnings release, lines 10–11). However, advertising is recorded partly in net sales and partly as a reduction of cost of sales, so the advertising growth rate is not directly equivalent to consolidated revenue growth (earnings release, line 12).",
+      "quote": "Global advertising business 2 up 25%.",
+      "filing": "Earnings release",
+      "accession_number": "0000104169-26-000168",
+      "line_start": 11,
+      "line_end": 12
+    }
+  ],
+  "recent_developments": [
+    {
+      "claim": "The later earnings release confirms continued growth rather than a halt in the main digital growth engine: total revenue increased 5.2% in the quarter ended October 31, 2026, while global eCommerce grew 17% in fiscal third-quarter 2027 (earnings release, lines 11 and 137–143). International eCommerce nevertheless declined 2%, which management attributed to the timing of a major promotional event; its expected recovery remains a forecast (earnings release, lines 61–67).",
+      "quote": "Global eCommerce sales grew 17%, led by store-fulfilled pickup & delivery.",
+      "filing": "Earnings release",
+      "accession_number": "0000104169-26-000168",
+      "line_start": 11,
+      "line_end": 11
+    },
+    {
+      "claim": "Most important disclosed operating risk: Rising claims, depreciation and healthcare costs are weakening expense leverage in the largest retail operation. Its expense ratio increased 72 basis points in the quarter ended July 31, 2026 (10-Q, line 1778). This matters because the contemporaneous gross-margin improvement was primarily refund-driven, not solely a recurring productivity gain (10-Q, line 1777).",
+      "quote": "Operating expenses as a percentage of net sales increased 72 and 64 basis points for the three and six months ended July 31, 2026, respectively, when compared to the same periods in the previous fiscal year. The increase for the three months ended July 31, 2026 was primarily driven by higher self-insured general liability claims expense, increased depreciation related to our capital investments and higher associate healthcare benefit costs related to increased enrollment and medical cost inflation.",
+      "filing": "10-Q",
+      "accession_number": "0000104169-26-000154",
+      "line_start": 1778,
+      "line_end": 1778
+    },
+    {
+      "claim": "The investment program is also pressuring cash generation: non-GAAP free cash flow decreased $1.4 billion to $5.5 billion in the six months ended July 31, 2026, as capital expenditures increased $2.8 billion (10-Q, line 1721). The later release reports the same pattern: free cash flow declined $2.0 billion to $6.8 billion for the nine months ended October 31, 2026, despite higher operating cash flow (earnings release, line 370).",
+      "quote": "Free cash flow for the six months ended July 31, 2026 was $5.5 billion, which represents a decrease of $1.4 billion when compared to the same period in the previous fiscal year. The decrease in free cash flow was due to an increase of $2.8 billion in capital expenditures to support our omnichannel growth strategy, partially offset by the increase in net cash provided by operating activities described above.",
+      "filing": "10-Q",
+      "accession_number": "0000104169-26-000154",
+      "line_start": 1721,
+      "line_end": 1721
+    },
+    {
+      "claim": "Membership bundling has an earnings trade-off: the U.S. warehouse-club segment's operating income fell 15.8% in fiscal third-quarter 2027 (earnings release, line 96). Management identified prior-year rewards breakage income, an inflation-related inventory charge and bundle fee allocation as headwinds, and expects the bundle to hurt segment operating-income growth until fiscal third-quarter 2028 (earnings release, lines 105–107). This does not establish an equivalent consolidated loss from bundling.",
+      "quote": "Bundled membership to have unfavorable impact on operating income growth until lapped in Q3 FY28",
+      "filing": "Earnings release",
+      "accession_number": "0000104169-26-000168",
+      "line_start": 107,
+      "line_end": 107
+    }
+  ],
+  "limitations": [
+    "The primary quarterly filing and the later earnings release cover different periods; their results have been kept separate. No later quarterly filing was supplied.",
+    "The annual filing's full risk discussion was not supplied. The quarterly filing incorporates it by reference and reports no material change (10-Q, line 1984).",
+    "Numerical market share, membership retention, customer acquisition costs and standalone delivery profitability are not stated in the supplied materials. Management's share-gain assertions do not establish the size or durability of a competitive advantage.",
+    "The filing does not quantify how much tariff-refund income was offset by price investment, so an underlying operating-profit figure excluding both effects cannot be established.",
+    "Free cash flow and adjusted constant-currency results are non-GAAP measures; they should supplement, not replace, GAAP results.",
+    "I would weaken the growth assessment if the next filing shows consolidated eCommerce sales, the main reported digital growth engine, flat or declining. The later release shows continued consolidated growth, notwithstanding the international timing-related decline."
+  ],
+  "insight": {
+    "line": "Insight: The approximately $2.9 billion tariff-refund benefit should not be extrapolated as a recurring quarterly earnings source: the 10-Q for the quarter ended July 31, 2026, accession 0000104169-26-000154, line 1607 states, \"During the quarter ended July 31, 2026, the Company received approximately $2.9 billion in tariff refunds pursuant to the CBP process, which were recorded as a reduction to cost of sales and represent substantially all of the refunds requested by the Company.\"",
+    "quote": "During the quarter ended July 31, 2026, the Company received approximately $2.9 billion in tariff refunds pursuant to the CBP process, which were recorded as a reduction to cost of sales and represent substantially all of the refunds requested by the Company.",
+    "filing": "10-Q",
+    "accession_number": "0000104169-26-000154",
+    "line_start": 1607,
+    "line_end": 1607
+  }
+}

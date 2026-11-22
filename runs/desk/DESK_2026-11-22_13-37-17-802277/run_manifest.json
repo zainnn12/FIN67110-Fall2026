@@ -1,0 +1,9 @@
+{
+  "ticker": null,
+  "screen": true,
+  "seeker_run": "/private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-37-17-802277/seeker/SEEKER_2026-11-22_13-37-17-953718",
+  "team_run": null,
+  "worksheet": null,
+  "registry_path": "/private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-37-17-802277/seeker/SEEKER_2026-11-22_13-37-17-953718/registry.json",
+  "final_report": "/private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-37-17-802277/final_report.md"
+}

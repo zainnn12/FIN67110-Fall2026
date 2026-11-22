@@ -1,0 +1,3 @@
+
+Role: Investor Persona
+Worksheet: /private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145/worksheet.md

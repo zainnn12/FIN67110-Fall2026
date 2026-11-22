@@ -1,0 +1,9 @@
+{
+  "seeker": "recorded in seeker_timing.json",
+  "deterministic_picker": "recorded in deterministic_picker_timing.json",
+  "agent_team": "not applicable",
+  "worksheet": "not applicable",
+  "worksheet_hook": "not applicable",
+  "final_report_hook": "not applicable",
+  "final_assembler": "recorded in final_assembler_timing.json"
+}

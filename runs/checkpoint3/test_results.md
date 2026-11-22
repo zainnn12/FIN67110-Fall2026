@@ -41,3 +41,14 @@ Result: **67 passed**. This was the full test run after the WRDS dependency, aut
 - NVDA and WMT joined-desk attempts failed at model calls with the same OpenAI quota response. Each has a `failure.json`; SEC filing bundles and independent filing audits are saved.
 - MSGR agent attempt failed closed because no primary 10-K exists in its saved SEC submissions. Evidence is in `runs/desk/DESK_2026-11-20_22-53-23-552966/failure.json`.
 - A second live screen attempt stopped after a premature SEC response. The failed folder and error are preserved at `runs/desk/DESK_2026-11-20_23-27-39-420799/failure.json`. The earlier successful live empty-screen output and replay proof remain intact.
+
+## Continuation validation (2026-11-22)
+
+- Completion smoke: PASS, `gpt-6-astra`, response status `completed`. Later NVDA, WMT, and webpage model calls returned HTTP 429 `credit_balance_exhausted` with message `You have no credits remaining`; no key or headers were saved.
+- Lab 07 regression coverage: standard 10-K selection, 10-Q fallback, registration-statement rejection, and annual facts marked not established when unavailable under a 10-Q fallback.
+- Full locked test suite: **72 passed**.
+- The new MSGR one-desk run selected primary 10-Q accession `0001628280-26-071325`, filing date 2026-11-06, reported period ending 2026-09-30. Owner cash flow and per-share values remain not computed because the filing period precedes the distribution and aligned post-spin cash-flow and share inputs are not established.
+- The MSGR Lab 08 run passed the clean hook and refused the seeded arithmetic error. Offline replay recorded zero network calls, zero model calls, and identical final-report SHA-256 hashes.
+- The timing-corrected SCREEN run completed with no rankable company and saved individual part timings.
+- NVDA and WMT saved filings, facts, and initial analyst outputs; both stopped at the Investment Advisor call on HTTP 429. Their joined reports remain pending.
+- The local page health endpoint passed. Its valid MSGR request stopped on HTTP 429 before any node output or final report was produced.

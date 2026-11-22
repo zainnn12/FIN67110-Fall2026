@@ -1,0 +1,94 @@
+{
+  "ticker": "MSGR",
+  "run_dir": "/private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145",
+  "source_basis": "not computed: neither reported-after-spin TTM nor comparable annual Form 10 pro-forma inputs are identified",
+  "base_owner_cash_flow_usd_millions": null,
+  "period": null,
+  "diluted_shares_millions": null,
+  "last_eligible_close_usd": "254.55",
+  "low_value_per_share_usd": null,
+  "mid_value_per_share_usd": null,
+  "median_daily_dollar_volume_usd": "48814756.38",
+  "purchase_size_percent": "0.02048560874124759894991408743",
+  "view": "Not computed",
+  "conviction": "Not computed",
+  "inputs": {
+    "net_income": {
+      "value": null,
+      "tag": null,
+      "period_start": null,
+      "period_end": null,
+      "accession": null,
+      "form": null
+    },
+    "depreciation_and_amortization": {
+      "value": null,
+      "tag": null,
+      "period_start": null,
+      "period_end": null,
+      "accession": null,
+      "form": null
+    },
+    "property_additions": {
+      "value": null,
+      "tag": null,
+      "period_start": null,
+      "period_end": null,
+      "accession": null,
+      "form": null
+    },
+    "diluted_shares": {
+      "value": null,
+      "tag": null,
+      "period_start": null,
+      "period_end": null,
+      "accession": null,
+      "form": null
+    }
+  },
+  "price_date": "2026-11-20",
+  "volume_start_date": "2026-10-27",
+  "volume_end_date": "2026-11-20",
+  "criterion_scores": {
+    "margin_of_safety": {
+      "score": 0,
+      "basis": "not computed: price-to-low-case comparison unavailable",
+      "number": "not known",
+      "filing_tag": "not known",
+      "period": "not known",
+      "calculation": "not computed"
+    },
+    "owner_cash_flow": {
+      "score": 0,
+      "basis": "not known: valid comparable cash-flow periods are unavailable",
+      "number": "not known",
+      "filing_tag": "not known",
+      "period": "not known",
+      "calculation": "not computed"
+    },
+    "parent_burden": {
+      "score": 0,
+      "basis": "not known: inherited obligations or restrictions are not established",
+      "number": "not known",
+      "filing_tag": "not known",
+      "period": "not known",
+      "calculation": "not computed"
+    },
+    "insider_alignment": {
+      "score": 0,
+      "basis": "not known: complete first-30-day Form 4 review is unavailable",
+      "number": "not known",
+      "filing_tag": "not known",
+      "period": "not known",
+      "calculation": "not computed"
+    },
+    "liquidity": {
+      "score": 2,
+      "basis": "median daily dollar volume compared with client purchase",
+      "number": "48814756.38",
+      "filing_tag": "Financial Datasets daily close and volume",
+      "period": "2026-10-27 to 2026-11-20",
+      "calculation": "10000 / 48814756.38 \u00d7 100 = 0.02048560874124759894991408743%"
+    }
+  }
+}

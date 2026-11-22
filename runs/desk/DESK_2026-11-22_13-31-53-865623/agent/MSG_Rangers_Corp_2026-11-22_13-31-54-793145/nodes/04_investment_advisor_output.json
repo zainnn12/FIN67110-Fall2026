@@ -1,0 +1,23 @@
+{
+  "thesis": "Contracted revenue visibility and the new rental stream do not yet offset deteriorating operating performance. Reduce exposure until the next filing demonstrates that year-over-year operating-loss deterioration has stopped, while recognizing that seasonal carve-out results are not a normalized standalone earnings baseline.",
+  "recommendation": "Sell",
+  "deciding_number": "84%",
+  "deciding_number_source": "Both analyst outputs cite the year-over-year increase in operating-loss magnitude for the three months ended September 30, 2026: 10-Q, accession 0001628280-26-071325, L1451.",
+  "rationale": "Investment Recommendation: Sell. The sole deciding number is the 84% widening in operating loss: modest revenue growth did not translate into improved operating economics. Both analysts agree on that deterioration; the Research Analyst emphasizes contractual visibility and catalysts, while the Financial Analyst emphasizes weak profitability and cash generation. Those perspectives differ in emphasis rather than factual conclusion.\n\nCriterion scores — all filing references below are to 10-Q accession 0001628280-26-071325:\n• Earnings strength: 1/5. Revenue grew 3%, but operating loss widened 84% (L1394–1403; L1451). The Financial Analyst calculated an operating margin of −167.42% from revenue and operating loss (L583–592). Operating cash outflow was $71.188 million; negative operating cash flow and negative net income make the positive conversion quotient misleading (L629–633; L648).\n• Catalyst credibility: 3/5. The training-center lease provides $2 million of first-contract-year fixed rent, but its net earnings benefit after changes in historical cost allocations is unquantified (L1164–1174).\n• Valuation attractiveness: 3/5, a neutral procedural placeholder, not an evidence-based valuation assessment. No price, compatible annual earnings, or comparable peer-period figures were supplied; no supporting valuation number or original filing source exists. Missing inputs establish neither cheapness nor expensiveness.\n• Risk-and-reward balance: 2/5. The strongest operating downside is the 84% widening in operating loss (L1451); the strongest contractual positive is $287.741 million of remaining performance obligations (L808–814), which supports visibility but not assured profitability.\n\nThe score average is 2.25/5, implying Sell under the prescribed rule, with no recommendation override. This is an operating-evidence recommendation, not a conclusion that the shares are overvalued.\n\nFuture Developments and Strategic Recommendations: Monitor realization of the contracted rental stream, standalone overhead, and whether ticket and sponsorship performance supplements league distributions. Avoid annualizing the seasonal quarter. Change the recommendation to Hold if the next filing shows that year-over-year GAAP operating-loss widening has stopped; that would invalidate the main numerical basis for Sell, without by itself establishing attractive valuation.",
+  "risks": [
+    "Main downside risk: Personnel and overhead costs may continue to overwhelm revenue growth; separation expenses and season-start timing explain part, but not necessarily all, of the deterioration.",
+    "Historical carve-out statements and centralized cash management do not establish normalized standalone costs or liquidity.",
+    "Operating cash consumption and weak reported liquidity create funding risk, although subsequent receipts and available borrowing capacity provide mitigation.",
+    "Seasonality and working-capital movements could make the reported deterioration less persistent than the Sell thesis assumes.",
+    "Remaining performance obligations are not a complete revenue forecast or cash already collected, and the rental catalyst's net earnings contribution is unquantified.",
+    "Missing price and peer information prevents assessing whether the operating risks are already reflected in valuation."
+  ],
+  "insight": {
+    "line": "Insight: The $71.188 million quarterly operating cash outflow should not be treated solely as recurring earnings burn: management attributed the increase primarily to working-capital changes (10-Q, L1510).",
+    "quote": "Net cash used in operating activities for the three months ended September 30, 2026 increased by $66,077 to $71,188. The increase was primarily due to changes in working capital assets and liabilities, and to a lesser extent, the change in net loss adjusted for non-cash items.",
+    "filing": "10-Q",
+    "accession_number": "0001628280-26-071325",
+    "line_start": 1510,
+    "line_end": 1510
+  }
+}

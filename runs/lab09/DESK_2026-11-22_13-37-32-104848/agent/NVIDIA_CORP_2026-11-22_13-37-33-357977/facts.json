@@ -1,0 +1,124 @@
+{
+  "company": {
+    "ticker": "NVDA",
+    "cik": 1045810,
+    "name": "NVIDIA CORP"
+  },
+  "generated_at": "2026-11-22T13:37:35-05:00",
+  "fiscal_year_period_end": "2026-01-25",
+  "prior_year_period_end": "2025-01-26",
+  "selection_rule": "For each metric, select the candidate US-GAAP tag whose latest annual period end is newest; break ties by candidate order. For revenue ties, the total-revenues candidate order prefers Revenues before RevenueFromContractWithCustomerExcludingAssessedTax. Read current and prior facts at the same period ends selected from revenue.",
+  "facts": {
+    "revenue": {
+      "label": "Total revenue",
+      "taxonomy": "us-gaap",
+      "tag": "Revenues",
+      "xbrl_label": "Revenues",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "operating_income": {
+      "label": "Operating income",
+      "taxonomy": "us-gaap",
+      "tag": "OperatingIncomeLoss",
+      "xbrl_label": "Operating Income (Loss)",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "net_income": {
+      "label": "Net income",
+      "taxonomy": "us-gaap",
+      "tag": "NetIncomeLoss",
+      "xbrl_label": "Net Income (Loss) Attributable to Parent",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "diluted_eps": {
+      "label": "Diluted EPS",
+      "taxonomy": "us-gaap",
+      "tag": "EarningsPerShareDiluted",
+      "xbrl_label": "Earnings Per Share, Diluted",
+      "unit": "USD/shares",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "stockholders_equity": {
+      "label": "Stockholders' equity",
+      "taxonomy": "us-gaap",
+      "tag": "StockholdersEquity",
+      "xbrl_label": "Stockholders' Equity Attributable to Parent",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "long_term_debt": {
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": "LongTermDebtNoncurrent",
+      "xbrl_label": "Long-term Debt, Excluding Current Maturities",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "current_long_term_debt": {
+      "label": "Current portion of long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": "LongTermDebtCurrent",
+      "xbrl_label": "Long-term Debt, Current Maturities",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "cash_from_operations": {
+      "label": "Cash from operations",
+      "taxonomy": "us-gaap",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "xbrl_label": "Net Cash Provided by (Used in) Operating Activities",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "property_additions": {
+      "label": "Additions to property and equipment",
+      "taxonomy": "us-gaap",
+      "tag": "PaymentsToAcquireProductiveAssets",
+      "xbrl_label": "Payments to Acquire Productive Assets",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "depreciation_and_amortization": {
+      "label": "Depreciation and amortization",
+      "taxonomy": "us-gaap",
+      "tag": "DepreciationDepletionAndAmortization",
+      "xbrl_label": "Depreciation, Depletion and Amortization",
+      "unit": "USD",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    },
+    "diluted_shares": {
+      "label": "Weighted-average diluted shares",
+      "taxonomy": "us-gaap",
+      "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "xbrl_label": "Weighted Average Number of Shares Outstanding, Diluted",
+      "unit": "shares",
+      "tag_latest_period_end": "2026-01-25",
+      "current": null,
+      "prior": null
+    }
+  },
+  "annual_only_metrics_status": "not established: the selected primary filing is a 10-Q and the aligned-facts extractor only selects annual periods"
+}

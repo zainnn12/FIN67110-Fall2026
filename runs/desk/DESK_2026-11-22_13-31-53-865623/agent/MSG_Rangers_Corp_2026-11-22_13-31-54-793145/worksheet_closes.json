@@ -1,0 +1,120 @@
+{
+  "ticker": "MSGR",
+  "source": "financialdatasets.ai",
+  "closes": [
+    {
+      "date": "2026-10-27",
+      "close": "177.61",
+      "volume": "393514",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-10-28",
+      "close": "186.65",
+      "volume": "354492",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-10-29",
+      "close": "217.0",
+      "volume": "260413",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-10-30",
+      "close": "218.49",
+      "volume": "343331",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-02",
+      "close": "217.53",
+      "volume": "222402",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-03",
+      "close": "232.63",
+      "volume": "333850",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-04",
+      "close": "229.12",
+      "volume": "300858",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-05",
+      "close": "224.5",
+      "volume": "195790",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-06",
+      "close": "240.8",
+      "volume": "167397",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-09",
+      "close": "244.08",
+      "volume": "148843",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-10",
+      "close": "230.57",
+      "volume": "134402",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-11",
+      "close": "229.91",
+      "volume": "159095",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-12",
+      "close": "230.15",
+      "volume": "90614",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-13",
+      "close": "239.92",
+      "volume": "109764",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-16",
+      "close": "251.0",
+      "volume": "267911",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-17",
+      "close": "250.32",
+      "volume": "205034",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-18",
+      "close": "247.84",
+      "volume": "176613",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-19",
+      "close": "249.21",
+      "volume": "195878",
+      "source": "Financial Datasets historical close"
+    },
+    {
+      "date": "2026-11-20",
+      "close": "254.55",
+      "volume": "226859",
+      "source": "Financial Datasets historical close"
+    }
+  ]
+}

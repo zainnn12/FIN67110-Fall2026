@@ -1,0 +1,3133 @@
+{
+  "dropped": [
+    {
+      "cik": 95572,
+      "classification_filing": {
+        "accession": "0001213900-26-007267",
+        "filed_date": "2026-01-23",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/95572/0001213900-26-007267.txt"
+      },
+      "company": "KiNRG, Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 96664,
+      "classification_filing": {
+        "accession": "0001079973-26-000309",
+        "filed_date": "2026-03-16",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/96664/0001079973-26-000309.txt"
+      },
+      "company": "American Fusion, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 758938,
+      "classification_filing": {
+        "accession": "0001096906-26-001670",
+        "filed_date": "2026-11-04",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/758938/0001096906-26-001670.txt"
+      },
+      "company": "QUALSTAR CORP",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 787496,
+      "classification_filing": {
+        "accession": "0001829126-26-003888",
+        "filed_date": "2026-04-24",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/787496/0001829126-26-003888.txt"
+      },
+      "company": "Longevity Diversified Holdings, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 803097,
+      "classification_filing": {
+        "accession": "0001683168-26-003868",
+        "filed_date": "2026-05-14",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/803097/0001683168-26-003868.txt"
+      },
+      "company": "Sparxx Corp",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 844985,
+      "classification_filing": {
+        "accession": "0001539497-25-002908",
+        "filed_date": "2025-11-12",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/844985/0001539497-25-002908.txt"
+      },
+      "company": "POSITRON CORP",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1070789,
+      "classification_filing": {
+        "accession": "0001493152-26-012036",
+        "filed_date": "2026-03-23",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1070789/0001493152-26-012036.txt"
+      },
+      "company": "HyOrc Corp",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1091326,
+      "classification_filing": {
+        "accession": "0001493152-26-047964",
+        "filed_date": "2026-10-22",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1091326/0001493152-26-047964.txt"
+      },
+      "company": "BIOMOLECULAR LIFE HOLDINGS, INC.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1096296,
+      "classification_filing": {
+        "accession": "0001539497-26-000849",
+        "filed_date": "2026-03-04",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1096296/0001539497-26-000849.txt"
+      },
+      "company": "MINERALRITE Corp",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1106861,
+      "classification_filing": {
+        "accession": "0001214659-26-003205",
+        "filed_date": "2026-03-12",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1106861/0001214659-26-003205.txt"
+      },
+      "company": "CS DIAGNOSTICS CORP.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1109262,
+      "classification_filing": {
+        "accession": "0001683168-26-000980",
+        "filed_date": "2026-02-13",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1109262/0001683168-26-000980.txt"
+      },
+      "company": "BILI Social International, Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1114859,
+      "classification_filing": {
+        "accession": "0001683168-26-004901",
+        "filed_date": "2026-06-17",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1114859/0001683168-26-004901.txt"
+      },
+      "company": "Glow Holdings, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1115864,
+      "classification_filing": {
+        "accession": "0001477932-26-002091",
+        "filed_date": "2026-04-09",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1115864/0001477932-26-002091.txt"
+      },
+      "company": "ECOMINAS CORP.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1133798,
+      "classification_filing": {
+        "accession": "0001437749-26-018183",
+        "filed_date": "2026-05-22",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1133798/0001437749-26-018183.txt"
+      },
+      "company": "TX Rail Products, Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1160420,
+      "classification_filing": {
+        "accession": "0001683168-25-008925",
+        "filed_date": "2025-12-05",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1160420/0001683168-25-008925.txt"
+      },
+      "company": "Adia Med, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1170839,
+      "classification_filing": {
+        "accession": "0001829126-25-009558",
+        "filed_date": "2025-12-01",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1170839/0001829126-25-009558.txt"
+      },
+      "company": "HUMITECH INTERNATIONAL GROUP INC",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1192323,
+      "classification_filing": {
+        "accession": "0001493152-25-027728",
+        "filed_date": "2025-12-15",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1192323/0001493152-25-027728.txt"
+      },
+      "company": "Superstar Platforms Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1289047,
+      "classification_filing": {
+        "accession": "0001477932-26-001197",
+        "filed_date": "2026-03-05",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1289047/0001477932-26-001197.txt"
+      },
+      "company": "AI Technology Group Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1341878,
+      "classification_filing": {
+        "accession": "0001493152-26-038756",
+        "filed_date": "2026-08-17",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341878/0001493152-26-038756.txt"
+      },
+      "company": "B-Scada, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1347491,
+      "classification_filing": {
+        "accession": "0001347491-26-000004",
+        "filed_date": "2026-07-30",
+        "form": "10-12B",
+        "url": "https://www.sec.gov/Archives/edgar/data/1347491/0001347491-26-000004.txt"
+      },
+      "company": "ALEXANDER TECH CORP",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1365359,
+      "classification_filing": {
+        "accession": "0001376474-26-000461",
+        "filed_date": "2026-06-29",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1365359/0001376474-26-000461.txt"
+      },
+      "company": "HYDRO POWER TECHNOLOGIES, INC.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1465311,
+      "classification_filing": {
+        "accession": "0001683168-25-009184",
+        "filed_date": "2025-12-16",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1465311/0001683168-25-009184.txt"
+      },
+      "company": "Zicix Corp",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1611046,
+      "classification_filing": {
+        "accession": "0001683168-25-007099",
+        "filed_date": "2025-09-18",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1611046/0001683168-25-007099.txt"
+      },
+      "company": "ModuLink Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1631463,
+      "classification_filing": {
+        "accession": "0001477932-26-002858",
+        "filed_date": "2026-05-08",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1631463/0001477932-26-002858.txt"
+      },
+      "company": "Barrel Energy Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1640967,
+      "classification_filing": {
+        "accession": "0001628280-25-032586",
+        "filed_date": "2025-06-23",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1640967/0001628280-25-032586.txt"
+      },
+      "company": "Rise Companies Corp",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 1658678,
+      "classification_filing": {
+        "accession": "0001213900-26-084943",
+        "filed_date": "2026-08-04",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1658678/0001213900-26-084943.txt"
+      },
+      "company": "BioStem Technologies, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1690455,
+      "classification_filing": {
+        "accession": "0001079973-26-000972",
+        "filed_date": "2026-07-24",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1690455/0001079973-26-000972.txt"
+      },
+      "company": "Feel The World, Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1705284,
+      "classification_filing": {
+        "accession": "0001193125-26-307732",
+        "filed_date": "2026-07-17",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1705284/0001193125-26-307732.txt"
+      },
+      "company": "Private Bancorp of America, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1711141,
+      "classification_filing": {
+        "accession": "0001493152-26-012756",
+        "filed_date": "2026-03-26",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1711141/0001493152-26-012756.txt"
+      },
+      "company": "Leef Brands Inc.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 1745931,
+      "classification_filing": {
+        "accession": "0001493152-26-048210",
+        "filed_date": "2026-10-23",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1745931/0001493152-26-048210.txt"
+      },
+      "company": "JS BEAUTY LAND NETWORK TECHNOLOGY INC",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1772918,
+      "classification_filing": {
+        "accession": "0001193125-26-227113",
+        "filed_date": "2026-05-15",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1772918/0001193125-26-227113.txt"
+      },
+      "company": "ADAMS STREET CREDIT SOLUTIONS FUND",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1807689,
+      "classification_filing": {
+        "accession": "0001171520-25-000364",
+        "filed_date": "2025-12-09",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1807689/0001171520-25-000364.txt"
+      },
+      "company": "Eyeonix AIQ, Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1858206,
+      "classification_filing": {
+        "accession": "0001493152-26-053563",
+        "filed_date": "2026-11-20",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1858206/0001493152-26-053563.txt"
+      },
+      "company": "Pacaso Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 1865120,
+      "classification_filing": {
+        "accession": "0001493152-26-047304",
+        "filed_date": "2026-10-16",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1865120/0001493152-26-047304.txt"
+      },
+      "company": "Broad Capital Acquisition Corp",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 1879001,
+      "classification_filing": {
+        "accession": "0001641172-25-025717",
+        "filed_date": "2025-08-27",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1879001/0001641172-25-025717.txt"
+      },
+      "company": "Verses AI Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1881928,
+      "classification_filing": {
+        "accession": "0001881928-26-000006",
+        "filed_date": "2026-06-16",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1881928/0001881928-26-000006.txt"
+      },
+      "company": "American CryptoFed",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1929017,
+      "classification_filing": {
+        "accession": "0000950170-25-079641",
+        "filed_date": "2025-05-30",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1929017/0000950170-25-079641.txt"
+      },
+      "company": "Sealy Industrial Partners IV, LP",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1938649,
+      "classification_filing": {
+        "accession": "0001398344-25-022745",
+        "filed_date": "2025-12-19",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1938649/0001398344-25-022745.txt"
+      },
+      "company": "Partners Group Lending Fund, LLC",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1953520,
+      "classification_filing": {
+        "accession": "0001193125-26-280945",
+        "filed_date": "2026-06-24",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1953520/0001193125-26-280945.txt"
+      },
+      "company": "Fidelity Core Real Estate Fund",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1953940,
+      "classification_filing": {
+        "accession": "0001193125-25-211746",
+        "filed_date": "2025-09-23",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1953940/0001193125-25-211746.txt"
+      },
+      "company": "Blackstone Private Equity Strategies Fund (TE) L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 1977837,
+      "classification_filing": {
+        "accession": "0001683168-25-009285",
+        "filed_date": "2025-12-19",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/1977837/0001683168-25-009285.txt"
+      },
+      "company": "MADE IN USA INC.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1984739,
+      "classification_filing": {
+        "accession": "0001193125-26-089532",
+        "filed_date": "2026-03-04",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1984739/0001193125-26-089532.txt"
+      },
+      "company": "Investcorp US Private Credit BDC II",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 1997284,
+      "classification_filing": {
+        "accession": "0001477932-25-005945",
+        "filed_date": "2025-08-15",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1997284/0001477932-25-005945.txt"
+      },
+      "company": "Shefford & Companies, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2011134,
+      "classification_filing": {
+        "accession": "0002011134-26-000009",
+        "filed_date": "2026-05-05",
+        "form": "10-12B",
+        "url": "https://www.sec.gov/Archives/edgar/data/2011134/0002011134-26-000009.txt"
+      },
+      "company": "Kioni Holdings Ltd",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 2012139,
+      "classification_filing": {
+        "accession": "0001140361-25-028557",
+        "filed_date": "2025-08-04",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2012139/0001140361-25-028557.txt"
+      },
+      "company": "Fortress Private Lending Fund",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2025369,
+      "classification_filing": {
+        "accession": "0001104659-26-000253",
+        "filed_date": "2026-01-05",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2025369/0001104659-26-000253.txt"
+      },
+      "company": "Third Point Private Capital Partners",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2027033,
+      "classification_filing": {
+        "accession": "0001104659-25-118913",
+        "filed_date": "2025-12-05",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2027033/0001104659-25-118913.txt"
+      },
+      "company": "Eagle Point Trinity Senior Secured Lending Co",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2029297,
+      "classification_filing": {
+        "accession": "0001193125-25-312006",
+        "filed_date": "2025-12-09",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2029297/0001193125-25-312006.txt"
+      },
+      "company": "Grayscale Bittensor Trust (TAO)",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2032020,
+      "classification_filing": {
+        "accession": "0001193125-25-223380",
+        "filed_date": "2025-09-29",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2032020/0001193125-25-223380.txt"
+      },
+      "company": "EQT Private Equity Co LLC",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2033362,
+      "classification_filing": {
+        "accession": "0001193125-25-209131",
+        "filed_date": "2025-09-19",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2033362/0001193125-25-209131.txt"
+      },
+      "company": "Audax Private Credit Fund, LLC",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2033382,
+      "classification_filing": {
+        "accession": "0001193125-26-134080",
+        "filed_date": "2026-03-31",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2033382/0001193125-26-134080.txt"
+      },
+      "company": "Silver Point Private Credit Fund",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2035713,
+      "classification_filing": {
+        "accession": "0001628280-25-049005",
+        "filed_date": "2025-11-04",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2035713/0001628280-25-049005.txt"
+      },
+      "company": "Crestline Lending Solutions, LLC",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2037250,
+      "classification_filing": {
+        "accession": "0001096906-26-001725",
+        "filed_date": "2026-11-12",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2037250/0001096906-26-001725.txt"
+      },
+      "company": "TARGATEK, INC.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2041385,
+      "classification_filing": {
+        "accession": "0001104659-25-053286",
+        "filed_date": "2025-05-28",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2041385/0001104659-25-053286.txt"
+      },
+      "company": "Ralliant Corp",
+      "reason": "Distribution date 2025-06-28 is before the requested start date 2025-11-18."
+    },
+    {
+      "cik": 2043133,
+      "classification_filing": {
+        "accession": "0001193125-25-237195",
+        "filed_date": "2025-10-10",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2043133/0001193125-25-237195.txt"
+      },
+      "company": "TCW Steel City Perpetual Levered Fund LP",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2044820,
+      "classification_filing": {
+        "accession": "0001193125-25-137190",
+        "filed_date": "2025-06-06",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2044820/0001193125-25-137190.txt"
+      },
+      "company": "VistaOne, L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2045370,
+      "classification_filing": {
+        "accession": "0001213900-25-067875",
+        "filed_date": "2025-07-28",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2045370/0001213900-25-067875.txt"
+      },
+      "company": "Remora Capital Corp",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2046946,
+      "classification_filing": {
+        "accession": "0001104659-25-121226",
+        "filed_date": "2025-12-15",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2046946/0001104659-25-121226.txt"
+      },
+      "company": "Ares Sports, Media & Entertainment Opportunities LP",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2049733,
+      "classification_filing": {
+        "accession": "0001193125-25-158250",
+        "filed_date": "2025-07-11",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2049733/0001193125-25-158250.txt"
+      },
+      "company": "Blackstone Private Real Estate Credit & Income Fund",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2050229,
+      "classification_filing": {
+        "accession": "0001193125-26-279443",
+        "filed_date": "2026-06-23",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2050229/0001193125-26-279443.txt"
+      },
+      "company": "Blackstone Infrastructure Strategies (TE) L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2050809,
+      "classification_filing": {
+        "accession": "0001104659-26-108351",
+        "filed_date": "2026-09-17",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2050809/0001104659-26-108351.txt"
+      },
+      "company": "Macquarie Infrastructure Income Opportunities Fund",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2052152,
+      "classification_filing": {
+        "accession": "0001193125-25-199183",
+        "filed_date": "2025-09-09",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2052152/0001193125-25-199183.txt"
+      },
+      "company": "Apollo Origination II (Levered) Capital Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2052153,
+      "classification_filing": {
+        "accession": "0001193125-25-199186",
+        "filed_date": "2025-09-09",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2052153/0001193125-25-199186.txt"
+      },
+      "company": "Apollo Origination II (UL) Capital Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2053365,
+      "classification_filing": {
+        "accession": "0002053365-26-000007",
+        "filed_date": "2026-11-05",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2053365/0002053365-26-000007.txt"
+      },
+      "company": "Biointra, Corp",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2056516,
+      "classification_filing": {
+        "accession": "0001193125-26-307369",
+        "filed_date": "2026-07-17",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2056516/0001193125-26-307369.txt"
+      },
+      "company": "CIFC Direct Lending Evergreen Fund",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2059924,
+      "classification_filing": {
+        "accession": "0001213900-25-061565",
+        "filed_date": "2025-07-03",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2059924/0001213900-25-061565.txt"
+      },
+      "company": "ISQ Open Infrastructure Co LLC",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2060192,
+      "classification_filing": {
+        "accession": "0001193125-26-470331",
+        "filed_date": "2026-11-20",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2060192/0001193125-26-470331.txt"
+      },
+      "company": "G-INFRA LP",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2060316,
+      "classification_filing": {
+        "accession": "0001193125-26-470316",
+        "filed_date": "2026-11-20",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2060316/0001193125-26-470316.txt"
+      },
+      "company": "G-Private Equity LP",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2061174,
+      "classification_filing": {
+        "accession": "0001829126-26-001261",
+        "filed_date": "2026-02-12",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2061174/0001829126-26-001261.txt"
+      },
+      "company": "Sound Point Direct Lending BDC",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2062936,
+      "classification_filing": {
+        "accession": "0001213900-26-107833",
+        "filed_date": "2026-10-08",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2062936/0001213900-26-107833.txt"
+      },
+      "company": "Macquarie Energy Transition Infrastructure Fund, L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2064953,
+      "classification_filing": {
+        "accession": "0001628280-25-043179",
+        "filed_date": "2025-09-30",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2064953/0001628280-25-043179.txt"
+      },
+      "company": "Solstice Advanced Materials Inc.",
+      "reason": "Distribution date 2025-10-30 is before the requested start date 2025-11-18."
+    },
+    {
+      "cik": 2065337,
+      "classification_filing": {
+        "accession": "0001628280-25-038306",
+        "filed_date": "2025-08-06",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2065337/0001628280-25-038306.txt"
+      },
+      "company": "Carlyle Private Equity Partners Fund, L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2065397,
+      "classification_filing": {
+        "accession": "0001104659-25-068429",
+        "filed_date": "2025-07-17",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2065397/0001104659-25-068429.txt"
+      },
+      "company": "Antares Strategic Credit Fund II LLC",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2066067,
+      "classification_filing": {
+        "accession": "0001213900-25-057931",
+        "filed_date": "2025-06-26",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2066067/0001213900-25-057931.txt"
+      },
+      "company": "Orielle Acquisition Corp.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2066337,
+      "classification_filing": {
+        "accession": "0001999371-25-009255",
+        "filed_date": "2025-07-16",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2066337/0001999371-25-009255.txt"
+      },
+      "company": "CNL Strategic Residential Credit, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2066811,
+      "classification_filing": {
+        "accession": "0001193125-26-134548",
+        "filed_date": "2026-03-31",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2066811/0001193125-26-134548.txt"
+      },
+      "company": "TCW SPECIALTY LENDING LLC",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2067876,
+      "classification_filing": {
+        "accession": "0001193125-25-306792",
+        "filed_date": "2025-12-03",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2067876/0001193125-25-306792.txt"
+      },
+      "company": "Versant Media Group, Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 2069692,
+      "classification_filing": {
+        "accession": "0001628280-25-039061",
+        "filed_date": "2025-08-08",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2069692/0001628280-25-039061.txt"
+      },
+      "company": "Blue Owl Digital Infrastructure Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2069925,
+      "classification_filing": {
+        "accession": "0001683168-26-008363",
+        "filed_date": "2026-11-06",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2069925/0001683168-26-008363.txt"
+      },
+      "company": "American Antimony Corp.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 2071136,
+      "classification_filing": {
+        "accession": "0001628280-25-037264",
+        "filed_date": "2025-08-01",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2071136/0001628280-25-037264.txt"
+      },
+      "company": "Nuveen Churchill BDC V",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2073537,
+      "classification_filing": {
+        "accession": "0001193125-25-239603",
+        "filed_date": "2025-10-15",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2073537/0001193125-25-239603.txt"
+      },
+      "company": "PIMCO Asset-Based Lending Co LLC",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2073653,
+      "classification_filing": {
+        "accession": "0001104659-25-093937",
+        "filed_date": "2025-09-26",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2073653/0001104659-25-093937.txt"
+      },
+      "company": "FBRED-C Feeder REIT Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2074065,
+      "classification_filing": {
+        "accession": "0001104659-25-081887",
+        "filed_date": "2025-08-22",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074065/0001104659-25-081887.txt"
+      },
+      "company": "Brookfield Private Equity Fund LP",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2074450,
+      "classification_filing": {
+        "accession": "0001193125-25-326963",
+        "filed_date": "2025-12-19",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074450/0001193125-25-326963.txt"
+      },
+      "company": "Apollo IG Core Replacement, L.P.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2075109,
+      "classification_filing": {
+        "accession": "0001213900-25-089462",
+        "filed_date": "2025-09-19",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2075109/0001213900-25-089462.txt"
+      },
+      "company": "Matternet, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2075239,
+      "classification_filing": {
+        "accession": "0001213900-25-089482",
+        "filed_date": "2025-09-19",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2075239/0001213900-25-089482.txt"
+      },
+      "company": "Var Acquisition Corp.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2077250,
+      "classification_filing": {
+        "accession": "0001104659-25-093941",
+        "filed_date": "2025-09-26",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2077250/0001104659-25-093941.txt"
+      },
+      "company": "Stone Point Credit Income Fund - Select",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2079320,
+      "classification_filing": {
+        "accession": "0001213900-25-095532",
+        "filed_date": "2025-10-02",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2079320/0001213900-25-095532.txt"
+      },
+      "company": "Range Acquisition Corp.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2079966,
+      "classification_filing": {
+        "accession": "0001213900-25-091204",
+        "filed_date": "2025-09-24",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2079966/0001213900-25-091204.txt"
+      },
+      "company": "Macquarie Infrastructure Fund, L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2081628,
+      "classification_filing": {
+        "accession": "0001104659-25-115977",
+        "filed_date": "2025-11-25",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2081628/0001104659-25-115977.txt"
+      },
+      "company": "Rithm Perpetual Life Residential Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2082015,
+      "classification_filing": {
+        "accession": "0001193125-25-327056",
+        "filed_date": "2025-12-19",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2082015/0001193125-25-327056.txt"
+      },
+      "company": "Augusta SpinCo Corp",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 2082557,
+      "classification_filing": {
+        "accession": "0001104659-26-033965",
+        "filed_date": "2026-03-24",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2082557/0001104659-26-033965.txt"
+      },
+      "company": "Golub Capital Private Income Fund S",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2082559,
+      "classification_filing": {
+        "accession": "0001104659-26-033964",
+        "filed_date": "2026-03-24",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2082559/0001104659-26-033964.txt"
+      },
+      "company": "Golub Capital Private Income Fund I",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2082826,
+      "classification_filing": {
+        "accession": "0001193125-25-240555",
+        "filed_date": "2025-10-16",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2082826/0001193125-25-240555.txt"
+      },
+      "company": "Warburg Pincus Access Fund, L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2083477,
+      "classification_filing": {
+        "accession": "0001193125-26-035874",
+        "filed_date": "2026-02-03",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2083477/0001193125-26-035874.txt"
+      },
+      "company": "APS BDC, LLC",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2083785,
+      "classification_filing": {
+        "accession": "0001193125-26-050612",
+        "filed_date": "2026-02-13",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2083785/0001193125-26-050612.txt"
+      },
+      "company": "Sunbelt Rentals Holdings, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2085428,
+      "classification_filing": {
+        "accession": "0000930413-25-003388",
+        "filed_date": "2025-11-05",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2085428/0000930413-25-003388.txt"
+      },
+      "company": "Nuveen Farmland REIT",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2088960,
+      "classification_filing": {
+        "accession": "0002088960-26-000009",
+        "filed_date": "2026-09-03",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2088960/0002088960-26-000009.txt"
+      },
+      "company": "Leach John Peter",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2089126,
+      "classification_filing": {
+        "accession": "0001193125-25-309940",
+        "filed_date": "2025-12-05",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2089126/0001193125-25-309940.txt"
+      },
+      "company": "PennantPark Private Income Fund",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2089189,
+      "classification_filing": {
+        "accession": "0001493152-25-016938",
+        "filed_date": "2025-10-03",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2089189/0001493152-25-016938.txt"
+      },
+      "company": "BTCS Labs Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2089975,
+      "classification_filing": {
+        "accession": "0001193125-26-177671",
+        "filed_date": "2026-04-24",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2089975/0001193125-26-177671.txt"
+      },
+      "company": "HPS Real Assets Lending Co LP",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2095486,
+      "classification_filing": {
+        "accession": "0001193125-26-014271",
+        "filed_date": "2026-01-15",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2095486/0001193125-26-014271.txt"
+      },
+      "company": "Blackstone Multi-Strategy Hedge Fund L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2096330,
+      "classification_filing": {
+        "accession": "0001193125-26-057161",
+        "filed_date": "2026-02-18",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2096330/0001193125-26-057161.txt"
+      },
+      "company": "CVC-PE Global Private Equity Fund, LP",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2097887,
+      "classification_filing": {
+        "accession": "0001193125-26-272445",
+        "filed_date": "2026-06-16",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2097887/0001193125-26-272445.txt"
+      },
+      "company": "HarbourVest Private Equity Secondaries Fund L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2098382,
+      "classification_filing": {
+        "accession": "0001213900-25-115421",
+        "filed_date": "2025-11-26",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2098382/0001213900-25-115421.txt"
+      },
+      "company": "Primus Acquisition Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2101664,
+      "classification_filing": {
+        "accession": "0001140361-26-042809",
+        "filed_date": "2026-11-09",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2101664/0001140361-26-042809.txt"
+      },
+      "company": "Trinzic, Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 2102386,
+      "classification_filing": {
+        "accession": "0001477932-26-001917",
+        "filed_date": "2026-04-01",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2102386/0001477932-26-001917.txt"
+      },
+      "company": "Shefford Small Business, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2105965,
+      "classification_filing": {
+        "accession": "0001628280-26-059592",
+        "filed_date": "2026-08-31",
+        "form": "10-12B",
+        "url": "https://www.sec.gov/Archives/edgar/data/2105965/0001628280-26-059592.txt"
+      },
+      "company": "West Coast Community Bancorp",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2107057,
+      "classification_filing": {
+        "accession": "0001193125-26-116167",
+        "filed_date": "2026-03-19",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2107057/0001193125-26-116167.txt"
+      },
+      "company": "TCW Specialty Lending IX LLC",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2107762,
+      "classification_filing": {
+        "accession": "0001193125-26-149886",
+        "filed_date": "2026-04-09",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2107762/0001193125-26-149886.txt"
+      },
+      "company": "HPS Net Lease Income REIT",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2108121,
+      "classification_filing": {
+        "accession": "0001213900-26-035633",
+        "filed_date": "2026-03-27",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2108121/0001213900-26-035633.txt"
+      },
+      "company": "JDEV Acquisition Corp",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2112554,
+      "classification_filing": {
+        "accession": "0001193125-26-315714",
+        "filed_date": "2026-07-24",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2112554/0001193125-26-315714.txt"
+      },
+      "company": "Fidelity Private Credit Co II LLC",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2113098,
+      "classification_filing": {
+        "accession": "0002113098-26-000025",
+        "filed_date": "2026-11-10",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2113098/0002113098-26-000025.txt"
+      },
+      "company": "NEXROC Group, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2117580,
+      "classification_filing": {
+        "accession": "0001193125-26-272456",
+        "filed_date": "2026-06-16",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2117580/0001193125-26-272456.txt"
+      },
+      "company": "HarbourVest Private Equity Secondaries Fund (TE) L.P.",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2119505,
+      "classification_filing": {
+        "accession": "0001193125-26-304935",
+        "filed_date": "2026-07-15",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2119505/0001193125-26-304935.txt"
+      },
+      "company": "Core University Living Real Estate Income Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2121708,
+      "classification_filing": {
+        "accession": "0001437749-26-017396",
+        "filed_date": "2026-05-15",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2121708/0001437749-26-017396.txt"
+      },
+      "company": "Imricor Medical Systems, Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2122354,
+      "classification_filing": {
+        "accession": "0001104659-26-112422",
+        "filed_date": "2026-09-30",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2122354/0001104659-26-112422.txt"
+      },
+      "company": "Third Point Private Capital Income Fund",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2125316,
+      "classification_filing": {
+        "accession": "0001104659-26-110028",
+        "filed_date": "2026-09-23",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2125316/0001104659-26-110028.txt"
+      },
+      "company": "Monroe Capital Asset-Backed Finance Company, LP",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2125703,
+      "classification_filing": {
+        "accession": "0001640334-26-001627",
+        "filed_date": "2026-10-07",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2125703/0001640334-26-001627.txt"
+      },
+      "company": "Dance Emotion Studios Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 2127486,
+      "classification_filing": {
+        "accession": "0001437749-26-011469",
+        "filed_date": "2026-04-07",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2127486/0001437749-26-011469.txt"
+      },
+      "company": "JLM-WNCO Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2129664,
+      "classification_filing": {
+        "accession": "0001213900-26-058540",
+        "filed_date": "2026-05-18",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2129664/0001213900-26-058540.txt"
+      },
+      "company": "Margaree Acquisition Corp.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2133018,
+      "classification_filing": {
+        "accession": "0001193125-26-436342",
+        "filed_date": "2026-10-28",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2133018/0001193125-26-436342.txt"
+      },
+      "company": "Sagard Private Income Fund Inc.",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2133917,
+      "classification_filing": {
+        "accession": "0001731122-26-000719",
+        "filed_date": "2026-05-13",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2133917/0001731122-26-000719.txt"
+      },
+      "company": "JBAAM Acquisition Corp II",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2134183,
+      "classification_filing": {
+        "accession": "0001193125-26-335481",
+        "filed_date": "2026-08-05",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2134183/0001193125-26-335481.txt"
+      },
+      "company": "Platinum SpinCo, Inc.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 2136418,
+      "classification_filing": {
+        "accession": "0001193125-26-417638",
+        "filed_date": "2026-10-08",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2136418/0001193125-26-417638.txt"
+      },
+      "company": "SLR Secured Specialty Lending Fund",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2139596,
+      "classification_filing": {
+        "accession": "0001477932-26-007179",
+        "filed_date": "2026-11-19",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2139596/0001477932-26-007179.txt"
+      },
+      "company": "Tristar Marble Group Ltd.",
+      "reason": "Information statement does not show a parent distributing the business."
+    },
+    {
+      "cik": 2142568,
+      "classification_filing": {
+        "accession": "0001213900-26-118729",
+        "filed_date": "2026-11-12",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2142568/0001213900-26-118729.txt"
+      },
+      "company": "Navesink Acquisition Corp",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2145729,
+      "classification_filing": {
+        "accession": "0001140361-26-043474",
+        "filed_date": "2026-11-12",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2145729/0001140361-26-043474.txt"
+      },
+      "company": "American Residential Housing Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2147245,
+      "classification_filing": {
+        "accession": "0001104659-26-122722",
+        "filed_date": "2026-11-04",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2147245/0001104659-26-122722.txt"
+      },
+      "company": "Angel Oak Residential Evergreen Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2150214,
+      "classification_filing": {
+        "accession": "0001628280-26-073915",
+        "filed_date": "2026-11-13",
+        "form": "10-12G/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2150214/0001628280-26-073915.txt"
+      },
+      "company": "JLL Property Finance Trust",
+      "reason": "Form 10 has no information statement."
+    },
+    {
+      "cik": 2159316,
+      "classification_filing": {
+        "accession": "0001104659-26-129080",
+        "filed_date": "2026-11-17",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2159316/0001104659-26-129080.txt"
+      },
+      "company": "Garry Oak Capital BDC LLC",
+      "reason": "Registrant is a fund, not a spinoff."
+    },
+    {
+      "cik": 2163809,
+      "classification_filing": {
+        "accession": "0001104659-26-130190",
+        "filed_date": "2026-11-19",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2163809/0001104659-26-130190.txt"
+      },
+      "company": "Pretium Housing Income Trust",
+      "reason": "Form 10 has no information statement."
+    }
+  ],
+  "factor_configuration": {
+    "configuration": "final",
+    "factors": [
+      {
+        "direction": "A smaller percentage receives more points.",
+        "filing_rule": "Divide the spinoff’s total assets from its Form 10 information statement by the parent’s total assets from its closest comparable 10-K or 10-Q. Never estimate a missing value.",
+        "id": "relative_company_size",
+        "name": "Relative company size",
+        "point_rule": [
+          "2 points when the ratio is 10% or less.",
+          "1 point when the ratio is greater than 10% and no more than 20%.",
+          "0 points when the ratio is greater than 20%."
+        ],
+        "sources": [
+          "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3."
+        ],
+        "weight_percent": 35
+      },
+      {
+        "direction": "A larger price decline receives more points because it may indicate forced selling.",
+        "filing_and_price_rule": "Establish the distribution date from the information statement or distribution 8-K. Use the first regular closing price after distribution and compare it with the closing price 20 trading days later. Never use a when-issued price.",
+        "id": "post_distribution_price_weakness",
+        "name": "Post-distribution price weakness",
+        "point_rule": [
+          "2 points when the price decline is at least 15%.",
+          "1 point when the decline is at least 5% but less than 15%.",
+          "0 points when the decline is less than 5% or the price increases."
+        ],
+        "sources": [
+          "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3.",
+          "Seth Klarman, Margin of Safety, Chapter 10."
+        ],
+        "weight_percent": 40
+      },
+      {
+        "direction": "Purchases by more distinct insiders receive more points.",
+        "filing_rule": "Count Form 4 transactions with transaction code P by officers or directors during the first 30 days after distribution. Exclude grants, awards, and sales.",
+        "id": "insider_open_market_buying",
+        "name": "Insider open-market buying",
+        "point_rule": [
+          "2 points for qualifying purchases by two or more distinct insiders.",
+          "1 point for a qualifying purchase by one insider.",
+          "0 points when there is no qualifying purchase."
+        ],
+        "sources": [
+          "Joel Greenblatt, You Can Be a Stock Market Genius, Chapter 3."
+        ],
+        "weight_percent": 25
+      }
+    ],
+    "missing_data_rule": "If a required fact, date, filing, or price is unavailable, leave it missing and list the company as unranked with the reason. Never estimate missing information.",
+    "window_days_after_distribution": 90
+  },
+  "index_date": "2026-11-22",
+  "index_scan_start": "2025-05-22",
+  "records": [
+    {
+      "cik": 1958489,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001753926-25-001532",
+        "filed_date": "2025-09-19",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1958489/0001753926-25-001532.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Cortigent, Inc.",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": null,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": "0.02703026"
+      },
+      "facts": {
+        "distribution_date": null,
+        "distribution_ratio": null,
+        "parent": {
+          "source": {
+            "accession": "0001753926-25-001532",
+            "form": "10-12B/A",
+            "line": 3764,
+            "quote": "our parent, Vivani,",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/1958489/0001753926-25-001532.txt"
+          },
+          "value": "Vivani Medical, Inc."
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001753926-25-001582",
+            "form": "8-K",
+            "line": 66,
+            "quote": "record date of October 8, 2025",
+            "section": "CURRENT REPORT",
+            "url": "https://www.sec.gov/Archives/edgar/data/1266806/000175392625001582/vani-20251003.htm"
+          },
+          "value": "2025-10-08"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2025-06-30",
+          "display_value": "677",
+          "source": {
+            "accession": "0001753926-25-001532",
+            "form": "10-12B/A",
+            "line": 3141,
+            "quote": "Total assets | $ | 677",
+            "section": "SUMMARY CONSOLIDATED FINANCIAL DATA",
+            "url": "https://www.sec.gov/Archives/edgar/data/1958489/0001753926-25-001532.txt"
+          },
+          "unit": "USD thousands",
+          "value": "677000"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 1266806,
+      "parent_total_assets": {
+        "as_of_date": "2025-09-30",
+        "source": {
+          "accession": "0001753926-25-001770",
+          "filed": "2025-11-13",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "25046000"
+      },
+      "stage": "registered",
+      "ticker": "",
+      "trading_proof": null,
+      "unavailable_facts": [
+        "Distribution ratio",
+        "Distribution date",
+        "Trading ticker",
+        "Post-distribution price weakness factor input",
+        "Insider open-market buying factor input"
+      ]
+    },
+    {
+      "cik": 2049860,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001477932-25-009149",
+        "filed_date": "2025-12-22",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2049860/0001477932-25-009149.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Electrified Materials Corp / IN",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": null,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": "0.01168008"
+      },
+      "facts": {
+        "distribution_date": null,
+        "distribution_ratio": null,
+        "parent": {
+          "source": {
+            "accession": "0001477932-25-009149",
+            "form": "10-12B/A",
+            "line": 80,
+            "quote": "parent company, American Resources Corporation (Nasdaq: AREC).",
+            "section": "INFORMATION STATEMENT SUMMARY",
+            "url": "https://www.sec.gov/Archives/edgar/data/2049860/0001477932-25-009149.txt"
+          },
+          "value": "American Resources Corp"
+        },
+        "record_date": null,
+        "spinoff_total_assets": {
+          "as_of_date": "2025-09-30",
+          "display_value": "1972855",
+          "source": {
+            "accession": "0001477932-25-009149",
+            "form": "10-12B/A",
+            "line": 660,
+            "quote": "Total assets | 1,972,855 | 284,002",
+            "section": "SELECTED HISTORICAL FINANCIAL INFORMATION OF ELECTRIFIED MATERIALS CORPORATION",
+            "url": "https://www.sec.gov/Archives/edgar/data/2049860/0001477932-25-009149.txt"
+          },
+          "unit": "units",
+          "value": "1972855"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 1590715,
+      "parent_total_assets": {
+        "as_of_date": "2025-12-31",
+        "source": {
+          "accession": "0001477932-26-003317",
+          "filed": "2026-05-20",
+          "form": "10-K",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "168907706"
+      },
+      "stage": "registered",
+      "ticker": "",
+      "trading_proof": null,
+      "unavailable_facts": [
+        "Distribution ratio",
+        "Record date",
+        "Distribution date",
+        "Trading ticker",
+        "Post-distribution price weakness factor input",
+        "Insider open-market buying factor input"
+      ]
+    },
+    {
+      "cik": 2058873,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001193125-25-223466",
+        "filed_date": "2025-09-29",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2058873/0001193125-25-223466.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Qnity Electronics, Inc.",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": null,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": "0.32993376"
+      },
+      "facts": {
+        "distribution_date": null,
+        "distribution_ratio": {
+          "source": {
+            "accession": "0001666700-25-000054",
+            "form": "8-K",
+            "line": 44,
+            "quote": "receive one share of Qnity Common Stock for every two shares",
+            "section": "CURRENT REPORT",
+            "url": "https://www.sec.gov/Archives/edgar/data/1666700/000166670025000054/dd-20251015.htm"
+          },
+          "value": "one share of Qnity Common Stock for every two shares"
+        },
+        "parent": {
+          "source": {
+            "accession": "0001193125-25-223466",
+            "form": "10-12B/A",
+            "line": 196,
+            "quote": "separation of the Electronics business from DuPont’s other businesses following the Internal Reorganization,",
+            "section": "INDEX TO THE FINANCIAL STATEMENTS | F-1",
+            "url": "https://www.sec.gov/Archives/edgar/data/2058873/0001193125-25-223466.txt"
+          },
+          "value": "DuPont de Nemours, Inc."
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001666700-25-000054",
+            "form": "8-K",
+            "line": 43,
+            "quote": "October 22, 2025 (the “Record Date”)",
+            "section": "CURRENT REPORT",
+            "url": "https://www.sec.gov/Archives/edgar/data/1666700/000166670025000054/dd-20251015.htm"
+          },
+          "value": "2025-10-22"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2026-03-31",
+          "display_value": "12552",
+          "source": {
+            "accession": "0001193125-25-223466",
+            "form": "10-12B/A",
+            "line": 2472,
+            "quote": "Total Assets | $ | 12,552 | $ | 765 | $ | 356 | $13,673",
+            "section": "S-X",
+            "url": "https://www.sec.gov/Archives/edgar/data/2058873/0001193125-25-223466.txt"
+          },
+          "unit": "USD millions",
+          "value": "12552000000"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 1666700,
+      "parent_total_assets": {
+        "as_of_date": "2025-09-30",
+        "source": {
+          "accession": "0001666700-25-000061",
+          "filed": "2025-11-06",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "38044000000"
+      },
+      "stage": "trading",
+      "ticker": "Q",
+      "trading_proof": {
+        "accession": "0002058873-25-000023",
+        "filing_date": "2025-11-18",
+        "form": "10-Q",
+        "report_date": "2025-09-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/2058873/000205887325000023/q-20250930.htm"
+      },
+      "unavailable_facts": [
+        "Distribution date",
+        "Post-distribution price weakness factor input",
+        "Insider open-market buying factor input"
+      ]
+    },
+    {
+      "cik": 2078008,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001193125-26-096776",
+        "filed_date": "2026-03-06",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2078008/0001193125-26-096776.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Versigent PLC",
+      "day20_price": {
+        "close": "37.07",
+        "source": "Financial Datasets historical close",
+        "ticker": "VGNT",
+        "trading_date": "2026-05-01"
+      },
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": "-31.9217",
+        "relative_company_size_ratio": "0.18386700"
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001193125-26-138225",
+            "form": "8-K",
+            "line": 99,
+            "quote": "April 1, 2026 (the “Distribution Date”)",
+            "section": "8-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1521332/000119312526138225/d110967d8k.htm"
+          },
+          "value": "2026-04-01"
+        },
+        "distribution_ratio": null,
+        "parent": {
+          "source": {
+            "accession": "0001193125-26-096776",
+            "form": "10-12B/A",
+            "line": 1465,
+            "quote": "separation from Aptiv,",
+            "section": "10-K,",
+            "url": "https://www.sec.gov/Archives/edgar/data/2078008/0001193125-26-096776.txt"
+          },
+          "value": "Aptiv PLC"
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001193125-26-096776",
+            "form": "10-12B/A",
+            "line": 1641,
+            "quote": "Record Date of March 17, 2026",
+            "section": "SPIN-OFF",
+            "url": "https://www.sec.gov/Archives/edgar/data/2078008/0001193125-26-096776.txt"
+          },
+          "value": "2026-03-17"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2025-12-31",
+          "display_value": "4634",
+          "source": {
+            "accession": "0001193125-26-096776",
+            "form": "10-12B/A",
+            "line": 632,
+            "quote": "Total assets | $ | 4,634 | $ | 4,485 | $ | 4,143",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/2078008/0001193125-26-096776.txt"
+          },
+          "unit": "USD millions",
+          "value": "4634000000"
+        }
+      },
+      "first_price": {
+        "close": "28.1",
+        "source": "Financial Datasets historical close",
+        "ticker": "VGNT",
+        "trading_date": "2026-04-02"
+      },
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 1521332,
+      "parent_total_assets": {
+        "as_of_date": "2026-03-31",
+        "source": {
+          "accession": "0001521332-26-000048",
+          "filed": "2026-05-05",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "25203000000"
+      },
+      "stage": "past_window",
+      "ticker": "VGNT",
+      "trading_proof": {
+        "accession": "0000950142-26-001019",
+        "filing_date": "2026-04-01",
+        "form": "4",
+        "report_date": "2026-04-01",
+        "url": "https://www.sec.gov/Archives/edgar/data/2078008/000095014226001019/xslF345X06/es260758610_4-aptiv.xml"
+      },
+      "unavailable_facts": [
+        "Distribution ratio"
+      ]
+    },
+    {
+      "cik": 2082247,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001104659-26-041977",
+        "filed_date": "2026-04-10",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2082247/0001104659-26-041977.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "FedEx Freight Holding Company, Inc.",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": null,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": "0.06754774"
+      },
+      "facts": {
+        "distribution_date": null,
+        "distribution_ratio": {
+          "source": {
+            "accession": "0001104659-26-060233",
+            "form": "8-K",
+            "line": 100,
+            "quote": "receive one share of FedEx Freight common stock for every two shares",
+            "section": "CURRENT REPORT",
+            "url": "https://www.sec.gov/Archives/edgar/data/1048911/000110465926060233/tm2520565d17_8k.htm"
+          },
+          "value": "one share of FedEx Freight common stock for every two shares"
+        },
+        "parent": {
+          "source": {
+            "accession": "0001104659-26-041977",
+            "form": "10-12B/A",
+            "line": 22,
+            "quote": "separation from FedEx Corporation.",
+            "section": "TABLE OF CONTENTS",
+            "url": "https://www.sec.gov/Archives/edgar/data/2082247/0001104659-26-041977.txt"
+          },
+          "value": "FEDEX CORP"
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001104659-26-041977",
+            "form": "10-12B/A",
+            "line": 1247,
+            "quote": "Record Date of May 15, 2026",
+            "section": "THE SPIN-OFF",
+            "url": "https://www.sec.gov/Archives/edgar/data/2082247/0001104659-26-041977.txt"
+          },
+          "value": "2026-05-15"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2026-02-28",
+          "display_value": "6399",
+          "source": {
+            "accession": "0001104659-26-041977",
+            "form": "10-12B/A",
+            "line": 705,
+            "quote": "Total assets | ​ | ​ | ​ | ​ | 6,399 | ​ | ​ | ​ | ​ | ​ | ​ | 6,167 | ​ | ​ | ​ | ​ | ​ | ​ | 5,022 | ​ | ​ | ​ | ​ | ​ | ​ | 5,048 | ​ | ​ | ​ | ​",
+            "section": "TABLE OF CONTENTS",
+            "url": "https://www.sec.gov/Archives/edgar/data/2082247/0001104659-26-041977.txt"
+          },
+          "unit": "USD millions",
+          "value": "6399000000"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 1048911,
+      "parent_total_assets": {
+        "as_of_date": "2026-02-28",
+        "source": {
+          "accession": "0001048911-26-000011",
+          "filed": "2026-03-19",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "94733000000"
+      },
+      "stage": "trading",
+      "ticker": "FDXF",
+      "trading_proof": {
+        "accession": "0001104659-26-068887",
+        "filing_date": "2026-06-01",
+        "form": "4",
+        "report_date": "2026-06-01",
+        "url": "https://www.sec.gov/Archives/edgar/data/2082247/000110465926068887/xslF345X06/tm2615965-1_4seq1.xml"
+      },
+      "unavailable_facts": [
+        "Distribution date",
+        "Post-distribution price weakness factor input",
+        "Insider open-market buying factor input"
+      ]
+    },
+    {
+      "cik": 2083632,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001628280-26-027570",
+        "filed_date": "2026-04-27",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2083632/0001628280-26-027570.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Octave Intelligence plc",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": null
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001628280-26-027570",
+            "form": "10-12B/A",
+            "line": 33,
+            "quote": "Distribution will be effective on May 22, 2026",
+            "section": "INFORMATION STATEMENT",
+            "url": "https://www.sec.gov/Archives/edgar/data/2083632/0001628280-26-027570.txt"
+          },
+          "value": "2026-05-22"
+        },
+        "distribution_ratio": null,
+        "parent": {
+          "source": {
+            "accession": "0001628280-26-027570",
+            "form": "10-12B/A",
+            "line": 32,
+            "quote": "distribution by Hexagon AB (“Hexagon”) to holders",
+            "section": "INFORMATION STATEMENT",
+            "url": "https://www.sec.gov/Archives/edgar/data/2083632/0001628280-26-027570.txt"
+          },
+          "value": "Hexagon AB"
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001628280-26-027570",
+            "form": "10-12B/A",
+            "line": 590,
+            "quote": "record date is May 22, 2026",
+            "section": "SUMMARY OF THE SEPARATION AND THE DISTRIBUTION",
+            "url": "https://www.sec.gov/Archives/edgar/data/2083632/0001628280-26-027570.txt"
+          },
+          "value": "2026-05-22"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2026-05-22",
+          "display_value": "8630006",
+          "source": {
+            "accession": "0001628280-26-027570",
+            "form": "10-12B/A",
+            "line": 614,
+            "quote": "Total assets | $ | 8,630,006 | $ | 8,696,251 | $ | 8,628,562",
+            "section": "ASSETS",
+            "url": "https://www.sec.gov/Archives/edgar/data/2083632/0001628280-26-027570.txt"
+          },
+          "unit": "USD thousands",
+          "value": "8630006000"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": null,
+      "parent_total_assets": null,
+      "stage": "past_window",
+      "ticker": "OCTLF",
+      "trading_proof": {
+        "accession": "0001628280-26-040622",
+        "filing_date": "2026-06-04",
+        "form": "10-Q",
+        "report_date": "2026-03-31",
+        "url": "https://www.sec.gov/Archives/edgar/data/2083632/000162828026040622/octv-20260331.htm"
+      },
+      "unavailable_facts": [
+        "Distribution ratio",
+        "Parent CIK",
+        "Parent total assets",
+        "First regular close after distribution",
+        "Financial Datasets price request (HTTPError: 400 Client Error: Bad Request for url: https://api.financialdatasets.ai/prices?ticker=OCTLF&interval=day&start_date=2026-05-22&end_date=2026-08-05)",
+        "Relative company size factor input",
+        "Post-distribution price weakness factor input"
+      ]
+    },
+    {
+      "cik": 2088281,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001193125-26-241891",
+        "filed_date": "2026-05-27",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2088281/0001193125-26-241891.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Midera Food Processing, Inc.",
+      "day20_price": {
+        "close": "47.29",
+        "source": "Financial Datasets historical close",
+        "ticker": "MFP",
+        "trading_date": "2026-08-04"
+      },
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": "-29.2077",
+        "relative_company_size_ratio": "0.26612299"
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001193125-26-295648",
+            "form": "8-K",
+            "line": 97,
+            "quote": "July 6, 2026 (the “Distribution Date”)",
+            "section": "8-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/769520/000119312526295648/d51635d8k.htm"
+          },
+          "value": "2026-07-06"
+        },
+        "distribution_ratio": {
+          "source": {
+            "accession": "0001193125-26-241891",
+            "form": "10-12B/A",
+            "line": 27,
+            "quote": "receive one share of SpinCo common stock for every one share",
+            "section": "EX-99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/2088281/0001193125-26-241891.txt"
+          },
+          "value": "one share of SpinCo common stock for every one share"
+        },
+        "parent": {
+          "source": {
+            "accession": "0001193125-26-241891",
+            "form": "10-12B/A",
+            "line": 421,
+            "quote": "parent company, Middleby,",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/2088281/0001193125-26-241891.txt"
+          },
+          "value": "MIDDLEBY Corp"
+        },
+        "record_date": null,
+        "spinoff_total_assets": {
+          "as_of_date": "2026-04-04",
+          "display_value": "1426593",
+          "source": {
+            "accession": "0001193125-26-241891",
+            "form": "10-12B/A",
+            "line": 715,
+            "quote": "Total assets | 1,426,593 | 1,413,675 | 1,461,013 | 1,282,897",
+            "section": "COMBINED FINANCIAL DATA",
+            "url": "https://www.sec.gov/Archives/edgar/data/2088281/0001193125-26-241891.txt"
+          },
+          "unit": "USD thousands",
+          "value": "1426593000"
+        }
+      },
+      "first_price": {
+        "close": "36.6",
+        "source": "Financial Datasets historical close",
+        "ticker": "MFP",
+        "trading_date": "2026-07-07"
+      },
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 769520,
+      "parent_total_assets": {
+        "as_of_date": "2026-07-04",
+        "source": {
+          "accession": "0000769520-26-000047",
+          "filed": "2026-08-13",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "5360653000"
+      },
+      "stage": "past_window",
+      "ticker": "MFP",
+      "trading_proof": {
+        "accession": "0001193125-26-296433",
+        "filing_date": "2026-07-06",
+        "form": "4",
+        "report_date": "2026-07-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/2088281/000119312526296433/xslF345X06/ownership.xml"
+      },
+      "unavailable_facts": [
+        "Record date"
+      ]
+    },
+    {
+      "cik": 2089271,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001628280-26-041399",
+        "filed_date": "2026-06-08",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2089271/0001628280-26-041399.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Honeywell Aerospace Inc.",
+      "day20_price": {
+        "close": "205.19",
+        "source": "Financial Datasets historical close",
+        "ticker": "HONA",
+        "trading_date": "2026-07-29"
+      },
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": "7.1874",
+        "relative_company_size_ratio": "0.27620759"
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001628280-26-041399",
+            "form": "10-12B/A",
+            "line": 909,
+            "quote": "distribution will be effective at 12:01 a.m., New York City time, on June 29, 2026",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/2089271/0001628280-26-041399.txt"
+          },
+          "value": "2026-06-29"
+        },
+        "distribution_ratio": {
+          "source": {
+            "accession": "0001628280-26-041399",
+            "form": "10-12B/A",
+            "line": 9,
+            "quote": "receive one share of Honeywell Aerospace for every two shares",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/2089271/0001628280-26-041399.txt"
+          },
+          "value": "one share of Honeywell Aerospace for every two shares"
+        },
+        "parent": {
+          "source": {
+            "accession": "0001628280-26-041399",
+            "form": "10-12B/A",
+            "line": 96,
+            "quote": "separation of the Aerospace Business from Honeywell’s other businesses and the creation,",
+            "section": "TABLE OF CONTENTS",
+            "url": "https://www.sec.gov/Archives/edgar/data/2089271/0001628280-26-041399.txt"
+          },
+          "value": "HONEYWELL INTERNATIONAL INC"
+        },
+        "record_date": null,
+        "spinoff_total_assets": {
+          "as_of_date": "2026-03-28",
+          "display_value": "21363",
+          "source": {
+            "accession": "0001628280-26-041399",
+            "form": "10-12B/A",
+            "line": 472,
+            "quote": "Total assets | 21,363 | 18,860 | 17,685 | 16,845",
+            "section": "SUMMARY OF HISTORICAL AND UNAUDITED PRO FORMA COMBINED FINANCIAL DATA",
+            "url": "https://www.sec.gov/Archives/edgar/data/2089271/0001628280-26-041399.txt"
+          },
+          "unit": "USD millions",
+          "value": "21363000000"
+        }
+      },
+      "first_price": {
+        "close": "221.08",
+        "source": "Financial Datasets historical close",
+        "ticker": "HONA",
+        "trading_date": "2026-06-30"
+      },
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 773840,
+      "parent_total_assets": {
+        "as_of_date": "2026-06-30",
+        "source": {
+          "accession": "0000773840-26-000124",
+          "filed": "2026-07-23",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "77344000000"
+      },
+      "stage": "past_window",
+      "ticker": "HONA",
+      "trading_proof": {
+        "accession": "0000773840-26-000089",
+        "filing_date": "2026-06-29",
+        "form": "4",
+        "report_date": "2026-06-29",
+        "url": "https://www.sec.gov/Archives/edgar/data/2089271/000077384026000089/xslF345X06/wk-form4_1782764617.xml"
+      },
+      "unavailable_facts": [
+        "Record date"
+      ]
+    },
+    {
+      "cik": 2090312,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001104659-26-066592",
+        "filed_date": "2026-05-27",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2090312/0001104659-26-066592.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Mobility Global Inc.",
+      "day20_price": {
+        "close": "20.38",
+        "source": "Financial Datasets historical close",
+        "ticker": "MBGL",
+        "trading_date": "2026-07-31"
+      },
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": "-2.9293",
+        "relative_company_size_ratio": null
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001104659-26-066592",
+            "form": "10-12B/A",
+            "line": 423,
+            "quote": "Distribution occur? ​ A: The Distribution is expected to occur on July 1, 2026",
+            "section": "TABLE OF CONTENTS",
+            "url": "https://www.sec.gov/Archives/edgar/data/2090312/0001104659-26-066592.txt"
+          },
+          "value": "2026-07-01"
+        },
+        "distribution_ratio": null,
+        "parent": null,
+        "record_date": {
+          "source": {
+            "accession": "0001104659-26-066592",
+            "form": "10-12B/A",
+            "line": 1210,
+            "quote": "record date of June 15, 2026",
+            "section": "THE SEPARATION",
+            "url": "https://www.sec.gov/Archives/edgar/data/2090312/0001104659-26-066592.txt"
+          },
+          "value": "2026-06-15"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2026-03-31",
+          "display_value": "13042",
+          "source": {
+            "accession": "0001104659-26-066592",
+            "form": "10-12B/A",
+            "line": 712,
+            "quote": "Total assets | ​ | ​ | ​ | $ | 13,042 | ​ | ​ | ​ | ​ | $ | 12,995 | ​ | ​",
+            "section": "SUMMARY COMBINED FINANCIAL AND OTHER DATA",
+            "url": "https://www.sec.gov/Archives/edgar/data/2090312/0001104659-26-066592.txt"
+          },
+          "unit": "USD millions",
+          "value": "13042000000"
+        }
+      },
+      "first_price": {
+        "close": "19.8",
+        "source": "Financial Datasets historical close",
+        "ticker": "MBGL",
+        "trading_date": "2026-07-02"
+      },
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": null,
+      "parent_total_assets": null,
+      "stage": "past_window",
+      "ticker": "MBGL",
+      "trading_proof": {
+        "accession": "0000950103-26-010279",
+        "filing_date": "2026-07-06",
+        "form": "4",
+        "report_date": "2026-07-01",
+        "url": "https://www.sec.gov/Archives/edgar/data/2090312/000095010326010279/xslF345X06/ownership.xml"
+      },
+      "unavailable_facts": [
+        "Parent",
+        "Distribution ratio",
+        "Parent CIK",
+        "Parent total assets",
+        "Relative company size factor input"
+      ]
+    },
+    {
+      "cik": 2091349,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001193125-26-129178",
+        "filed_date": "2026-03-27",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2091349/0001193125-26-129178.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "First Tracks Biotherapeutics, Inc.",
+      "day20_price": {
+        "close": "16.66",
+        "source": "Financial Datasets historical close",
+        "ticker": "TRAX",
+        "trading_date": "2026-05-19"
+      },
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": "2.0000",
+        "relative_company_size_ratio": "0.58749287"
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001193125-26-129178",
+            "form": "10-12B/A",
+            "line": 46,
+            "quote": "April 20, 2026 (the “Distribution Date”)",
+            "section": "FIRST TRACKS BIOTHERAPEUTICS, INC.",
+            "url": "https://www.sec.gov/Archives/edgar/data/2091349/0001193125-26-129178.txt"
+          },
+          "value": "2026-04-20"
+        },
+        "distribution_ratio": {
+          "source": {
+            "accession": "0001193125-26-129178",
+            "form": "10-12B/A",
+            "line": 228,
+            "quote": "receive one share of First Tracks Biotherapeutics common stock for every one share",
+            "section": "SPIN-OFF",
+            "url": "https://www.sec.gov/Archives/edgar/data/2091349/0001193125-26-129178.txt"
+          },
+          "value": "one share of First Tracks Biotherapeutics common stock for every one share"
+        },
+        "parent": {
+          "source": {
+            "accession": "0001193125-26-129178",
+            "form": "10-12B/A",
+            "line": 238,
+            "quote": "separation of the First Tracks Biotherapeutics Business from AnaptysBio,",
+            "section": "SPIN-OFF",
+            "url": "https://www.sec.gov/Archives/edgar/data/2091349/0001193125-26-129178.txt"
+          },
+          "value": "ANAPTYSBIO, INC"
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001193125-26-129178",
+            "form": "10-12B/A",
+            "line": 18,
+            "quote": "record date of April 6, 2026",
+            "section": "EX-99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/2091349/0001193125-26-129178.txt"
+          },
+          "value": "2026-04-06"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2025-12-31",
+          "display_value": "193687",
+          "source": {
+            "accession": "0001193125-26-129178",
+            "form": "10-12B/A",
+            "line": 769,
+            "quote": "Total assets | $ | 193,687 | $ | 330,545 | $ | 441,891",
+            "section": "ASSETS",
+            "url": "https://www.sec.gov/Archives/edgar/data/2091349/0001193125-26-129178.txt"
+          },
+          "unit": "USD thousands",
+          "value": "193687000"
+        }
+      },
+      "first_price": {
+        "close": "17.0",
+        "source": "Financial Datasets historical close",
+        "ticker": "TRAX",
+        "trading_date": "2026-04-21"
+      },
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 1370053,
+      "parent_total_assets": {
+        "as_of_date": "2026-03-31",
+        "source": {
+          "accession": "0001193125-26-219515",
+          "filed": "2026-05-12",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "329684000"
+      },
+      "stage": "past_window",
+      "ticker": "TRAX",
+      "trading_proof": {
+        "accession": "0000935836-26-000208",
+        "filing_date": "2026-04-22",
+        "form": "4",
+        "report_date": "2026-04-20",
+        "url": "https://www.sec.gov/Archives/edgar/data/2091349/000093583626000208/xslF345X06/ownership.xml"
+      },
+      "unavailable_facts": []
+    },
+    {
+      "cik": 2093101,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001193125-26-055010",
+        "filed_date": "2026-02-17",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2093101/0001193125-26-055010.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Atrium Therapeutics, Inc.",
+      "day20_price": {
+        "close": "13.77",
+        "source": "Financial Datasets historical close",
+        "ticker": "RNA",
+        "trading_date": "2026-03-17"
+      },
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": "81.1033",
+        "relative_company_size_ratio": null
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001193125-26-055010",
+            "form": "10-12B/A",
+            "line": 5381,
+            "quote": "Distribution occurred as of February 12, 2026",
+            "section": "SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT",
+            "url": "https://www.sec.gov/Archives/edgar/data/2093101/0001193125-26-055010.txt"
+          },
+          "value": "2026-02-12"
+        },
+        "distribution_ratio": null,
+        "parent": {
+          "source": {
+            "accession": "0001193125-26-055010",
+            "form": "10-12B/A",
+            "line": 4898,
+            "quote": "parent company, Araxes Pharma LLC,",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/2093101/0001193125-26-055010.txt"
+          },
+          "value": "Araxes Pharma LLC"
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001193125-26-055010",
+            "form": "10-12B/A",
+            "line": 46,
+            "quote": "February 12, 2026 (the “Record Date”)",
+            "section": "INFORMATION STATEMENT",
+            "url": "https://www.sec.gov/Archives/edgar/data/2093101/0001193125-26-055010.txt"
+          },
+          "value": "2026-02-12"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2025-12-31",
+          "display_value": "8353",
+          "source": {
+            "accession": "0001193125-26-055010",
+            "form": "10-12B/A",
+            "line": 4395,
+            "quote": "Total Assets | $ | 8,353 | $ | 270,000 | $ | 278,353",
+            "section": "ASSETS",
+            "url": "https://www.sec.gov/Archives/edgar/data/2093101/0001193125-26-055010.txt"
+          },
+          "unit": "USD thousands",
+          "value": "8353000"
+        }
+      },
+      "first_price": {
+        "close": "72.87",
+        "source": "Financial Datasets historical close",
+        "ticker": "RNA",
+        "trading_date": "2026-02-13"
+      },
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": null,
+      "parent_total_assets": null,
+      "stage": "past_window",
+      "ticker": "RNA",
+      "trading_proof": {
+        "accession": "0001193125-26-085922",
+        "filing_date": "2026-03-02",
+        "form": "4",
+        "report_date": "2026-02-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/2093101/000119312526085922/xslF345X05/ownership.xml"
+      },
+      "unavailable_facts": [
+        "Distribution ratio",
+        "Parent CIK",
+        "Parent total assets",
+        "Relative company size factor input"
+      ]
+    },
+    {
+      "cik": 2104052,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0002104052-26-000013",
+        "filed_date": "2026-05-06",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2104052/0002104052-26-000013.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Enviri Corp",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": null,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": null
+      },
+      "facts": {
+        "distribution_date": null,
+        "distribution_ratio": {
+          "source": {
+            "accession": "0002104052-26-000013",
+            "form": "10-12B/A",
+            "line": 187,
+            "quote": "receive one share of New Enviri common stock for every three shares",
+            "section": "QUESTIONS AND ANSWERS ABOUT THE HOLDING COMPANY MERGER, REORGANIZATION AND DISTRIBUTION",
+            "url": "https://www.sec.gov/Archives/edgar/data/2104052/0002104052-26-000013.txt"
+          },
+          "value": "one share of New Enviri common stock for every three shares"
+        },
+        "parent": null,
+        "record_date": {
+          "source": {
+            "accession": "0002104052-26-000013",
+            "form": "10-12B/A",
+            "line": 31,
+            "quote": "June 1, 2026 (the “Record Date”)",
+            "section": "SUBJECT TO COMPLETION, DATED MAY 6, 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/2104052/0002104052-26-000013.txt"
+          },
+          "value": "2026-06-01"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2025-12-31",
+          "display_value": "2708671",
+          "source": {
+            "accession": "0002104052-26-000013",
+            "form": "10-12B/A",
+            "line": 1435,
+            "quote": "Total assets | $ | 2,708,671 | $ | (1,220,445) | $ | 389,461 | $ | 1,877,687",
+            "section": "AS OF DECEMBER 31, 2025",
+            "url": "https://www.sec.gov/Archives/edgar/data/2104052/0002104052-26-000013.txt"
+          },
+          "unit": "USD thousands",
+          "value": "2708671000"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": null,
+      "parent_total_assets": null,
+      "stage": "trading",
+      "ticker": "NVRI",
+      "trading_proof": {
+        "accession": "0000045876-26-000258",
+        "filing_date": "2026-06-01",
+        "form": "4",
+        "report_date": "2026-06-01",
+        "url": "https://www.sec.gov/Archives/edgar/data/2104052/000004587626000258/xslF345X06/wk-form4_1780353406.xml"
+      },
+      "unavailable_facts": [
+        "Parent",
+        "Distribution date",
+        "Parent CIK",
+        "Parent total assets",
+        "Relative company size factor input",
+        "Post-distribution price weakness factor input",
+        "Insider open-market buying factor input"
+      ]
+    },
+    {
+      "cik": 2105139,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001213900-26-074253",
+        "filed_date": "2026-07-01",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2105139/0001213900-26-074253.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "ADI GLOBAL DISTRIBUTION INC.",
+      "day20_price": {
+        "close": "20.34",
+        "source": "Financial Datasets historical close",
+        "ticker": "ADIG",
+        "trading_date": "2026-09-01"
+      },
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": "7.5455",
+        "relative_company_size_ratio": "0.05392791"
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001213900-26-074253",
+            "form": "10-12B/A",
+            "line": 329,
+            "quote": "distribution occur? | It is expected that 100% of our common stock will be distributed by Resideo at 5:00 p.m. Eastern Time, on August 3, 2026",
+            "section": "AND ANSWERS ABOUT THE SEPARATION AND DISTRIBUTION",
+            "url": "https://www.sec.gov/Archives/edgar/data/2105139/0001213900-26-074253.txt"
+          },
+          "value": "2026-08-03"
+        },
+        "distribution_ratio": {
+          "source": {
+            "accession": "0001213900-26-074253",
+            "form": "10-12B/A",
+            "line": 29,
+            "quote": "receive one share of ADI common stock for every two shares",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/2105139/0001213900-26-074253.txt"
+          },
+          "value": "one share of ADI common stock for every two shares"
+        },
+        "parent": {
+          "source": {
+            "accession": "0001213900-26-074253",
+            "form": "10-12B/A",
+            "line": 187,
+            "quote": "separation of Resideo from Honeywell in 2018.",
+            "section": "REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM | F-2",
+            "url": "https://www.sec.gov/Archives/edgar/data/2105139/0001213900-26-074253.txt"
+          },
+          "value": "HONEYWELL INTERNATIONAL INC"
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001213900-26-074253",
+            "form": "10-12B/A",
+            "line": 5700,
+            "quote": "record date of July 20, 2026",
+            "section": "THE SEPARATION AND DISTRIBUTION",
+            "url": "https://www.sec.gov/Archives/edgar/data/2105139/0001213900-26-074253.txt"
+          },
+          "value": "2026-07-20"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2026-04-04",
+          "display_value": "4171",
+          "source": {
+            "accession": "0001213900-26-074253",
+            "form": "10-12B/A",
+            "line": 687,
+            "quote": "Total assets | $ | 4,171 | $ | 4,156 | $ | 4,152 | $ | 4,095",
+            "section": "HISTORICAL AND UNAUDITED PRO FORMA COMBINED FINANCIAL DATA",
+            "url": "https://www.sec.gov/Archives/edgar/data/2105139/0001213900-26-074253.txt"
+          },
+          "unit": "USD millions",
+          "value": "4171000000"
+        }
+      },
+      "first_price": {
+        "close": "22.0",
+        "source": "Financial Datasets historical close",
+        "ticker": "ADIG",
+        "trading_date": "2026-08-04"
+      },
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 773840,
+      "parent_total_assets": {
+        "as_of_date": "2026-06-30",
+        "source": {
+          "accession": "0000773840-26-000124",
+          "filed": "2026-07-23",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "77344000000"
+      },
+      "stage": "past_window",
+      "ticker": "ADIG",
+      "trading_proof": {
+        "accession": "0001213900-26-085657",
+        "filing_date": "2026-08-05",
+        "form": "4",
+        "report_date": "2026-08-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/2105139/000121390026085657/xslF345X06/ownership.xml"
+      },
+      "unavailable_facts": []
+    },
+    {
+      "cik": 2108359,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001213900-26-061646",
+        "filed_date": "2026-05-28",
+        "form": "10-12G",
+        "url": "https://www.sec.gov/Archives/edgar/data/2108359/0001213900-26-061646.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "BioKey (Cayman), Inc.",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": "0.09263260"
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001213900-26-094152",
+            "form": "8-K",
+            "line": 96,
+            "quote": "August 21, 2026 (the “ Distribution Date ”)",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/1173313/000121390026094152/ea0302908-8k_abvc.htm"
+          },
+          "value": "2026-08-21"
+        },
+        "distribution_ratio": null,
+        "parent": {
+          "source": {
+            "accession": "0001213900-26-061646",
+            "form": "10-12G",
+            "line": 1519,
+            "quote": "separation of the business from ABVC.",
+            "section": "SPIN-OFF",
+            "url": "https://www.sec.gov/Archives/edgar/data/2108359/0001213900-26-061646.txt"
+          },
+          "value": "ABVC BIOPHARMA, INC."
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001213900-26-094152",
+            "form": "8-K",
+            "line": 91,
+            "quote": "July 24, 2026 (the “ Record Date ”)",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/1173313/000121390026094152/ea0302908-8k_abvc.htm"
+          },
+          "value": "2026-07-24"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2026-03-31",
+          "display_value": "1880078",
+          "source": {
+            "accession": "0001213900-26-061646",
+            "form": "10-12G",
+            "line": 2081,
+            "quote": "Total assets | $ | 1,880,078 | $ | 529,448 | $ | 1,797,979 | $ | 456,583",
+            "section": "HISTORICAL AND UNAUDITED PRO FORMA CONDENSED CONSOLIDATED FINANCIAL DATA",
+            "url": "https://www.sec.gov/Archives/edgar/data/2108359/0001213900-26-061646.txt"
+          },
+          "unit": "units",
+          "value": "1880078"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": false,
+      "parent_cik": 1173313,
+      "parent_total_assets": {
+        "as_of_date": "2026-09-30",
+        "source": {
+          "accession": "0001213900-26-118078",
+          "filed": "2026-11-10",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "20296072"
+      },
+      "stage": "past_window",
+      "ticker": "BKAIF",
+      "trading_proof": {
+        "accession": "0001213900-26-119665",
+        "filing_date": "2026-11-13",
+        "form": "10-Q",
+        "report_date": "2026-09-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/2108359/000121390026119665/ea0310660-10q_biokey.htm"
+      },
+      "unavailable_facts": [
+        "Distribution ratio",
+        "First regular close after distribution",
+        "Financial Datasets price request (HTTPError: 400 Client Error: Bad Request for url: https://api.financialdatasets.ai/prices?ticker=BKAIF&interval=day&start_date=2026-08-21&end_date=2026-11-04)",
+        "Post-distribution price weakness factor input"
+      ]
+    },
+    {
+      "cik": 2128626,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001193125-26-396054",
+        "filed_date": "2026-09-21",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2128626/0001193125-26-396054.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Vylor Inc.",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": null,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": "0.96772095"
+      },
+      "facts": {
+        "distribution_date": null,
+        "distribution_ratio": null,
+        "parent": {
+          "source": {
+            "accession": "0001193125-26-396054",
+            "form": "10-12B/A",
+            "line": 162,
+            "quote": "separation from Corteva and the distribution of shares of Vylor common stock by Corteva to its stockholders.",
+            "section": "EMENT SUMMARY",
+            "url": "https://www.sec.gov/Archives/edgar/data/2128626/0001193125-26-396054.txt"
+          },
+          "value": "Corteva, Inc."
+        },
+        "record_date": {
+          "source": {
+            "accession": "0001193125-26-396054",
+            "form": "10-12B/A",
+            "line": 1817,
+            "quote": "holders of record on March 2, 2026",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/2128626/0001193125-26-396054.txt"
+          },
+          "value": "2026-03-02"
+        },
+        "spinoff_total_assets": {
+          "as_of_date": "2026-10-01",
+          "display_value": "41642",
+          "source": {
+            "accession": "0001193125-26-396054",
+            "form": "10-12B/A",
+            "line": 907,
+            "quote": "Total Assets | $ | 41,642 | $ | (19,679 | ) | $ | 927 | $ | 22,890",
+            "section": "ATED FINANCIAL STATEMENTS",
+            "url": "https://www.sec.gov/Archives/edgar/data/2128626/0001193125-26-396054.txt"
+          },
+          "unit": "USD millions",
+          "value": "41642000000"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 1755672,
+      "parent_total_assets": {
+        "as_of_date": "2026-09-30",
+        "source": {
+          "accession": "0001755672-26-000035",
+          "filed": "2026-11-12",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "43031000000"
+      },
+      "stage": "trading",
+      "ticker": "VYLR",
+      "trading_proof": {
+        "accession": "0001225208-26-008275",
+        "filing_date": "2026-10-05",
+        "form": "4",
+        "report_date": "2026-10-01",
+        "url": "https://www.sec.gov/Archives/edgar/data/2128626/000122520826008275/xslF345X06/doc4.xml"
+      },
+      "unavailable_facts": [
+        "Distribution ratio",
+        "Distribution date",
+        "Post-distribution price weakness factor input",
+        "Insider open-market buying factor input"
+      ]
+    },
+    {
+      "cik": 2130999,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001193125-26-465664",
+        "filed_date": "2026-11-17",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130999/0001193125-26-465664.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "Axiom Solutions International, Inc.",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": null,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": "0.57175731"
+      },
+      "facts": {
+        "distribution_date": null,
+        "distribution_ratio": null,
+        "parent": {
+          "source": {
+            "accession": "0001193125-26-465664",
+            "form": "10-12B/A",
+            "line": 601,
+            "quote": "parent company, Flex,",
+            "section": "Information statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/2130999/0001193125-26-465664.txt"
+          },
+          "value": "FLEX LTD."
+        },
+        "record_date": null,
+        "spinoff_total_assets": {
+          "as_of_date": "2026-09-25",
+          "display_value": "15653",
+          "source": {
+            "accession": "0001193125-26-465664",
+            "form": "10-12B/A",
+            "line": 879,
+            "quote": "Total assets | $ | 15,653 | $ | 9,288 | $ | 6,032 | $ | 3,343",
+            "section": "DATA",
+            "url": "https://www.sec.gov/Archives/edgar/data/2130999/0001193125-26-465664.txt"
+          },
+          "unit": "USD millions",
+          "value": "15653000000"
+        }
+      },
+      "first_price": null,
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": 866374,
+      "parent_total_assets": {
+        "as_of_date": "2026-09-25",
+        "source": {
+          "accession": "0000866374-26-000042",
+          "filed": "2026-10-30",
+          "form": "10-Q",
+          "section": "XBRL company facts",
+          "tag": "Assets",
+          "unit": "USD"
+        },
+        "value": "27377000000"
+      },
+      "stage": "registered",
+      "ticker": "AXM",
+      "trading_proof": null,
+      "unavailable_facts": [
+        "Distribution ratio",
+        "Record date",
+        "Distribution date",
+        "Post-distribution price weakness factor input",
+        "Insider open-market buying factor input"
+      ]
+    },
+    {
+      "cik": 2132873,
+      "classification": "spinoff",
+      "classification_filing": {
+        "accession": "0001193125-26-409182",
+        "filed_date": "2026-09-30",
+        "form": "10-12B/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/2132873/0001193125-26-409182.txt"
+      },
+      "classification_reason": "A Form 10 information statement shows a parent distributing the business.",
+      "company": "MSG Rangers Corp.",
+      "day20_price": null,
+      "factor_inputs": {
+        "distinct_qualifying_insiders": 0,
+        "price_decline_percent": null,
+        "relative_company_size_ratio": null
+      },
+      "facts": {
+        "distribution_date": {
+          "source": {
+            "accession": "0001193125-26-409182",
+            "form": "10-12B/A",
+            "line": 55,
+            "quote": "Distribution will be effective at 11:59 p.m., New York City time, on October 26, 2026",
+            "section": "INFORMATION STATEMENT",
+            "url": "https://www.sec.gov/Archives/edgar/data/2132873/0001193125-26-409182.txt"
+          },
+          "value": "2026-10-26"
+        },
+        "distribution_ratio": {
+          "source": {
+            "accession": "0001193125-26-409182",
+            "form": "10-12B/A",
+            "line": 18,
+            "quote": "receive one share of Spinco Class A Common Stock for every two shares",
+            "section": "NEW YORK, NY 10121",
+            "url": "https://www.sec.gov/Archives/edgar/data/2132873/0001193125-26-409182.txt"
+          },
+          "value": "one share of Spinco Class A Common Stock for every two shares"
+        },
+        "parent": {
+          "source": {
+            "accession": "0001193125-26-409182",
+            "form": "10-12B/A",
+            "line": 49,
+            "quote": "distribution by Madison Square Garden Sports Corp. (“MSG Sports”) to holders",
+            "section": "INFORMATION STATEMENT",
+            "url": "https://www.sec.gov/Archives/edgar/data/2132873/0001193125-26-409182.txt"
+          },
+          "value": "Madison Square Garden Sports Corp"
+        },
+        "record_date": null,
+        "spinoff_total_assets": {
+          "as_of_date": "2026-06-30",
+          "display_value": "565139",
+          "source": {
+            "accession": "0001193125-26-409182",
+            "form": "10-12B/A",
+            "line": 346,
+            "quote": "Total assets | 565,139 | 517,294 | 509,866",
+            "section": "DATA",
+            "url": "https://www.sec.gov/Archives/edgar/data/2132873/0001193125-26-409182.txt"
+          },
+          "unit": "USD thousands",
+          "value": "565139000"
+        }
+      },
+      "first_price": {
+        "close": "177.61",
+        "source": "Financial Datasets historical close",
+        "ticker": "MSGR",
+        "trading_date": "2026-10-27"
+      },
+      "insider_purchases": [],
+      "later_filing_override": true,
+      "parent_cik": null,
+      "parent_total_assets": null,
+      "stage": "in_window",
+      "ticker": "MSGR",
+      "trading_proof": {
+        "accession": "0000933029-26-000004",
+        "filing_date": "2026-10-28",
+        "form": "4",
+        "report_date": "2026-10-26",
+        "url": "https://www.sec.gov/Archives/edgar/data/2132873/000093302926000004/xslF345X06/form4-10292026_121058.xml"
+      },
+      "unavailable_facts": [
+        "Record date",
+        "Parent CIK",
+        "Parent total assets",
+        "Closing price 20 trading days after the first close",
+        "Relative company size factor input",
+        "Post-distribution price weakness factor input"
+      ]
+    }
+  ],
+  "run_date": "2026-11-22",
+  "start_date": "2025-11-18",
+  "window_days": 90
+}

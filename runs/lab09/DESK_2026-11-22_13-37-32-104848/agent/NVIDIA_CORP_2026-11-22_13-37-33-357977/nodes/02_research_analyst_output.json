@@ -1,0 +1,138 @@
+{
+  "business_model": [
+    {
+      "claim": "Overview: Revenue comes principally from accelerated-computing and networking platforms, AI software and systems, with additional automotive, gaming-PC and workstation products. Compute & Networking is the dominant reported segment; Graphics is a separate business. These operating segments should not be confused with the Data Center and Edge Computing market-platform disclosures.",
+      "quote": "The Compute & Networking segment includes our Data Center accelerated computing and networking platforms and AI solutions and software, and automotive platforms and autonomous and electric vehicle solutions including software.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2170,
+      "line_end": 2175
+    },
+    {
+      "claim": "In the quarter ended July 26, 2026, Compute & Networking generated $88,299 million of revenue, growing 114% year over year; Graphics generated $7,922 million, growing 46%. Total revenue increased 106%. The revenue base is therefore heavily dependent on continued accelerated-computing demand (10-Q, L2405–L2410).",
+      "quote": "Compute & Networking | $ | 88,299 | $ | 41,331 | $ | 46,968 | 114 | % | $ | 162,850 | $ | 80,920 | $ | 81,930 | 101 | %\nGraphics | 7,922 | 5,412 | 2,510 | 46 | % | 14,987 | 9,885 | 5,102 | 52 | %\nTotal | $ | 96,221 | $ | 46,743 | $ | 49,478 | 106 | % | $ | 177,837 | $ | 90,805 | $ | 87,032 | 96 | %",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2408,
+      "line_end": 2410
+    },
+    {
+      "claim": "Sales reach cloud providers, AI model makers, enterprises and public-sector users both directly and through equipment manufacturers, distributors and system integrators. Channel breadth does not eliminate end-customer concentration: some indirect customers individually account for at least 10% of revenue, and management identifies meaningful exposure to one AI research customer's cloud purchases in the second quarter and first half of fiscal 2027 (10-Q, L2426–L2432).",
+      "quote": "We generate a significant amount of our revenue from a limited number of indirect customers, some individually representing 10% or more of our revenue. Certain companies purchase cloud and related services through various direct and indirect customers. We estimate that one AI research and deployment company contributed a meaningful amount of our revenue by purchasing cloud services from our customers in the second quarter and first half of fiscal year 2027.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2432,
+      "line_end": 2432
+    }
+  ],
+  "competitive_position": [
+    {
+      "claim": "Market Positioning and Growth Outlook: The integrated platform spans processors, networking, software, systems and services, providing a plausible basis for differentiation. However, the supplied disclosure does not quantify switching costs or establish market share; integration alone is not proof of an enduring competitive advantage.",
+      "quote": "These platforms incorporate processors, interconnects, software, algorithms, systems, and services to deliver unique value.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2364,
+      "line_end": 2364
+    },
+    {
+      "claim": "Contractual visibility is measurable but limited in scope: remaining performance obligations on contracts longer than one year were $3.2 billion at July 26, 2026, with approximately 39% expected to be recognized over the following twelve months. This is not a disclosure of total hardware backlog and does not establish that current sales growth is locked in (10-Q, L1898–L1908).",
+      "quote": "As of July 26, 2026, revenue related to remaining performance obligations from contracts greater than one year in length was $\n3.2\nbillion, which included $\n3.0\nbillion from deferred revenue and $\n244\nmillion that has not yet been billed or recognized as revenue. Approximately\n39\n% of revenue from contracts greater than one year in length will be recognized over the next\ntwelve months\n.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 1898,
+      "line_end": 1908
+    },
+    {
+      "claim": "Export restrictions weaken competitive durability, not just near-term sales. Management reports effective exclusion from China's data-center compute market at the end of the second quarter of fiscal 2027 and says that this has helped competitors develop larger customer and developer ecosystems (10-Q, L2576).",
+      "quote": "As of the end of the second quarter of fiscal year 2027, while we were able to ship uncontrolled products to China, such as gaming and workstation GPUs, we were effectively foreclosed from competing in China’s data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2576,
+      "line_end": 2576
+    }
+  ],
+  "catalysts": [
+    {
+      "claim": "Main catalyst: Scaling the next architecture alongside Blackwell could extend the data-center growth cycle. Vera Rubin began production shipments in the third quarter of fiscal 2027. Supply and capacity commitments increased from $119 billion in the preceding quarter to $279 billion at July 26, 2026, supporting production expansion but also increasing exposure if demand or deployment timing disappoints (10-Q, L2339–L2341). These commitments are expenditures, not customer orders.",
+      "quote": "Our next-generation Data Center architecture, Vera Rubin, began production shipments in the third quarter of fiscal year 2027.\nWe have significantly increased our supply and capacity commitments from $119 billion last quarter to $279 billion as of July 26, 2026 to meet future demand.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2339,
+      "line_end": 2341
+    },
+    {
+      "claim": "The latest outlook supports further revenue expansion but warns against extrapolating current profitability. Fourth-quarter fiscal 2027 revenue guidance is $130.0 billion, plus or minus 3%, while GAAP gross-margin guidance is 71.0%–72.0%. The outlook includes an additional week, so sequential revenue comparisons are not on equal-length periods (Earnings release, L38–L44).",
+      "quote": "GAAP and non-GAAP gross margins are expected to be between 71.0% and 72.0%.",
+      "filing": "Earnings release",
+      "accession_number": "0001045810-26-000088",
+      "line_start": 38,
+      "line_end": 44
+    },
+    {
+      "claim": "Financing partnerships could remove a customer-deployment bottleneck. August 2026 memorandums of understanding target mobilizing more than $500 billion of third-party capital over time. This is an intended financing capacity, not secured funding, revenue or backlog; definitive agreements may never follow (10-Q, L2346).",
+      "quote": "In August 2026, we entered into memorandums of understanding with several large capital providers to establish independent financing platforms designed to mobilize more than $500 billion of third-party capital over time to support the deployment of AI infrastructure. These and other preliminary arrangements may not lead to definitive agreements.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2346,
+      "line_end": 2346
+    }
+  ],
+  "recent_developments": [
+    {
+      "claim": "The later earnings release confirms that the main growth engine remained strong: for the quarter ended October 25, 2026, total revenue increased 103% year over year to $115.8 billion, and Data Center revenue increased 110% to $107.6 billion (Earnings release, L14 and L50). I would weaken the view if the next filing showed Data Center growth stopping or turning negative.",
+      "quote": "Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
+      "filing": "Earnings release",
+      "accession_number": "0001045810-26-000088",
+      "line_start": 50,
+      "line_end": 50
+    },
+    {
+      "claim": "Most important disclosed risk: The business increasingly assumes financial obligations to support the infrastructure needed by its customers. The new AI-cloud model carried $36 billion of commitments at July 26, 2026, typically lasting six years (10-Q, L2345). If partners cannot sell the supported capacity, the supplier must purchase it and may be unable to use or resell it. This creates exposure to downstream utilization and pricing in addition to hardware demand.",
+      "quote": "Under the agreements, if AI clouds do not successfully sell committed capacity to third-party customers, we have agreed to purchase that capacity. We may not have sufficient demand for, or the operational ability to use or resell, all the capacity we are committed to purchase.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2550,
+      "line_end": 2550
+    },
+    {
+      "claim": "A subsequent-event infrastructure guarantee signed in August 2026 adds a potential obligation capped at $105 billion. It becomes effective in phases as applicable leases commence, with the first construction phase expected in fiscal 2029; payment obligations are triggered by specified tenant defaults. The cap is contingent exposure, not an incurred loss or an immediately payable liability (10-Q, L2061–L2067).",
+      "quote": "– In August 2026, we entered into guarantees, capped at a total of $\n105\nbillion, to provide credit support",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2061,
+      "line_end": 2067
+    },
+    {
+      "claim": "Export-related costs remain tangible: the first half of fiscal 2027 included a $0.4 billion H200 excess-inventory and purchase-obligation charge. Licensed shipments also faced a 25% import tariff that the business had been unable to pass through to customers (10-Q, L2350).",
+      "quote": "During the first half of fiscal year 2027, we incurred a $0.4 billion charge associated with H200 for excess inventory and purchase obligations, as the demand for H200 products diminished.",
+      "filing": "10-Q",
+      "accession_number": "0001045810-26-000075",
+      "line_start": 2350,
+      "line_end": 2350
+    },
+    {
+      "claim": "Cash collection deserves monitoring alongside reported growth. Accounts receivable used $18,052 million of operating cash in the quarter ended October 25, 2026, versus $5,583 million in the prior-year quarter (Earnings release, L202–L216). The primary filing separately explains that extended payment terms on large agreements affected first-half fiscal 2027 operating cash flows (10-Q, L2479); the later release does not establish how much of the latest increase has that cause.",
+      "quote": "Accounts receivable | (18,052) | (5,583) | (42,642) | (10,325)",
+      "filing": "Earnings release",
+      "accession_number": "0001045810-26-000088",
+      "line_start": 216,
+      "line_end": 216
+    }
+  ],
+  "limitations": [
+    "The primary filing covers the quarter ended July 26, 2026 (10-Q, L1313–L1314); the later earnings release covers the quarter ended October 25, 2026 (L14). No corresponding later quarterly filing is supplied, so earlier commitment and risk balances cannot be assumed unchanged.",
+    "Score table — scores are analyst judgments, not reported metrics. Higher scores mean a stronger investment profile; the risk-pressure score therefore falls as pressure rises.\nCriterion | Score | Supporting number and period | Source\nBusiness momentum | 5/5 | Total revenue +103%; Data Center revenue +110% year over year, quarter ended October 25, 2026 | Earnings release, accession 0001045810-26-000088, L14 and L50\nCompetitive durability | 3/5 | $3.2 billion of remaining performance obligations on contracts longer than one year, July 26, 2026; limited evidence of long-term visibility | 10-Q, accession 0001045810-26-000075, L1898–L1908\nCatalyst strength | 4/5 | Supply and capacity commitments increased from $119 billion in the prior quarter to $279 billion at July 26, 2026; supports expansion but is not backlog | 10-Q, accession 0001045810-26-000075, L2341\nRisk pressure | 2/5 | $0.4 billion H200 charge in the first half of fiscal 2027, alongside expanding customer-support obligations | 10-Q, accession 0001045810-26-000075, L2350",
+    "Market share, customer-retention rates, quantified switching costs and a separate software revenue contribution are not stated in the supplied material. Strong growth and an integrated product offering should not be substituted for those measures.",
+    "Market-platform comparisons were recast, including a customer reclassification between ACIE and Hyperscale in the second quarter of fiscal 2027 (10-Q, L2267). Geographic revenue reflects direct-customer headquarters rather than final deployment location (10-Q, L2229).",
+    "The latest release identifies an interim chief executive and references an independent-board-committee investigation, but does not provide enough detail to establish its cause, findings or financial consequences (Earnings release, L15 and L135–L136).",
+    "Guarantee caps, supply commitments, intended third-party financing and remaining performance obligations measure different things. They should not be combined into a single backlog or expected-loss figure."
+  ],
+  "insight": {
+    "line": "Insight: The $36 billion of AI-cloud commitments at July 26, 2026 expose the business to unsold downstream capacity, not just hardware demand; the 10-Q states, “Under the agreements, if AI clouds do not successfully sell committed capacity to third-party customers, we have agreed to purchase that capacity.” (Accession 0001045810-26-000075, amount at L2345; exact quoted sentence at L2550.)",
+    "quote": "Our commitments, which are typically six years in duration, totaled $36 billion as of July 26, 2026, and decrease as capacity is used by third-party customers or by us for our research and development efforts.\nUnder the agreements, if AI clouds do not successfully sell committed capacity to third-party customers, we have agreed to purchase that capacity.",
+    "filing": "10-Q",
+    "accession_number": "0001045810-26-000075",
+    "line_start": 2345,
+    "line_end": 2550
+  }
+}

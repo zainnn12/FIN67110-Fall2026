@@ -1,0 +1,124 @@
+{
+  "company": {
+    "ticker": "MSGR",
+    "cik": 2132873,
+    "name": "MSG Rangers Corp."
+  },
+  "generated_at": "2026-11-22T13:40:30-05:00",
+  "fiscal_year_period_end": "not established",
+  "prior_year_period_end": null,
+  "selection_rule": "For each metric, select the candidate US-GAAP tag whose latest annual period end is newest; break ties by candidate order. For revenue ties, the total-revenues candidate order prefers Revenues before RevenueFromContractWithCustomerExcludingAssessedTax. Read current and prior facts at the same period ends selected from revenue.",
+  "facts": {
+    "revenue": {
+      "label": "Total revenue",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Total revenue",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "operating_income": {
+      "label": "Operating income",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Operating income",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "net_income": {
+      "label": "Net income",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Net income",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "diluted_eps": {
+      "label": "Diluted EPS",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Diluted EPS",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "stockholders_equity": {
+      "label": "Stockholders' equity",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Stockholders' equity",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "long_term_debt": {
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Long-term debt",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "current_long_term_debt": {
+      "label": "Current portion of long-term debt",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Current portion of long-term debt",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "cash_from_operations": {
+      "label": "Cash from operations",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Cash from operations",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "property_additions": {
+      "label": "Additions to property and equipment",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Additions to property and equipment",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "depreciation_and_amortization": {
+      "label": "Depreciation and amortization",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Depreciation and amortization",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    },
+    "diluted_shares": {
+      "label": "Weighted-average diluted shares",
+      "taxonomy": "us-gaap",
+      "tag": null,
+      "xbrl_label": "Weighted-average diluted shares",
+      "unit": null,
+      "tag_latest_period_end": null,
+      "current": null,
+      "prior": null
+    }
+  },
+  "annual_only_metrics_status": "not established: the selected primary filing is a 10-Q and the aligned-facts extractor only selects annual periods"
+}

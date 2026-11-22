@@ -1,0 +1,279 @@
+{
+  "statement_analysis": [
+    {
+      "conclusion": "The primary filing shows strong operating growth, but it covers an earlier quarter than the earnings release. Its quarterly income statement must not be paired with its six-month cash-flow statement for cash-conversion calculations.",
+      "evidence": [
+        {
+          "metric": "Total revenue",
+          "value": "Current: $96,221 million; prior: $46,743 million",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "source_reference": "L1391-L1395",
+          "period": "Three months ended July 26, 2026 and July 27, 2025, respectively"
+        },
+        {
+          "metric": "GAAP operating income",
+          "value": "Current: $63,734 million; prior: $28,440 million",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "source_reference": "L1393-L1394; L1402",
+          "period": "Three months ended July 26, 2026 and July 27, 2025, respectively"
+        },
+        {
+          "metric": "GAAP gross profit",
+          "value": "Current: $72,142 million; prior: $33,853 million",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "source_reference": "L1393-L1394; L1397",
+          "period": "Three months ended July 26, 2026 and July 27, 2025, respectively"
+        }
+      ],
+      "ratio_arithmetic": "Reproducible expressions, not newly evaluated calculator results: revenue growth = (96,221 - 46,743) / 46,743; operating-income growth = (63,734 - 28,440) / 28,440; current gross margin = 72,142 / 96,221; current operating margin = 63,734 / 96,221.",
+      "definition": "Growth compares the same quarterly duration year over year. Gross margin is GAAP gross profit divided by total revenue; operating margin is consolidated GAAP operating income divided by total revenue, not segment operating income."
+    },
+    {
+      "conclusion": "Cash generation lagged earnings in the primary filing. Receivables and inventory absorbed cash, while equity-security gains were removed in the operating cash-flow reconciliation.",
+      "evidence": [
+        {
+          "metric": "GAAP net income",
+          "value": "Current: $118,010 million; prior: $45,197 million",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "source_reference": "L1535-L1540",
+          "period": "Six months ended July 26, 2026 and July 27, 2025, respectively"
+        },
+        {
+          "metric": "Operating cash flow",
+          "value": "Current: $74,421 million; prior: $42,779 million",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "source_reference": "L1537-L1538; L1554",
+          "period": "Six months ended July 26, 2026 and July 27, 2025, respectively"
+        },
+        {
+          "metric": "Operating cash-flow reconciliation adjustments",
+          "value": "Equity-security gains: ($23,707 million); accounts receivable: ($24,590 million); inventories: ($10,204 million)",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "source_reference": "L1545; L1548-L1549",
+          "period": "Six months ended July 26, 2026"
+        },
+        {
+          "metric": "Purchases related to property and equipment and intangible assets; associated principal payments",
+          "value": "Purchases: ($4,434 million); principal payments: ($92 million)",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "source_reference": "L1560; L1571",
+          "period": "Six months ended July 26, 2026"
+        }
+      ],
+      "ratio_arithmetic": "Cash conversion = 74,421 / 118,010, below 1.0 because operating cash flow is less than net income. Operating cash flow less the disclosed combined asset purchases = 74,421 - 4,434. Applying the release's broader free-cash-flow definition would additionally subtract principal payments: 74,421 - 4,434 - 92. Expressions are not newly evaluated.",
+      "definition": "Cash conversion uses operating cash flow and GAAP net income for the same six-month period. The disclosed purchase line combines property, equipment and intangible assets; it is not a separately established property-and-equipment-only capital-expenditure measure."
+    },
+    {
+      "conclusion": "The latest release shows substantial current assets relative to current liabilities and modest debt relative to equity. Cash alone, however, is below reported long-term debt.",
+      "evidence": [
+        {
+          "metric": "Cash and cash equivalents; marketable debt securities",
+          "value": "$29,089 million; $24,423 million",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L165-L168; L171-L172",
+          "period": "October 25, 2026"
+        },
+        {
+          "metric": "Current assets; current liabilities",
+          "value": "$221,994 million; $54,361 million",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L177; L191",
+          "period": "October 25, 2026"
+        },
+        {
+          "metric": "Short-term debt; long-term debt; shareholders' equity",
+          "value": "Short-term debt: —; long-term debt: $32,371 million; equity: $266,666 million",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L190; L192; L196",
+          "period": "October 25, 2026"
+        }
+      ],
+      "ratio_arithmetic": "Unevaluated expressions: current ratio = 221,994 / 54,361; debt/equity = (0 + 32,371) / 266,666, treating the reported dash as no short-term debt; cash-only net debt = 32,371 - 29,089; cash plus marketable debt securities less debt = 29,089 + 24,423 - 32,371.",
+      "definition": "Current ratio is current assets divided by current liabilities. Debt/equity includes reported short- and long-term borrowings, excluding operating leases and other liabilities. Marketable debt securities are identified separately from cash; marketable equity securities are excluded from the cash-and-debt-securities comparison."
+    }
+  ],
+  "ratio_analysis": [
+    {
+      "conclusion": "All saved annual calculator results remain unavailable. Interim statement inputs permit separately identified interim analysis but do not repair the missing aligned annual facts.",
+      "evidence": [
+        {
+          "metric": "Revenue; operating income; net income; diluted EPS",
+          "value": "Current and prior values are null for every listed metric",
+          "filing": "Saved XBRL facts; annual source filing not established",
+          "accession_number": "Not supplied",
+          "source_reference": "us-gaap:Revenues; us-gaap:OperatingIncomeLoss; us-gaap:NetIncomeLoss; us-gaap:EarningsPerShareDiluted",
+          "period": "Selected annual period ends January 25, 2026 and January 26, 2025"
+        },
+        {
+          "metric": "Equity; noncurrent debt; current debt",
+          "value": "Current and prior values are null for every listed metric",
+          "filing": "Saved XBRL facts; annual source filing not established",
+          "accession_number": "Not supplied",
+          "source_reference": "us-gaap:StockholdersEquity; us-gaap:LongTermDebtNoncurrent; us-gaap:LongTermDebtCurrent",
+          "period": "Selected balance-sheet dates January 25, 2026 and January 26, 2025"
+        },
+        {
+          "metric": "Operating cash flow; property additions; depreciation and amortization; diluted shares",
+          "value": "Current and prior values are null for every listed metric",
+          "filing": "Saved XBRL facts; annual source filing not established",
+          "accession_number": "Not supplied",
+          "source_reference": "us-gaap:NetCashProvidedByUsedInOperatingActivities; us-gaap:PaymentsToAcquireProductiveAssets; us-gaap:DepreciationDepletionAndAmortization; us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+          "period": "Selected annual period ends January 25, 2026 and January 26, 2025"
+        }
+      ],
+      "ratio_arithmetic": "Saved results preserved: Revenue growth: N/A (current and prior revenue are required). Operating margin: N/A (operating income and revenue are required). Return on average equity: N/A (net income and current/prior equity are required). Debt to equity: N/A (noncurrent debt, current debt, and equity are required). Free cash flow: N/A (cash from operations and property additions are required). P/E: N/A (--price was not supplied).",
+      "definition": "Revenue growth = (current revenue - prior revenue) / prior revenue. Operating margin = operating income / total revenue. Return on average equity = net income / ((opening equity + closing equity) / 2). Debt/equity = (noncurrent debt + current debt) / equity. Saved free cash flow = operating cash flow - property additions. P/E requires a supplied dated share price divided by compatible annual or trailing diluted EPS."
+    }
+  ],
+  "quarterly_analysis": [
+    {
+      "conclusion": "The supplied deterministic calculation establishes strong latest-quarter revenue growth. Operating income also increased faster than revenue on the release's reported year-over-year comparison.",
+      "evidence": [
+        {
+          "metric": "Total revenue",
+          "value": "Current: $115,844 million; prior: $57,006 million; supplied growth: 103.21%",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L140-L145; step_6_quarter.deterministic_output",
+          "period": "Three months ended October 25, 2026 and October 26, 2025, respectively"
+        },
+        {
+          "metric": "GAAP operating income",
+          "value": "Current: $77,520 million; prior: $36,010 million; release-reported growth: 115%",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L20; L24; L27; L142-L144; L152",
+          "period": "Q3 FY2027 and Q3 FY2026, respectively"
+        },
+        {
+          "metric": "GAAP diluted EPS",
+          "value": "Current: $2.70; prior: $1.30",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L142-L144; L159",
+          "period": "Three months ended October 25, 2026 and October 26, 2025, respectively"
+        }
+      ],
+      "ratio_arithmetic": "Supplied deterministic arithmetic: ($115,844 - $57,006) / $57,006 = 103.21%. Operating-income growth expression: (77,520 - 36,010) / 36,010; the release reports 115%, rounded. EPS inputs are preserved without calculating an additional growth result.",
+      "definition": "Revenue means consolidated total revenue, not Data Center revenue. Growth compares current and prior-year quarters. EPS is GAAP diluted EPS, not adjusted EPS or annual EPS."
+    },
+    {
+      "conclusion": "Latest-quarter profitability is strong, but cash conversion remains below parity. Positive reported free cash flow does not eliminate the earnings-to-cash shortfall.",
+      "evidence": [
+        {
+          "metric": "GAAP gross profit; total revenue; GAAP operating income",
+          "value": "$86,676 million; $115,844 million; $77,520 million",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L142-L147; L152",
+          "period": "Three months ended October 25, 2026"
+        },
+        {
+          "metric": "Reported GAAP gross margin",
+          "value": "Current: 74.8%; prior-year quarter: 73.4%",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L20; L22",
+          "period": "Q3 FY2027 and Q3 FY2026, respectively"
+        },
+        {
+          "metric": "Operating cash flow; GAAP net income",
+          "value": "$48,253 million; $65,287 million",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L202-L206; L222",
+          "period": "Three months ended October 25, 2026"
+        },
+        {
+          "metric": "Combined asset purchases; principal payments; reported free cash flow",
+          "value": "Purchases: ($4,422 million); principal payments: ($54 million); free cash flow: $43,777 million",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L249-L251; L280-L283",
+          "period": "Three months ended October 25, 2026"
+        }
+      ],
+      "ratio_arithmetic": "Gross-margin expression = 86,676 / 115,844; reported result = 74.8%, rounded. Operating-margin expression = 77,520 / 115,844. Cash-conversion expression = 48,253 / 65,287, below 1.0. Operating cash flow less combined asset purchases = 48,253 - 4,422. Release-defined free-cash-flow expression = 48,253 - 4,422 - 54; reported free cash flow = $43,777 million. No additional ratio results are evaluated.",
+      "definition": "Margins use consolidated GAAP numerators and total revenue. Cash conversion is same-quarter operating cash flow divided by GAAP net income. Release-defined free cash flow subtracts both purchases and principal payments related to property, equipment and intangible assets, as specified at L126; it differs from the saved operating-cash-flow-less-property-additions definition."
+    }
+  ],
+  "peer_analysis": [
+    {
+      "conclusion": "A peer comparison cannot be established because no peer facts were supplied.",
+      "evidence": [],
+      "ratio_arithmetic": "N/A: step_7_peers is empty.",
+      "definition": "A valid peer comparison requires identified fiscal periods, comparable consolidated revenue and profit definitions, and consistent GAAP or adjusted treatment."
+    }
+  ],
+  "valuation_insights": [
+    {
+      "conclusion": "Financial score table — Growth quality: 5/5, strong; profitability: 5/5, strong; cash conversion: 2/5, weak earnings conversion despite positive free cash flow; balance-sheet strength: 4/5, strong reported liquidity and low balance-sheet leverage; valuation: not scored because the required price and compatible annual EPS are unavailable. These are qualitative analyst scores, not calculator outputs.",
+      "evidence": [
+        {
+          "metric": "Growth-score inputs",
+          "value": "Revenue $115,844 million versus $57,006 million; supplied growth 103.21%; operating income $77,520 million versus $36,010 million; reported growth 115%",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L24; L142-L145; L152; step_6_quarter.deterministic_output",
+          "period": "Q3 FY2027 versus Q3 FY2026"
+        },
+        {
+          "metric": "Profitability-score inputs",
+          "value": "Gross profit $86,676 million; operating income $77,520 million; revenue $115,844 million; reported gross margin 74.8%",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L22; L145; L147; L152",
+          "period": "Three months ended October 25, 2026"
+        },
+        {
+          "metric": "Cash-conversion-score inputs",
+          "value": "Operating cash flow $48,253 million; net income $65,287 million; reported free cash flow $43,777 million",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L206; L222; L283",
+          "period": "Three months ended October 25, 2026"
+        },
+        {
+          "metric": "Balance-sheet-score inputs",
+          "value": "Current assets $221,994 million; current liabilities $54,361 million; short-term debt —; long-term debt $32,371 million; equity $266,666 million",
+          "filing": "8-K Exhibit 99.1",
+          "accession_number": "0001045810-26-000088",
+          "source_reference": "L177; L190-L192; L196",
+          "period": "October 25, 2026"
+        }
+      ],
+      "ratio_arithmetic": "Score support: growth uses supplied (115,844 - 57,006) / 57,006 = 103.21% and operating-income expression (77,520 - 36,010) / 36,010; profitability uses 86,676 / 115,844 and 77,520 / 115,844; cash conversion uses 48,253 / 65,287; liquidity uses 221,994 / 54,361; leverage uses (0 + 32,371) / 266,666. P/E remains N/A: no supplied price or compatible annual diluted EPS.",
+      "definition": "Scores use the requested scale, where 1 is weak, 3 is mixed and 5 is strong. The balance-sheet score assesses reported liquidity and borrowing leverage, not a comprehensive commitment-adjusted solvency measure. A future filing with operating cash flow below same-period net income would sustain the cautious cash-conversion view; that condition already appears in the supplied statements."
+    }
+  ],
+  "calculator_requests": [],
+  "limitations": [
+    "No additional calculator requests or newly evaluated model ratio results are provided. Unevaluated formulas show the required definitions and inputs; numeric results are limited to supplied deterministic arithmetic or reported statement measures, apart from qualitative analyst scores.",
+    "The annual facts extractor selected January 25, 2026 and January 26, 2025, but all aligned current and prior values are null. The selected primary filing is a 10-Q, so annual-only metrics are not established.",
+    "The saved selection rule prefers the newest annual period end and resolves ties by candidate order; for revenue, Revenues precedes RevenueFromContractWithCustomerExcludingAssessedTax. Missing selected facts are not replaced with a different revenue definition.",
+    "The primary 10-Q covers the quarter and six months ended July 26, 2026; the later release covers the quarter and nine months ended October 25, 2026. These are distinct reporting periods and sources.",
+    "No dated valuation share price was supplied. Historical repurchase prices are not substituted for a valuation price, and quarterly diluted EPS is not annualized.",
+    "No peer financial facts or peer fiscal periods were supplied.",
+    "Separate property-and-equipment-only cash capital expenditures are not established by the disclosed combined property, equipment and intangible-asset purchase lines.",
+    "The release's non-GAAP definition changed beginning in fiscal 2027 to include stock-based compensation, with historical comparisons updated (8-K Exhibit 99.1, accession 0001045810-26-000088, L126). The analysis uses GAAP profitability to avoid mixing definitions.",
+    "The reported balance-sheet ratios do not capture all commitments and contingent exposures. The primary filing separately presents commitments and guarantees in Note 10 (10-Q, accession 0001045810-26-000075, L2010-L2073)."
+  ],
+  "insight": {
+    "line": "Insight: For the six months ended July 26, 2026, operating cash flow was below GAAP net income—cash conversion = $74,421 million / $118,010 million < 1.0—showing weaker cash realization than reported earnings (10-Q, accession 0001045810-26-000075, L1540 and L1554; period at L1537-L1538).",
+    "quote": "L1537: Six Months Ended\nL1538: Jul 26, 2026 | Jul 27, 2025\nL1539: Cash flows from operating activities:\nL1540: Net income | $ | 118,010 | $ | 45,197\nL1541: Adjustments to reconcile net income to net cash provided by operating activities:\nL1542: Stock-based compensation expense | 3,954 | 3,099\nL1543: Depreciation and amortization | 2,124 | 1,280\nL1544: Deferred income taxes | 982 | ( 2,160 )\nL1545: Gains from equity securities, net | ( 23,707 ) | ( 2,073 )\nL1546: Other | 222 | ( 196 )\nL1547: Changes in operating assets and liabilities, net of acquisitions:\nL1548: Accounts receivable | ( 24,590 ) | ( 4,743 )\nL1549: Inventories | ( 10,204 ) | ( 4,880 )\nL1550: Prepaid expenses and other assets | ( 6,480 ) | 946\nL1551: Accounts payable | 4,125 | 2,255\nL1552: Accrued and other current liabilities | 8,015 | 3,075\nL1553: Other long-term liabilities | 1,970 | 979\nL1554: Net cash provided by operating activities | 74,421 | 42,779",
+    "filing": "10-Q",
+    "accession_number": "0001045810-26-000075",
+    "line_start": 1537,
+    "line_end": 1554
+  }
+}

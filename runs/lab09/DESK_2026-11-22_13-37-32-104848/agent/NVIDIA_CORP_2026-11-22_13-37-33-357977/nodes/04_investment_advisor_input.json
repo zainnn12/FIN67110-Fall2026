@@ -1,0 +1,432 @@
+{
+  "task": "Create one thesis and one Buy, Hold, or Sell recommendation from the two analyst outputs. Use exactly one deciding number.",
+  "context": {
+    "research_analyst_output": {
+      "business_model": [
+        {
+          "claim": "Overview: Revenue comes principally from accelerated-computing and networking platforms, AI software and systems, with additional automotive, gaming-PC and workstation products. Compute & Networking is the dominant reported segment; Graphics is a separate business. These operating segments should not be confused with the Data Center and Edge Computing market-platform disclosures.",
+          "quote": "The Compute & Networking segment includes our Data Center accelerated computing and networking platforms and AI solutions and software, and automotive platforms and autonomous and electric vehicle solutions including software.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2170,
+          "line_end": 2175
+        },
+        {
+          "claim": "In the quarter ended July 26, 2026, Compute & Networking generated $88,299 million of revenue, growing 114% year over year; Graphics generated $7,922 million, growing 46%. Total revenue increased 106%. The revenue base is therefore heavily dependent on continued accelerated-computing demand (10-Q, L2405–L2410).",
+          "quote": "Compute & Networking | $ | 88,299 | $ | 41,331 | $ | 46,968 | 114 | % | $ | 162,850 | $ | 80,920 | $ | 81,930 | 101 | %\nGraphics | 7,922 | 5,412 | 2,510 | 46 | % | 14,987 | 9,885 | 5,102 | 52 | %\nTotal | $ | 96,221 | $ | 46,743 | $ | 49,478 | 106 | % | $ | 177,837 | $ | 90,805 | $ | 87,032 | 96 | %",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2408,
+          "line_end": 2410
+        },
+        {
+          "claim": "Sales reach cloud providers, AI model makers, enterprises and public-sector users both directly and through equipment manufacturers, distributors and system integrators. Channel breadth does not eliminate end-customer concentration: some indirect customers individually account for at least 10% of revenue, and management identifies meaningful exposure to one AI research customer's cloud purchases in the second quarter and first half of fiscal 2027 (10-Q, L2426–L2432).",
+          "quote": "We generate a significant amount of our revenue from a limited number of indirect customers, some individually representing 10% or more of our revenue. Certain companies purchase cloud and related services through various direct and indirect customers. We estimate that one AI research and deployment company contributed a meaningful amount of our revenue by purchasing cloud services from our customers in the second quarter and first half of fiscal year 2027.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2432,
+          "line_end": 2432
+        }
+      ],
+      "competitive_position": [
+        {
+          "claim": "Market Positioning and Growth Outlook: The integrated platform spans processors, networking, software, systems and services, providing a plausible basis for differentiation. However, the supplied disclosure does not quantify switching costs or establish market share; integration alone is not proof of an enduring competitive advantage.",
+          "quote": "These platforms incorporate processors, interconnects, software, algorithms, systems, and services to deliver unique value.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2364,
+          "line_end": 2364
+        },
+        {
+          "claim": "Contractual visibility is measurable but limited in scope: remaining performance obligations on contracts longer than one year were $3.2 billion at July 26, 2026, with approximately 39% expected to be recognized over the following twelve months. This is not a disclosure of total hardware backlog and does not establish that current sales growth is locked in (10-Q, L1898–L1908).",
+          "quote": "As of July 26, 2026, revenue related to remaining performance obligations from contracts greater than one year in length was $\n3.2\nbillion, which included $\n3.0\nbillion from deferred revenue and $\n244\nmillion that has not yet been billed or recognized as revenue. Approximately\n39\n% of revenue from contracts greater than one year in length will be recognized over the next\ntwelve months\n.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 1898,
+          "line_end": 1908
+        },
+        {
+          "claim": "Export restrictions weaken competitive durability, not just near-term sales. Management reports effective exclusion from China's data-center compute market at the end of the second quarter of fiscal 2027 and says that this has helped competitors develop larger customer and developer ecosystems (10-Q, L2576).",
+          "quote": "As of the end of the second quarter of fiscal year 2027, while we were able to ship uncontrolled products to China, such as gaming and workstation GPUs, we were effectively foreclosed from competing in China’s data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2576,
+          "line_end": 2576
+        }
+      ],
+      "catalysts": [
+        {
+          "claim": "Main catalyst: Scaling the next architecture alongside Blackwell could extend the data-center growth cycle. Vera Rubin began production shipments in the third quarter of fiscal 2027. Supply and capacity commitments increased from $119 billion in the preceding quarter to $279 billion at July 26, 2026, supporting production expansion but also increasing exposure if demand or deployment timing disappoints (10-Q, L2339–L2341). These commitments are expenditures, not customer orders.",
+          "quote": "Our next-generation Data Center architecture, Vera Rubin, began production shipments in the third quarter of fiscal year 2027.\nWe have significantly increased our supply and capacity commitments from $119 billion last quarter to $279 billion as of July 26, 2026 to meet future demand.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2339,
+          "line_end": 2341
+        },
+        {
+          "claim": "The latest outlook supports further revenue expansion but warns against extrapolating current profitability. Fourth-quarter fiscal 2027 revenue guidance is $130.0 billion, plus or minus 3%, while GAAP gross-margin guidance is 71.0%–72.0%. The outlook includes an additional week, so sequential revenue comparisons are not on equal-length periods (Earnings release, L38–L44).",
+          "quote": "GAAP and non-GAAP gross margins are expected to be between 71.0% and 72.0%.",
+          "filing": "Earnings release",
+          "accession_number": "0001045810-26-000088",
+          "line_start": 38,
+          "line_end": 44
+        },
+        {
+          "claim": "Financing partnerships could remove a customer-deployment bottleneck. August 2026 memorandums of understanding target mobilizing more than $500 billion of third-party capital over time. This is an intended financing capacity, not secured funding, revenue or backlog; definitive agreements may never follow (10-Q, L2346).",
+          "quote": "In August 2026, we entered into memorandums of understanding with several large capital providers to establish independent financing platforms designed to mobilize more than $500 billion of third-party capital over time to support the deployment of AI infrastructure. These and other preliminary arrangements may not lead to definitive agreements.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2346,
+          "line_end": 2346
+        }
+      ],
+      "recent_developments": [
+        {
+          "claim": "The later earnings release confirms that the main growth engine remained strong: for the quarter ended October 25, 2026, total revenue increased 103% year over year to $115.8 billion, and Data Center revenue increased 110% to $107.6 billion (Earnings release, L14 and L50). I would weaken the view if the next filing showed Data Center growth stopping or turning negative.",
+          "quote": "Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
+          "filing": "Earnings release",
+          "accession_number": "0001045810-26-000088",
+          "line_start": 50,
+          "line_end": 50
+        },
+        {
+          "claim": "Most important disclosed risk: The business increasingly assumes financial obligations to support the infrastructure needed by its customers. The new AI-cloud model carried $36 billion of commitments at July 26, 2026, typically lasting six years (10-Q, L2345). If partners cannot sell the supported capacity, the supplier must purchase it and may be unable to use or resell it. This creates exposure to downstream utilization and pricing in addition to hardware demand.",
+          "quote": "Under the agreements, if AI clouds do not successfully sell committed capacity to third-party customers, we have agreed to purchase that capacity. We may not have sufficient demand for, or the operational ability to use or resell, all the capacity we are committed to purchase.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2550,
+          "line_end": 2550
+        },
+        {
+          "claim": "A subsequent-event infrastructure guarantee signed in August 2026 adds a potential obligation capped at $105 billion. It becomes effective in phases as applicable leases commence, with the first construction phase expected in fiscal 2029; payment obligations are triggered by specified tenant defaults. The cap is contingent exposure, not an incurred loss or an immediately payable liability (10-Q, L2061–L2067).",
+          "quote": "– In August 2026, we entered into guarantees, capped at a total of $\n105\nbillion, to provide credit support",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2061,
+          "line_end": 2067
+        },
+        {
+          "claim": "Export-related costs remain tangible: the first half of fiscal 2027 included a $0.4 billion H200 excess-inventory and purchase-obligation charge. Licensed shipments also faced a 25% import tariff that the business had been unable to pass through to customers (10-Q, L2350).",
+          "quote": "During the first half of fiscal year 2027, we incurred a $0.4 billion charge associated with H200 for excess inventory and purchase obligations, as the demand for H200 products diminished.",
+          "filing": "10-Q",
+          "accession_number": "0001045810-26-000075",
+          "line_start": 2350,
+          "line_end": 2350
+        },
+        {
+          "claim": "Cash collection deserves monitoring alongside reported growth. Accounts receivable used $18,052 million of operating cash in the quarter ended October 25, 2026, versus $5,583 million in the prior-year quarter (Earnings release, L202–L216). The primary filing separately explains that extended payment terms on large agreements affected first-half fiscal 2027 operating cash flows (10-Q, L2479); the later release does not establish how much of the latest increase has that cause.",
+          "quote": "Accounts receivable | (18,052) | (5,583) | (42,642) | (10,325)",
+          "filing": "Earnings release",
+          "accession_number": "0001045810-26-000088",
+          "line_start": 216,
+          "line_end": 216
+        }
+      ],
+      "limitations": [
+        "The primary filing covers the quarter ended July 26, 2026 (10-Q, L1313–L1314); the later earnings release covers the quarter ended October 25, 2026 (L14). No corresponding later quarterly filing is supplied, so earlier commitment and risk balances cannot be assumed unchanged.",
+        "Score table — scores are analyst judgments, not reported metrics. Higher scores mean a stronger investment profile; the risk-pressure score therefore falls as pressure rises.\nCriterion | Score | Supporting number and period | Source\nBusiness momentum | 5/5 | Total revenue +103%; Data Center revenue +110% year over year, quarter ended October 25, 2026 | Earnings release, accession 0001045810-26-000088, L14 and L50\nCompetitive durability | 3/5 | $3.2 billion of remaining performance obligations on contracts longer than one year, July 26, 2026; limited evidence of long-term visibility | 10-Q, accession 0001045810-26-000075, L1898–L1908\nCatalyst strength | 4/5 | Supply and capacity commitments increased from $119 billion in the prior quarter to $279 billion at July 26, 2026; supports expansion but is not backlog | 10-Q, accession 0001045810-26-000075, L2341\nRisk pressure | 2/5 | $0.4 billion H200 charge in the first half of fiscal 2027, alongside expanding customer-support obligations | 10-Q, accession 0001045810-26-000075, L2350",
+        "Market share, customer-retention rates, quantified switching costs and a separate software revenue contribution are not stated in the supplied material. Strong growth and an integrated product offering should not be substituted for those measures.",
+        "Market-platform comparisons were recast, including a customer reclassification between ACIE and Hyperscale in the second quarter of fiscal 2027 (10-Q, L2267). Geographic revenue reflects direct-customer headquarters rather than final deployment location (10-Q, L2229).",
+        "The latest release identifies an interim chief executive and references an independent-board-committee investigation, but does not provide enough detail to establish its cause, findings or financial consequences (Earnings release, L15 and L135–L136).",
+        "Guarantee caps, supply commitments, intended third-party financing and remaining performance obligations measure different things. They should not be combined into a single backlog or expected-loss figure."
+      ],
+      "insight": {
+        "line": "Insight: The $36 billion of AI-cloud commitments at July 26, 2026 expose the business to unsold downstream capacity, not just hardware demand; the 10-Q states, “Under the agreements, if AI clouds do not successfully sell committed capacity to third-party customers, we have agreed to purchase that capacity.” (Accession 0001045810-26-000075, amount at L2345; exact quoted sentence at L2550.)",
+        "quote": "Our commitments, which are typically six years in duration, totaled $36 billion as of July 26, 2026, and decrease as capacity is used by third-party customers or by us for our research and development efforts.\nUnder the agreements, if AI clouds do not successfully sell committed capacity to third-party customers, we have agreed to purchase that capacity.",
+        "filing": "10-Q",
+        "accession_number": "0001045810-26-000075",
+        "line_start": 2345,
+        "line_end": 2550
+      }
+    },
+    "financial_analyst_output": {
+      "statement_analysis": [
+        {
+          "conclusion": "The primary filing shows strong operating growth, but it covers an earlier quarter than the earnings release. Its quarterly income statement must not be paired with its six-month cash-flow statement for cash-conversion calculations.",
+          "evidence": [
+            {
+              "metric": "Total revenue",
+              "value": "Current: $96,221 million; prior: $46,743 million",
+              "filing": "10-Q",
+              "accession_number": "0001045810-26-000075",
+              "source_reference": "L1391-L1395",
+              "period": "Three months ended July 26, 2026 and July 27, 2025, respectively"
+            },
+            {
+              "metric": "GAAP operating income",
+              "value": "Current: $63,734 million; prior: $28,440 million",
+              "filing": "10-Q",
+              "accession_number": "0001045810-26-000075",
+              "source_reference": "L1393-L1394; L1402",
+              "period": "Three months ended July 26, 2026 and July 27, 2025, respectively"
+            },
+            {
+              "metric": "GAAP gross profit",
+              "value": "Current: $72,142 million; prior: $33,853 million",
+              "filing": "10-Q",
+              "accession_number": "0001045810-26-000075",
+              "source_reference": "L1393-L1394; L1397",
+              "period": "Three months ended July 26, 2026 and July 27, 2025, respectively"
+            }
+          ],
+          "ratio_arithmetic": "Reproducible expressions, not newly evaluated calculator results: revenue growth = (96,221 - 46,743) / 46,743; operating-income growth = (63,734 - 28,440) / 28,440; current gross margin = 72,142 / 96,221; current operating margin = 63,734 / 96,221.",
+          "definition": "Growth compares the same quarterly duration year over year. Gross margin is GAAP gross profit divided by total revenue; operating margin is consolidated GAAP operating income divided by total revenue, not segment operating income."
+        },
+        {
+          "conclusion": "Cash generation lagged earnings in the primary filing. Receivables and inventory absorbed cash, while equity-security gains were removed in the operating cash-flow reconciliation.",
+          "evidence": [
+            {
+              "metric": "GAAP net income",
+              "value": "Current: $118,010 million; prior: $45,197 million",
+              "filing": "10-Q",
+              "accession_number": "0001045810-26-000075",
+              "source_reference": "L1535-L1540",
+              "period": "Six months ended July 26, 2026 and July 27, 2025, respectively"
+            },
+            {
+              "metric": "Operating cash flow",
+              "value": "Current: $74,421 million; prior: $42,779 million",
+              "filing": "10-Q",
+              "accession_number": "0001045810-26-000075",
+              "source_reference": "L1537-L1538; L1554",
+              "period": "Six months ended July 26, 2026 and July 27, 2025, respectively"
+            },
+            {
+              "metric": "Operating cash-flow reconciliation adjustments",
+              "value": "Equity-security gains: ($23,707 million); accounts receivable: ($24,590 million); inventories: ($10,204 million)",
+              "filing": "10-Q",
+              "accession_number": "0001045810-26-000075",
+              "source_reference": "L1545; L1548-L1549",
+              "period": "Six months ended July 26, 2026"
+            },
+            {
+              "metric": "Purchases related to property and equipment and intangible assets; associated principal payments",
+              "value": "Purchases: ($4,434 million); principal payments: ($92 million)",
+              "filing": "10-Q",
+              "accession_number": "0001045810-26-000075",
+              "source_reference": "L1560; L1571",
+              "period": "Six months ended July 26, 2026"
+            }
+          ],
+          "ratio_arithmetic": "Cash conversion = 74,421 / 118,010, below 1.0 because operating cash flow is less than net income. Operating cash flow less the disclosed combined asset purchases = 74,421 - 4,434. Applying the release's broader free-cash-flow definition would additionally subtract principal payments: 74,421 - 4,434 - 92. Expressions are not newly evaluated.",
+          "definition": "Cash conversion uses operating cash flow and GAAP net income for the same six-month period. The disclosed purchase line combines property, equipment and intangible assets; it is not a separately established property-and-equipment-only capital-expenditure measure."
+        },
+        {
+          "conclusion": "The latest release shows substantial current assets relative to current liabilities and modest debt relative to equity. Cash alone, however, is below reported long-term debt.",
+          "evidence": [
+            {
+              "metric": "Cash and cash equivalents; marketable debt securities",
+              "value": "$29,089 million; $24,423 million",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L165-L168; L171-L172",
+              "period": "October 25, 2026"
+            },
+            {
+              "metric": "Current assets; current liabilities",
+              "value": "$221,994 million; $54,361 million",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L177; L191",
+              "period": "October 25, 2026"
+            },
+            {
+              "metric": "Short-term debt; long-term debt; shareholders' equity",
+              "value": "Short-term debt: —; long-term debt: $32,371 million; equity: $266,666 million",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L190; L192; L196",
+              "period": "October 25, 2026"
+            }
+          ],
+          "ratio_arithmetic": "Unevaluated expressions: current ratio = 221,994 / 54,361; debt/equity = (0 + 32,371) / 266,666, treating the reported dash as no short-term debt; cash-only net debt = 32,371 - 29,089; cash plus marketable debt securities less debt = 29,089 + 24,423 - 32,371.",
+          "definition": "Current ratio is current assets divided by current liabilities. Debt/equity includes reported short- and long-term borrowings, excluding operating leases and other liabilities. Marketable debt securities are identified separately from cash; marketable equity securities are excluded from the cash-and-debt-securities comparison."
+        }
+      ],
+      "ratio_analysis": [
+        {
+          "conclusion": "All saved annual calculator results remain unavailable. Interim statement inputs permit separately identified interim analysis but do not repair the missing aligned annual facts.",
+          "evidence": [
+            {
+              "metric": "Revenue; operating income; net income; diluted EPS",
+              "value": "Current and prior values are null for every listed metric",
+              "filing": "Saved XBRL facts; annual source filing not established",
+              "accession_number": "Not supplied",
+              "source_reference": "us-gaap:Revenues; us-gaap:OperatingIncomeLoss; us-gaap:NetIncomeLoss; us-gaap:EarningsPerShareDiluted",
+              "period": "Selected annual period ends January 25, 2026 and January 26, 2025"
+            },
+            {
+              "metric": "Equity; noncurrent debt; current debt",
+              "value": "Current and prior values are null for every listed metric",
+              "filing": "Saved XBRL facts; annual source filing not established",
+              "accession_number": "Not supplied",
+              "source_reference": "us-gaap:StockholdersEquity; us-gaap:LongTermDebtNoncurrent; us-gaap:LongTermDebtCurrent",
+              "period": "Selected balance-sheet dates January 25, 2026 and January 26, 2025"
+            },
+            {
+              "metric": "Operating cash flow; property additions; depreciation and amortization; diluted shares",
+              "value": "Current and prior values are null for every listed metric",
+              "filing": "Saved XBRL facts; annual source filing not established",
+              "accession_number": "Not supplied",
+              "source_reference": "us-gaap:NetCashProvidedByUsedInOperatingActivities; us-gaap:PaymentsToAcquireProductiveAssets; us-gaap:DepreciationDepletionAndAmortization; us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "period": "Selected annual period ends January 25, 2026 and January 26, 2025"
+            }
+          ],
+          "ratio_arithmetic": "Saved results preserved: Revenue growth: N/A (current and prior revenue are required). Operating margin: N/A (operating income and revenue are required). Return on average equity: N/A (net income and current/prior equity are required). Debt to equity: N/A (noncurrent debt, current debt, and equity are required). Free cash flow: N/A (cash from operations and property additions are required). P/E: N/A (--price was not supplied).",
+          "definition": "Revenue growth = (current revenue - prior revenue) / prior revenue. Operating margin = operating income / total revenue. Return on average equity = net income / ((opening equity + closing equity) / 2). Debt/equity = (noncurrent debt + current debt) / equity. Saved free cash flow = operating cash flow - property additions. P/E requires a supplied dated share price divided by compatible annual or trailing diluted EPS."
+        }
+      ],
+      "quarterly_analysis": [
+        {
+          "conclusion": "The supplied deterministic calculation establishes strong latest-quarter revenue growth. Operating income also increased faster than revenue on the release's reported year-over-year comparison.",
+          "evidence": [
+            {
+              "metric": "Total revenue",
+              "value": "Current: $115,844 million; prior: $57,006 million; supplied growth: 103.21%",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L140-L145; step_6_quarter.deterministic_output",
+              "period": "Three months ended October 25, 2026 and October 26, 2025, respectively"
+            },
+            {
+              "metric": "GAAP operating income",
+              "value": "Current: $77,520 million; prior: $36,010 million; release-reported growth: 115%",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L20; L24; L27; L142-L144; L152",
+              "period": "Q3 FY2027 and Q3 FY2026, respectively"
+            },
+            {
+              "metric": "GAAP diluted EPS",
+              "value": "Current: $2.70; prior: $1.30",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L142-L144; L159",
+              "period": "Three months ended October 25, 2026 and October 26, 2025, respectively"
+            }
+          ],
+          "ratio_arithmetic": "Supplied deterministic arithmetic: ($115,844 - $57,006) / $57,006 = 103.21%. Operating-income growth expression: (77,520 - 36,010) / 36,010; the release reports 115%, rounded. EPS inputs are preserved without calculating an additional growth result.",
+          "definition": "Revenue means consolidated total revenue, not Data Center revenue. Growth compares current and prior-year quarters. EPS is GAAP diluted EPS, not adjusted EPS or annual EPS."
+        },
+        {
+          "conclusion": "Latest-quarter profitability is strong, but cash conversion remains below parity. Positive reported free cash flow does not eliminate the earnings-to-cash shortfall.",
+          "evidence": [
+            {
+              "metric": "GAAP gross profit; total revenue; GAAP operating income",
+              "value": "$86,676 million; $115,844 million; $77,520 million",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L142-L147; L152",
+              "period": "Three months ended October 25, 2026"
+            },
+            {
+              "metric": "Reported GAAP gross margin",
+              "value": "Current: 74.8%; prior-year quarter: 73.4%",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L20; L22",
+              "period": "Q3 FY2027 and Q3 FY2026, respectively"
+            },
+            {
+              "metric": "Operating cash flow; GAAP net income",
+              "value": "$48,253 million; $65,287 million",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L202-L206; L222",
+              "period": "Three months ended October 25, 2026"
+            },
+            {
+              "metric": "Combined asset purchases; principal payments; reported free cash flow",
+              "value": "Purchases: ($4,422 million); principal payments: ($54 million); free cash flow: $43,777 million",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L249-L251; L280-L283",
+              "period": "Three months ended October 25, 2026"
+            }
+          ],
+          "ratio_arithmetic": "Gross-margin expression = 86,676 / 115,844; reported result = 74.8%, rounded. Operating-margin expression = 77,520 / 115,844. Cash-conversion expression = 48,253 / 65,287, below 1.0. Operating cash flow less combined asset purchases = 48,253 - 4,422. Release-defined free-cash-flow expression = 48,253 - 4,422 - 54; reported free cash flow = $43,777 million. No additional ratio results are evaluated.",
+          "definition": "Margins use consolidated GAAP numerators and total revenue. Cash conversion is same-quarter operating cash flow divided by GAAP net income. Release-defined free cash flow subtracts both purchases and principal payments related to property, equipment and intangible assets, as specified at L126; it differs from the saved operating-cash-flow-less-property-additions definition."
+        }
+      ],
+      "peer_analysis": [
+        {
+          "conclusion": "A peer comparison cannot be established because no peer facts were supplied.",
+          "evidence": [],
+          "ratio_arithmetic": "N/A: step_7_peers is empty.",
+          "definition": "A valid peer comparison requires identified fiscal periods, comparable consolidated revenue and profit definitions, and consistent GAAP or adjusted treatment."
+        }
+      ],
+      "valuation_insights": [
+        {
+          "conclusion": "Financial score table — Growth quality: 5/5, strong; profitability: 5/5, strong; cash conversion: 2/5, weak earnings conversion despite positive free cash flow; balance-sheet strength: 4/5, strong reported liquidity and low balance-sheet leverage; valuation: not scored because the required price and compatible annual EPS are unavailable. These are qualitative analyst scores, not calculator outputs.",
+          "evidence": [
+            {
+              "metric": "Growth-score inputs",
+              "value": "Revenue $115,844 million versus $57,006 million; supplied growth 103.21%; operating income $77,520 million versus $36,010 million; reported growth 115%",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L24; L142-L145; L152; step_6_quarter.deterministic_output",
+              "period": "Q3 FY2027 versus Q3 FY2026"
+            },
+            {
+              "metric": "Profitability-score inputs",
+              "value": "Gross profit $86,676 million; operating income $77,520 million; revenue $115,844 million; reported gross margin 74.8%",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L22; L145; L147; L152",
+              "period": "Three months ended October 25, 2026"
+            },
+            {
+              "metric": "Cash-conversion-score inputs",
+              "value": "Operating cash flow $48,253 million; net income $65,287 million; reported free cash flow $43,777 million",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L206; L222; L283",
+              "period": "Three months ended October 25, 2026"
+            },
+            {
+              "metric": "Balance-sheet-score inputs",
+              "value": "Current assets $221,994 million; current liabilities $54,361 million; short-term debt —; long-term debt $32,371 million; equity $266,666 million",
+              "filing": "8-K Exhibit 99.1",
+              "accession_number": "0001045810-26-000088",
+              "source_reference": "L177; L190-L192; L196",
+              "period": "October 25, 2026"
+            }
+          ],
+          "ratio_arithmetic": "Score support: growth uses supplied (115,844 - 57,006) / 57,006 = 103.21% and operating-income expression (77,520 - 36,010) / 36,010; profitability uses 86,676 / 115,844 and 77,520 / 115,844; cash conversion uses 48,253 / 65,287; liquidity uses 221,994 / 54,361; leverage uses (0 + 32,371) / 266,666. P/E remains N/A: no supplied price or compatible annual diluted EPS.",
+          "definition": "Scores use the requested scale, where 1 is weak, 3 is mixed and 5 is strong. The balance-sheet score assesses reported liquidity and borrowing leverage, not a comprehensive commitment-adjusted solvency measure. A future filing with operating cash flow below same-period net income would sustain the cautious cash-conversion view; that condition already appears in the supplied statements."
+        }
+      ],
+      "calculator_requests": [],
+      "limitations": [
+        "No additional calculator requests or newly evaluated model ratio results are provided. Unevaluated formulas show the required definitions and inputs; numeric results are limited to supplied deterministic arithmetic or reported statement measures, apart from qualitative analyst scores.",
+        "The annual facts extractor selected January 25, 2026 and January 26, 2025, but all aligned current and prior values are null. The selected primary filing is a 10-Q, so annual-only metrics are not established.",
+        "The saved selection rule prefers the newest annual period end and resolves ties by candidate order; for revenue, Revenues precedes RevenueFromContractWithCustomerExcludingAssessedTax. Missing selected facts are not replaced with a different revenue definition.",
+        "The primary 10-Q covers the quarter and six months ended July 26, 2026; the later release covers the quarter and nine months ended October 25, 2026. These are distinct reporting periods and sources.",
+        "No dated valuation share price was supplied. Historical repurchase prices are not substituted for a valuation price, and quarterly diluted EPS is not annualized.",
+        "No peer financial facts or peer fiscal periods were supplied.",
+        "Separate property-and-equipment-only cash capital expenditures are not established by the disclosed combined property, equipment and intangible-asset purchase lines.",
+        "The release's non-GAAP definition changed beginning in fiscal 2027 to include stock-based compensation, with historical comparisons updated (8-K Exhibit 99.1, accession 0001045810-26-000088, L126). The analysis uses GAAP profitability to avoid mixing definitions.",
+        "The reported balance-sheet ratios do not capture all commitments and contingent exposures. The primary filing separately presents commitments and guarantees in Note 10 (10-Q, accession 0001045810-26-000075, L2010-L2073)."
+      ],
+      "insight": {
+        "line": "Insight: For the six months ended July 26, 2026, operating cash flow was below GAAP net income—cash conversion = $74,421 million / $118,010 million < 1.0—showing weaker cash realization than reported earnings (10-Q, accession 0001045810-26-000075, L1540 and L1554; period at L1537-L1538).",
+        "quote": "L1537: Six Months Ended\nL1538: Jul 26, 2026 | Jul 27, 2025\nL1539: Cash flows from operating activities:\nL1540: Net income | $ | 118,010 | $ | 45,197\nL1541: Adjustments to reconcile net income to net cash provided by operating activities:\nL1542: Stock-based compensation expense | 3,954 | 3,099\nL1543: Depreciation and amortization | 2,124 | 1,280\nL1544: Deferred income taxes | 982 | ( 2,160 )\nL1545: Gains from equity securities, net | ( 23,707 ) | ( 2,073 )\nL1546: Other | 222 | ( 196 )\nL1547: Changes in operating assets and liabilities, net of acquisitions:\nL1548: Accounts receivable | ( 24,590 ) | ( 4,743 )\nL1549: Inventories | ( 10,204 ) | ( 4,880 )\nL1550: Prepaid expenses and other assets | ( 6,480 ) | 946\nL1551: Accounts payable | 4,125 | 2,255\nL1552: Accrued and other current liabilities | 8,015 | 3,075\nL1553: Other long-term liabilities | 1,970 | 979\nL1554: Net cash provided by operating activities | 74,421 | 42,779",
+        "filing": "10-Q",
+        "accession_number": "0001045810-26-000075",
+        "line_start": 1537,
+        "line_end": 1554
+      }
+    },
+    "earnings_release_first_paragraph": "NVIDIA (NASDAQ: NVDA) today reported revenue for the third quarter ended October 25, 2026, of $115.8 billion, up 20% from the previous quarter and up 103% from a year ago. For the quarter, GAAP and non-GAAP gross margins were 74.8% and 74.9%, respectively. GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively."
+  },
+  "expected_output": {
+    "thesis": "One evidence-bound thesis",
+    "recommendation": "Exactly Buy, Hold, or Sell",
+    "deciding_number": "Exactly one number from the analyst outputs",
+    "deciding_number_source": "The analyst-output source of that number",
+    "rationale": "Why the one number decides the recommendation",
+    "risks": "Material risks already present in the analyst outputs",
+    "insight": "One numeric Insight line copied or derived only from an analyst output, with the same filing quote, accession number, and line range. It must not restate only a figure in the earnings release first paragraph."
+  }
+}

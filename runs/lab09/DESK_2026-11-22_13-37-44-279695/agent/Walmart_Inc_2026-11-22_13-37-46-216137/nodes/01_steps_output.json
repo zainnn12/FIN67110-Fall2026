@@ -1,0 +1,20 @@
+{
+  "run_dir": "/private/tmp/checkpoint3-completion/runs/lab09/DESK_2026-11-22_13-37-44-279695/agent/Walmart_Inc_2026-11-22_13-37-46-216137",
+  "saved_files": [
+    "10-Q_000010416926000154.txt",
+    "8-K_000010416926000168.txt",
+    "8-K_EX-99.1_000010416926000168.txt",
+    "facts.csv",
+    "facts.json",
+    "manifest.json"
+  ],
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

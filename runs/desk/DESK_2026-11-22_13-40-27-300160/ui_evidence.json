@@ -1,0 +1,34 @@
+{
+  "source": "local UI subprocess event stream",
+  "inputs": {
+    "ticker": "MSGR",
+    "peers": [],
+    "price": null
+  },
+  "status": "failed",
+  "node_order": [],
+  "report_path": null,
+  "events": [
+    {
+      "kind": "status",
+      "status": "running"
+    },
+    {
+      "kind": "log",
+      "line": "Part agent_team: 7.963 seconds"
+    },
+    {
+      "kind": "log",
+      "line": "Run folder: /private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-40-27-300160"
+    },
+    {
+      "kind": "log",
+      "line": "ERROR: ERROR: Research Analyst model call failed: Error code: 429 - {'error': {'code': 'credit_balance_exhausted', 'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'param': None, 'type': 'insufficient_quota'}}"
+    },
+    {
+      "kind": "error",
+      "status": "failed",
+      "message": "ERROR: ERROR: Research Analyst model call failed: Error code: 429 - {'error': {'code': 'credit_balance_exhausted', 'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'param': None, 'type': 'insufficient_quota'}}"
+    }
+  ]
+}

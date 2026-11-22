@@ -1,0 +1,20 @@
+{
+  "run_dir": "/private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-40-27-300160/agent/MSG_Rangers_Corp_2026-11-22_13-40-28-543971",
+  "saved_files": [
+    "10-Q_000162828026071325.txt",
+    "8-K_000162828026071324.txt",
+    "8-K_EX-99.1_000162828026071324.txt",
+    "facts.csv",
+    "facts.json",
+    "manifest.json"
+  ],
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

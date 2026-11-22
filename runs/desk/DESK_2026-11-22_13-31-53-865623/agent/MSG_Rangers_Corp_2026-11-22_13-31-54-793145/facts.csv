@@ -1,0 +1,12 @@
+metric,label,taxonomy,tag,unit,tag_latest_period_end,current_value,current_start,current_end,current_form,current_accession,current_filed,prior_value,prior_start,prior_end,prior_form,prior_accession,prior_filed
+revenue,Total revenue,us-gaap,,,,,,,,,,,,,,,
+operating_income,Operating income,us-gaap,,,,,,,,,,,,,,,
+net_income,Net income,us-gaap,,,,,,,,,,,,,,,
+diluted_eps,Diluted EPS,us-gaap,,,,,,,,,,,,,,,
+stockholders_equity,Stockholders' equity,us-gaap,,,,,,,,,,,,,,,
+long_term_debt,Long-term debt,us-gaap,,,,,,,,,,,,,,,
+current_long_term_debt,Current portion of long-term debt,us-gaap,,,,,,,,,,,,,,,
+cash_from_operations,Cash from operations,us-gaap,,,,,,,,,,,,,,,
+property_additions,Additions to property and equipment,us-gaap,,,,,,,,,,,,,,,
+depreciation_and_amortization,Depreciation and amortization,us-gaap,,,,,,,,,,,,,,,
+diluted_shares,Weighted-average diluted shares,us-gaap,,,,,,,,,,,,,,,

@@ -1,0 +1,12 @@
+metric,label,taxonomy,tag,unit,tag_latest_period_end,current_value,current_start,current_end,current_form,current_accession,current_filed,prior_value,prior_start,prior_end,prior_form,prior_accession,prior_filed
+revenue,Total revenue,us-gaap,Revenues,USD,2026-01-25,,,,,,,,,,,,
+operating_income,Operating income,us-gaap,OperatingIncomeLoss,USD,2026-01-25,,,,,,,,,,,,
+net_income,Net income,us-gaap,NetIncomeLoss,USD,2026-01-25,,,,,,,,,,,,
+diluted_eps,Diluted EPS,us-gaap,EarningsPerShareDiluted,USD/shares,2026-01-25,,,,,,,,,,,,
+stockholders_equity,Stockholders' equity,us-gaap,StockholdersEquity,USD,2026-01-25,,,,,,,,,,,,
+long_term_debt,Long-term debt,us-gaap,LongTermDebtNoncurrent,USD,2026-01-25,,,,,,,,,,,,
+current_long_term_debt,Current portion of long-term debt,us-gaap,LongTermDebtCurrent,USD,2026-01-25,,,,,,,,,,,,
+cash_from_operations,Cash from operations,us-gaap,NetCashProvidedByUsedInOperatingActivities,USD,2026-01-25,,,,,,,,,,,,
+property_additions,Additions to property and equipment,us-gaap,PaymentsToAcquireProductiveAssets,USD,2026-01-25,,,,,,,,,,,,
+depreciation_and_amortization,Depreciation and amortization,us-gaap,DepreciationDepletionAndAmortization,USD,2026-01-25,,,,,,,,,,,,
+diluted_shares,Weighted-average diluted shares,us-gaap,WeightedAverageNumberOfDilutedSharesOutstanding,shares,2026-01-25,,,,,,,,,,,,

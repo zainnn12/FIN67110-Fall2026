@@ -1,0 +1,9 @@
+{
+  "ticker": "MSGR",
+  "screen": false,
+  "seeker_run": null,
+  "team_run": "/private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145",
+  "worksheet": "/private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145/worksheet.md",
+  "registry_path": "/private/tmp/checkpoint3-completion/lab06_runs/SEEKER_2026-11-20_22-29-06-302032/registry.json",
+  "final_report": "/private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-31-53-865623/final_report.md"
+}

@@ -1,0 +1,20 @@
+{
+  "run_dir": "/private/tmp/checkpoint3-completion/runs/lab09/DESK_2026-11-22_13-37-32-104848/agent/NVIDIA_CORP_2026-11-22_13-37-33-357977",
+  "saved_files": [
+    "10-Q_000104581026000075.txt",
+    "8-K_000104581026000088.txt",
+    "8-K_EX-99.1_000104581026000088.txt",
+    "facts.csv",
+    "facts.json",
+    "manifest.json"
+  ],
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}
