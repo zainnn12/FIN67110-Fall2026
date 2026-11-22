@@ -1,6 +1,6 @@
 # Lab 06 evidence audit
 
-Reviewer: **Codex evidence audit, authorized by the instructor and relayed by Zainab on November 20, 2026.**
+Reviewer: **Automated evidence audit, November 20, 2026.**
 
 ## Original saved run
 
@@ -27,13 +27,13 @@ The parent extractor now trims generic prose boundaries and drops unresolved par
 
 ## Teammate-owned evidence
 
-No teammate check is represented as performed. This file records the instructor-authorized Codex evidence audit only. Any fact that the saved filing does not establish remains unavailable.
+No teammate check is represented as performed. This file records an automated evidence audit. Any fact that the saved filing does not establish remains unavailable.
 
 ## Corrected evidence audit
 
 Corrected run: `lab06_runs/SEEKER_2026-11-20_22-29-06-302032/`.
 
-Reviewer: **Codex evidence audit, authorized by the instructor and relayed by Zainab on November 20, 2026.**
+Reviewer: **Automated evidence audit, November 20, 2026.**
 
 | Check | Result | Saved evidence |
 |---|---|---|

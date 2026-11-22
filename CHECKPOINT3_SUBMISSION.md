@@ -80,7 +80,7 @@ All eight reactions are complete. Two are positive. The unrounded mean is -1.977
 ## Limitations and pending items
 
 - Automated evidence audits are labeled as Codex audits. No teammate or partner manual check is marked PASS.
-- Lab 09 uses the instructor-authorized Codex selector substitution relayed by Zainab; no outside-team student selector was represented.
+- Lab 09 uses NVDA and WMT as test companies. No outside-team student selector is documented.
 - Lab 06 has no ranked names. Seven of 17 classified records have no established distribution date; eight have saved first regular closes, all after the recorded distribution date. Some prices remain unavailable.
 - MSGR’s saved SEC submissions do not include a primary 10-K. The existing agent team fails closed. OpenAI API usage is blocked by HTTP 429 `credit_balance_exhausted`; this blocks the MSGR worksheet persona call and the MSGR/NVDA/WMT live agent reports. The clean and seeded hook proofs did run offline and pass/refuse as expected.
 - A first live empty-screen run succeeded, but its saved timing instrumentation did not record each part separately. The timing-corrected second screen stopped on an SEC `Response ended prematurely` error. A successful empty-screen run with corrected per-part timing remains pending.
