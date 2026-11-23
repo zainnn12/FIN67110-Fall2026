@@ -31,6 +31,7 @@ from closes_reader import (  # noqa: E402
 )
 from seeker import (  # noqa: E402
     FINAL_FACTORS_PATH,
+    classify_parent_transaction_updates,
     evaluate_snapshot,
     load_factors,
     _save_cited_fact_sources,
@@ -39,6 +40,53 @@ from seeker import (  # noqa: E402
     render_report,
     validate_report_contract,
 )
+
+
+def test_cortigent_later_parent_filings_invalidate_record_date_and_watch_status():
+    result = classify_parent_transaction_updates(
+        [
+            {
+                "form": "8-K",
+                "accession": "0001753926-25-001582",
+                "filed_date": "2025-10-03",
+                "url": "https://www.sec.gov/Archives/edgar/data/1266806/000175392625001582/vani-20251003.htm",
+                "text": (
+                    "The Company announced that it is temporarily withdrawing the "
+                    "previously-announced record date of October 8, 2025 for the "
+                    "proposed spinoff of its wholly-owned subsidiary, Cortigent, Inc."
+                ),
+            },
+            {
+                "form": "8-K",
+                "accession": "0001753926-26-001144",
+                "filed_date": "2026-07-07",
+                "url": "https://www.sec.gov/Archives/edgar/data/1266806/000175392626001144/vani-20260707.htm",
+                "text": (
+                    "Cortigent will merge with and into MergerSub and become a wholly "
+                    "owned subsidiary of ClearOne."
+                ),
+            },
+            {
+                "form": "8-K",
+                "accession": "0001753926-26-002036",
+                "filed_date": "2026-10-30",
+                "url": "https://www.sec.gov/Archives/edgar/data/1266806/000175392626002036/vani-20261030.htm",
+                "text": (
+                    "Closing continues to remain subject to receiving final regulatory "
+                    "approval for the Cortigent merger."
+                ),
+            },
+        ],
+        accepted_filed_date="2025-09-19",
+    )
+
+    assert result["classification"] == "status_conflict"
+    assert result["record_date_withdrawn"] is True
+    assert result["record_date_withdrawal_filing"]["accession"] == (
+        "0001753926-25-001582"
+    )
+    assert result["merger_filing"]["accession"] == "0001753926-26-001144"
+    assert "record date and pending spin-off status" in result["reason"]
 
 
 def test_parent_extractor_trims_prose_and_rejects_unresolved_fragments():

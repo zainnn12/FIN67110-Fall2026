@@ -1,0 +1,46 @@
+{
+  "artifact_type": "post-run correction",
+  "base_run": "lab06_runs/SEEKER_2026-11-20_22-29-06-302032",
+  "company": "Cortigent, Inc.",
+  "created_date": "2026-11-22",
+  "original_run_modified": false,
+  "original_saved_result": {
+    "classification": "spinoff",
+    "record_date": "2025-10-08",
+    "stage": "registered"
+  },
+  "manual_review_result": "FAIL",
+  "correction": {
+    "classification": "status_conflict",
+    "record_date": null,
+    "record_date_status": "withdrawn",
+    "registered_watch_list_eligible": false,
+    "spin_off_status": "not supported by the saved evidence because a later pending merger conflicts with the earlier spin-off status",
+    "trading_status": "not trading is supported; no saved trading proof was found"
+  },
+  "reason": "The saved evidence contradicts the registry's October 8, 2025 record date and pending spin-off status. The record date was withdrawn. Later filings describe a pending merger in which Cortigent would become a wholly owned subsidiary of ClearOne. The original saved run remains unchanged and must not be represented as having passed this check.",
+  "saved_evidence": [
+    {
+      "accession": "0001753926-25-001582",
+      "filed_date": "2025-10-03",
+      "finding": "Vivani temporarily withdrew the previously announced October 8, 2025 record date for the proposed Cortigent spin-off.",
+      "form": "8-K",
+      "manual_review_package_path": "ANSH_LAB06_MANUAL_REVIEW_EVIDENCE/watch-list/CIK0001958489/parent_CIK0001266806/8-K_000175392625001582.htm"
+    },
+    {
+      "accession": "0001753926-26-001144",
+      "filed_date": "2026-07-07",
+      "finding": "Vivani disclosed an agreement under which Cortigent would merge into MergerSub and become a wholly owned subsidiary of ClearOne.",
+      "form": "8-K",
+      "manual_review_package_path": "ANSH_LAB06_MANUAL_REVIEW_EVIDENCE/watch-list/CIK0001958489/parent_CIK0001266806/8-K_000175392626001144.htm"
+    },
+    {
+      "accession": "0001753926-26-002036",
+      "filed_date": "2026-10-30",
+      "finding": "The merger closing remained subject to final regulatory approval.",
+      "form": "8-K",
+      "manual_review_package_path": "ANSH_LAB06_MANUAL_REVIEW_EVIDENCE/watch-list/CIK0001958489/parent_CIK0001266806/8-K_000175392626002036.htm"
+    }
+  ],
+  "implemented_rule": "A later parent filing that withdraws a spin-off record date clears that date. A later merger filing creates a status conflict unless a still-later filing establishes completion of the spin-off. A status-conflict record is not included in the registered/watch list."
+}

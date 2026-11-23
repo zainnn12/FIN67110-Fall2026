@@ -56,7 +56,8 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 ### Lab 06
 
 - [Corrected Lab 06 run](lab06_runs/SEEKER_2026-11-20_22-29-06-302032/seeker_report.md), [registry](lab06_runs/SEEKER_2026-11-20_22-29-06-302032/registry.json), and [citation audit](lab06_runs/SEEKER_2026-11-20_22-29-06-302032/citation_audit.json).
-- [Zero-weight proof](lab06_runs/SEEKER_2026-11-20_22-29-06-302032/weight_zero_proof_2026-11-20_22-49-34-990421/proof.json) and [Lab 06 validation](LAB06_VALIDATION.md). The saved screen has no ranked name. Ansh’s validation update and review remain pending; see the [merge checklist](TEAMMATE_EVIDENCE_TO_MERGE.md).
+- [Zero-weight proof](lab06_runs/SEEKER_2026-11-20_22-29-06-302032/weight_zero_proof_2026-11-20_22-49-34-990421/proof.json), [Lab 06 validation](LAB06_VALIDATION.md), and [Ansh's completed review section](02_LAB06_VALIDATION_section_COMPLETED.md). Ansh completed the independent manual review on November 22, 2026. The saved screen has no ranked name.
+- Ansh marked Cortigent **FAIL** because the saved evidence contradicts the registry's October 8, 2025 record date and pending spin-off status. He marked the Octave and BioKey insider checks **NOT VERIFIABLE** and the MSG Rangers insider check **INCOMPLETE PERIOD**. His 12 PASS marks and all 8 stated limitations remain unchanged. The historical run is preserved; the separate [Cortigent correction artifact](lab06_runs/SEEKER_2026-11-20_22-29-06-302032/CORRECTION_CORTIGENT_2026-11-22.json) clears the withdrawn record date and removes Cortigent from registered/watch eligibility.
 
 ### Lab 07
 
@@ -86,7 +87,7 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 
 ## Manual reviews
 
-- Ansh’s update to [Lab 06 validation](LAB06_VALIDATION.md) is **PENDING**. The assigned filing-claim checks must be completed by Ansh and recorded there.
+- Ansh’s independent [Lab 06 validation review](LAB06_VALIDATION.md) is **COMPLETE — November 22, 2026**. Cortigent is FAIL; Octave and BioKey are NOT VERIFIABLE; MSG Rangers is INCOMPLETE PERIOD. The remaining checks keep Ansh's PASS marks and stated limitations.
 - Krishmi’s expected manual review file, `runs/lab07/KRISHMI_MANUAL_REVIEW.md`, is **PENDING**. It must contain Krishmi’s two required worksheet recomputations and her own review result.
 - The independent outside-team review is **PENDING**. No automated audit is represented as that review.
 - [Test results](runs/checkpoint3/test_results.md) record the locked test suite. The [completion matrix](CHECKPOINT3_COMPLETION_MATRIX.md) records each requirement and remaining action. The [teammate evidence merge checklist](TEAMMATE_EVIDENCE_TO_MERGE.md) lists the expected files and required links.
@@ -98,9 +99,9 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 - MSGR valuation and view were not computed because required post-distribution cash-flow and share inputs are not established.
 - NVDA and WMT joined reports did not complete after the Investment Advisor calls returned HTTP 429 `credit_balance_exhausted`.
 - The local page health check passed, but no successful model-assisted webpage report display was completed.
-- Teammate and outside-team manual reviews remain pending.
+- Krishmi's Lab 07 manual review and the independent outside-team review remain pending. Ansh's Lab 06 manual review is complete.
 - The subscribed CRSP data ends December 31, 2025.
 - The MATW pre-reaction view time was not captured.
 - The OpenAI completion smoke request passed, but later model calls exhausted the account credit. No further model call was made for this submission update.
 
-This page submits the Checkpoint 3 proposal and available evidence. It does not claim that every Lab 07–09 deliverable or manual review is complete.
+This page submits the Checkpoint 3 proposal and available evidence. It does not claim that every Lab 07–09 deliverable or the independent outside-team review is complete.

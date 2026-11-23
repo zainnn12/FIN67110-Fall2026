@@ -345,6 +345,109 @@ def classify_registration_history(
     }
 
 
+def classify_parent_transaction_updates(
+    filings: Sequence[Mapping[str, Any]],
+    *,
+    accepted_filed_date: str,
+) -> dict[str, Any]:
+    """Reconcile a Form 10 classification with later parent transaction filings."""
+
+    ordered = sorted(
+        (
+            filing
+            for filing in filings
+            if str(filing.get("filed_date", "")) > accepted_filed_date
+        ),
+        key=lambda item: str(item.get("filed_date", "")),
+    )
+    withdrawn_record_date: Mapping[str, Any] | None = None
+    reinstated_record_date: Mapping[str, Any] | None = None
+    merger: Mapping[str, Any] | None = None
+    completed_spinoff: Mapping[str, Any] | None = None
+
+    for filing in ordered:
+        text = re.sub(r"\s+", " ", str(filing.get("text", ""))).strip()
+        lowered = text.lower()
+        if re.search(
+            r"withdraw(?:s|n|ing)?\b.{0,180}\brecord date\b|"
+            r"\brecord date\b.{0,180}\bwithdraw(?:s|n|ing)?\b",
+            lowered,
+        ) and re.search(r"spin[- ]?off", lowered):
+            withdrawn_record_date = filing
+        elif re.search(r"\brecord date\b", lowered) and re.search(
+            r"spin[- ]?off", lowered
+        ):
+            reinstated_record_date = filing
+
+        if re.search(
+            r"\bwill merge with and into\b.{0,500}\bmerger\s*sub\b|"
+            r"\bmerge with and into\b.{0,500}\bwholly owned subsidiary\b",
+            lowered,
+        ):
+            merger = filing
+        if re.search(
+            r"\b(?:completed|consummated)\b.{0,180}\b(?:spin[- ]?off|distribution)\b|"
+            r"\b(?:spin[- ]?off|distribution)\b.{0,180}\b(?:completed|consummated)\b",
+            lowered,
+        ):
+            completed_spinoff = filing
+
+    record_date_withdrawn = bool(
+        withdrawn_record_date
+        and (
+            reinstated_record_date is None
+            or str(reinstated_record_date.get("filed_date", ""))
+            <= str(withdrawn_record_date.get("filed_date", ""))
+        )
+    )
+    merger_conflict = bool(
+        merger
+        and (
+            completed_spinoff is None
+            or str(completed_spinoff.get("filed_date", ""))
+            <= str(merger.get("filed_date", ""))
+        )
+    )
+
+    def source(filing: Mapping[str, Any] | None) -> dict[str, Any] | None:
+        if filing is None:
+            return None
+        return {
+            key: filing.get(key)
+            for key in ("form", "accession", "filed_date", "url")
+            if filing.get(key)
+        }
+
+    if merger_conflict:
+        reason = (
+            "Later parent filing evidence contradicts the pending spin-off status: "
+            "the registrant is subject to a pending merger that would make it a "
+            "wholly owned subsidiary of another company."
+        )
+        if record_date_withdrawn:
+            reason = (
+                "Later parent filing evidence contradicts the record date and pending "
+                "spin-off status: the announced record date was withdrawn, and the "
+                "registrant is subject to a pending merger that would make it a wholly "
+                "owned subsidiary of another company."
+            )
+        return {
+            "classification": "status_conflict",
+            "reason": reason,
+            "record_date_withdrawn": record_date_withdrawn,
+            "record_date_withdrawal_filing": source(withdrawn_record_date),
+            "merger_filing": source(merger),
+        }
+
+    return {
+        "classification": "spinoff",
+        "reason": None,
+        "record_date_withdrawn": record_date_withdrawn,
+        "record_date_withdrawal_filing": source(withdrawn_record_date),
+        "merger_filing": None,
+    }
+
+
 def _line_source(
     text: str,
     character_offset: int,
@@ -1093,7 +1196,7 @@ def _download_parent_distribution_evidence(
     raw_dir: Path,
     facts: dict[str, Any],
     start_date: date,
-) -> None:
+) -> list[dict[str, Any]]:
     wanted = _normalize_company_name(registrant_name)
     candidates = [
         filing
@@ -1102,6 +1205,7 @@ def _download_parent_distribution_evidence(
         and filing.primary_document
         and (not filing.filing_date or filing.filing_date >= (start_date - timedelta(days=120)).isoformat())
     ]
+    status_filings: list[dict[str, Any]] = []
     for filing in sorted(candidates, key=lambda item: item.filing_date, reverse=True)[:30]:
         url = filing.primary_document_url(parent.cik)
         resource = _save_sec_resource(
@@ -1113,8 +1217,17 @@ def _download_parent_distribution_evidence(
         normalized = _normalize_company_name(text[:200_000])
         if wanted and wanted not in normalized:
             continue
-        if not re.search(r"spin[- ]off|distribution", text, re.I):
+        if not re.search(r"spin[- ]off|distribution|merger|record date", text, re.I):
             continue
+        status_filings.append(
+            {
+                "form": "8-K",
+                "accession": filing.accession_number,
+                "filed_date": filing.filing_date,
+                "url": url,
+                "text": text,
+            }
+        )
         _merge_missing_facts(
             facts,
             extract_registry_facts(
@@ -1127,8 +1240,7 @@ def _download_parent_distribution_evidence(
         (raw_dir / f"parent_8-K_{filing.accession_number.replace('-', '')}.txt").write_text(
             text, encoding="utf-8"
         )
-        if facts.get("distribution_date") is not None:
-            return
+    return status_filings
 
 
 def _save_cited_fact_sources(
@@ -1288,6 +1400,13 @@ def run_live_seeker(
 
         parent_cik: int | None = None
         parent_record = None
+        parent_status = {
+            "classification": "spinoff",
+            "reason": None,
+            "record_date_withdrawn": False,
+            "record_date_withdrawal_filing": None,
+            "merger_filing": None,
+        }
         parent_fact = facts.get("parent")
         if isinstance(parent_fact, Mapping) and parent_fact.get("value"):
             parent_record = resolve_company_by_name(
@@ -1307,7 +1426,7 @@ def run_live_seeker(
                 client, parent_submissions_url, parent_dir / "submissions.json"
             )
             _, parent_filings = fetch_submission_filings(client, parent, include_history=False)
-            _download_parent_distribution_evidence(
+            parent_status_filings = _download_parent_distribution_evidence(
                 client,
                 parent,
                 company_name,
@@ -1316,6 +1435,23 @@ def run_live_seeker(
                 facts,
                 start_date,
             )
+            parent_status = classify_parent_transaction_updates(
+                parent_status_filings,
+                accepted_filed_date=str(accepted["filed_date"]),
+            )
+            if parent_status["record_date_withdrawn"]:
+                facts["record_date"] = None
+            if parent_status["classification"] == "status_conflict":
+                dropped.append(
+                    {
+                        "cik": cik,
+                        "company": company_name,
+                        "reason": parent_status["reason"],
+                        "classification_filing": classification_filing,
+                        "parent_status_correction": parent_status,
+                    }
+                )
+                continue
             distribution_value = (
                 facts.get("distribution_date", {}).get("value")
                 if isinstance(facts.get("distribution_date"), Mapping)

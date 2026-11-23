@@ -58,6 +58,18 @@ Result: **67 passed**. This was the full test run after the WRDS dependency, aut
 - Full locked offline suite after the Checkpoint 3 page and fallback-report edits: **72 passed**.
 - No OpenAI API request was made for this submission update.
 - Credential scan over tracked submission files and the new fallback reports: PASS, zero matches.
-- Unsupported instructor or professor attribution scan: PASS, zero matches.
+- Unsupported-attribution scan: PASS, zero matches.
 - Relative links in `CHECKPOINT3_SUBMISSION.md`: checked against repository files.
+- `.env`: ignored and untracked.
+
+## Ansh Lab 06 review merge validation (2026-11-22)
+
+- ZIP extraction scope: only `02_LAB06_VALIDATION_section_COMPLETED.md` was extracted. Its SHA-256 is `1c212b0e116fa514bf376390708380cc4391e7226c5e8ee70a403bc37f67d38e`, identical to the ZIP entry. The evidence folder, draft file, ZIP, caches, and raw evidence were not added.
+- Review merge: the section appended to `LAB06_VALIDATION.md` is byte-identical to the extracted completed section. It contains Ansh's 12 PASS marks, 2 NOT VERIFIABLE marks, 1 INCOMPLETE PERIOD mark, 1 FAIL mark, and 8 limitations without changes.
+- Cortigent correction: the original saved run remains unchanged. A separate correction artifact records the withdrawn October 8, 2025 record date and the later pending merger status. The classification regression test uses the three saved Cortigent filing facts.
+- Full locked offline suite: **73 passed**.
+- Credential scan over tracked files and the intended untracked review and correction files: PASS, zero matching files. The scan checked AWS, OpenAI, GitHub, Slack, and private-key signatures without printing secret values.
+- Placeholder-token scan over tracked document and data files and the intended untracked review and correction files: PASS, zero matching files. The scan checked the standard unresolved-work and template-marker forms.
+- Unsupported-attribution scan over the submission and review documents: PASS, zero matches.
+- Relative-link check over the extracted review, merged validation, completion matrix, merge checklist, and submission page: PASS, 70 links checked and zero missing.
 - `.env`: ignored and untracked.
