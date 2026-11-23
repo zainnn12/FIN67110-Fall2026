@@ -88,3 +88,22 @@ Result: **67 passed**. This was the full test run after the WRDS dependency, aut
 - Unsupported-attribution scan: PASS. The submission documents do not mark the outside-team review complete or passed, do not claim that Krishmi passed either reviewed calculation, and do not claim that her marks or conclusions were changed or upgraded.
 - Relative-link check: PASS, 76 links checked and zero missing across the manual review, completion matrix, merge checklist, and submission page.
 - The independent outside-team review remains pending. `.env` remains ignored and untracked.
+
+## Lab 09 fallback, webpage, and review-evidence validation (2026-11-22)
+
+- OpenAI API calls: **0**. No model was called. The saved HTTP 429 `credit_balance_exhausted` evidence was reused without retry.
+- NVIDIA citation regression: PASS. The test fixes the November 17, 2026 release date, November 17, 2026, 16:20:51 Eastern Time acceptance, exact revenue at line 145, 103% growth at lines 8, 14, and 21, Data Center values at lines 10 and 50, and exact net income at line 156. It also checks the other saved table citations.
+- NVDA fallback worksheet: PASS. Required annual or trailing-12-month valuation results are `NOT COMPUTABLE`; the combined property-and-equipment and intangible-asset line is not substituted for property-only capital expenditures.
+- WMT fallback worksheet: PASS. The matched nine-month diagnostic is `17,114 + 11,763 − 22,621 = 6,256` USD million. It is marked interim, not annualized, and excluded from valuation. Required valuation results are `NOT COMPUTABLE`.
+- Targeted fallback and webpage tests: **11 passed**.
+- Full locked offline suite: **82 passed**.
+- Local page: `GET /health` returned HTTP 200. `POST /api/fallbacks` returned HTTP 202 with status `fallback` for both NVDA and WMT. Both saved UI response artifacts record zero network calls, zero model calls, the required warning banner, the failure reason, artifact paths, missing outputs, and `live_joined_report_succeeded: false`.
+- Browser capture: unavailable. The browser tool returned `The browser access host is unavailable`; no screenshot is claimed. Deterministic response evidence was saved for both fallback packages.
+- Credential and secret scan: PASS. All tracked files, including the staged files, were scanned for AWS, OpenAI, GitHub, Slack, and private-key signatures. Zero files matched, and no secret values were printed.
+- Placeholder/TODO scan: PASS. The high-signal unresolved-work scan found zero TODO, TBD, FIXME, XXX, template-token, or insert-marker matches. Literal `placeholder` uses are limited to intentional UI identifiers, an HTML input hint, an `.env.example` description, and preserved historical wording; none is unresolved work.
+- Unsupported-attribution scan: PASS. No file attributes the AI pre-reviews to Ansh or Shivani Rathi, and no file states that human confirmation was obtained.
+- Unsupported-permission scan: PASS. No tracked file claims unsupported permission, consent, authorization, or approval.
+- Relative-link check: PASS, 170 relative Markdown links checked and zero missing.
+- Git diff whitespace check: PASS.
+- Staged-file scope: PASS. The final staged set contains 23 intended code, test, fallback, review, validation-record, and submission-document files. It contains no `.env`, key, ZIP, cache, raw evidence, downloaded package, `.pyc`, or unrelated untracked file.
+- Human limits: Ansh’s MATW review, the genuine outside-team student review, the MATW pre-reaction view, both live Lab 09 joined outputs, and successful live joined-model webpage display remain missing.

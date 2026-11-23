@@ -1,0 +1,34 @@
+{
+  "artifact_type": "fallback_evidence_manifest",
+  "ticker": "NVDA",
+  "saved_run": "DESK_2026-11-22_13-37-32-104848",
+  "status": "fallback_only_not_live_joined_output",
+  "network_calls": 0,
+  "model_calls": 0,
+  "failure": {
+    "path": "failure.json",
+    "stage": "Investment Advisor",
+    "reason": "HTTP 429 credit_balance_exhausted"
+  },
+  "fallback_artifacts": [
+    {"path": "fallback_report.md", "role": "filing facts, partial-output boundary, and run status"},
+    {"path": "fallback_worksheet.md", "role": "human-readable deterministic fallback worksheet"},
+    {"path": "fallback_worksheet.json", "role": "machine-readable deterministic fallback worksheet"},
+    {"path": "fallback_ui_evidence.json", "role": "offline local-page response evidence"}
+  ],
+  "saved_filing_evidence": [
+    "agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/manifest.json",
+    "agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/facts.json",
+    "agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/facts.csv",
+    "agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/10-Q_000104581026000075.txt",
+    "agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/8-K_000104581026000088.txt",
+    "agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/8-K_EX-99.1_000104581026000088.txt"
+  ],
+  "partial_unverified_role_outputs": [
+    "agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/nodes/02_research_analyst_output.json",
+    "agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/nodes/03_financial_analyst_output.json"
+  ],
+  "not_produced": ["parts_alone_output", "joined_final_report", "joined_worksheet", "verified_report", "investment_view", "conviction", "deciding_number"],
+  "comparison": "../../../LAB09_NVDA_COMPARISON.md",
+  "disclaimer": "Fallback artifacts document the saved failure boundary. They do not replace the missing live outputs."
+}

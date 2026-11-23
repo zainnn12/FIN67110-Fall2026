@@ -1,0 +1,23 @@
+{
+  "source": "local UI saved-fallback display path",
+  "status": "fallback_displayed",
+  "banner": "Fallback evidence — not a successful live model-assisted report",
+  "ticker": "NVDA",
+  "saved_run": "DESK_2026-11-22_13-37-32-104848",
+  "failure_reason": "HTTP 429 credit_balance_exhausted",
+  "fallback_report_path": "runs/lab09/DESK_2026-11-22_13-37-32-104848/fallback_report.md",
+  "fallback_worksheet_path": "runs/lab09/DESK_2026-11-22_13-37-32-104848/fallback_worksheet.md",
+  "fallback_manifest_path": "runs/lab09/DESK_2026-11-22_13-37-32-104848/fallback_manifest.json",
+  "missing_outputs": [
+    "parts_alone_output",
+    "joined_final_report",
+    "joined_worksheet",
+    "verified_report",
+    "investment_view",
+    "conviction",
+    "deciding_number"
+  ],
+  "network_calls": 0,
+  "model_calls": 0,
+  "live_joined_report_succeeded": false
+}

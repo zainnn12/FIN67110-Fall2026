@@ -1,0 +1,76 @@
+{
+  "artifact_type": "deterministic_fallback_worksheet",
+  "ticker": "WMT",
+  "company": "Walmart Inc.",
+  "saved_run": "DESK_2026-11-22_13-37-44-279695",
+  "status": "fallback_only_not_live_joined_output",
+  "network_calls": 0,
+  "model_calls": 0,
+  "valuation_basis_required": "annual_or_trailing_12_months",
+  "inputs": [
+    {
+      "name": "earnings",
+      "status": "unavailable",
+      "required_basis": "annual_or_trailing_12_months",
+      "saved_interim_fact": {"value": 17114, "units": "USD millions", "period": "nine months ended 2026-10-31", "source_line": 216},
+      "valuation_use": false,
+      "reason": "Only an interim value is supported; it was not annualized."
+    },
+    {
+      "name": "depreciation_and_amortization",
+      "status": "unavailable",
+      "required_basis": "annual_or_trailing_12_months",
+      "saved_interim_fact": {"value": 11763, "units": "USD millions", "period": "nine months ended 2026-10-31", "source_line": 218},
+      "valuation_use": false,
+      "reason": "Only an interim value is supported; it was not annualized."
+    },
+    {
+      "name": "capital_expenditures",
+      "status": "unavailable",
+      "required_basis": "annual_or_trailing_12_months",
+      "saved_interim_fact": {"value": -22621, "units": "USD millions", "period": "nine months ended 2026-10-31", "source_line": 230},
+      "valuation_use": false,
+      "reason": "Only an interim property-and-equipment value is supported; it was not annualized."
+    },
+    {
+      "name": "diluted_weighted_average_shares",
+      "status": "unavailable",
+      "required_basis": "annual_or_trailing_12_months",
+      "saved_interim_facts": [
+        {"value": 7952, "units": "million shares", "period": "three months ended 2026-10-31", "source_line": 164},
+        {"value": 7976, "units": "million shares", "period": "nine months ended 2026-10-31", "source_line": 164}
+      ],
+      "valuation_use": false,
+      "reason": "Only interim values are supported; they were not annualized."
+    },
+    {
+      "name": "dated_share_price",
+      "status": "unavailable",
+      "valuation_use": false,
+      "reason": "No dated share price was supplied or saved."
+    }
+  ],
+  "deterministic_calculations": [
+    {
+      "name": "nine_month_interim_owner_cash_flow_diagnostic",
+      "formula": "17114 + 11763 - abs(-22621)",
+      "value": 6256,
+      "units": "USD millions",
+      "period": "nine months ended 2026-10-31",
+      "source_lines": [216, 218, 230],
+      "status": "supported",
+      "valuation_use": false,
+      "reason": "Matched nine-month arithmetic only; it was not annualized and is excluded from valuation."
+    }
+  ],
+  "results": {
+    "owner_cash_flow_annual_or_ttm": {"value": "NOT COMPUTABLE", "reason": "A supported annual or trailing-12-month matched basis is missing."},
+    "low_case_equity_value": {"value": "NOT COMPUTABLE", "reason": "Required owner cash flow is not computable."},
+    "low_case_value_per_share": {"value": "NOT COMPUTABLE", "reason": "Equity value and aligned annual or trailing-12-month diluted shares are not computable."},
+    "investment_view": {"value": "NOT COMPUTABLE", "reason": "The Investment Advisor output was not produced."},
+    "conviction": {"value": "NOT COMPUTABLE", "reason": "The Investment Advisor output was not produced."},
+    "deciding_number": {"value": "NOT COMPUTABLE", "reason": "No joined valuation or Investment Advisor output exists."}
+  },
+  "missing_model_outputs": ["investment_advisor", "risk_manager", "strategy_manager", "final_joined_report"],
+  "disclaimer": "This fallback worksheet is not a successful live model-assisted report, a verified joined report, or a recommendation."
+}

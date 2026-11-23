@@ -40,6 +40,8 @@
     button { width: 100%; border: 0; border-radius: 10px; background: var(--green); color: white; padding: 13px 18px; font: 800 1rem/1.2 inherit; cursor: pointer; }
     button:hover { background: #0e3e2e; }
     button:disabled { cursor: wait; opacity: .6; }
+    #fallback-button { margin-top: 10px; border: 1px solid var(--green); background: transparent; color: var(--green); }
+    #fallback-button:hover { background: #e8efe9; }
     .note { margin: 15px 0 0; color: var(--muted); font-size: .8rem; }
     .workspace { min-height: 520px; padding: 24px; }
     .status-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 18px; }
@@ -48,6 +50,7 @@
     #status.running { background: #fff0d8; color: #84511e; }
     #status.complete { background: var(--lime); color: #27431a; }
     #status.failed { background: #ffe0d8; color: #8a2e20; }
+    #status.fallback { background: #fff0d8; color: #714316; }
     .nodes { display: flex; flex-wrap: wrap; gap: 8px; min-height: 42px; padding: 18px 0 4px; }
     .node { border: 1px solid #b9c8bd; border-radius: 999px; background: #edf3ed; padding: 6px 10px; font-size: .8rem; font-weight: 750; animation: arrive .28s ease both; }
     @keyframes arrive { from { opacity: 0; transform: translateY(5px); } }
@@ -55,7 +58,9 @@
     details { margin: 17px 0; }
     summary { color: var(--muted); cursor: pointer; font-weight: 700; }
     #log { max-height: 180px; overflow: auto; border-radius: 10px; background: #17241f; color: #dce8de; padding: 12px; white-space: pre-wrap; font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
-    #report-wrap[hidden], #error[hidden], details[hidden] { display: none; }
+    #report-wrap[hidden], #error[hidden], #fallback-banner[hidden], #fallback-meta[hidden], details[hidden] { display: none; }
+    #fallback-banner { margin-top: 18px; border: 3px solid #a94d21; border-radius: 10px; background: #fff0df; padding: 14px 16px; color: #722d12; font-weight: 900; }
+    #fallback-meta { margin: 13px 0; border-left: 4px solid #a94d21; background: #fff8ee; padding: 11px 14px; color: #512b1d; white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; }
     #report-path { margin: 7px 0 14px; color: var(--muted); overflow-wrap: anywhere; font-size: .8rem; }
     #report { max-height: 720px; overflow: auto; border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 19px; color: #23332c; white-space: pre-wrap; font: 13px/1.58 ui-monospace, SFMono-Regular, Menlo, monospace; }
     #error { margin-top: 18px; border-left: 4px solid var(--orange); background: #fff1eb; padding: 12px 14px; color: #7a2d20; }
@@ -74,7 +79,8 @@
         <input id="ticker" name="ticker" placeholder="MSGR or SCREEN" maxlength="10" autocomplete="off" required>
       </label>
       <button id="run-button" type="submit">Run joined desk</button>
-      <p class="note">The page runs on this computer. It uses the API key and SEC identity already saved in the work folder.</p>
+      <button id="fallback-button" type="button">Open saved fallback</button>
+      <p class="note">The joined path uses the saved work-folder configuration. The fallback path reads saved NVDA or WMT files only and makes no network or model call.</p>
     </form>
 
     <section class="card workspace" aria-live="polite">
@@ -89,6 +95,8 @@
         <pre id="log"></pre>
       </details>
       <div id="error" hidden></div>
+      <div id="fallback-banner" role="alert" hidden>Fallback evidence — not a successful live model-assisted report</div>
+      <pre id="fallback-meta" hidden></pre>
       <section id="report-wrap" hidden>
         <h2 id="report-title">Joined desk final report</h2>
         <p id="report-path"></p>
@@ -100,12 +108,15 @@
   <script>
     const form = document.querySelector('#run-form');
     const button = document.querySelector('#run-button');
+    const fallbackButton = document.querySelector('#fallback-button');
     const status = document.querySelector('#status');
     const nodes = document.querySelector('#nodes');
     const placeholder = document.querySelector('#placeholder');
     const logWrap = document.querySelector('#log-wrap');
     const log = document.querySelector('#log');
     const error = document.querySelector('#error');
+    const fallbackBanner = document.querySelector('#fallback-banner');
+    const fallbackMeta = document.querySelector('#fallback-meta');
     const reportWrap = document.querySelector('#report-wrap');
     const reportTitle = document.querySelector('#report-title');
     const report = document.querySelector('#report');
@@ -116,15 +127,91 @@
       status.className = value.toLowerCase();
     }
 
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      button.disabled = true;
+    function resetWorkspace() {
       nodes.replaceChildren();
       log.textContent = '';
       error.hidden = true;
+      fallbackBanner.hidden = true;
+      fallbackMeta.hidden = true;
       reportWrap.hidden = true;
       reportTitle.textContent = 'Joined desk final report';
       placeholder.hidden = false;
+    }
+
+    function openEventStream(runId) {
+      const stream = new EventSource(`/api/runs/${runId}/events`);
+      stream.onmessage = (message) => {
+        const item = JSON.parse(message.data);
+        if (item.kind === 'status') setStatus(item.status);
+        if (item.kind === 'node') {
+          placeholder.hidden = true;
+          const chip = document.createElement('span');
+          chip.className = 'node';
+          chip.textContent = item.name;
+          nodes.append(chip);
+        }
+        if (item.kind === 'log') {
+          log.textContent += `${item.line}\n`;
+          log.scrollTop = log.scrollHeight;
+        }
+        if (item.kind === 'complete') {
+          setStatus('Complete');
+          report.textContent = item.report;
+          reportPath.textContent = item.report_path;
+          reportWrap.hidden = false;
+          button.disabled = false;
+          fallbackButton.disabled = false;
+          stream.close();
+        }
+        if (item.kind === 'fallback') {
+          setStatus('Fallback');
+          placeholder.hidden = true;
+          logWrap.hidden = true;
+          fallbackBanner.textContent = item.banner;
+          fallbackBanner.hidden = false;
+          fallbackMeta.textContent = [
+            `Ticker: ${item.ticker}`,
+            `Saved run: ${item.saved_run}`,
+            `Failure reason: ${item.failure_reason}`,
+            `Fallback report: ${item.fallback_report_path}`,
+            `Fallback worksheet: ${item.fallback_worksheet_path}`,
+            `Missing outputs: ${item.missing_outputs.join(', ')}`
+          ].join('\n');
+          fallbackMeta.hidden = false;
+          reportTitle.textContent = 'Saved fallback report and worksheet';
+          report.textContent = item.report;
+          reportPath.textContent = item.fallback_report_path;
+          reportWrap.hidden = false;
+          button.disabled = false;
+          fallbackButton.disabled = false;
+          stream.close();
+        }
+        if (item.kind === 'error') {
+          setStatus('Failed');
+          error.textContent = item.message;
+          error.hidden = false;
+          button.disabled = false;
+          fallbackButton.disabled = false;
+          stream.close();
+        }
+      };
+      stream.onerror = () => {
+        if (!['Complete', 'Failed', 'Fallback'].includes(status.textContent)) {
+          setStatus('Failed');
+          error.textContent = 'The live event connection stopped.';
+          error.hidden = false;
+          button.disabled = false;
+          fallbackButton.disabled = false;
+        }
+        stream.close();
+      };
+    }
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      button.disabled = true;
+      fallbackButton.disabled = true;
+      resetWorkspace();
       logWrap.hidden = false;
       setStatus('Queued');
 
@@ -137,51 +224,38 @@
         });
         const data = await response.json();
         if (!response.ok) throw new Error(data.detail?.[0]?.msg || data.detail || 'The run did not start.');
-        const stream = new EventSource(`/api/runs/${data.run_id}/events`);
-        stream.onmessage = (message) => {
-          const item = JSON.parse(message.data);
-          if (item.kind === 'status') setStatus(item.status);
-          if (item.kind === 'node') {
-            placeholder.hidden = true;
-            const chip = document.createElement('span');
-            chip.className = 'node';
-            chip.textContent = item.name;
-            nodes.append(chip);
-          }
-          if (item.kind === 'log') {
-            log.textContent += `${item.line}\n`;
-            log.scrollTop = log.scrollHeight;
-          }
-          if (item.kind === 'complete') {
-            setStatus('Complete');
-            report.textContent = item.report;
-            reportPath.textContent = item.report_path;
-            reportWrap.hidden = false;
-            button.disabled = false;
-            stream.close();
-          }
-          if (item.kind === 'error') {
-            setStatus('Failed');
-            error.textContent = item.message;
-            error.hidden = false;
-            button.disabled = false;
-            stream.close();
-          }
-        };
-        stream.onerror = () => {
-          if (status.textContent !== 'Complete' && status.textContent !== 'Failed') {
-            setStatus('Failed');
-            error.textContent = 'The live event connection stopped.';
-            error.hidden = false;
-            button.disabled = false;
-          }
-          stream.close();
-        };
+        openEventStream(data.run_id);
       } catch (runError) {
         setStatus('Failed');
         error.textContent = runError.message;
         error.hidden = false;
         button.disabled = false;
+        fallbackButton.disabled = false;
+      }
+    });
+
+    fallbackButton.addEventListener('click', async () => {
+      button.disabled = true;
+      fallbackButton.disabled = true;
+      resetWorkspace();
+      logWrap.hidden = true;
+      setStatus('Queued');
+      const payload = {ticker: document.querySelector('#ticker').value};
+      try {
+        const response = await fetch('/api/fallbacks', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || 'The saved fallback did not open.');
+        openEventStream(data.run_id);
+      } catch (fallbackError) {
+        setStatus('Failed');
+        error.textContent = fallbackError.message;
+        error.hidden = false;
+        button.disabled = false;
+        fallbackButton.disabled = false;
       }
     });
   </script>

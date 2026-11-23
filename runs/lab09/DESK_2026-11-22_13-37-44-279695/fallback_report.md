@@ -2,7 +2,7 @@ Status: FALLBACK EVIDENCE REPORT — the joined model-assisted report did not co
 
 # WMT (Walmart Inc.)
 
-This fallback reports saved filing evidence and partial saved role outputs. It is not a recommendation and does not provide a view or deciding number.
+This fallback reports saved filing evidence, deterministic fallback worksheet results, and partial saved role outputs. It is not a recommendation, verified report, joined final report, or successful live run. It does not provide a view or deciding number.
 
 ## Filing evidence
 
@@ -41,9 +41,12 @@ Full cited source: [saved Exhibit 99.1](agent/Walmart_Inc_2026-11-22_13-37-46-21
 - Failure point: Investment Advisor call.
 - Sanitized error: HTTP 429 `credit_balance_exhausted`.
 - Verified final report: not produced.
-- Worksheet: not produced.
-- View: not produced.
-- Deciding number: not produced.
+- Joined worksheet: not produced.
+- Deterministic fallback worksheet: [Markdown](fallback_worksheet.md) and [JSON](fallback_worksheet.json). It records required inputs and `NOT COMPUTABLE` valuation results without annualizing interim data.
+- Fallback manifest: [fallback_manifest.json](fallback_manifest.json).
+- View: `NOT COMPUTABLE`; no joined view was produced.
+- Conviction: `NOT COMPUTABLE`; no joined conviction was produced.
+- Deciding number: `NOT COMPUTABLE`; no Investment Advisor output was produced.
 - Partner manual check: **PENDING**.
 
-Saved failure record: [failure.json](failure.json). The model-assisted joined report did not complete. No final report, worksheet, view, or deciding number exists.
+Saved failure record: [failure.json](failure.json). The model-assisted joined report did not complete. No fallback artifact is represented as a final verified joined report.

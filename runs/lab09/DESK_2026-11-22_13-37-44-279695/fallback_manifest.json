@@ -1,0 +1,33 @@
+{
+  "artifact_type": "fallback_evidence_manifest",
+  "ticker": "WMT",
+  "saved_run": "DESK_2026-11-22_13-37-44-279695",
+  "status": "fallback_only_not_live_joined_output",
+  "network_calls": 0,
+  "model_calls": 0,
+  "failure": {
+    "path": "failure.json",
+    "stage": "Investment Advisor",
+    "reason": "HTTP 429 credit_balance_exhausted"
+  },
+  "fallback_artifacts": [
+    {"path": "fallback_report.md", "role": "filing facts, partial-output boundary, and run status"},
+    {"path": "fallback_worksheet.md", "role": "human-readable deterministic fallback worksheet"},
+    {"path": "fallback_worksheet.json", "role": "machine-readable deterministic fallback worksheet"},
+    {"path": "fallback_ui_evidence.json", "role": "offline local-page response evidence"}
+  ],
+  "saved_filing_evidence": [
+    "agent/Walmart_Inc_2026-11-22_13-37-46-216137/manifest.json",
+    "agent/Walmart_Inc_2026-11-22_13-37-46-216137/facts.json",
+    "agent/Walmart_Inc_2026-11-22_13-37-46-216137/facts.csv",
+    "agent/Walmart_Inc_2026-11-22_13-37-46-216137/10-Q_000010416926000154.txt",
+    "agent/Walmart_Inc_2026-11-22_13-37-46-216137/8-K_000010416926000168.txt",
+    "agent/Walmart_Inc_2026-11-22_13-37-46-216137/8-K_EX-99.1_000010416926000168.txt"
+  ],
+  "partial_unverified_role_outputs": [
+    "agent/Walmart_Inc_2026-11-22_13-37-46-216137/nodes/02_research_analyst_output.json",
+    "agent/Walmart_Inc_2026-11-22_13-37-46-216137/nodes/03_financial_analyst_output.json"
+  ],
+  "not_produced": ["parts_alone_output", "joined_final_report", "joined_worksheet", "verified_report", "investment_view", "conviction", "deciding_number"],
+  "disclaimer": "Fallback artifacts document the saved failure boundary. They do not replace the missing live outputs."
+}

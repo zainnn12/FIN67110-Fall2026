@@ -25,6 +25,11 @@ STATIC_DIR = Path(__file__).resolve().parent / "static"
 TICKER_RE = re.compile(r"^[A-Za-z][A-Za-z0-9.-]{0,9}$")
 PACKAGE_SOURCE_DIR = PROJECT_DIR / "src"
 ONE_DESK = WORKSPACE_DIR / "one_desk.py"
+FALLBACK_BANNER = "Fallback evidence — not a successful live model-assisted report"
+FALLBACK_RUNS = {
+    "NVDA": WORKSPACE_DIR / "runs/lab09/DESK_2026-11-22_13-37-32-104848",
+    "WMT": WORKSPACE_DIR / "runs/lab09/DESK_2026-11-22_13-37-44-279695",
+}
 
 
 @dataclass(frozen=True)
@@ -124,6 +129,72 @@ def _emit(record: RunRecord, kind: str, **payload: Any) -> None:
         record.events.append({"kind": kind, **payload})
 
 
+def _workspace_path(path: Path) -> str:
+    """Return a stable workspace-relative path for saved evidence."""
+    return path.resolve().relative_to(WORKSPACE_DIR.resolve()).as_posix()
+
+
+def _load_saved_fallback(run_id: str, ticker: str) -> None:
+    """Load a declared fallback package without a subprocess or external call."""
+    record = _runs[run_id]
+    run_dir = FALLBACK_RUNS.get(ticker)
+    if run_dir is None:
+        raise ValueError("Saved fallback evidence is available only for NVDA and WMT.")
+
+    report_path = run_dir / "fallback_report.md"
+    worksheet_path = run_dir / "fallback_worksheet.md"
+    manifest_path = run_dir / "fallback_manifest.json"
+    required = (report_path, worksheet_path, manifest_path, run_dir / "failure.json")
+    missing_files = [path.name for path in required if not path.is_file()]
+    if missing_files:
+        raise FileNotFoundError(
+            f"The saved fallback package is missing: {', '.join(missing_files)}"
+        )
+
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    missing_outputs = list(manifest.get("not_produced", []))
+    failure_reason = str(manifest["failure"]["reason"])
+    report = report_path.read_text(encoding="utf-8")
+    worksheet = worksheet_path.read_text(encoding="utf-8")
+
+    record.run_dir = str(run_dir.resolve())
+    record.report_path = _workspace_path(report_path)
+    record.report = f"{report.rstrip()}\n\n---\n\n{worksheet}"
+    record.status = "fallback"
+    event = {
+        "status": "fallback",
+        "banner": FALLBACK_BANNER,
+        "ticker": ticker,
+        "saved_run": run_dir.name,
+        "failure_reason": failure_reason,
+        "fallback_report_path": record.report_path,
+        "fallback_worksheet_path": _workspace_path(worksheet_path),
+        "fallback_manifest_path": _workspace_path(manifest_path),
+        "missing_outputs": missing_outputs,
+        "report": record.report,
+    }
+    _emit(record, "fallback", **event)
+
+    evidence = {
+        "source": "local UI saved-fallback display path",
+        "status": "fallback_displayed",
+        "banner": FALLBACK_BANNER,
+        "ticker": ticker,
+        "saved_run": run_dir.name,
+        "failure_reason": failure_reason,
+        "fallback_report_path": record.report_path,
+        "fallback_worksheet_path": event["fallback_worksheet_path"],
+        "fallback_manifest_path": event["fallback_manifest_path"],
+        "missing_outputs": missing_outputs,
+        "network_calls": 0,
+        "model_calls": 0,
+        "live_joined_report_succeeded": False,
+    }
+    (run_dir / "fallback_ui_evidence.json").write_text(
+        json.dumps(evidence, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+
+
 def _run_team(run_id: str, run_input: RunInput) -> None:
     record = _runs[run_id]
     record.status = "running"
@@ -220,7 +291,8 @@ class PageHandler(BaseHTTPRequestHandler):
         self._send_json({"detail": "Not found."}, HTTPStatus.NOT_FOUND)
 
     def do_POST(self) -> None:  # noqa: N802 - BaseHTTPRequestHandler API
-        if urlparse(self.path).path != "/api/runs":
+        path = urlparse(self.path).path
+        if path not in {"/api/runs", "/api/fallbacks"}:
             self._send_json({"detail": "Not found."}, HTTPStatus.NOT_FOUND)
             return
         try:
@@ -239,6 +311,18 @@ class PageHandler(BaseHTTPRequestHandler):
         record = RunRecord(run_id=run_id)
         with _lock:
             _runs[run_id] = record
+        if path == "/api/fallbacks":
+            try:
+                _load_saved_fallback(run_id, run_input.ticker)
+            except (ValueError, FileNotFoundError, KeyError, json.JSONDecodeError) as exc:
+                with _lock:
+                    _runs.pop(run_id, None)
+                self._send_json({"detail": str(exc)}, HTTPStatus.BAD_REQUEST)
+                return
+            self._send_json(
+                {"run_id": run_id, "status": "fallback"}, HTTPStatus.ACCEPTED
+            )
+            return
         threading.Thread(
             target=_run_team,
             args=(run_id, run_input),
@@ -275,7 +359,7 @@ class PageHandler(BaseHTTPRequestHandler):
                 if not pending:
                     self.wfile.write(b": keepalive\n\n")
                 self.wfile.flush()
-                if status in {"complete", "failed"} and cursor >= len(record.events):
+                if status in {"complete", "failed", "fallback"} and cursor >= len(record.events):
                     return
                 time.sleep(0.35)
         except (BrokenPipeError, ConnectionResetError):
