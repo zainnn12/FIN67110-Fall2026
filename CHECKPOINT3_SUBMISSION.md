@@ -2,7 +2,7 @@
 
 Our client is a long-term individual investor seeking capital appreciation, with moderate risk tolerance and a preference for evidence-based recommendations supported by SEC filings and transparent valuation assumptions.
 
-Overall status: **NOT 100% COMPLETE**. The saved-only technical corrections and fallback packages are complete. The required live Lab 09 joined outputs, successful live joined-model webpage display, Ansh’s MATW review, the genuine outside-team review, and the MATW pre-reaction view remain missing.
+Overall status: **NOT 100% COMPLETE**. The saved-only technical corrections and fallback packages are available. The NVDA and WMT live joined runs and successful live joined webpage display remain failed because the team does not currently have access to a funded OpenAI API key. Ansh’s MATW review and the genuine outside-team review remain missing. The MATW pre-reaction view does not exist and cannot be recreated retroactively.
 
 ## Desk design
 
@@ -53,7 +53,7 @@ The team owns a prospective factor-check feature. It fixes each factor’s defin
 |---|---|---|---|---|---|---|
 | MATW | Fourth-quarter and fiscal-year 2026 earnings, period ended September 30, 2026 | November 20, 2026, 08:22:14 EST (UTC−05:00); accession `0000063296-26-000118` | Not captured; no pre-reaction view time is asserted | November 20, 2026, 22:52:13 EST (UTC−05:00); commit [`bda922d626e4c59cd0ba1129063360731b01e421`](https://github.com/zainnn12/FIN67110-Fall2026/commit/bda922d626e4c59cd0ba1129063360731b01e421) | Inside; before November 21, 2026, 08:22:14 EST | [MATW live report at the recorded commit](https://github.com/zainnn12/FIN67110-Fall2026/blob/bda922d626e4c59cd0ba1129063360731b01e421/runs/live/MATW_TEAM_WORKSHEET_FINAL/MATW_LIVE_REPORT.md) · [saved live record](runs/live/MATW_TEAM_WORKSHEET_FINAL/live_record.json) |
 
-The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupported. The worksheet view and value range were not computed because aligned owner-cash-flow and share inputs were unavailable. The saved MATW live report does not establish a pre-reaction view. The [AI MATW pre-review](MATW_REVIEW.md) confirms a 14:29:59 acceptance-to-commit interval but does not replace Ansh’s pending review.
+The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupported. The worksheet view and value range were not computed because aligned owner-cash-flow and share inputs were unavailable. The team did not capture a timestamped MATW investment view before the market reaction. That evidence does not exist and cannot be recreated retroactively. No pre-reaction view is claimed. The saved record establishes only the filing time, report-commit time, and that the report was committed within 24 hours. The [AI MATW pre-review](MATW_REVIEW.md) confirms the recorded 14:29:59 interval but does not replace Ansh’s pending review.
 
 ## Checkpoint 3 evidence
 
@@ -81,7 +81,8 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 - NVDA saved-only package: [fallback report](runs/lab09/DESK_2026-11-22_13-37-32-104848/fallback_report.md), deterministic fallback worksheet in [Markdown](runs/lab09/DESK_2026-11-22_13-37-32-104848/fallback_worksheet.md) and [JSON](runs/lab09/DESK_2026-11-22_13-37-32-104848/fallback_worksheet.json), [fallback manifest](runs/lab09/DESK_2026-11-22_13-37-32-104848/fallback_manifest.json), saved filing [manifest](runs/lab09/DESK_2026-11-22_13-37-32-104848/agent/NVIDIA_CORP_2026-11-22_13-37-33-357977/manifest.json), and [failure record](runs/lab09/DESK_2026-11-22_13-37-32-104848/failure.json).
 - WMT saved-only package: [fallback report](runs/lab09/DESK_2026-11-22_13-37-44-279695/fallback_report.md), deterministic fallback worksheet in [Markdown](runs/lab09/DESK_2026-11-22_13-37-44-279695/fallback_worksheet.md) and [JSON](runs/lab09/DESK_2026-11-22_13-37-44-279695/fallback_worksheet.json), [fallback manifest](runs/lab09/DESK_2026-11-22_13-37-44-279695/fallback_manifest.json), saved filing [manifest](runs/lab09/DESK_2026-11-22_13-37-44-279695/agent/Walmart_Inc_2026-11-22_13-37-46-216137/manifest.json), and [failure record](runs/lab09/DESK_2026-11-22_13-37-44-279695/failure.json).
 - The [corrected NVIDIA comparison](LAB09_NVDA_COMPARISON.md) uses the November 17, 2026 release date and November 17, 2026, 16:20:51 Eastern Time acceptance. It cites line 145 for exact $115.844 billion revenue; lines 8, 14, and 21 for 103% growth; lines 10 and 50 for $107.6 billion Data Center revenue and 110% growth; and line 156 for exact $65.287 billion GAAP net income. Line 25 is identified only as the rounded $65.3 billion summary.
-- Both joined runs stopped at the Investment Advisor call after HTTP 429 `credit_balance_exhausted`. No new model call was made. Parts-alone output, joined final reports, joined worksheets, verified reports, views, convictions, and deciding numbers were not produced. The comparison keeps differences and investment conclusions NOT ASSESSABLE.
+- Completing the NVDA and WMT live joined runs and displaying a successful live joined report through the webpage requires a funded OpenAI API key. The team does not currently have access to a funded key. The available key returned HTTP 429 `credit_balance_exhausted`, so the Investment Advisor and later stages did not finish. Saved fallback reports, worksheets, and the offline webpage display document the available evidence and failure boundary, but they are not successful live joined-model outputs. No additional API credit is represented as available.
+- No new model call was made. Parts-alone output, joined final reports, joined worksheets, verified reports, views, convictions, and deciding numbers were not produced. The comparison keeps differences and investment conclusions NOT ASSESSABLE.
 - NVDA owner cash flow and valuation are NOT COMPUTABLE because a matched annual or trailing-12-month basis and property-only capital expenditures are missing. WMT’s matched nine-month diagnostic is $6.256 billion, but it is not annualized and is excluded from valuation; the required WMT valuation is NOT COMPUTABLE.
 - The [AI outside-team pre-review](OUTSIDE_TEAM_REVIEW.md) checks the saved citations and failure boundaries. It is not the required genuine outside-team student review.
 
@@ -93,8 +94,10 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 ### Local webpage
 
 - [Local page evidence](runs/checkpoint3/LOCAL_PAGE_EVIDENCE.md) records the health response, unchanged normal joined path, failed prior MSGR UI request, and successful saved-only fallback route for NVDA and WMT.
+- The [NVDA live webpage attempt screenshot](runs/checkpoint3/nvda_live_webpage_attempt_failed_429.png) shows that the webpage loaded and started the joined path, then the Research Analyst model call failed with HTTP 429 `credit_balance_exhausted` because the team does not have a funded OpenAI API key. The screenshot contains no secret key.
 - The fallback route displays the exact banner `Fallback evidence — not a successful live model-assisted report` and identifies the ticker, saved run, failure reason, report path, worksheet path, and missing outputs. The [NVDA](runs/lab09/DESK_2026-11-22_13-37-32-104848/fallback_ui_evidence.json) and [WMT](runs/lab09/DESK_2026-11-22_13-37-44-279695/fallback_ui_evidence.json) response records state zero network calls, zero model calls, and `live_joined_report_succeeded: false`.
-- No screenshot was captured because the available browser-capture host was unavailable. A successful live model-assisted report display is still missing.
+- Live joined webpage attempt: **FAILED** because no funded OpenAI API credit was available. Saved screenshot evidence is linked above.
+- Saved fallback webpage display: **SUCCESSFUL**, offline, and not a live model-assisted report. The [fallback-display screenshot](runs/checkpoint3/nvda_saved_fallback_display.png) shows the warning banner, saved run, failure reason, artifact paths, missing outputs, and displayed fallback content. The deterministic response records remain linked from [local-page evidence](runs/checkpoint3/LOCAL_PAGE_EVIDENCE.md).
 
 ## Manual reviews
 
@@ -109,16 +112,20 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 - Lab 06 produced no ranked name.
 - The prospective factor-check has zero comparisons.
 - MSGR has no reported-after-spin TTM. The corrected worksheet therefore uses the matching annual Form 10 hierarchy level 2 basis, not the pre-spin 10-Q. Owner cash flow is −$25.087 million, and the low-case equity value and value per share are $0.00.
-- NVDA and WMT joined reports did not complete after the Investment Advisor calls returned HTTP 429 `credit_balance_exhausted`.
+- NVDA, WMT, and webpage limitation: Completing the NVDA and WMT live joined runs and displaying a successful live joined report through the webpage requires a funded OpenAI API key. The team does not currently have access to a funded key. The available key returned HTTP 429 `credit_balance_exhausted`, so the Investment Advisor and later stages did not finish. Saved fallback reports, worksheets, and the offline webpage display document the available evidence and failure boundary, but they are not successful live joined-model outputs.
 - The saved-only fallback packages and offline fallback webpage display are complete. They are not successful live joined-model outputs.
-- No successful live model-assisted webpage report display was completed.
+- The live joined webpage attempt failed because the team did not have access to a funded OpenAI API key. The screenshot records that the page loaded and the Research Analyst model call returned HTTP 429 `credit_balance_exhausted`.
 - Ansh’s MATW review and the genuine outside-team review remain pending. Ansh's Lab 06 manual review and Krishmi's Lab 07 manual review are complete.
 - The subscribed CRSP data ends December 31, 2025.
-- The MATW pre-reaction view time was not captured.
+- MATW pre-reaction-view limitation: The team did not capture a timestamped MATW investment view before the market reaction. That evidence does not exist and cannot be recreated retroactively. No pre-reaction view is claimed. The saved record establishes only the filing time, report-commit time, and that the report was committed within 24 hours.
 - The OpenAI completion smoke request passed, but later model calls exhausted the account credit. No further model call was made for this submission update.
 
 ## Brightspace-safe status text
 
-Checkpoint 3 includes the completed technical corrections, Ansh’s completed Lab 06 review, Krishmi’s completed Lab 07 review, corrected MSGR worksheet evidence, corrected NVIDIA citations, saved-only NVDA and WMT fallback packages, and a tested offline fallback webpage display. The NVDA and WMT live joined runs stopped at the Investment Advisor call after the saved HTTP 429 `credit_balance_exhausted` response. No new model call was made. Parts-alone output, joined final reports, successful live model-assisted webpage display, Ansh’s MATW review, the genuine outside-team review, and the MATW pre-reaction view remain missing. The fallback artifacts document the failure boundary and are not represented as verified joined reports, recommendations, or complete live outputs.
+NVDA, WMT, and webpage limitation: Completing the NVDA and WMT live joined runs and displaying a successful live joined report through the webpage requires a funded OpenAI API key. The team does not currently have access to a funded key. The available key returned HTTP 429 credit_balance_exhausted, so the Investment Advisor and later stages did not finish. Saved fallback reports, worksheets, and the offline webpage display document the available evidence and failure boundary, but they are not successful live joined-model outputs.
+
+MATW pre-reaction-view limitation: The team did not capture a timestamped MATW investment view before the market reaction. That evidence does not exist and cannot be recreated retroactively. No pre-reaction view is claimed. The saved record establishes only the filing time, report-commit time, and that the report was committed within 24 hours.
+
+Checkpoint 3 also includes Ansh’s completed Lab 06 review, Krishmi’s completed Lab 07 review, corrected MSGR worksheet evidence, and corrected NVIDIA citations. Parts-alone output, joined final reports, Ansh’s MATW review, and the genuine outside-team review remain missing. The fallback artifacts document the failure boundary only; they are not verified joined reports, recommendations, or complete live outputs.
 
 This page submits the Checkpoint 3 proposal and available evidence. It does not claim that every Lab 07–09 deliverable or required human review is complete.
