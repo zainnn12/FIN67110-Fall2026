@@ -51,6 +51,26 @@ def registry_row(ticker:str,registry_path:Path|None):
     rows=json.loads(registry_path.read_text()).get("records",[])
     return next((x for x in rows if str(x.get("ticker","")).upper()==ticker.upper()),None)
 
+def saved_form10_evidence(ticker:str,spinoff:dict|None) -> tuple[Path|None,str|None]:
+    """Return one accession-matched saved Form 10 information statement, if present."""
+    filing=(spinoff or {}).get("classification_filing") or {}
+    accession=filing.get("accession")
+    if not accession or str(filing.get("form","")) not in {"10-12B","10-12B/A","10-12G","10-12G/A"}:
+        return None,None
+    path=ROOT/"runs"/"lab07"/f"{ticker.upper()}_evidence"/f"Form10_{accession}_information.txt"
+    return (path,accession) if path.is_file() else (None,accession)
+
+def worksheet_supplemental_evidence(team_dir:Path) -> list[Path]:
+    path=team_dir/"worksheet.json"
+    if not path.is_file(): return []
+    data=json.loads(path.read_text())
+    evidence=[]
+    for item in data.get("source_evidence",[]):
+        candidate=Path(item)
+        if not candidate.is_absolute(): candidate=ROOT/candidate
+        if candidate.is_file(): evidence.append(candidate)
+    return evidence
+
 def assemble_final(run_dir:Path,team_dir:Path|None,worksheet_path:Path|None,ticker:str,spinoff:dict|None):
     filing_items=[]
     if team_dir and (team_dir/"manifest.json").is_file():
@@ -67,8 +87,9 @@ def assemble_final(run_dir:Path,team_dir:Path|None,worksheet_path:Path|None,tick
 
 def finalize_outputs(run_dir:Path,team_dir:Path,worksheet_path:Path,ticker:str,spinoff:dict|None):
     from spinoff_worksheet_hook import validate_report
+    supplemental=worksheet_supplemental_evidence(team_dir)
     started=time.monotonic()
-    validate_report(worksheet_path,team_dir)
+    validate_report(worksheet_path,team_dir,supplemental_paths=supplemental)
     worksheet_hook_elapsed=time.monotonic()-started
     (run_dir/"worksheet_hook_timing.json").write_text(json.dumps({"part":"worksheet_hook","elapsed_seconds":round(worksheet_hook_elapsed,6),"return_code":0},indent=2)+"\n")
     print(f"Part worksheet_hook: {worksheet_hook_elapsed:.3f} seconds")
@@ -80,7 +101,7 @@ def finalize_outputs(run_dir:Path,team_dir:Path,worksheet_path:Path,ticker:str,s
     (run_dir/"final_assembler_timing.json").write_text(json.dumps({"part":"final_assembler","elapsed_seconds":round(assembler_elapsed,6),"return_code":0},indent=2)+"\n")
     print(f"Part final_assembler: {assembler_elapsed:.3f} seconds")
     started=time.monotonic()
-    validate_report(final,team_dir)
+    validate_report(final,team_dir,supplemental_paths=supplemental)
     final_hook_elapsed=time.monotonic()-started
     (run_dir/"final_report_hook_timing.json").write_text(json.dumps({"part":"final_report_hook","elapsed_seconds":round(final_hook_elapsed,6),"return_code":0},indent=2)+"\n")
     print(f"Part final_report_hook: {final_hook_elapsed:.3f} seconds")
@@ -137,7 +158,11 @@ def run_desk(ticker:str,*,run_root:Path|None=None,registry_path:Path|None=None) 
             team_command.extend(["--spinoff-date",str(spinoff_date)])
     team_out=run_command("agent_team",team_command,run_dir,cwd=TEAM_PROJECT,env=env)
     team_dir=find_team_run(team_out)
-    worksheet_out=run_command("worksheet",[sys.executable,str(WORKSHEET),str(team_dir),selected],run_dir,env=env)
+    worksheet_command=[sys.executable,str(WORKSHEET),str(team_dir),selected]
+    form10_evidence,form10_accession=saved_form10_evidence(selected,record)
+    if form10_evidence:
+        worksheet_command.extend(["--form10-evidence",str(form10_evidence),"--form10-accession",str(form10_accession)])
+    worksheet_out=run_command("worksheet",worksheet_command,run_dir,env=env)
     match=re.search(r"(?m)^Worksheet: (.+)$",worksheet_out)
     if not match: raise DeskRunError("Worksheet completed without printing its saved path.")
     worksheet_path=Path(match.group(1).strip())

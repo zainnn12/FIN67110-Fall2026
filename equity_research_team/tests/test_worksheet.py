@@ -9,7 +9,8 @@ ROOT=Path(__file__).resolve().parents[2]
 SCRIPT=ROOT/"skills"/"spinoff-worksheet"
 sys.path.insert(0,str(SCRIPT))
 from spinoff_worksheet_hook import validate_report
-from worksheet import aligned_owner_cash_flow, persona_call, save_market_data, calculate_liquidity
+from worksheet import (aligned_owner_cash_flow, assemble, persona_call, save_market_data,
+                       calculate_liquidity, parse_form10_comparable_annual_pro_forma)
 
 def test_hook_passes_clean_and_refuses_seeded_amount_by_line(tmp_path):
     (tmp_path/"facts.json").write_text(json.dumps({"facts":{"net_income":{"current":{"val":10},"prior":{"val":-5}}}}))
@@ -57,6 +58,34 @@ def test_no_unidentified_annual_basis_is_not_computed():
     value,_,basis=aligned_owner_cash_flow({"facts":{}})
     assert value is None
     assert basis.startswith("not computed")
+
+def test_msgr_saved_form10_selects_matching_annual_inputs_and_zero_low_case():
+    evidence=ROOT/"runs"/"lab07"/"MSGR_evidence"/"Form10_0001193125-26-409182_information.txt"
+    parsed=parse_form10_comparable_annual_pro_forma(evidence,accession="0001193125-26-409182")
+    facts=parsed["facts"]
+    assert facts["net_income"]["current"]["val"] == -26_801_000
+    assert facts["depreciation_and_amortization"]["current"]["val"] == 2_348_000
+    assert facts["property_additions"]["current"]["val"] == -634_000
+    assert facts["diluted_shares"]["current"]["val"] == 12_077_000
+    assert {facts[key]["current"]["start"] for key in facts} == {"2025-07-01"}
+    assert {facts[key]["current"]["end"] for key in facts} == {"2026-06-30"}
+    assert {facts[key]["current"]["accn"] for key in facts} == {"0001193125-26-409182"}
+    run=ROOT/"runs"/"desk"/"DESK_2026-11-22_13-31-53-865623"/"agent"/"MSG_Rangers_Corp_2026-11-22_13-31-54-793145"
+    result=assemble(run,"MSGR",form10_evidence=evidence,form10_accession="0001193125-26-409182")
+    assert Decimal(result["base_owner_cash_flow_usd_millions"]) == Decimal("-25.087")
+    assert Decimal(result["diluted_shares_millions"]) == Decimal("12.077")
+    assert Decimal(result["low_equity_value_usd_millions"]) == Decimal("0")
+    assert Decimal(result["low_value_per_share_usd"]) == Decimal("0")
+    assert result["period"] == "2025-07-01 to 2026-06-30"
+    assert result["source_basis"] == "aligned Form 10 comparable annual pro-forma figures"
+    assert result["inputs"]["net_income"]["source_line"] == 1791
+    assert result["inputs"]["property_additions"]["source_line"] == 5108
+
+def test_form10_parser_refuses_a_renamed_10q(tmp_path):
+    path=tmp_path/"10-Q_000162828026071325.txt"
+    path.write_text("For the Year Ended June 30, 2026\n")
+    with pytest.raises(ValueError,match="filename"):
+        parse_form10_comparable_annual_pro_forma(path)
 
 def test_high_conviction_requires_all_five_known_inputs_and_liquidity(tmp_path):
     closes={"closes":[{"close":"10","volume":"100000","date":"2026-01-01"},{"close":"10","volume":"100000","date":"2026-01-02"}]}

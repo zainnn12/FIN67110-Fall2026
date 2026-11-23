@@ -5,7 +5,8 @@ from pathlib import Path
 import pytest
 
 import one_desk
-from one_desk import DeskRunError, assemble_final, finalize_outputs, replay, run_command, run_desk
+from one_desk import (DeskRunError, assemble_final, finalize_outputs, replay, run_command,
+                      run_desk, saved_form10_evidence)
 
 
 def test_non_registry_ticker_has_not_applicable_spinoff_sections(tmp_path):
@@ -44,6 +45,15 @@ def test_replay_is_byte_identical_and_file_only(tmp_path, monkeypatch):
     assert proof["network_calls"] == 0
     assert proof["model_calls"] == 0
     assert proof["byte_identical"] is True
+
+def test_saved_form10_selection_requires_registry_accession_match():
+    record={"classification_filing":{"accession":"0001193125-26-409182","form":"10-12B/A"}}
+    path,accession=saved_form10_evidence("MSGR",record)
+    assert accession == "0001193125-26-409182"
+    assert path == Path(one_desk.__file__).parent/"runs"/"lab07"/"MSGR_evidence"/"Form10_0001193125-26-409182_information.txt"
+    assert path.is_file()
+    path,accession=saved_form10_evidence("MSGR",{"classification_filing":{"accession":"wrong","form":"10-Q"}})
+    assert path is None and accession is None
 
 
 def test_screen_empty_report_and_manifest_are_not_applicable(tmp_path):

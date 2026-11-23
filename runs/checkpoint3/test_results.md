@@ -73,3 +73,18 @@ Result: **67 passed**. This was the full test run after the WRDS dependency, aut
 - Unsupported-attribution scan over the submission and review documents: PASS, zero matches.
 - Relative-link check over the extracted review, merged validation, completion matrix, merge checklist, and submission page: PASS, 70 links checked and zero missing.
 - `.env`: ignored and untracked.
+
+## Krishmi Lab 07 review merge and MSGR correction validation (2026-11-22)
+
+- Manual review merge: `runs/lab07/KRISHMI_MANUAL_REVIEW.md` is byte-identical to `/Users/zfashola/Downloads/KRISHMI_MANUAL_REVIEW.md`. Both files have SHA-256 `8aeebac0e48f1072d9f746f907103d3ac09e0895b870504b1b79fc2d3915cf05`. Krishmi Appuhamilage's calculations, conclusions, review date, and two FAIL marks are unchanged.
+- Form 10 regression: PASS. The saved-evidence parser selected accession `0001193125-26-409182`, period 2025-07-01 through 2026-06-30, pro forma net loss of −$26,801,000 at line 1791, depreciation and amortization of $2,348,000 at line 1781, capital expenditures of −$634,000 at line 5108, and pro forma diluted weighted-average shares of 12,077,000 at line 1797. The parser rejects a 10-Q filename and does not annualize or mix its three-month period.
+- Corrected result: owner cash flow is −$25.087 million. The capital-expenditure subtraction uses the absolute value. Low-case equity value and value per share are $0.00.
+- Offline worksheet proof: PASS, zero network calls and zero model calls. The original saved persona response was not replaced or regenerated through an OpenAI API call.
+- Hook proof: clean corrected final report PASS. The seeded $0.01 error was refused at line 51. The hook no longer treats every source-text line number as an allowed financial amount.
+- Offline replay: PASS, zero network calls, zero model calls, byte-identical content, and matching SHA-256 `b8d740c1ddeb1de30033764088910886336d5a34c89b5e9d1eb0cc29c21d5809`.
+- Full locked offline suite: **76 passed**.
+- Credential scan: PASS. All tracked files and every intended untracked review, correction, and proof file were checked for AWS, OpenAI, GitHub, Slack, and private-key signatures. Zero files matched, and no secret values were printed.
+- Placeholder-token scan: PASS. The intended code, tests, documents, corrected run outputs, review, correction record, and proofs have zero standard unresolved-work or template-marker matches.
+- Unsupported-attribution scan: PASS. The submission documents do not mark the outside-team review complete or passed, do not claim that Krishmi passed either reviewed calculation, and do not claim that her marks or conclusions were changed or upgraded.
+- Relative-link check: PASS, 76 links checked and zero missing across the manual review, completion matrix, merge checklist, and submission page.
+- The independent outside-team review remains pending. `.env` remains ignored and untracked.

@@ -1,1 +1,1 @@
-Numerical claim refused at line 37: 10001
+Numerical claim refused at line 51: $10,000.01

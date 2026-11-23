@@ -62,7 +62,9 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 ### Lab 07
 
 - The saved MSGR joined run’s [final report](runs/desk/DESK_2026-11-22_13-31-53-865623/final_report.md) and [manifest](runs/desk/DESK_2026-11-22_13-31-53-865623/run_manifest.json) show that the run completed. It selected Form 10-Q accession `0001628280-26-071325`, filed November 6, 2026, for the period ended September 30, 2026. The period predates the October 26, 2026 distribution.
-- The [worksheet](runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145/worksheet.md), [verified report](runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145/verified_report.md), and [evidence-bound fallback summary](runs/lab07/MSGR_FALLBACK_REPORT.md) preserve the facts and the unsupported items. Owner cash flow, diluted shares, low and midpoint values, view, and conviction are not established or not computed. Krishmi’s manual review remains pending.
+- Krishmi’s [completed manual review](runs/lab07/KRISHMI_MANUAL_REVIEW.md) records two **FAIL** marks: the original worksheet did not compute the available owner-cash-flow value or the available low-case value per share. Her calculations, conclusions, review date of November 22, 2026, and both FAIL marks are unchanged.
+- The [correction record](runs/lab07/MSGR_WORKSHEET_CORRECTION_2026-11-22.json) and corrected [worksheet](runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145/worksheet.md) use Form 10 accession `0001193125-26-409182` for the single matching fiscal year from July 1, 2025 through June 30, 2026. The source units are USD thousands, except shares in thousands. The inputs are pro forma net loss of −$26,801,000 at line 1791, depreciation and amortization of $2,348,000 at line 1781, capital expenditures of −$634,000 at line 5108 with its absolute value subtracted, and pro forma diluted weighted-average shares of 12,077,000 at line 1797.
+- The corrected owner cash flow is −$25.087 million. The low-case equity value and value per share are $0.00. The [offline worksheet proof](runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145/worksheet_offline_proof.json), [hook result](runs/desk/DESK_2026-11-22_13-31-53-865623/hook_result.json), and [offline replay proof](runs/desk/DESK_2026-11-22_13-31-53-865623/replay/replay_proof.json) record zero model calls, zero network calls for regeneration and replay, a clean hook PASS, and a byte-identical replay. The pre-spin 10-Q is not annualized and is not mixed with the annual Form 10 period.
 
 ### Lab 08
 
@@ -88,7 +90,7 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 ## Manual reviews
 
 - Ansh’s independent [Lab 06 validation review](LAB06_VALIDATION.md) is **COMPLETE — November 22, 2026**. Cortigent is FAIL; Octave and BioKey are NOT VERIFIABLE; MSG Rangers is INCOMPLETE PERIOD. The remaining checks keep Ansh's PASS marks and stated limitations.
-- Krishmi’s expected manual review file, `runs/lab07/KRISHMI_MANUAL_REVIEW.md`, is **PENDING**. It must contain Krishmi’s two required worksheet recomputations and her own review result.
+- Krishmi’s independent [Lab 07 manual worksheet review](runs/lab07/KRISHMI_MANUAL_REVIEW.md) is **COMPLETE — November 22, 2026**. Both reviewed calculations remain marked FAIL because the original worksheet did not compute the available values. The corrected deterministic result is recorded separately and does not change her marks.
 - The independent outside-team review is **PENDING**. No automated audit is represented as that review.
 - [Test results](runs/checkpoint3/test_results.md) record the locked test suite. The [completion matrix](CHECKPOINT3_COMPLETION_MATRIX.md) records each requirement and remaining action. The [teammate evidence merge checklist](TEAMMATE_EVIDENCE_TO_MERGE.md) lists the expected files and required links.
 
@@ -96,10 +98,10 @@ The MATW report records verifier marks of 16 correct, 4 wrong, and 37 unsupporte
 
 - Lab 06 produced no ranked name.
 - The prospective factor-check has zero comparisons.
-- MSGR valuation and view were not computed because required post-distribution cash-flow and share inputs are not established.
+- MSGR has no reported-after-spin TTM. The corrected worksheet therefore uses the matching annual Form 10 hierarchy level 2 basis, not the pre-spin 10-Q. Owner cash flow is −$25.087 million, and the low-case equity value and value per share are $0.00.
 - NVDA and WMT joined reports did not complete after the Investment Advisor calls returned HTTP 429 `credit_balance_exhausted`.
 - The local page health check passed, but no successful model-assisted webpage report display was completed.
-- Krishmi's Lab 07 manual review and the independent outside-team review remain pending. Ansh's Lab 06 manual review is complete.
+- The independent outside-team review remains pending. Ansh's Lab 06 manual review and Krishmi's Lab 07 manual review are complete.
 - The subscribed CRSP data ends December 31, 2025.
 - The MATW pre-reaction view time was not captured.
 - The OpenAI completion smoke request passed, but later model calls exhausted the account credit. No further model call was made for this submission update.

@@ -1,0 +1,71 @@
+{
+  "correction_date": "2026-11-22",
+  "ticker": "MSGR",
+  "reason": "The original deterministic selector ignored comparable annual Form 10 inputs that existed in saved evidence and incorrectly reported the worksheet result as not computed.",
+  "historical_saved_result": {
+    "worksheet_json_sha256": "84d18acc2b812180f26ac41f0e098d24b6ef6adfa8af975ee375c2b64c0174c9",
+    "worksheet_md_sha256": "c6ba5d0b7df823903da64d8992ba98e737d8cec62b12f193b90c6bb5afa2ab91",
+    "final_report_sha256": "25ee3a718451da912c4e0aa7102cf49c5380d23919aa3c8316935c9303a4a919",
+    "result": "not computed: neither reported-after-spin TTM nor comparable annual Form 10 pro-forma inputs are identified",
+    "preservation_note": "These hashes record the pre-correction files. The corrected artifacts do not represent the original worksheet as having computed or passed either reviewed calculation."
+  },
+  "source": {
+    "path": "runs/lab07/MSGR_evidence/Form10_0001193125-26-409182_information.txt",
+    "accession": "0001193125-26-409182",
+    "form": "10-12B/A",
+    "period_start": "2025-07-01",
+    "period_end": "2026-06-30",
+    "units": "USD thousands, except shares in thousands",
+    "inputs": {
+      "pro_forma_net_loss": {
+        "value_usd": -26801000,
+        "saved_text_line": 1791
+      },
+      "depreciation_and_amortization": {
+        "value_usd": 2348000,
+        "saved_text_line": 1781
+      },
+      "capital_expenditures": {
+        "value_usd": -634000,
+        "saved_text_line": 5108,
+        "treatment": "Use the absolute value in the owner-cash-flow subtraction. This is the historical figure for the same fiscal year in the same filing because the Form 10 has no pro forma cash-flow statement."
+      },
+      "pro_forma_diluted_weighted_average_shares": {
+        "value_shares": 12077000,
+        "saved_text_line": 1797
+      }
+    }
+  },
+  "excluded_source": {
+    "accession": "0001628280-26-071325",
+    "form": "10-Q",
+    "period_end": "2026-09-30",
+    "reason": "The three-month period is before the 2026-10-26 distribution. It is not annualized and is not mixed with the Form 10 fiscal-year basis."
+  },
+  "corrected_result": {
+    "owner_cash_flow_formula_usd_millions": "-26.801 + 2.348 - abs(-0.634) = -25.087",
+    "owner_cash_flow_usd_millions": -25.087,
+    "low_equity_value_usd_millions": 0.0,
+    "diluted_shares_millions": 12.077,
+    "low_value_per_share_usd": 0.0,
+    "worksheet_json_sha256": "6267b0c80a4a455ebeac14af020e8a8089be67185591d306d9fde638d28880e6",
+    "worksheet_md_sha256": "ba8f7781e6a2aabc104da8fd61b752460c4686b5cffa8e913f39bbb0e3c8fdb3",
+    "final_report_sha256": "b8d740c1ddeb1de30033764088910886336d5a34c89b5e9d1eb0cc29c21d5809"
+  },
+  "manual_review": {
+    "path": "runs/lab07/KRISHMI_MANUAL_REVIEW.md",
+    "reviewer": "Krishmi Appuhamilage",
+    "review_date": "2026-11-22",
+    "marks_preserved": [
+      "FAIL: worksheet did not compute an available owner-cash-flow value",
+      "FAIL: worksheet did not compute an available low-case value per share"
+    ]
+  },
+  "offline_regeneration": {
+    "worksheet_proof": "runs/desk/DESK_2026-11-22_13-31-53-865623/agent/MSG_Rangers_Corp_2026-11-22_13-31-54-793145/worksheet_offline_proof.json",
+    "hook_result": "runs/desk/DESK_2026-11-22_13-31-53-865623/hook_result.json",
+    "replay_proof": "runs/desk/DESK_2026-11-22_13-31-53-865623/replay/replay_proof.json",
+    "network_calls": 0,
+    "model_calls": 0
+  }
+}

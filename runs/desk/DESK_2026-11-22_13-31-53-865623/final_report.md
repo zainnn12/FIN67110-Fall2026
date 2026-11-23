@@ -13,25 +13,33 @@ Saved report: /private/tmp/checkpoint3-completion/runs/desk/DESK_2026-11-22_13-3
 ## Worksheet view
 Why it may be cheap—or why it is not
 
-Why it may be cheap—or why it is not
-
-The saved evidence does not establish undervaluation: the worksheet has no owner-cash-flow baseline or value range against which to assess the saved close. Forced selling is unsubstantiated, and the supplied evidence does not establish insider code-P purchases, purchase-size liquidity, or whether inherited obligations are manageable relative to owner cash flow.
-
-Filing after the separation does not make the reported quarter a post-spin operating period. The cash-flow statement covers the quarter ended September 30, 2026; the distribution occurred October 26, 2026 (10-Q accession 0001628280-26-071325, saved text L629–L631 and L1478). These results therefore cannot establish post-spin owner cash economics.
-
-The next filing must provide post-spin cash-flow and capital-spending evidence, with standalone obligations clarified. A change in owner cash flow’s sign relative to a valid normalized baseline would change the view, but that comparison is currently unsupported because the baseline is unavailable.
+Correction note: the original saved worksheet stated that no comparable annual Form 10 inputs were identified. The saved Form 10 accession 0001193125-26-409182 supplies one matching fiscal-year basis for 2025-07-01 through 2026-06-30. The corrected deterministic selector uses that annual basis. It does not annualize the pre-spin three-month 10-Q or mix periods. Owner cash flow is negative, so the low-case equity value and low-case value per share are zero. The saved positive close is above that low case; conviction remains Low. Parent-burden and complete first-30-day insider evidence remain unavailable.
 Ticker: MSGR
+
+Correction record
+
+The original saved worksheet did not identify the available comparable annual Form 10 inputs. This regenerated worksheet corrects that selector result; it does not annualize the pre-spin 10-Q.
+
+Matched Form 10 basis
+
+Accession: 0001193125-26-409182; form: 10-12B/A; period: 2025-07-01 through 2026-06-30; source units: USD thousands, except shares in thousands.
+Pro forma net loss: -26,801,000 USD; runs/lab07/MSGR_evidence/Form10_0001193125-26-409182_information.txt, saved-text line 1791.
+Depreciation and amortization: 2,348,000 USD; runs/lab07/MSGR_evidence/Form10_0001193125-26-409182_information.txt, saved-text line 1781.
+Capital expenditures: -634,000 USD; runs/lab07/MSGR_evidence/Form10_0001193125-26-409182_information.txt, saved-text line 5108; the owner-cash-flow subtraction uses its absolute value.
+Pro forma diluted weighted-average shares: 12,077,000; runs/lab07/MSGR_evidence/Form10_0001193125-26-409182_information.txt, saved-text line 1797.
+
 Owner cash flow formula: after-tax earnings + depreciation and amortization − capital expenditures.
-Owner cash flow: not known USD millions (not computed: neither reported-after-spin TTM nor comparable annual Form 10 pro-forma inputs are identified); period: not known.
-Diluted shares: not known million.
+Owner cash flow arithmetic: -26.801 + 2.348 − 0.634 = -25.087 USD millions.
+Owner cash flow: -25.087 USD millions (aligned Form 10 comparable annual pro-forma figures); period: 2025-07-01 to 2026-06-30.
+Diluted shares: 12.077 million.
 Valuation assumptions: low case haircut 20.0%, growth 0.0%, required return 12.0%; midpoint haircut 0.0%, growth 2.0%, required return 10.0%.
-Low-case value per share: not known USD; midpoint: not known USD.
+Low-case equity value: 0.00 USD millions; low-case value per share: 0.00 USD; midpoint: 0.00 USD.
 Last eligible close: 254.55 USD per share (2026-11-20).
-View: Not computed. Conviction: Not computed.
+View: Price is above low-case value. Conviction: Low.
 
 Criterion scores (number, source tag, period, and arithmetic are shown; unavailable inputs receive zero under the supplied criteria):
-- Margin Of Safety: 0/2; not computed: price-to-low-case comparison unavailable; number: not known; filing tag: not known; period: not known; calculation: not computed.
-- Owner Cash Flow: 0/2; not known: valid comparable cash-flow periods are unavailable; number: not known; filing tag: not known; period: not known; calculation: not computed.
+- Margin Of Safety: 0/2; price compared with low-case value per share; number: 254.55; filing tag: saved daily close and deterministic low-case worksheet computation; period: 2026-11-20; calculation: price 254.55 compared with 80% of low case 0.00 and low case 0.
+- Owner Cash Flow: 0/2; one valid base owner-cash-flow period; second comparable period not established; number: -25.087; filing tag: 10-12B/A accession 0001193125-26-409182; period: 2025-07-01 to 2026-06-30; calculation: one nonpositive valid period.
 - Parent Burden: 0/2; not known: inherited obligations or restrictions are not established; number: not known; filing tag: not known; period: not known; calculation: not computed.
 - Insider Alignment: 0/2; not known: complete first-30-day Form 4 review is unavailable; number: not known; filing tag: not known; period: not known; calculation: not computed.
 - Liquidity: 2/2; median daily dollar volume compared with client purchase; number: 48814756.38; filing tag: Financial Datasets daily close and volume; period: 2026-10-27 to 2026-11-20; calculation: 10000 / 48814756.38 × 100 = 0.02048560874124759894991408743%.
